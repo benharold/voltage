@@ -1,0 +1,118 @@
+{ "peers" :
+    [
+     { "id" : "034725c18651ace5f07ee7e958473726f38b2af123eefbd127124134c2c0e11263", "connected" : false, "channels" :
+     [
+      { "state" : "OPENINGD", "dust_limit_satoshis" : 546, "max_htlc_value_in_flight_msat" : 18446744073709551615, "channel_reserve_satoshis" : 0, "htlc_minimum_msat" : 0, "to_self_delay" : 6, "max_accepted_htlcs" : 483 } ] },
+     { "id" : "02c644a8aa5d31c64a8b42ef5870c152d74d6bc6fcec56f188e2c7b58cf85b79f6", "connected" : false, "channels" :
+     [
+      { "state" : "OPENINGD", "dust_limit_satoshis" : 546, "max_htlc_value_in_flight_msat" : 18446744073709551615, "channel_reserve_satoshis" : 0, "htlc_minimum_msat" : 0, "to_self_delay" : 6, "max_accepted_htlcs" : 483 } ] },
+     { "id" : "03acc1679243d8e8a01c0702daa3904ccb5c83953b55086a6225b45ed6d532513d", "connected" : false, "channels" :
+     [
+      { "state" : "OPENINGD", "dust_limit_satoshis" : 546, "max_htlc_value_in_flight_msat" : 18446744073709551615, "channel_reserve_satoshis" : 0, "htlc_minimum_msat" : 0, "to_self_delay" : 6, "max_accepted_htlcs" : 483 } ] },
+     { "id" : "02362e43eb124981a4f4882ab44c4428176b6fd1cf086044185079f78c6ae16d05", "connected" : false, "channels" :
+     [
+      { "state" : "OPENINGD", "dust_limit_satoshis" : 546, "max_htlc_value_in_flight_msat" : 18446744073709551615, "channel_reserve_satoshis" : 0, "htlc_minimum_msat" : 0, "to_self_delay" : 6, "max_accepted_htlcs" : 483 } ] },
+     { "id" : "02362e43eb124981a4f4882ab44c4428176b6fd1cf086044185079f78c6ae16d05", "connected" : false, "channels" :
+     [
+      { "state" : "OPENINGD", "dust_limit_satoshis" : 546, "max_htlc_value_in_flight_msat" : 18446744073709551615, "channel_reserve_satoshis" : 0, "htlc_minimum_msat" : 0, "to_self_delay" : 6, "max_accepted_htlcs" : 483 } ] },
+     { "id" : "02362e43eb124981a4f4882ab44c4428176b6fd1cf086044185079f78c6ae16d05", "connected" : false, "channels" :
+     [
+      { "state" : "OPENINGD", "dust_limit_satoshis" : 546, "max_htlc_value_in_flight_msat" : 18446744073709551615, "channel_reserve_satoshis" : 0, "htlc_minimum_msat" : 0, "to_self_delay" : 6, "max_accepted_htlcs" : 483 } ] },
+     { "id" : "02362e43eb124981a4f4882ab44c4428176b6fd1cf086044185079f78c6ae16d05", "connected" : false, "channels" :
+     [
+      { "state" : "OPENINGD", "dust_limit_satoshis" : 546, "max_htlc_value_in_flight_msat" : 18446744073709551615, "channel_reserve_satoshis" : 0, "htlc_minimum_msat" : 0, "to_self_delay" : 6, "max_accepted_htlcs" : 483 } ] },
+     { "id" : "02362e43eb124981a4f4882ab44c4428176b6fd1cf086044185079f78c6ae16d05", "connected" : false, "channels" :
+     [
+      { "state" : "OPENINGD", "dust_limit_satoshis" : 546, "max_htlc_value_in_flight_msat" : 18446744073709551615, "channel_reserve_satoshis" : 0, "htlc_minimum_msat" : 0, "to_self_delay" : 6, "max_accepted_htlcs" : 483 } ] },
+     { "id" : "02362e43eb124981a4f4882ab44c4428176b6fd1cf086044185079f78c6ae16d05", "connected" : false, "channels" :
+     [
+      { "state" : "OPENINGD", "dust_limit_satoshis" : 546, "max_htlc_value_in_flight_msat" : 18446744073709551615, "channel_reserve_satoshis" : 0, "htlc_minimum_msat" : 0, "to_self_delay" : 6, "max_accepted_htlcs" : 483 } ] },
+     { "id" : "02d28c3aac4b4f36746052a735831afbe65bc5698a7be5bd41b42fd1ddf2a1a358", "connected" : false, "channels" :
+     [
+      { "state" : "OPENINGD", "dust_limit_satoshis" : 546, "max_htlc_value_in_flight_msat" : 18446744073709551615, "channel_reserve_satoshis" : 0, "htlc_minimum_msat" : 0, "to_self_delay" : 6, "max_accepted_htlcs" : 483 } ] },
+     { "id" : "02d28c3aac4b4f36746052a735831afbe65bc5698a7be5bd41b42fd1ddf2a1a358", "connected" : false, "channels" :
+     [
+      { "state" : "OPENINGD", "dust_limit_satoshis" : 546, "max_htlc_value_in_flight_msat" : 18446744073709551615, "channel_reserve_satoshis" : 0, "htlc_minimum_msat" : 0, "to_self_delay" : 6, "max_accepted_htlcs" : 483 } ] },
+     { "id" : "0376063a480d3530023e95933504fca3da45f9524a37fcc656d276c129d5c57500", "connected" : false, "channels" :
+     [
+      { "state" : "OPENINGD", "dust_limit_satoshis" : 546, "max_htlc_value_in_flight_msat" : 18446744073709551615, "channel_reserve_satoshis" : 0, "htlc_minimum_msat" : 0, "to_self_delay" : 6, "max_accepted_htlcs" : 483 } ] },
+     { "id" : "025160df2e0934f49c7327225679a01d294997ba6f483a629609943693c546082e", "connected" : false, "channels" :
+     [
+      { "state" : "OPENINGD", "dust_limit_satoshis" : 546, "max_htlc_value_in_flight_msat" : 18446744073709551615, "channel_reserve_satoshis" : 0, "htlc_minimum_msat" : 0, "to_self_delay" : 6, "max_accepted_htlcs" : 483 } ] },
+     { "id" : "026210049063949182ec8292c9c86814e2202fcd96477ba800ae753ae7f1f02e11", "connected" : false, "channels" :
+     [
+      { "state" : "OPENINGD", "dust_limit_satoshis" : 546, "max_htlc_value_in_flight_msat" : 18446744073709551615, "channel_reserve_satoshis" : 0, "htlc_minimum_msat" : 0, "to_self_delay" : 6, "max_accepted_htlcs" : 483 } ] },
+     { "id" : "02d28c3aac4b4f36746052a735831afbe65bc5698a7be5bd41b42fd1ddf2a1a358", "connected" : false, "channels" :
+     [
+      { "state" : "OPENINGD", "dust_limit_satoshis" : 546, "max_htlc_value_in_flight_msat" : 18446744073709551615, "channel_reserve_satoshis" : 0, "htlc_minimum_msat" : 0, "to_self_delay" : 6, "max_accepted_htlcs" : 483 } ] },
+     { "id" : "02d28c3aac4b4f36746052a735831afbe65bc5698a7be5bd41b42fd1ddf2a1a358", "connected" : false, "channels" :
+     [
+      { "state" : "OPENINGD", "dust_limit_satoshis" : 546, "max_htlc_value_in_flight_msat" : 18446744073709551615, "channel_reserve_satoshis" : 0, "htlc_minimum_msat" : 0, "to_self_delay" : 6, "max_accepted_htlcs" : 483 } ] },
+     { "id" : "033a743ab6e0a464ef5ee187d4fde82af01b737cc8e06a4a1beaa09144c445b87a", "connected" : true, "netaddr" :
+     [ "45.77.115.33:9735" ], "channels" :
+     [
+      { "state" : "CHANNELD_NORMAL", "owner" : "lightning_channeld", "short_channel_id" : "1260359:74:0", "funding_txid" : "41ce9578b38cae6f1446253471404f0b1777b60b7701230f807204fd06563371", "msatoshi_to_us" : 1677721000, "msatoshi_total" : 1677721000, "dust_limit_satoshis" : 546, "max_htlc_value_in_flight_msat" : 18446744073709551615, "channel_reserve_satoshis" : 0, "htlc_minimum_msat" : 0, "to_self_delay" : 6, "max_accepted_htlcs" : 483 } ] },
+     { "id" : "033a743ab6e0a464ef5ee187d4fde82af01b737cc8e06a4a1beaa09144c445b87a", "connected" : false, "channels" :
+     [
+      { "state" : "OPENINGD", "dust_limit_satoshis" : 0, "max_htlc_value_in_flight_msat" : 0, "channel_reserve_satoshis" : 0, "htlc_minimum_msat" : 0, "to_self_delay" : 0, "max_accepted_htlcs" : 0 } ] },
+     { "id" : "033a743ab6e0a464ef5ee187d4fde82af01b737cc8e06a4a1beaa09144c445b87a", "connected" : false, "channels" :
+     [
+      { "state" : "OPENINGD", "dust_limit_satoshis" : 0, "max_htlc_value_in_flight_msat" : 0, "channel_reserve_satoshis" : 0, "htlc_minimum_msat" : 0, "to_self_delay" : 0, "max_accepted_htlcs" : 0 } ] },
+     { "id" : "033a743ab6e0a464ef5ee187d4fde82af01b737cc8e06a4a1beaa09144c445b87a", "connected" : false, "channels" :
+     [
+      { "state" : "OPENINGD", "dust_limit_satoshis" : 0, "max_htlc_value_in_flight_msat" : 0, "channel_reserve_satoshis" : 0, "htlc_minimum_msat" : 0, "to_self_delay" : 0, "max_accepted_htlcs" : 0 } ] },
+     { "id" : "033a743ab6e0a464ef5ee187d4fde82af01b737cc8e06a4a1beaa09144c445b87a", "connected" : false, "channels" :
+     [
+      { "state" : "OPENINGD", "dust_limit_satoshis" : 0, "max_htlc_value_in_flight_msat" : 0, "channel_reserve_satoshis" : 0, "htlc_minimum_msat" : 0, "to_self_delay" : 0, "max_accepted_htlcs" : 0 } ] },
+     { "id" : "033a743ab6e0a464ef5ee187d4fde82af01b737cc8e06a4a1beaa09144c445b87a", "connected" : false, "channels" :
+     [
+      { "state" : "OPENINGD", "dust_limit_satoshis" : 0, "max_htlc_value_in_flight_msat" : 0, "channel_reserve_satoshis" : 0, "htlc_minimum_msat" : 0, "to_self_delay" : 0, "max_accepted_htlcs" : 0 } ] },
+     { "id" : "036d8454b9c89af87b13b504af429a9ef05922dd084268370de2609b25e34aee21", "connected" : false, "channels" :
+     [
+      { "state" : "ONCHAIND_THEIR_UNILATERAL", "short_channel_id" : "1260349:42:1", "funding_txid" : "1b7c83b6ae80511c8c96116c2c2e8020a000f096ceb0cfbf49b7e8c653efecc2", "msatoshi_to_us" : 7500000000, "msatoshi_total" : 15000000000, "dust_limit_satoshis" : 546, "max_htlc_value_in_flight_msat" : 18446744073709551615, "channel_reserve_satoshis" : 0, "htlc_minimum_msat" : 0, "to_self_delay" : 6, "max_accepted_htlcs" : 483 } ] },
+     { "id" : "036d8454b9c89af87b13b504af429a9ef05922dd084268370de2609b25e34aee21", "connected" : false, "channels" :
+     [
+      { "state" : "OPENINGD", "dust_limit_satoshis" : 546, "max_htlc_value_in_flight_msat" : 18446744073709551615, "channel_reserve_satoshis" : 0, "htlc_minimum_msat" : 0, "to_self_delay" : 6, "max_accepted_htlcs" : 483 } ] },
+     { "id" : "036d8454b9c89af87b13b504af429a9ef05922dd084268370de2609b25e34aee21", "connected" : false, "channels" :
+     [
+      { "state" : "OPENINGD", "dust_limit_satoshis" : 546, "max_htlc_value_in_flight_msat" : 18446744073709551615, "channel_reserve_satoshis" : 0, "htlc_minimum_msat" : 0, "to_self_delay" : 6, "max_accepted_htlcs" : 483 } ] },
+     { "id" : "036d8454b9c89af87b13b504af429a9ef05922dd084268370de2609b25e34aee21", "connected" : false, "channels" :
+     [
+      { "state" : "OPENINGD", "dust_limit_satoshis" : 0, "max_htlc_value_in_flight_msat" : 0, "channel_reserve_satoshis" : 0, "htlc_minimum_msat" : 0, "to_self_delay" : 0, "max_accepted_htlcs" : 0 } ] },
+     { "id" : "02d2ccdf98507238b7980c94616815ad2fec75f048caeaba738f408da363e43ba1", "connected" : false, "channels" :
+     [
+      { "state" : "OPENINGD", "dust_limit_satoshis" : 0, "max_htlc_value_in_flight_msat" : 0, "channel_reserve_satoshis" : 0, "htlc_minimum_msat" : 0, "to_self_delay" : 0, "max_accepted_htlcs" : 0 } ] },
+     { "id" : "02d2ccdf98507238b7980c94616815ad2fec75f048caeaba738f408da363e43ba1", "connected" : false, "channels" :
+     [
+      { "state" : "OPENINGD", "dust_limit_satoshis" : 0, "max_htlc_value_in_flight_msat" : 0, "channel_reserve_satoshis" : 0, "htlc_minimum_msat" : 0, "to_self_delay" : 0, "max_accepted_htlcs" : 0 } ] },
+     { "id" : "02d2ccdf98507238b7980c94616815ad2fec75f048caeaba738f408da363e43ba1", "connected" : false, "channels" :
+     [
+      { "state" : "OPENINGD", "dust_limit_satoshis" : 0, "max_htlc_value_in_flight_msat" : 0, "channel_reserve_satoshis" : 0, "htlc_minimum_msat" : 0, "to_self_delay" : 0, "max_accepted_htlcs" : 0 } ] },
+     { "id" : "02d2ccdf98507238b7980c94616815ad2fec75f048caeaba738f408da363e43ba1", "connected" : false, "channels" :
+     [
+      { "state" : "OPENINGD", "dust_limit_satoshis" : 0, "max_htlc_value_in_flight_msat" : 0, "channel_reserve_satoshis" : 0, "htlc_minimum_msat" : 0, "to_self_delay" : 0, "max_accepted_htlcs" : 0 } ] },
+     { "id" : "02d2ccdf98507238b7980c94616815ad2fec75f048caeaba738f408da363e43ba1", "connected" : false, "channels" :
+     [
+      { "state" : "OPENINGD", "dust_limit_satoshis" : 0, "max_htlc_value_in_flight_msat" : 0, "channel_reserve_satoshis" : 0, "htlc_minimum_msat" : 0, "to_self_delay" : 0, "max_accepted_htlcs" : 0 } ] },
+     { "id" : "02d2ccdf98507238b7980c94616815ad2fec75f048caeaba738f408da363e43ba1", "connected" : false, "channels" :
+     [
+      { "state" : "OPENINGD", "dust_limit_satoshis" : 0, "max_htlc_value_in_flight_msat" : 0, "channel_reserve_satoshis" : 0, "htlc_minimum_msat" : 0, "to_self_delay" : 0, "max_accepted_htlcs" : 0 } ] },
+     { "id" : "036d8454b9c89af87b13b504af429a9ef05922dd084268370de2609b25e34aee21", "connected" : false, "channels" :
+     [
+      { "state" : "OPENINGD", "dust_limit_satoshis" : 0, "max_htlc_value_in_flight_msat" : 0, "channel_reserve_satoshis" : 0, "htlc_minimum_msat" : 0, "to_self_delay" : 0, "max_accepted_htlcs" : 0 } ] },
+     { "id" : "036d8454b9c89af87b13b504af429a9ef05922dd084268370de2609b25e34aee21", "connected" : false, "channels" :
+     [
+      { "state" : "OPENINGD", "dust_limit_satoshis" : 0, "max_htlc_value_in_flight_msat" : 0, "channel_reserve_satoshis" : 0, "htlc_minimum_msat" : 0, "to_self_delay" : 0, "max_accepted_htlcs" : 0 } ] },
+     { "id" : "036d8454b9c89af87b13b504af429a9ef05922dd084268370de2609b25e34aee21", "connected" : false, "channels" :
+     [
+      { "state" : "OPENINGD", "dust_limit_satoshis" : 0, "max_htlc_value_in_flight_msat" : 0, "channel_reserve_satoshis" : 0, "htlc_minimum_msat" : 0, "to_self_delay" : 0, "max_accepted_htlcs" : 0 } ] },
+     { "id" : "03fb59ef9a0907d0581aca81aec7f6cf280aed1b8b2c13f93ac67b462f7a7eb9bf", "connected" : false, "channels" :
+     [
+      { "state" : "OPENINGD", "dust_limit_satoshis" : 546, "max_htlc_value_in_flight_msat" : 18446744073709551615, "channel_reserve_satoshis" : 0, "htlc_minimum_msat" : 0, "to_self_delay" : 6, "max_accepted_htlcs" : 483 } ] },
+     { "id" : "03933884aaf1d6b108397e5efe5c86bcf2d8ca8d2f700eda99db9214fc2712b134", "connected" : true, "netaddr" :
+     [ "34.250.234.192:9735" ], "channels" :
+     [
+      { "state" : "CHANNELD_NORMAL", "owner" : "lightning_channeld", "short_channel_id" : "1260314:86:0", "funding_txid" : "1baa5ee80685c0a34766b5396d145c2926bba324113c908478195b26d8df3310", "msatoshi_to_us" : 1000000000, "msatoshi_total" : 1000000000, "dust_limit_satoshis" : 546, "max_htlc_value_in_flight_msat" : 18446744073709551615, "channel_reserve_satoshis" : 0, "htlc_minimum_msat" : 0, "to_self_delay" : 6, "max_accepted_htlcs" : 483 } ] },
+     { "id" : "03948f2bd6b2c8d40df31172b28953d766cb56a59fd3a92cd51cf972c864007850", "connected" : false, "channels" :
+     [
+      { "state" : "ONCHAIND_OUR_UNILATERAL", "owner" : "lightning_onchaind", "short_channel_id" : "1260306:13:0", "funding_txid" : "74cd8a9915ba0409ed8ab7d235cc00f048709249a3fafafd8cf18f1318637d6b", "msatoshi_to_us" : 992807989, "msatoshi_total" : 1000000000, "dust_limit_satoshis" : 546, "max_htlc_value_in_flight_msat" : 18446744073709551615, "channel_reserve_satoshis" : 0, "htlc_minimum_msat" : 0, "to_self_delay" : 6, "max_accepted_htlcs" : 483 } ] } ] }

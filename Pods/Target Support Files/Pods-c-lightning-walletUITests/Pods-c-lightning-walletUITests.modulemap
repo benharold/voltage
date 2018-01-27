@@ -1,0 +1,6 @@
+framework module Pods_c_lightning_walletUITests {
+  umbrella header "Pods-c-lightning-walletUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

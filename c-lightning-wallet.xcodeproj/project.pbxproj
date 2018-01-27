@@ -13,6 +13,17 @@
 		3A071400201A7127008E2AEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0713FE201A7127008E2AEE /* Main.storyboard */; };
 		3A07140C201A7127008E2AEE /* c_lightning_walletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A07140B201A7127008E2AEE /* c_lightning_walletTests.swift */; };
 		3A071417201A7127008E2AEE /* c_lightning_walletUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A071416201A7127008E2AEE /* c_lightning_walletUITests.swift */; };
+		3A38BDE7201C1DB10055BBA1 /* PaymentListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A38BDE6201C1DB10055BBA1 /* PaymentListController.swift */; };
+		3A38BDE9201C55B40055BBA1 /* PaymentHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A38BDE8201C55B40055BBA1 /* PaymentHash.swift */; };
+		3A38BDED201CF8D70055BBA1 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A38BDEC201CF8D70055BBA1 /* Helper.swift */; };
+		3AA4BDEA201BCADC00000153 /* listpayments.json in Resources */ = {isa = PBXBuildFile; fileRef = 3AA4BDE9201BCADC00000153 /* listpayments.json */; };
+		3AA4BDEC201BE13800000153 /* listpeers.json in Resources */ = {isa = PBXBuildFile; fileRef = 3AA4BDEB201BE13800000153 /* listpeers.json */; };
+		3AA4BDEE201BE8A300000153 /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA4BDED201BE8A300000153 /* Payment.swift */; };
+		3AA4BDF0201BE8F400000153 /* Peer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA4BDEF201BE8F400000153 /* Peer.swift */; };
+		3AA4BDF3201BE91B00000153 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA4BDF2201BE91B00000153 /* Channel.swift */; };
+		6B9FA68BD368EEB050E4FA27 /* Pods_c_lightning_walletTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B742AD0EF7BDD6AEBDD95596 /* Pods_c_lightning_walletTests.framework */; };
+		B00ED6C9BAE2C1ECEAA04211 /* Pods_c_lightning_wallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B965782AA154250D74836F0 /* Pods_c_lightning_wallet.framework */; };
+		EDDD71B9F46AA57C0239AFF8 /* Pods_c_lightning_walletUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1EF40C1FFF1DEF01AA08180 /* Pods_c_lightning_walletUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +44,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2239A5071D1BF4137E236D27 /* Pods-c-lightning-wallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-c-lightning-wallet.release.xcconfig"; path = "Pods/Target Support Files/Pods-c-lightning-wallet/Pods-c-lightning-wallet.release.xcconfig"; sourceTree = "<group>"; };
+		25C46BEAB8062EB1EC733396 /* Pods-c-lightning-walletTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-c-lightning-walletTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-c-lightning-walletTests/Pods-c-lightning-walletTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2C76F246BDB8850F514E73B1 /* Pods-c-lightning-walletUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-c-lightning-walletUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-c-lightning-walletUITests/Pods-c-lightning-walletUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2F4261298D5C12BCC3D71CAD /* Pods-c-lightning-walletTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-c-lightning-walletTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-c-lightning-walletTests/Pods-c-lightning-walletTests.release.xcconfig"; sourceTree = "<group>"; };
 		3A0713F5201A7127008E2AEE /* c-lightning-wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "c-lightning-wallet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A0713F8201A7127008E2AEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A0713FA201A7127008E2AEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +61,21 @@
 		3A071412201A7127008E2AEE /* c-lightning-walletUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "c-lightning-walletUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A071416201A7127008E2AEE /* c_lightning_walletUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = c_lightning_walletUITests.swift; sourceTree = "<group>"; };
 		3A071418201A7127008E2AEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A38BDE6201C1DB10055BBA1 /* PaymentListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentListController.swift; sourceTree = "<group>"; };
+		3A38BDE8201C55B40055BBA1 /* PaymentHash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHash.swift; sourceTree = "<group>"; };
+		3A38BDEB201CF59C0055BBA1 /* c-lightning-wallet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "c-lightning-wallet-Bridging-Header.h"; sourceTree = "<group>"; };
+		3A38BDEC201CF8D70055BBA1 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		3A38BDEE201D16DE0055BBA1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3AA4BDE9201BCADC00000153 /* listpayments.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = listpayments.json; sourceTree = "<group>"; };
+		3AA4BDEB201BE13800000153 /* listpeers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = listpeers.json; sourceTree = "<group>"; };
+		3AA4BDED201BE8A300000153 /* Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
+		3AA4BDEF201BE8F400000153 /* Peer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Peer.swift; sourceTree = "<group>"; };
+		3AA4BDF2201BE91B00000153 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		9B965782AA154250D74836F0 /* Pods_c_lightning_wallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_c_lightning_wallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1EF40C1FFF1DEF01AA08180 /* Pods_c_lightning_walletUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_c_lightning_walletUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B742AD0EF7BDD6AEBDD95596 /* Pods_c_lightning_walletTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_c_lightning_walletTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CADAD3CC30E4236D1EA808CF /* Pods-c-lightning-wallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-c-lightning-wallet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-c-lightning-wallet/Pods-c-lightning-wallet.debug.xcconfig"; sourceTree = "<group>"; };
+		E6035D87E1134C4A130B3A18 /* Pods-c-lightning-walletUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-c-lightning-walletUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-c-lightning-walletUITests/Pods-c-lightning-walletUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B00ED6C9BAE2C1ECEAA04211 /* Pods_c_lightning_wallet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B9FA68BD368EEB050E4FA27 /* Pods_c_lightning_walletTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,19 +99,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDDD71B9F46AA57C0239AFF8 /* Pods_c_lightning_walletUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37D7FF82BD8B9D4E18DCB5DE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CADAD3CC30E4236D1EA808CF /* Pods-c-lightning-wallet.debug.xcconfig */,
+				2239A5071D1BF4137E236D27 /* Pods-c-lightning-wallet.release.xcconfig */,
+				25C46BEAB8062EB1EC733396 /* Pods-c-lightning-walletTests.debug.xcconfig */,
+				2F4261298D5C12BCC3D71CAD /* Pods-c-lightning-walletTests.release.xcconfig */,
+				E6035D87E1134C4A130B3A18 /* Pods-c-lightning-walletUITests.debug.xcconfig */,
+				2C76F246BDB8850F514E73B1 /* Pods-c-lightning-walletUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		3A0713EC201A7127008E2AEE = {
 			isa = PBXGroup;
 			children = (
+				3A38BDEE201D16DE0055BBA1 /* README.md */,
 				3A0713F7201A7127008E2AEE /* c-lightning-wallet */,
 				3A07140A201A7127008E2AEE /* c-lightning-walletTests */,
 				3A071415201A7127008E2AEE /* c-lightning-walletUITests */,
 				3A0713F6201A7127008E2AEE /* Products */,
+				37D7FF82BD8B9D4E18DCB5DE /* Pods */,
+				4F54E42768BBC5040CD934D1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +151,13 @@
 				3A0713FE201A7127008E2AEE /* Main.storyboard */,
 				3A071401201A7127008E2AEE /* Info.plist */,
 				3A071402201A7127008E2AEE /* c_lightning_wallet.entitlements */,
+				3AA4BDED201BE8A300000153 /* Payment.swift */,
+				3AA4BDEF201BE8F400000153 /* Peer.swift */,
+				3AA4BDF2201BE91B00000153 /* Channel.swift */,
+				3A38BDE6201C1DB10055BBA1 /* PaymentListController.swift */,
+				3A38BDE8201C55B40055BBA1 /* PaymentHash.swift */,
+				3A38BDEB201CF59C0055BBA1 /* c-lightning-wallet-Bridging-Header.h */,
+				3A38BDEC201CF8D70055BBA1 /* Helper.swift */,
 			);
 			path = "c-lightning-wallet";
 			sourceTree = "<group>";
@@ -111,6 +167,8 @@
 			children = (
 				3A07140B201A7127008E2AEE /* c_lightning_walletTests.swift */,
 				3A07140D201A7127008E2AEE /* Info.plist */,
+				3AA4BDE9201BCADC00000153 /* listpayments.json */,
+				3AA4BDEB201BE13800000153 /* listpeers.json */,
 			);
 			path = "c-lightning-walletTests";
 			sourceTree = "<group>";
@@ -124,6 +182,16 @@
 			path = "c-lightning-walletUITests";
 			sourceTree = "<group>";
 		};
+		4F54E42768BBC5040CD934D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B965782AA154250D74836F0 /* Pods_c_lightning_wallet.framework */,
+				B742AD0EF7BDD6AEBDD95596 /* Pods_c_lightning_walletTests.framework */,
+				B1EF40C1FFF1DEF01AA08180 /* Pods_c_lightning_walletUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -131,9 +199,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A07141B201A7127008E2AEE /* Build configuration list for PBXNativeTarget "c-lightning-wallet" */;
 			buildPhases = (
+				187A490185E04BFA3393F715 /* [CP] Check Pods Manifest.lock */,
 				3A0713F1201A7127008E2AEE /* Sources */,
 				3A0713F2201A7127008E2AEE /* Frameworks */,
 				3A0713F3201A7127008E2AEE /* Resources */,
+				7399D77DF7098ED4DFDE2BE1 /* [CP] Embed Pods Frameworks */,
+				FCF1F0EE71BDCE8B59F187A3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -148,9 +219,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A07141E201A7127008E2AEE /* Build configuration list for PBXNativeTarget "c-lightning-walletTests" */;
 			buildPhases = (
+				69ECFF3B1F9C07F731E882FB /* [CP] Check Pods Manifest.lock */,
 				3A071403201A7127008E2AEE /* Sources */,
 				3A071404201A7127008E2AEE /* Frameworks */,
 				3A071405201A7127008E2AEE /* Resources */,
+				74C8B135DD5B601916A940E7 /* [CP] Embed Pods Frameworks */,
+				59A8F98BEAEB095E52ED5255 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -166,9 +240,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A071421201A7127008E2AEE /* Build configuration list for PBXNativeTarget "c-lightning-walletUITests" */;
 			buildPhases = (
+				619584A79E1A65BCB65B04D6 /* [CP] Check Pods Manifest.lock */,
 				3A07140E201A7127008E2AEE /* Sources */,
 				3A07140F201A7127008E2AEE /* Frameworks */,
 				3A071410201A7127008E2AEE /* Resources */,
+				BF59C9F7EF1728E2BD809566 /* [CP] Embed Pods Frameworks */,
+				5B7EB10F81A6C6E49B3687EF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -240,6 +317,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AA4BDEA201BCADC00000153 /* listpayments.json in Resources */,
+				3AA4BDEC201BE13800000153 /* listpeers.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,13 +331,172 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		187A490185E04BFA3393F715 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-c-lightning-wallet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59A8F98BEAEB095E52ED5255 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-c-lightning-walletTests/Pods-c-lightning-walletTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B7EB10F81A6C6E49B3687EF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-c-lightning-walletUITests/Pods-c-lightning-walletUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		619584A79E1A65BCB65B04D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-c-lightning-walletUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69ECFF3B1F9C07F731E882FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-c-lightning-walletTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7399D77DF7098ED4DFDE2BE1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-c-lightning-wallet/Pods-c-lightning-wallet-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Fakery/Fakery.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Fakery.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-c-lightning-wallet/Pods-c-lightning-wallet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74C8B135DD5B601916A940E7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-c-lightning-walletTests/Pods-c-lightning-walletTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Fakery/Fakery.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Fakery.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-c-lightning-walletTests/Pods-c-lightning-walletTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF59C9F7EF1728E2BD809566 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-c-lightning-walletUITests/Pods-c-lightning-walletUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCF1F0EE71BDCE8B59F187A3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-c-lightning-wallet/Pods-c-lightning-wallet-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3A0713F1201A7127008E2AEE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A38BDE7201C1DB10055BBA1 /* PaymentListController.swift in Sources */,
 				3A0713FB201A7127008E2AEE /* ViewController.swift in Sources */,
+				3A38BDE9201C55B40055BBA1 /* PaymentHash.swift in Sources */,
+				3AA4BDF3201BE91B00000153 /* Channel.swift in Sources */,
+				3AA4BDF0201BE8F400000153 /* Peer.swift in Sources */,
+				3AA4BDEE201BE8A300000153 /* Payment.swift in Sources */,
 				3A0713F9201A7127008E2AEE /* AppDelegate.swift in Sources */,
+				3A38BDED201CF8D70055BBA1 /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,7 +651,9 @@
 		};
 		3A07141C201A7127008E2AEE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CADAD3CC30E4236D1EA808CF /* Pods-c-lightning-wallet.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "c-lightning-wallet/c_lightning_wallet.entitlements";
 				CODE_SIGN_STYLE = Automatic;
@@ -422,13 +662,16 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hci.c-lightning-wallet";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "c-lightning-wallet/c-lightning-wallet-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
 		3A07141D201A7127008E2AEE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2239A5071D1BF4137E236D27 /* Pods-c-lightning-wallet.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "c-lightning-wallet/c_lightning_wallet.entitlements";
 				CODE_SIGN_STYLE = Automatic;
@@ -437,12 +680,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hci.c-lightning-wallet";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "c-lightning-wallet/c-lightning-wallet-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
 		3A07141F201A7127008E2AEE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25C46BEAB8062EB1EC733396 /* Pods-c-lightning-walletTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -452,6 +697,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hci.c-lightning-walletTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "c-lightning-wallet/c-lightning-wallet-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/c-lightning-wallet.app/Contents/MacOS/c-lightning-wallet";
 			};
@@ -459,6 +706,7 @@
 		};
 		3A071420201A7127008E2AEE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F4261298D5C12BCC3D71CAD /* Pods-c-lightning-walletTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -468,6 +716,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hci.c-lightning-walletTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "c-lightning-wallet/c-lightning-wallet-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/c-lightning-wallet.app/Contents/MacOS/c-lightning-wallet";
 			};
@@ -475,6 +725,7 @@
 		};
 		3A071422201A7127008E2AEE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6035D87E1134C4A130B3A18 /* Pods-c-lightning-walletUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -483,6 +734,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hci.c-lightning-walletUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "c-lightning-wallet/c-lightning-wallet-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = "c-lightning-wallet";
 			};
@@ -490,6 +742,7 @@
 		};
 		3A071423201A7127008E2AEE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C76F246BDB8850F514E73B1 /* Pods-c-lightning-walletUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -498,6 +751,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hci.c-lightning-walletUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "c-lightning-wallet/c-lightning-wallet-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = "c-lightning-wallet";
 			};
