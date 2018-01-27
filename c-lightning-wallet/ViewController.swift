@@ -35,7 +35,7 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
         
         // Do any additional setup after loading the view.
         payment_list = []
-        for index in 1...25 {
+        for _ in 1...25 {
             payment_list.append(Payment.fake())
         }
         //print(payment_list)
