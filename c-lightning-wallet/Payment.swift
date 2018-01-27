@@ -21,16 +21,16 @@ struct Payment: Codable, PaymentFactory {
     let timestamp: Int
     let created_at: Int
     let status: String
-    
+
     enum PaymentKeys: String, CodingKey {
         case payments
     }
-    
+
     static func fake() -> Payment {
         let faker = Faker(locale: "en-US")
         let statuses = ["complete", "failed"]
         let status = Int(arc4random_uniform(UInt32(statuses.count)))
-        
+
         return Payment(
             id: faker.number.randomInt(),
             payment_hash: PaymentHash.fake().value,

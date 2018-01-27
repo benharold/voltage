@@ -25,7 +25,7 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
         Process.launchedProcess(launchPath: path, arguments: arguments)
         self.label_value.stringValue = "my cool text"
         
-        let end_result = runCommand(cmd:"/usr/bin/which", args:"lncli")
+        let end_result = runCommand(cmd: "/usr/bin/which", args: "lncli")
         print(end_result)
         self.which_lncli_value.stringValue = end_result.output[0]
     }
@@ -47,23 +47,21 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
         }
     }
     
-    func numberOfRows(in tableView: NSTableView) -> Int
-    {
+    func numberOfRows(in tableView: NSTableView) -> Int {
         return self.payment_list.count
     }
     
-    func tableView(_ tableView: NSTableView, objectValueFor tableColumn: NSTableColumn?, row: Int) -> Any?
-    {
+    func tableView(_ tableView: NSTableView, objectValueFor tableColumn: NSTableColumn?, row: Int) -> Any? {
         var key = ""
         key = tableColumn!.identifier.rawValue
         
-        if (key == "id") {
+        if key == "id" {
             return payment_list[row].id
-        } else if (key == "payment_hash") {
+        } else if key == "payment_hash" {
             return payment_list[row].payment_hash
-        } else if (key == "status") {
+        } else if key == "status" {
             return payment_list[row].status
-        } else if (key == "created") {
+        } else if key == "created" {
             let date = Date(timeIntervalSince1970: TimeInterval(payment_list[row].created_at))
             let dateFormatter = DateFormatter()
             dateFormatter.dateStyle = .medium
@@ -73,19 +71,18 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
             //dateFormatter.dateFormat = "yyyy-MM-dd"
             let strDate = dateFormatter.string(from: date)
             return strDate
-        } else if (key == "msatoshi") {
+        } else if key == "msatoshi" {
             return payment_list[row].msatoshi / 1000
-        } else if (key == "destination") {
+        } else if key == "destination" {
             return payment_list[row].destination
         }
 
         return nil
     }
     
-    func runCommand(cmd : String, args : String...) -> (output: [String], error: [String], exitCode: Int32) {
-        
-        var output : [String] = []
-        var error : [String] = []
+    func runCommand(cmd: String, args: String...) -> (output: [String], error: [String], exitCode: Int32) {
+        var output: [String] = []
+        var error: [String] = []
         
         let task = Process()
         task.launchPath = cmd
@@ -115,6 +112,4 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
         
         return (output, error, status)
     }
-    
 }
-

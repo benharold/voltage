@@ -15,7 +15,7 @@ protocol PaymentHashFactory {
 
 struct PaymentHash: PaymentHashFactory {
     let value: String
-    
+
     static func fake() -> PaymentHash {
         let faker = Faker(locale: "en-US")
         let fake_payment = faker.lorem.characters(amount: 8)

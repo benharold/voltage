@@ -10,14 +10,14 @@ import Foundation
 
 extension String {
     
-    func sha256() -> String{
+    func sha256() -> String {
         if let stringData = self.data(using: String.Encoding.utf8) {
             return hexStringFromData(input: digest(input: stringData as NSData))
         }
         return ""
     }
     
-    private func digest(input : NSData) -> NSData {
+    private func digest(input: NSData) -> NSData {
         let digestLength = Int(CC_SHA256_DIGEST_LENGTH)
         var hash = [UInt8](repeating: 0, count: digestLength)
         CC_SHA256(input.bytes, UInt32(input.length), &hash)
@@ -30,7 +30,7 @@ extension String {
         
         var hexString = ""
         for byte in bytes {
-            hexString += String(format:"%02x", UInt8(byte))
+            hexString += String(format: "%02x", UInt8(byte))
         }
         
         return hexString

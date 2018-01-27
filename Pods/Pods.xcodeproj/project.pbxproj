@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -93,94 +93,94 @@
 
 /* Begin PBXFileReference section */
 		01912D0840369C2A431FBB249612AD78 /* Internet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Internet.swift; path = Sources/Fakery/Generators/Internet.swift; sourceTree = "<group>"; };
-		01C9781BCEFFEDA36580CDF9DD969C98 /* en-TEST.json */ = {isa = PBXFileReference; includeInIndex = 1; name = "en-TEST.json"; path = "Resources/Locales/en-TEST.json"; sourceTree = "<group>"; };
+		01C9781BCEFFEDA36580CDF9DD969C98 /* en-TEST.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = "en-TEST.json"; path = "Resources/Locales/en-TEST.json"; sourceTree = "<group>"; };
 		020988DA416460F1076D901F52BF715F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0320AEEA90202E1CB50849E7F0E621E3 /* Parser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Parser.swift; path = Sources/Fakery/Data/Parser.swift; sourceTree = "<group>"; };
 		07EC930035426DE28A6F94C73AA62572 /* Pods-c-lightning-wallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-c-lightning-wallet.release.xcconfig"; sourceTree = "<group>"; };
 		09A1C38071E3C4FF8ECDD2D09CCB5C0E /* ArrayExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArrayExtension.swift; path = Sources/Fakery/Extensions/ArrayExtension.swift; sourceTree = "<group>"; };
 		0D1B8FC4EF232E9A2183B746AB9599E6 /* Pods-c-lightning-wallet-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-c-lightning-wallet-acknowledgements.plist"; sourceTree = "<group>"; };
-		0D8EC7A41436124E73F044319E7DA864 /* zh-TW.json */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-TW.json"; path = "Resources/Locales/zh-TW.json"; sourceTree = "<group>"; };
-		104FD7213CB6C2CB55F8824885FC024F /* ru.json */ = {isa = PBXFileReference; includeInIndex = 1; name = ru.json; path = Resources/Locales/ru.json; sourceTree = "<group>"; };
+		0D8EC7A41436124E73F044319E7DA864 /* zh-TW.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = "zh-TW.json"; path = "Resources/Locales/zh-TW.json"; sourceTree = "<group>"; };
+		104FD7213CB6C2CB55F8824885FC024F /* ru.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = ru.json; path = Resources/Locales/ru.json; sourceTree = "<group>"; };
 		14171294A4A14C8D1430EAD80128DDA6 /* Pods-c-lightning-walletTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-c-lightning-walletTests-dummy.m"; sourceTree = "<group>"; };
 		15A463A99E80AA404AC1CD23EF12713A /* Pods-c-lightning-walletTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-c-lightning-walletTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		15CE4E3CA48970F6AD27A7555C7F7B9F /* Faker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Faker.swift; path = Sources/Fakery/Faker.swift; sourceTree = "<group>"; };
 		16F258DF85CFD36658125A2788A6969E /* Address.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Address.swift; path = Sources/Fakery/Generators/Address.swift; sourceTree = "<group>"; };
 		1ABC9280CCF308B08860ECAB349EDDB9 /* Pods-c-lightning-walletUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-c-lightning-walletUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		1AE995CB3B4FC972C80027E6EB226999 /* fr.json */ = {isa = PBXFileReference; includeInIndex = 1; name = fr.json; path = Resources/Locales/fr.json; sourceTree = "<group>"; };
+		1AE995CB3B4FC972C80027E6EB226999 /* fr.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = fr.json; path = Resources/Locales/fr.json; sourceTree = "<group>"; };
 		1B1D5E3B72DF4A8FEA4FD4F73F8197E1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D507332AAF4920A187792905CB3DB20 /* Pods-c-lightning-walletUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-c-lightning-walletUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		1E110E3518E2D475577D0E2056C8B05D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		2970FF1F540B6C99E9D785C7953BC6AD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CDE84E603276E81146A11A3CAC4B365 /* Pods-c-lightning-walletUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-c-lightning-walletUITests-umbrella.h"; sourceTree = "<group>"; };
 		2DFB5D2C60069CEB90207D8874EE4358 /* Business.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Business.swift; path = Sources/Fakery/Generators/Business.swift; sourceTree = "<group>"; };
-		302C2EBEDCE8C8B27ABDECC89EF22D1B /* uk.json */ = {isa = PBXFileReference; includeInIndex = 1; name = uk.json; path = Resources/Locales/uk.json; sourceTree = "<group>"; };
+		302C2EBEDCE8C8B27ABDECC89EF22D1B /* uk.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = uk.json; path = Resources/Locales/uk.json; sourceTree = "<group>"; };
 		30F382D339EF2251D2644559E4191C9E /* Company.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Company.swift; path = Sources/Fakery/Generators/Company.swift; sourceTree = "<group>"; };
 		328A74BC7139BD61588F600FCFA27967 /* Generator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Generator.swift; path = Sources/Fakery/Generators/Generator.swift; sourceTree = "<group>"; };
-		35B2ACEC4A58043F3EF7B92F3E13823D /* it.json */ = {isa = PBXFileReference; includeInIndex = 1; name = it.json; path = Resources/Locales/it.json; sourceTree = "<group>"; };
+		35B2ACEC4A58043F3EF7B92F3E13823D /* it.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = it.json; path = Resources/Locales/it.json; sourceTree = "<group>"; };
 		36CA0ECF913EF97D33FD336576F31D7E /* Provider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Provider.swift; path = Sources/Fakery/Data/Provider.swift; sourceTree = "<group>"; };
 		45F0B029553A1051EB243357F86CF5A7 /* Pods-c-lightning-walletTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-c-lightning-walletTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4889CAC045062BFA191B52605F80BF5E /* Pods-c-lightning-wallet-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-c-lightning-wallet-resources.sh"; sourceTree = "<group>"; };
-		490A3344D92B323CA9EC6A0C428C95BF /* nb-NO.json */ = {isa = PBXFileReference; includeInIndex = 1; name = "nb-NO.json"; path = "Resources/Locales/nb-NO.json"; sourceTree = "<group>"; };
+		490A3344D92B323CA9EC6A0C428C95BF /* nb-NO.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = "nb-NO.json"; path = "Resources/Locales/nb-NO.json"; sourceTree = "<group>"; };
 		4910964E4BA127BF48338881ED255C3D /* PhoneNumber.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhoneNumber.swift; path = Sources/Fakery/Generators/PhoneNumber.swift; sourceTree = "<group>"; };
-		4BCF568C25E275AB36518F65917AF05D /* Pods_c_lightning_walletTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_c_lightning_walletTests.framework; path = "Pods-c-lightning-walletTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BCF568C25E275AB36518F65917AF05D /* Pods_c_lightning_walletTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_c_lightning_walletTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C21D9C3AB841A7B41A4ED0868578DC4 /* Pods-c-lightning-walletTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-c-lightning-walletTests.release.xcconfig"; sourceTree = "<group>"; };
-		4D33AAA47E6C9A8AC2506416A60450FD /* es.json */ = {isa = PBXFileReference; includeInIndex = 1; name = es.json; path = Resources/Locales/es.json; sourceTree = "<group>"; };
+		4D33AAA47E6C9A8AC2506416A60450FD /* es.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = es.json; path = Resources/Locales/es.json; sourceTree = "<group>"; };
 		4D6391E55D4FDED336C0B324FD7CAA8F /* Team.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Team.swift; path = Sources/Fakery/Generators/Team.swift; sourceTree = "<group>"; };
-		4F340D95C272758F546E0B3E90E7E2E2 /* Pods_c_lightning_wallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_c_lightning_wallet.framework; path = "Pods-c-lightning-wallet.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F340D95C272758F546E0B3E90E7E2E2 /* Pods_c_lightning_wallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_c_lightning_wallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56247FB6530FED87A5B7CEF06CC4D648 /* Pods-c-lightning-walletUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-c-lightning-walletUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5A3E69DA195B6172EA662CFDCE4BDDE1 /* en-GB.json */ = {isa = PBXFileReference; includeInIndex = 1; name = "en-GB.json"; path = "Resources/Locales/en-GB.json"; sourceTree = "<group>"; };
+		5A3E69DA195B6172EA662CFDCE4BDDE1 /* en-GB.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = "en-GB.json"; path = "Resources/Locales/en-GB.json"; sourceTree = "<group>"; };
 		5B0862FF712F6A2489AB21B804A2DC35 /* Bank.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Bank.swift; path = Sources/Fakery/Generators/Bank.swift; sourceTree = "<group>"; };
-		5D4FF816D67BB0F671CB9367CAA885D9 /* Pods_c_lightning_walletUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_c_lightning_walletUITests.framework; path = "Pods-c-lightning-walletUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D4FF816D67BB0F671CB9367CAA885D9 /* Pods_c_lightning_walletUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_c_lightning_walletUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DC438F69339BC5EFB9D5B1057F671EE /* Fakery.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Fakery.xcconfig; sourceTree = "<group>"; };
-		5FB02302CA322E89C11A87C10E31803A /* ja.json */ = {isa = PBXFileReference; includeInIndex = 1; name = ja.json; path = Resources/Locales/ja.json; sourceTree = "<group>"; };
-		60616B965C3AC1D71BA2A963C14FCA45 /* Faker.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Faker.bundle; path = "Fakery-Faker.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6063F82C9092388D7057F065F7D3A7B6 /* ko.json */ = {isa = PBXFileReference; includeInIndex = 1; name = ko.json; path = Resources/Locales/ko.json; sourceTree = "<group>"; };
+		5FB02302CA322E89C11A87C10E31803A /* ja.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = ja.json; path = Resources/Locales/ja.json; sourceTree = "<group>"; };
+		60616B965C3AC1D71BA2A963C14FCA45 /* Faker.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Faker.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		6063F82C9092388D7057F065F7D3A7B6 /* ko.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = ko.json; path = Resources/Locales/ko.json; sourceTree = "<group>"; };
 		63FFDF2CBE533891A2AD912DC40A6DAF /* Commerce.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Commerce.swift; path = Sources/Fakery/Generators/Commerce.swift; sourceTree = "<group>"; };
 		646205F6DB57FFF127DDD1ADCA3BE697 /* Pods-c-lightning-walletUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-c-lightning-walletUITests-resources.sh"; sourceTree = "<group>"; };
 		6526E38143AA3C7320583E142AA64538 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
-		668CC2C04897DB20FEC9FD1CADA40AEF /* de-AT.json */ = {isa = PBXFileReference; includeInIndex = 1; name = "de-AT.json"; path = "Resources/Locales/de-AT.json"; sourceTree = "<group>"; };
+		668CC2C04897DB20FEC9FD1CADA40AEF /* de-AT.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = "de-AT.json"; path = "Resources/Locales/de-AT.json"; sourceTree = "<group>"; };
 		6CBD31B31E657D31118AB8B8045122DC /* Pods-c-lightning-wallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-c-lightning-wallet.debug.xcconfig"; sourceTree = "<group>"; };
-		6FD56D65EF6D3EFD1EDD92661C6E257C /* Pods-c-lightning-wallet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-c-lightning-wallet.modulemap"; sourceTree = "<group>"; };
-		70C2EE04FF28B414F55C24E91FBA3845 /* en-US.json */ = {isa = PBXFileReference; includeInIndex = 1; name = "en-US.json"; path = "Resources/Locales/en-US.json"; sourceTree = "<group>"; };
+		6FD56D65EF6D3EFD1EDD92661C6E257C /* Pods-c-lightning-wallet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-c-lightning-wallet.modulemap"; sourceTree = "<group>"; };
+		70C2EE04FF28B414F55C24E91FBA3845 /* en-US.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = "en-US.json"; path = "Resources/Locales/en-US.json"; sourceTree = "<group>"; };
 		760B44852DE9C1B3DE32EA5CA5AC374D /* Fakery-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Fakery-dummy.m"; sourceTree = "<group>"; };
 		7C4E8A702B9789D5906108622A7973A8 /* Fakery-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Fakery-prefix.pch"; sourceTree = "<group>"; };
 		7FF99D0681AABB1552D6F1AECAD2FB14 /* Pods-c-lightning-walletTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-c-lightning-walletTests-umbrella.h"; sourceTree = "<group>"; };
 		87F5A1C4B7C65484AFA79A088012D66B /* Name.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Name.swift; path = Sources/Fakery/Generators/Name.swift; sourceTree = "<group>"; };
 		8891400BA48AC0824E92D4DD48243F37 /* Pods-c-lightning-wallet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-c-lightning-wallet-dummy.m"; sourceTree = "<group>"; };
-		90F743B6D7A41AC1680205973F730B6F /* Fakery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Fakery.framework; path = Fakery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90F743B6D7A41AC1680205973F730B6F /* Fakery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Fakery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		919194D30E1D7BB191190E642EF866A1 /* Pods-c-lightning-walletUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-c-lightning-walletUITests-frameworks.sh"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9830710AE73AEBE9AD1BE4144AA0C990 /* tr-TR.json */ = {isa = PBXFileReference; includeInIndex = 1; name = "tr-TR.json"; path = "Resources/Locales/tr-TR.json"; sourceTree = "<group>"; };
-		99A93EFF74A5DA4B4BCCDBE029DD749C /* nl.json */ = {isa = PBXFileReference; includeInIndex = 1; name = nl.json; path = Resources/Locales/nl.json; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9830710AE73AEBE9AD1BE4144AA0C990 /* tr-TR.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = "tr-TR.json"; path = "Resources/Locales/tr-TR.json"; sourceTree = "<group>"; };
+		99A93EFF74A5DA4B4BCCDBE029DD749C /* nl.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = nl.json; path = Resources/Locales/nl.json; sourceTree = "<group>"; };
 		99DD55ED9185C6D120829195E3F81E38 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DF8EC26E39286E5B70B3A6CB3BDF91E /* Pods-c-lightning-wallet-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-c-lightning-wallet-frameworks.sh"; sourceTree = "<group>"; };
 		9E7CFB6017ADB59F5159B3F5F5672623 /* Pods-c-lightning-wallet-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-c-lightning-wallet-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A44395FE969A5129AD2CDC4BADF0C207 /* ResourceBundle-Faker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Faker-Info.plist"; sourceTree = "<group>"; };
-		A49A8C65DEAAB571DBB702C80755B4B1 /* sk.json */ = {isa = PBXFileReference; includeInIndex = 1; name = sk.json; path = Resources/Locales/sk.json; sourceTree = "<group>"; };
+		A49A8C65DEAAB571DBB702C80755B4B1 /* sk.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = sk.json; path = Resources/Locales/sk.json; sourceTree = "<group>"; };
 		A52753C6B07E5A08F559333B4903651A /* Pods-c-lightning-walletTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-c-lightning-walletTests-resources.sh"; sourceTree = "<group>"; };
-		A7104C4D5FF8520035F56B8DEC5C0E66 /* Pods-c-lightning-walletTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-c-lightning-walletTests.modulemap"; sourceTree = "<group>"; };
+		A7104C4D5FF8520035F56B8DEC5C0E66 /* Pods-c-lightning-walletTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-c-lightning-walletTests.modulemap"; sourceTree = "<group>"; };
 		A7A82F49564AFA21364F3666CEAFEC06 /* Pods-c-lightning-wallet-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-c-lightning-wallet-umbrella.h"; sourceTree = "<group>"; };
-		A89617B38CF8BE3ACA41C863C7CBE0C1 /* en.json */ = {isa = PBXFileReference; includeInIndex = 1; name = en.json; path = Resources/Locales/en.json; sourceTree = "<group>"; };
+		A89617B38CF8BE3ACA41C863C7CBE0C1 /* en.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = en.json; path = Resources/Locales/en.json; sourceTree = "<group>"; };
 		AABA537449CAD2808F7A6A8FACC95529 /* Pods-c-lightning-walletTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-c-lightning-walletTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		AD31507B2AD692B59B57F04D1F79E392 /* Pods-c-lightning-walletTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-c-lightning-walletTests-frameworks.sh"; sourceTree = "<group>"; };
-		ADE965F8789EACB775A24C5AA0D4784E /* de-CH.json */ = {isa = PBXFileReference; includeInIndex = 1; name = "de-CH.json"; path = "Resources/Locales/de-CH.json"; sourceTree = "<group>"; };
+		ADE965F8789EACB775A24C5AA0D4784E /* de-CH.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = "de-CH.json"; path = "Resources/Locales/de-CH.json"; sourceTree = "<group>"; };
 		B0AD0A3626CBD747DC6A21941632F94B /* Lorem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Lorem.swift; path = Sources/Fakery/Generators/Lorem.swift; sourceTree = "<group>"; };
-		B5EFFB3C88D94093D7BC3AA6203DF6DA /* Fakery.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Fakery.modulemap; sourceTree = "<group>"; };
-		B81CE31EBDF7F720276F1CDA16C2F733 /* Pods-c-lightning-walletUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-c-lightning-walletUITests.modulemap"; sourceTree = "<group>"; };
+		B5EFFB3C88D94093D7BC3AA6203DF6DA /* Fakery.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Fakery.modulemap; sourceTree = "<group>"; };
+		B81CE31EBDF7F720276F1CDA16C2F733 /* Pods-c-lightning-walletUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-c-lightning-walletUITests.modulemap"; sourceTree = "<group>"; };
 		BA57F450D052C915C0946F11E2A808B9 /* Pods-c-lightning-walletUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-c-lightning-walletUITests-dummy.m"; sourceTree = "<group>"; };
 		BE4596709338F51A05E80019B24BF6E3 /* Number.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Number.swift; path = Sources/Fakery/Generators/Number.swift; sourceTree = "<group>"; };
 		BFFC9A9E72396DC30B4468888EE42360 /* App.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = App.swift; path = Sources/Fakery/Generators/App.swift; sourceTree = "<group>"; };
-		C27F419A4D1CE68AF48D3E0CAF17962B /* zh-CN.json */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-CN.json"; path = "Resources/Locales/zh-CN.json"; sourceTree = "<group>"; };
-		C5FD053C96F9D2EDE6CD88983BA1327E /* fa.json */ = {isa = PBXFileReference; includeInIndex = 1; name = fa.json; path = Resources/Locales/fa.json; sourceTree = "<group>"; };
+		C27F419A4D1CE68AF48D3E0CAF17962B /* zh-CN.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = "zh-CN.json"; path = "Resources/Locales/zh-CN.json"; sourceTree = "<group>"; };
+		C5FD053C96F9D2EDE6CD88983BA1327E /* fa.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = fa.json; path = Resources/Locales/fa.json; sourceTree = "<group>"; };
 		C6E3802780224404BD3E2F35FEC18E1F /* Config.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Config.swift; path = Sources/Fakery/Config.swift; sourceTree = "<group>"; };
-		CCDB4B5E2A970CFA9CD88C45691E6C12 /* en-AU.json */ = {isa = PBXFileReference; includeInIndex = 1; name = "en-AU.json"; path = "Resources/Locales/en-AU.json"; sourceTree = "<group>"; };
-		D0E81ECBC12F2ABFC8CBD725E0DBF504 /* de.json */ = {isa = PBXFileReference; includeInIndex = 1; name = de.json; path = Resources/Locales/de.json; sourceTree = "<group>"; };
-		D4B8CDF54D1F10288DFF0587CF568BC0 /* en-IND.json */ = {isa = PBXFileReference; includeInIndex = 1; name = "en-IND.json"; path = "Resources/Locales/en-IND.json"; sourceTree = "<group>"; };
-		D6DFF60008FB33A49D0F34221CECA911 /* pl.json */ = {isa = PBXFileReference; includeInIndex = 1; name = pl.json; path = Resources/Locales/pl.json; sourceTree = "<group>"; };
+		CCDB4B5E2A970CFA9CD88C45691E6C12 /* en-AU.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = "en-AU.json"; path = "Resources/Locales/en-AU.json"; sourceTree = "<group>"; };
+		D0E81ECBC12F2ABFC8CBD725E0DBF504 /* de.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = de.json; path = Resources/Locales/de.json; sourceTree = "<group>"; };
+		D4B8CDF54D1F10288DFF0587CF568BC0 /* en-IND.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = "en-IND.json"; path = "Resources/Locales/en-IND.json"; sourceTree = "<group>"; };
+		D6DFF60008FB33A49D0F34221CECA911 /* pl.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = pl.json; path = Resources/Locales/pl.json; sourceTree = "<group>"; };
 		D97C51283CE0FA1F2838E456F80503D0 /* Fakery-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Fakery-umbrella.h"; sourceTree = "<group>"; };
-		DD999B2B84429FA2C623B8F837144A09 /* en-CA.json */ = {isa = PBXFileReference; includeInIndex = 1; name = "en-CA.json"; path = "Resources/Locales/en-CA.json"; sourceTree = "<group>"; };
+		DD999B2B84429FA2C623B8F837144A09 /* en-CA.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = "en-CA.json"; path = "Resources/Locales/en-CA.json"; sourceTree = "<group>"; };
 		EC3443A75993BDAFD1FE817764ECABD0 /* Pods-c-lightning-walletUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-c-lightning-walletUITests.release.xcconfig"; sourceTree = "<group>"; };
-		FA2A354FD5616B12F705E8D106E6564B /* sv.json */ = {isa = PBXFileReference; includeInIndex = 1; name = sv.json; path = Resources/Locales/sv.json; sourceTree = "<group>"; };
+		FA2A354FD5616B12F705E8D106E6564B /* sv.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = sv.json; path = Resources/Locales/sv.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -339,7 +339,6 @@
 				29313443D7C6A89B3D4A9A17697BD04D /* Resources */,
 				2A698484440752579635FBF042ABC0B2 /* Support Files */,
 			);
-			name = Fakery;
 			path = Fakery;
 			sourceTree = "<group>";
 		};
@@ -385,7 +384,6 @@
 			isa = PBXGroup;
 			children = (
 			);
-			name = SwiftLint;
 			path = SwiftLint;
 			sourceTree = "<group>";
 		};
@@ -558,7 +556,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0920;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1028,6 +1026,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;

@@ -5,6 +5,7 @@
 //  Created by Ben Harold on 1/25/18.
 //  Copyright © 2018 Harold Consulting. All rights reserved.
 //
+// swiftlint:disable type_name
 
 import XCTest
 import Fakery

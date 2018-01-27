@@ -80,7 +80,7 @@ public final class Address: Generator {
     return drand48() * 360.0 - 180.0
   }
   
-  public func coordinate(inRadius radius: Double, fromCenter center:CLLocationCoordinate2D) -> CLLocationCoordinate2D {
+  public func coordinate(inRadius radius: Double, fromCenter center: CLLocationCoordinate2D) -> CLLocationCoordinate2D {
     let y0 = center.latitude
     let x0 = center.longitude
     

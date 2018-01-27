@@ -12,13 +12,11 @@ class PaymentListController: NSViewController, NSTableViewDelegate, NSTableViewD
    
     var payment_list: [Payment] = [Payment.fake()]
     
-    func numberOfRows(in tableView: NSTableView) -> Int
-    {
+    func numberOfRows(in tableView: NSTableView) -> Int {
         return self.payment_list.count
     }
     
-    func tableView(_ tableView: NSTableView, objectValueFor tableColumn: NSTableColumn?, row: Int) -> Any?
-    {
+    func tableView(_ tableView: NSTableView, objectValueFor tableColumn: NSTableColumn?, row: Int) -> Any? {
         return self.payment_list[row]
     }
 
