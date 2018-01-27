@@ -7,6 +7,7 @@ target 'c-lightning-wallet' do
 
   # Pods for c-lightning-wallet
   pod 'Fakery', '~> 3.0'
+  pod 'SwiftLint'
 
   target 'c-lightning-walletTests' do
     inherit! :search_paths
