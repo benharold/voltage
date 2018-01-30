@@ -9,36 +9,54 @@
 import Cocoa
 
 class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSource {
-
-    @IBOutlet weak var label_value: NSTextField!
-    
-    @IBOutlet weak var which_lncli_value: NSTextField!
     
     @IBOutlet weak var payments_table_view: NSTableView!
     
-    var payment_list: [Payment]!
+    @IBOutlet weak var payment_hash: NSTextFieldCell!
     
-    @IBAction func talk(_ sender: Any) {
-        let path = "/usr/bin/say"
-        let arguments = ["--voice=Kanya", "Hello World"]
-        
-        Process.launchedProcess(launchPath: path, arguments: arguments)
-        self.label_value.stringValue = "my cool text"
-        
-        let end_result = runCommand(cmd: "/usr/bin/which", args: "lncli")
-        print(end_result)
-        self.which_lncli_value.stringValue = end_result.output[0]
-    }
+    @IBOutlet weak var destination: NSTextFieldCell!
+    
+    var payment_list: [Payment]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
-        payment_list = []
-        for _ in 1...25 {
-            payment_list.append(Payment.fake())
-        }
+        load_payments()
+        //for _ in 1...5 {
+        //    payment_list.append(Payment.fake())
+        //}
         //print(payment_list)
+        
+        payments_table_view.delegate = self
+        payments_table_view.dataSource = self
+        
+        payments_table_view.tableColumns[0].sortDescriptorPrototype =
+            NSSortDescriptor(key: "id", ascending: true)
+        payments_table_view.tableColumns[1].sortDescriptorPrototype =
+            NSSortDescriptor(key: "payment_hash", ascending: true)
+        payments_table_view.tableColumns[2].sortDescriptorPrototype =
+            NSSortDescriptor(key: "destination", ascending: true)
+        payments_table_view.tableColumns[3].sortDescriptorPrototype =
+            NSSortDescriptor(key: "msatoshi", ascending: true)
+        payments_table_view.tableColumns[4].sortDescriptorPrototype =
+            NSSortDescriptor(key: "status", ascending: true)
+        payments_table_view.tableColumns[5].sortDescriptorPrototype =
+            NSSortDescriptor(key: "created_at", ascending: true)
+    }
+    
+    func load_payments() {
+        let payments = runCommand(cmd: "/Users/haroldbr/Development/lightning/cli/lightning-cli", args: "listpayments")
+        
+        let decoder = JSONDecoder.init()
+        do {
+            let result = try decoder.decode(PaymentList.self, from: payments.output[0].data(using: .utf8)!)
+            //print(result)
+            payment_list = result.payments
+        } catch {
+            print("Error: \(error)")
+        }
+        
+        payments_table_view.reloadData()
     }
 
     override var representedObject: Any? {
@@ -48,7 +66,7 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
     }
     
     func numberOfRows(in tableView: NSTableView) -> Int {
-        return self.payment_list.count
+        return payment_list?.count ?? 0
     }
     
     func tableView(_ tableView: NSTableView, objectValueFor tableColumn: NSTableColumn?, row: Int) -> Any? {
@@ -80,6 +98,60 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
         return nil
     }
     
+    func tableView(_ tableView: NSTableView, sortDescriptorsDidChange oldDescriptors: [NSSortDescriptor]) {
+        guard let sortDescriptor = tableView.sortDescriptors.first else {
+            return
+        }
+        
+        let key = sortDescriptor.key!
+
+        if sortDescriptor.ascending == true {
+            switch key {
+            case "payment_hash":
+                payment_list.sort { $0.payment_hash < $1.payment_hash }
+            case "destination":
+                payment_list.sort { $0.destination < $1.destination }
+            case "msatoshi":
+                payment_list.sort { $0.msatoshi < $1.msatoshi }
+            case "status":
+                payment_list.sort { $0.status < $1.status }
+            case "created_at":
+                payment_list.sort { $0.created_at < $1.created_at }
+            default:
+                payment_list.sort { $0.id < $1.id }
+            }
+        } else {
+            switch key {
+            case "payment_hash":
+                payment_list.sort { $0.payment_hash > $1.payment_hash }
+            case "destination":
+                payment_list.sort { $0.destination > $1.destination }
+            case "msatoshi":
+                payment_list.sort { $0.msatoshi > $1.msatoshi }
+            case "status":
+                payment_list.sort { $0.status > $1.status }
+            case "created_at":
+                payment_list.sort { $0.created_at > $1.created_at }
+            default:
+                payment_list.sort { $0.id > $1.id }
+            }
+        }
+        
+        tableView.reloadData()
+    }
+    
+    func tableViewSelectionDidChange(_ notification: Notification) {
+        set_active_row()
+    }
+    
+    func set_active_row() {
+        // payments_table_view.selectedRow will be -1 if the user selects a column
+        if payments_table_view.selectedRow >= 0 {
+            payment_hash.stringValue = payment_list[payments_table_view.selectedRow].payment_hash
+            destination.stringValue = payment_list[payments_table_view.selectedRow].destination
+        }
+    }
+    
     func runCommand(cmd: String, args: String...) -> (output: [String], error: [String], exitCode: Int32) {
         var output: [String] = []
         var error: [String] = []
@@ -98,7 +170,7 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
         let outdata = outpipe.fileHandleForReading.readDataToEndOfFile()
         if var string = String(data: outdata, encoding: .utf8) {
             string = string.trimmingCharacters(in: .newlines)
-            output = string.components(separatedBy: "\n")
+            output = string.components(separatedBy: "")
         }
         
         let errdata = errpipe.fileHandleForReading.readDataToEndOfFile()
