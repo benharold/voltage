@@ -22,7 +22,11 @@
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
-                                        <menuItem title="Preferences…" keyEquivalent="," id="BOF-NM-1cW"/>
+                                        <menuItem title="Preferences…" keyEquivalent="," id="BOF-NM-1cW">
+                                            <connections>
+                                                <segue destination="JLI-Gy-e2g" kind="show" id="8C0-qk-XpD"/>
+                                            </connections>
+                                        </menuItem>
                                         <menuItem isSeparatorItem="YES" id="wFC-TO-SCJ"/>
                                         <menuItem title="Services" id="NMo-om-nkz">
                                             <modifierMask key="keyEquivalentModifierMask"/>
@@ -882,6 +886,51 @@
                 <userDefaultsController representsSharedInstance="YES" id="xjU-5B-WFD"/>
             </objects>
             <point key="canvasLocation" x="75" y="825"/>
+        </scene>
+        <!--Window Controller-->
+        <scene sceneID="v4z-fj-ut3">
+            <objects>
+                <windowController id="JLI-Gy-e2g" sceneMemberID="viewController">
+                    <window key="window" title="Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="BIv-1c-q99">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="294" y="323" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <connections>
+                            <outlet property="delegate" destination="JLI-Gy-e2g" id="JO4-Qp-kEW"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="wcA-CG-e9h" kind="relationship" relationship="window.shadowedContentViewController" id="CRb-JB-1Yq"/>
+                    </connections>
+                </windowController>
+                <customObject id="xUp-hy-inc" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="873" y="358"/>
+        </scene>
+        <!--Preferences View Controller-->
+        <scene sceneID="yCS-K0-rVB">
+            <objects>
+                <viewController id="wcA-CG-e9h" customClass="PreferencesViewController" customModule="c_lightning_wallet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="H0K-l4-hWL">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m2R-DQ-kHb">
+                                <rect key="frame" x="18" y="233" width="118" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Wallet Preferences" id="0z5-0b-5pj">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                    </view>
+                </viewController>
+                <customObject id="quW-qf-7Ji" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="873" y="896"/>
         </scene>
     </scenes>
 </document>
