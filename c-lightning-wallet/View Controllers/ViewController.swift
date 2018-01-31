@@ -9,14 +9,13 @@
 import Cocoa
 
 class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSource {
+    var payment_list: [Payment]!
     
     @IBOutlet weak var payments_table_view: NSTableView!
     
     @IBOutlet weak var payment_hash: NSTextFieldCell!
     
     @IBOutlet weak var destination: NSTextFieldCell!
-    
-    var payment_list: [Payment]!
     
     override func viewDidLoad() {
         super.viewDidLoad()

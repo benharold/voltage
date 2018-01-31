@@ -150,20 +150,16 @@
 			isa = PBXGroup;
 			children = (
 				3A0713F8201A7127008E2AEE /* AppDelegate.swift */,
-				3A0713FA201A7127008E2AEE /* ViewController.swift */,
+				3A38BDEB201CF59C0055BBA1 /* c-lightning-wallet-Bridging-Header.h */,
 				3A0713FC201A7127008E2AEE /* Assets.xcassets */,
 				3A0713FE201A7127008E2AEE /* Main.storyboard */,
 				3A071401201A7127008E2AEE /* Info.plist */,
 				3A071402201A7127008E2AEE /* c_lightning_wallet.entitlements */,
-				3AA4BDED201BE8A300000153 /* Payment.swift */,
-				3AA4BDEF201BE8F400000153 /* Peer.swift */,
-				3AA4BDF2201BE91B00000153 /* Channel.swift */,
 				3A38BDE6201C1DB10055BBA1 /* PaymentListController.swift */,
-				3A38BDE8201C55B40055BBA1 /* PaymentHash.swift */,
-				3A38BDEB201CF59C0055BBA1 /* c-lightning-wallet-Bridging-Header.h */,
 				3A38BDEC201CF8D70055BBA1 /* Helper.swift */,
-				3AFD6CF920213EAA001599D2 /* PreferencesViewController.swift */,
 				3AFD6CFB202149D0001599D2 /* Preferences.swift */,
+				3AFD6CFE20222C6B001599D2 /* Models */,
+				3AFD6CFD20222BFC001599D2 /* View Controllers */,
 			);
 			path = "c-lightning-wallet";
 			sourceTree = "<group>";
@@ -186,6 +182,26 @@
 				3A071418201A7127008E2AEE /* Info.plist */,
 			);
 			path = "c-lightning-walletUITests";
+			sourceTree = "<group>";
+		};
+		3AFD6CFD20222BFC001599D2 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3AFD6CF920213EAA001599D2 /* PreferencesViewController.swift */,
+				3A0713FA201A7127008E2AEE /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		3AFD6CFE20222C6B001599D2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3AA4BDF2201BE91B00000153 /* Channel.swift */,
+				3AA4BDED201BE8A300000153 /* Payment.swift */,
+				3A38BDE8201C55B40055BBA1 /* PaymentHash.swift */,
+				3AA4BDEF201BE8F400000153 /* Peer.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		4F54E42768BBC5040CD934D1 /* Frameworks */ = {
