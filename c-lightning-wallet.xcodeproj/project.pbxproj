@@ -15,6 +15,7 @@
 		3A071417201A7127008E2AEE /* c_lightning_walletUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A071416201A7127008E2AEE /* c_lightning_walletUITests.swift */; };
 		3A38BDE9201C55B40055BBA1 /* PaymentHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A38BDE8201C55B40055BBA1 /* PaymentHash.swift */; };
 		3A38BDED201CF8D70055BBA1 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A38BDEC201CF8D70055BBA1 /* String.swift */; };
+		3AA2A68420227AC2005664FC /* LightningRPCQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA2A68320227AC2005664FC /* LightningRPCQuery.swift */; };
 		3AA4BDEA201BCADC00000153 /* listpayments.json in Resources */ = {isa = PBXBuildFile; fileRef = 3AA4BDE9201BCADC00000153 /* listpayments.json */; };
 		3AA4BDEC201BE13800000153 /* listpeers.json in Resources */ = {isa = PBXBuildFile; fileRef = 3AA4BDEB201BE13800000153 /* listpeers.json */; };
 		3AA4BDEE201BE8A300000153 /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA4BDED201BE8A300000153 /* Payment.swift */; };
@@ -22,6 +23,8 @@
 		3AA4BDF3201BE91B00000153 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA4BDF2201BE91B00000153 /* Channel.swift */; };
 		3AFD6CFA20213EAA001599D2 /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFD6CF920213EAA001599D2 /* PreferencesViewController.swift */; };
 		3AFD6CFC202149D0001599D2 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFD6CFB202149D0001599D2 /* Preferences.swift */; };
+		3AFD6D0020223C6F001599D2 /* LightningRPCSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFD6CFF20223C6F001599D2 /* LightningRPCSocket.swift */; };
+		3AFD6D02202240E2001599D2 /* LightningRPCSocketTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFD6D01202240E2001599D2 /* LightningRPCSocketTest.swift */; };
 		6B9FA68BD368EEB050E4FA27 /* Pods_c_lightning_walletTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B742AD0EF7BDD6AEBDD95596 /* Pods_c_lightning_walletTests.framework */; };
 		B00ED6C9BAE2C1ECEAA04211 /* Pods_c_lightning_wallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B965782AA154250D74836F0 /* Pods_c_lightning_wallet.framework */; };
 		EDDD71B9F46AA57C0239AFF8 /* Pods_c_lightning_walletUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1EF40C1FFF1DEF01AA08180 /* Pods_c_lightning_walletUITests.framework */; };
@@ -66,6 +69,7 @@
 		3A38BDEB201CF59C0055BBA1 /* c-lightning-wallet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "c-lightning-wallet-Bridging-Header.h"; sourceTree = "<group>"; };
 		3A38BDEC201CF8D70055BBA1 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		3A38BDEE201D16DE0055BBA1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3AA2A68320227AC2005664FC /* LightningRPCQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightningRPCQuery.swift; sourceTree = "<group>"; };
 		3AA4BDE9201BCADC00000153 /* listpayments.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = listpayments.json; sourceTree = "<group>"; };
 		3AA4BDEB201BE13800000153 /* listpeers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = listpeers.json; sourceTree = "<group>"; };
 		3AA4BDED201BE8A300000153 /* Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
@@ -73,6 +77,8 @@
 		3AA4BDF2201BE91B00000153 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 		3AFD6CF920213EAA001599D2 /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
 		3AFD6CFB202149D0001599D2 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		3AFD6CFF20223C6F001599D2 /* LightningRPCSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightningRPCSocket.swift; sourceTree = "<group>"; };
+		3AFD6D01202240E2001599D2 /* LightningRPCSocketTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightningRPCSocketTest.swift; sourceTree = "<group>"; };
 		9B965782AA154250D74836F0 /* Pods_c_lightning_wallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_c_lightning_wallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1EF40C1FFF1DEF01AA08180 /* Pods_c_lightning_walletUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_c_lightning_walletUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B742AD0EF7BDD6AEBDD95596 /* Pods_c_lightning_walletTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_c_lightning_walletTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -166,6 +172,7 @@
 				3A07140D201A7127008E2AEE /* Info.plist */,
 				3AA4BDE9201BCADC00000153 /* listpayments.json */,
 				3AA4BDEB201BE13800000153 /* listpeers.json */,
+				3AFD6D01202240E2001599D2 /* LightningRPCSocketTest.swift */,
 			);
 			path = "c-lightning-walletTests";
 			sourceTree = "<group>";
@@ -192,6 +199,8 @@
 			isa = PBXGroup;
 			children = (
 				3AA4BDF2201BE91B00000153 /* Channel.swift */,
+				3AA2A68320227AC2005664FC /* LightningRPCQuery.swift */,
+				3AFD6CFF20223C6F001599D2 /* LightningRPCSocket.swift */,
 				3AA4BDED201BE8A300000153 /* Payment.swift */,
 				3A38BDE8201C55B40055BBA1 /* PaymentHash.swift */,
 				3AA4BDEF201BE8F400000153 /* Peer.swift */,
@@ -525,8 +534,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A0713FB201A7127008E2AEE /* ViewController.swift in Sources */,
+				3AFD6D0020223C6F001599D2 /* LightningRPCSocket.swift in Sources */,
 				3AFD6CFC202149D0001599D2 /* Preferences.swift in Sources */,
 				3AFD6CFA20213EAA001599D2 /* PreferencesViewController.swift in Sources */,
+				3AA2A68420227AC2005664FC /* LightningRPCQuery.swift in Sources */,
 				3A38BDE9201C55B40055BBA1 /* PaymentHash.swift in Sources */,
 				3AA4BDF3201BE91B00000153 /* Channel.swift in Sources */,
 				3AA4BDF0201BE8F400000153 /* Peer.swift in Sources */,
@@ -541,6 +552,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A07140C201A7127008E2AEE /* c_lightning_walletTests.swift in Sources */,
+				3AFD6D02202240E2001599D2 /* LightningRPCSocketTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
