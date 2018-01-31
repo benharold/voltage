@@ -22,6 +22,7 @@
 		3AA4BDF0201BE8F400000153 /* Peer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA4BDEF201BE8F400000153 /* Peer.swift */; };
 		3AA4BDF3201BE91B00000153 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA4BDF2201BE91B00000153 /* Channel.swift */; };
 		3AFD6CFA20213EAA001599D2 /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFD6CF920213EAA001599D2 /* PreferencesViewController.swift */; };
+		3AFD6CFC202149D0001599D2 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFD6CFB202149D0001599D2 /* Preferences.swift */; };
 		6B9FA68BD368EEB050E4FA27 /* Pods_c_lightning_walletTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B742AD0EF7BDD6AEBDD95596 /* Pods_c_lightning_walletTests.framework */; };
 		B00ED6C9BAE2C1ECEAA04211 /* Pods_c_lightning_wallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B965782AA154250D74836F0 /* Pods_c_lightning_wallet.framework */; };
 		EDDD71B9F46AA57C0239AFF8 /* Pods_c_lightning_walletUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1EF40C1FFF1DEF01AA08180 /* Pods_c_lightning_walletUITests.framework */; };
@@ -73,6 +74,7 @@
 		3AA4BDEF201BE8F400000153 /* Peer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Peer.swift; sourceTree = "<group>"; };
 		3AA4BDF2201BE91B00000153 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 		3AFD6CF920213EAA001599D2 /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
+		3AFD6CFB202149D0001599D2 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
 		9B965782AA154250D74836F0 /* Pods_c_lightning_wallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_c_lightning_wallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1EF40C1FFF1DEF01AA08180 /* Pods_c_lightning_walletUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_c_lightning_walletUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B742AD0EF7BDD6AEBDD95596 /* Pods_c_lightning_walletTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_c_lightning_walletTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -161,6 +163,7 @@
 				3A38BDEB201CF59C0055BBA1 /* c-lightning-wallet-Bridging-Header.h */,
 				3A38BDEC201CF8D70055BBA1 /* Helper.swift */,
 				3AFD6CF920213EAA001599D2 /* PreferencesViewController.swift */,
+				3AFD6CFB202149D0001599D2 /* Preferences.swift */,
 			);
 			path = "c-lightning-wallet";
 			sourceTree = "<group>";
@@ -508,6 +511,7 @@
 			files = (
 				3A38BDE7201C1DB10055BBA1 /* PaymentListController.swift in Sources */,
 				3A0713FB201A7127008E2AEE /* ViewController.swift in Sources */,
+				3AFD6CFC202149D0001599D2 /* Preferences.swift in Sources */,
 				3AFD6CFA20213EAA001599D2 /* PreferencesViewController.swift in Sources */,
 				3A38BDE9201C55B40055BBA1 /* PaymentHash.swift in Sources */,
 				3AA4BDF3201BE91B00000153 /* Channel.swift in Sources */,
