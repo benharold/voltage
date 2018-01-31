@@ -6,6 +6,7 @@ target 'c-lightning-wallet' do
   use_frameworks!
 
   # Pods for c-lightning-wallet
+  pod 'BlueSocket'
   pod 'Fakery', '~> 3.0'
   pod 'SwiftLint'
 
