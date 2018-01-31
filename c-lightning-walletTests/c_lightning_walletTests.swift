@@ -75,7 +75,6 @@ class c_lightning_walletTests: XCTestCase {
     
     func testUseFactoryToCreatePayment() {
         let new_payment = Payment.fake()
-        print("your mother is a whore")
         print(new_payment)
     }
     

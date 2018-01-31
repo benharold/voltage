@@ -16,7 +16,7 @@ struct Channel: Codable {
     let msatoshi_to_us: Int?
     let msatoshi_total: Int?
     let dust_limit_satoshis: Int
-    // TODO: This is bigger than 64 bit
+    // TODO: This is bigger than 64 bits
     //let max_htlc_value_in_flight_msat: BigInt
     let channel_reserve_satoshis: Int
     let htlc_minimum_msat: Int
