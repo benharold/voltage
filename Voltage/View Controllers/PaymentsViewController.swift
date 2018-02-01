@@ -44,7 +44,7 @@ class PaymentsViewController: NSViewController, NSTableViewDelegate, NSTableView
     
     func load_payments() {
         let service: LightningRPCSocket = LightningRPCSocket.create()
-        let listpayments: LightningRPCQuery = LightningRPCQuery(id: 1, method: "listpayments", params: [])
+        let listpayments: LightningRPCQuery = LightningRPCQuery(id: Int(getpid()), method: "listpayments", params: [])
         let response: Data = service.send(query: listpayments)
         do {
             let result: PaymentList = try decoder.decode(PaymentResult.self, from: response).result

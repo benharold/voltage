@@ -53,7 +53,7 @@ class LightningRPCSocketTest: XCTestCase {
     func testSendGetInfoQuery() {
         let socket = LightningRPCSocket(path: relative_path)
         let query = LightningRPCQuery(
-            id: 1,
+            id: Int(getpid()),
             method: "getinfo",
             params: []
         )
@@ -72,7 +72,7 @@ class LightningRPCSocketTest: XCTestCase {
         let result: PaymentResult
         let socket = LightningRPCSocket(path: relative_path)
         let query = LightningRPCQuery(
-            id: 1,
+            id: Int(getpid()),
             method: "listpayments",
             params: []
         )
