@@ -11,6 +11,8 @@ import Cocoa
 class PreferencesViewController: NSViewController {
     var preferences = Preferences()
     
+    var default_socket_path: String = "~/.lightning/lightning-rpc"
+    
     @IBOutlet weak var socket_location: NSTextFieldCell!
     
     @IBOutlet weak var socket_status: NSTextField!
@@ -27,6 +29,10 @@ class PreferencesViewController: NSViewController {
     
     @IBAction func test_connection_button(_ sender: Any) {
         test_connection()
+    }
+    
+    @IBAction func revert_to_default_button(_ sender: Any) {
+        socket_location.stringValue = default_socket_path
     }
     
     func show_existing_preferences() {

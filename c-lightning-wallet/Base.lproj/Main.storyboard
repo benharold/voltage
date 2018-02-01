@@ -857,19 +857,32 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="v9R-1J-xhI">
+                                <rect key="frame" x="856" y="18" width="56" height="25"/>
+                                <buttonCell key="cell" type="roundTextured" title="Reload" bezelStyle="texturedRounded" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="WhC-Hm-5wF">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="reload_button:" target="XfG-lQ-9wD" id="6uZ-q1-7q4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="hJP-Be-bxn" firstAttribute="trailing" secondItem="TKV-zE-kHX" secondAttribute="trailing" id="4nC-aF-Md8"/>
                             <constraint firstItem="O8a-0e-kW0" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="4rf-su-6W7"/>
                             <constraint firstItem="HGK-gz-h8R" firstAttribute="leading" secondItem="hJP-Be-bxn" secondAttribute="trailing" constant="4" id="D3z-0A-x5H"/>
                             <constraint firstAttribute="bottom" secondItem="HGK-gz-h8R" secondAttribute="bottom" constant="50" id="GU2-Y7-MEb"/>
+                            <constraint firstAttribute="bottom" secondItem="v9R-1J-xhI" secondAttribute="bottom" constant="20" id="OQx-Uu-4lt"/>
                             <constraint firstItem="TKV-zE-kHX" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" symbolic="YES" id="Sy1-ZM-NqC"/>
                             <constraint firstAttribute="bottom" secondItem="hJP-Be-bxn" secondAttribute="bottom" constant="50" id="TQO-sQ-Gzc"/>
                             <constraint firstAttribute="bottom" secondItem="O8a-0e-kW0" secondAttribute="bottom" constant="100" id="V1w-3n-uZy"/>
                             <constraint firstItem="O8a-0e-kW0" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="Xpr-z0-YNR"/>
                             <constraint firstItem="HGK-gz-h8R" firstAttribute="top" secondItem="X64-Bi-CNn" secondAttribute="bottom" constant="8" id="c3q-fs-KtZ"/>
+                            <constraint firstAttribute="trailing" secondItem="v9R-1J-xhI" secondAttribute="trailing" constant="20" id="cfJ-bL-F5v"/>
                             <constraint firstItem="X64-Bi-CNn" firstAttribute="leading" secondItem="HGK-gz-h8R" secondAttribute="leading" id="gBs-K1-IYI"/>
                             <constraint firstItem="hJP-Be-bxn" firstAttribute="leading" secondItem="TKV-zE-kHX" secondAttribute="leading" id="ivP-lo-Bdl"/>
+                            <constraint firstItem="v9R-1J-xhI" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" symbolic="YES" id="kD8-Ck-zOw"/>
                             <constraint firstItem="O8a-0e-kW0" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="koS-th-QZ0"/>
                             <constraint firstItem="hJP-Be-bxn" firstAttribute="top" secondItem="TKV-zE-kHX" secondAttribute="bottom" constant="8" id="lTP-aA-LRa"/>
                             <constraint firstItem="hJP-Be-bxn" firstAttribute="top" secondItem="TKV-zE-kHX" secondAttribute="bottom" constant="8" symbolic="YES" id="nj0-Dm-qOr"/>
@@ -885,7 +898,7 @@
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <userDefaultsController representsSharedInstance="YES" id="xjU-5B-WFD"/>
             </objects>
-            <point key="canvasLocation" x="75" y="825"/>
+            <point key="canvasLocation" x="75" y="770"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="v4z-fj-ut3">
@@ -906,14 +919,14 @@
                 </windowController>
                 <customObject id="xUp-hy-inc" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="873" y="358"/>
+            <point key="canvasLocation" x="925" y="361"/>
         </scene>
         <!--Preferences View Controller-->
         <scene sceneID="yCS-K0-rVB">
             <objects>
                 <viewController id="wcA-CG-e9h" customClass="PreferencesViewController" customModule="c_lightning_wallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="H0K-l4-hWL">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="584" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m2R-DQ-kHb">
@@ -925,17 +938,26 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3NK-bl-io8">
-                                <rect key="frame" x="129" y="231" width="219" height="22"/>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nyC-rW-gvy">
+                                <rect key="frame" x="18" y="206" width="47" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="bG2-WI-N93">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Status:" id="U4Y-5X-aFp">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3NK-bl-io8">
+                                <rect key="frame" x="129" y="231" width="300" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="~/lightning/lightning-rpc" drawsBackground="YES" id="bG2-WI-N93">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u3c-oh-iZJ">
-                                <rect key="frame" x="396" y="13" width="59" height="32"/>
+                                <rect key="frame" x="511" y="13" width="59" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" title="OK" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="kr1-0C-pJh">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -949,7 +971,7 @@ DQ
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="glj-La-KGV">
-                                <rect key="frame" x="315" y="13" width="82" height="32"/>
+                                <rect key="frame" x="430" y="13" width="82" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="q3s-P9-nKf">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -962,15 +984,48 @@ Gw
                                     <action selector="cancel_button:" target="wcA-CG-e9h" id="Cmk-4k-Z4X"/>
                                 </connections>
                             </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YUU-k1-w7F">
+                                <rect key="frame" x="431" y="225" width="139" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Test Connection" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="pMl-c9-md6">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="test_connection_button:" target="wcA-CG-e9h" id="Woz-US-0dn"/>
+                                </connections>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KQX-gW-Zj8">
+                                <rect key="frame" x="129" y="206" width="198" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" id="Qkw-vU-KJX">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bcL-PJ-d2I">
+                                <rect key="frame" x="432" y="197" width="138" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Rever to Default" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="jfJ-8J-WfV">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="revert_to_default_button:" target="wcA-CG-e9h" id="ZS6-Rc-hif"/>
+                                </connections>
+                            </button>
                         </subviews>
                     </view>
                     <connections>
+                        <outlet property="other" destination="3NK-bl-io8" id="AWs-cg-hc0"/>
                         <outlet property="socket_location" destination="bG2-WI-N93" id="q7C-lW-Ye4"/>
+                        <outlet property="socket_status" destination="KQX-gW-Zj8" id="hBT-Hu-bmv"/>
                     </connections>
                 </viewController>
                 <customObject id="quW-qf-7Ji" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="873" y="896"/>
+            <point key="canvasLocation" x="925" y="802"/>
         </scene>
     </scenes>
 </document>
