@@ -19,6 +19,10 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
     
     @IBOutlet weak var destination: NSTextFieldCell!
     
+    @IBAction func reload_button(_ sender: Any) {
+        load_payments()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
