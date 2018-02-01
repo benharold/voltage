@@ -1,5 +1,5 @@
 //
-//  JSONDecoderTests.swift
+//  JSONDecoderTest.swift
 //  VoltageTests
 //
 //  Created by Ben Harold on 1/25/18.
@@ -10,7 +10,7 @@ import XCTest
 import Fakery
 @testable import Voltage
 
-class JSONDecoderTests: XCTestCase {
+class JSONDecoderTest: XCTestCase {
     
     // Load JSON data from a static file located in the test directory
     func loadJson(file_name: String) -> String? {
