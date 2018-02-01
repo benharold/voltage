@@ -16,6 +16,7 @@
 		3A38BDE9201C55B40055BBA1 /* PaymentHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A38BDE8201C55B40055BBA1 /* PaymentHash.swift */; };
 		3A38BDED201CF8D70055BBA1 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A38BDEC201CF8D70055BBA1 /* String.swift */; };
 		3AA2A68420227AC2005664FC /* LightningRPCQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA2A68320227AC2005664FC /* LightningRPCQuery.swift */; };
+		3AA2A68E202385AC005664FC /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA2A68D202385AC005664FC /* Data.swift */; };
 		3AA4BDEA201BCADC00000153 /* listpayments.json in Resources */ = {isa = PBXBuildFile; fileRef = 3AA4BDE9201BCADC00000153 /* listpayments.json */; };
 		3AA4BDEC201BE13800000153 /* listpeers.json in Resources */ = {isa = PBXBuildFile; fileRef = 3AA4BDEB201BE13800000153 /* listpeers.json */; };
 		3AA4BDEE201BE8A300000153 /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA4BDED201BE8A300000153 /* Payment.swift */; };
@@ -70,6 +71,8 @@
 		3A38BDEC201CF8D70055BBA1 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		3A38BDEE201D16DE0055BBA1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3AA2A68320227AC2005664FC /* LightningRPCQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightningRPCQuery.swift; sourceTree = "<group>"; };
+		3AA2A68D202385AC005664FC /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		3AA2A69020239073005664FC /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		3AA4BDE9201BCADC00000153 /* listpayments.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = listpayments.json; sourceTree = "<group>"; };
 		3AA4BDEB201BE13800000153 /* listpeers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = listpeers.json; sourceTree = "<group>"; };
 		3AA4BDED201BE8A300000153 /* Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
@@ -130,6 +133,7 @@
 		3A0713EC201A7127008E2AEE = {
 			isa = PBXGroup;
 			children = (
+				3AA2A69020239073005664FC /* LICENSE.md */,
 				3A38BDEE201D16DE0055BBA1 /* README.md */,
 				3A0713F7201A7127008E2AEE /* c-lightning-wallet */,
 				3A07140A201A7127008E2AEE /* c-lightning-walletTests */,
@@ -159,6 +163,7 @@
 				3A0713FE201A7127008E2AEE /* Main.storyboard */,
 				3A071401201A7127008E2AEE /* Info.plist */,
 				3A071402201A7127008E2AEE /* c_lightning_wallet.entitlements */,
+				3AA2A68F202385B8005664FC /* Extensions */,
 				3AFD6CFE20222C6B001599D2 /* Models */,
 				3AFD6CFD20222BFC001599D2 /* View Controllers */,
 			);
@@ -186,6 +191,15 @@
 			path = "c-lightning-walletUITests";
 			sourceTree = "<group>";
 		};
+		3AA2A68F202385B8005664FC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3AA2A68D202385AC005664FC /* Data.swift */,
+				3A38BDEC201CF8D70055BBA1 /* String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		3AFD6CFD20222BFC001599D2 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -205,7 +219,6 @@
 				3A38BDE8201C55B40055BBA1 /* PaymentHash.swift */,
 				3AA4BDEF201BE8F400000153 /* Peer.swift */,
 				3AFD6CFB202149D0001599D2 /* Preferences.swift */,
-				3A38BDEC201CF8D70055BBA1 /* String.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -541,6 +554,7 @@
 				3A38BDE9201C55B40055BBA1 /* PaymentHash.swift in Sources */,
 				3AA4BDF3201BE91B00000153 /* Channel.swift in Sources */,
 				3AA4BDF0201BE8F400000153 /* Peer.swift in Sources */,
+				3AA2A68E202385AC005664FC /* Data.swift in Sources */,
 				3AA4BDEE201BE8A300000153 /* Payment.swift in Sources */,
 				3A0713F9201A7127008E2AEE /* AppDelegate.swift in Sources */,
 				3A38BDED201CF8D70055BBA1 /* String.swift in Sources */,
