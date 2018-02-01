@@ -72,8 +72,14 @@ class LightningRPCSocket: NSObject, RPCProtocol {
                 let readable = try socket.isReadableOrWritable().readable
                 if readable {
                     _ = try socket.read(into: &read_data)
-                    //response = String(data: read_data, encoding: .utf8) as String!
-                    break
+                    // RPC calls with large payloads can take longer than one
+                    // second to return. This all needs to be moved to another
+                    // thread anyway. Good enough for the demo lol!!1!
+                    sleep(1)
+                    let still_readable = try socket.isReadableOrWritable().readable
+                    if !still_readable {
+                        break
+                    }
                 }
                 sleep(1)
             }
