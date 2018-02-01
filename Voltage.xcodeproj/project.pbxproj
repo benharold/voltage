@@ -11,8 +11,8 @@
 		3A0713FB201A7127008E2AEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0713FA201A7127008E2AEE /* ViewController.swift */; };
 		3A0713FD201A7127008E2AEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A0713FC201A7127008E2AEE /* Assets.xcassets */; };
 		3A071400201A7127008E2AEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0713FE201A7127008E2AEE /* Main.storyboard */; };
-		3A07140C201A7127008E2AEE /* c_lightning_walletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A07140B201A7127008E2AEE /* c_lightning_walletTests.swift */; };
-		3A071417201A7127008E2AEE /* c_lightning_walletUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A071416201A7127008E2AEE /* c_lightning_walletUITests.swift */; };
+		3A07140C201A7127008E2AEE /* JSONDecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A07140B201A7127008E2AEE /* JSONDecoderTests.swift */; };
+		3A071417201A7127008E2AEE /* VoltageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A071416201A7127008E2AEE /* VoltageUITests.swift */; };
 		3A38BDE9201C55B40055BBA1 /* PaymentHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A38BDE8201C55B40055BBA1 /* PaymentHash.swift */; };
 		3A38BDED201CF8D70055BBA1 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A38BDEC201CF8D70055BBA1 /* String.swift */; };
 		3AA2A68420227AC2005664FC /* LightningRPCQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA2A68320227AC2005664FC /* LightningRPCQuery.swift */; };
@@ -53,21 +53,21 @@
 		25C46BEAB8062EB1EC733396 /* Pods-c-lightning-walletTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-c-lightning-walletTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-c-lightning-walletTests/Pods-c-lightning-walletTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2C76F246BDB8850F514E73B1 /* Pods-c-lightning-walletUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-c-lightning-walletUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-c-lightning-walletUITests/Pods-c-lightning-walletUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2F4261298D5C12BCC3D71CAD /* Pods-c-lightning-walletTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-c-lightning-walletTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-c-lightning-walletTests/Pods-c-lightning-walletTests.release.xcconfig"; sourceTree = "<group>"; };
-		3A0713F5201A7127008E2AEE /* c-lightning-wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "c-lightning-wallet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A0713F5201A7127008E2AEE /* Voltage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Voltage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A0713F8201A7127008E2AEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A0713FA201A7127008E2AEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3A0713FC201A7127008E2AEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A0713FF201A7127008E2AEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3A071401201A7127008E2AEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3A071402201A7127008E2AEE /* c_lightning_wallet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = c_lightning_wallet.entitlements; sourceTree = "<group>"; };
-		3A071407201A7127008E2AEE /* c-lightning-walletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "c-lightning-walletTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3A07140B201A7127008E2AEE /* c_lightning_walletTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = c_lightning_walletTests.swift; sourceTree = "<group>"; };
+		3A071402201A7127008E2AEE /* Voltage.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Voltage.entitlements; sourceTree = "<group>"; };
+		3A071407201A7127008E2AEE /* VoltageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoltageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A07140B201A7127008E2AEE /* JSONDecoderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoderTests.swift; sourceTree = "<group>"; };
 		3A07140D201A7127008E2AEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3A071412201A7127008E2AEE /* c-lightning-walletUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "c-lightning-walletUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3A071416201A7127008E2AEE /* c_lightning_walletUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = c_lightning_walletUITests.swift; sourceTree = "<group>"; };
+		3A071412201A7127008E2AEE /* VoltageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoltageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A071416201A7127008E2AEE /* VoltageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoltageUITests.swift; sourceTree = "<group>"; };
 		3A071418201A7127008E2AEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A38BDE8201C55B40055BBA1 /* PaymentHash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHash.swift; sourceTree = "<group>"; };
-		3A38BDEB201CF59C0055BBA1 /* c-lightning-wallet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "c-lightning-wallet-Bridging-Header.h"; sourceTree = "<group>"; };
+		3A38BDEB201CF59C0055BBA1 /* Voltage-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Voltage-Bridging-Header.h"; sourceTree = "<group>"; };
 		3A38BDEC201CF8D70055BBA1 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		3A38BDEE201D16DE0055BBA1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3AA2A68320227AC2005664FC /* LightningRPCQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightningRPCQuery.swift; sourceTree = "<group>"; };
@@ -135,9 +135,9 @@
 			children = (
 				3AA2A69020239073005664FC /* LICENSE.md */,
 				3A38BDEE201D16DE0055BBA1 /* README.md */,
-				3A0713F7201A7127008E2AEE /* c-lightning-wallet */,
-				3A07140A201A7127008E2AEE /* c-lightning-walletTests */,
-				3A071415201A7127008E2AEE /* c-lightning-walletUITests */,
+				3A0713F7201A7127008E2AEE /* Voltage */,
+				3A07140A201A7127008E2AEE /* VoltageTests */,
+				3A071415201A7127008E2AEE /* VoltageUITests */,
 				3A0713F6201A7127008E2AEE /* Products */,
 				37D7FF82BD8B9D4E18DCB5DE /* Pods */,
 				4F54E42768BBC5040CD934D1 /* Frameworks */,
@@ -147,48 +147,48 @@
 		3A0713F6201A7127008E2AEE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3A0713F5201A7127008E2AEE /* c-lightning-wallet.app */,
-				3A071407201A7127008E2AEE /* c-lightning-walletTests.xctest */,
-				3A071412201A7127008E2AEE /* c-lightning-walletUITests.xctest */,
+				3A0713F5201A7127008E2AEE /* Voltage.app */,
+				3A071407201A7127008E2AEE /* VoltageTests.xctest */,
+				3A071412201A7127008E2AEE /* VoltageUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3A0713F7201A7127008E2AEE /* c-lightning-wallet */ = {
+		3A0713F7201A7127008E2AEE /* Voltage */ = {
 			isa = PBXGroup;
 			children = (
 				3A0713F8201A7127008E2AEE /* AppDelegate.swift */,
-				3A38BDEB201CF59C0055BBA1 /* c-lightning-wallet-Bridging-Header.h */,
+				3A38BDEB201CF59C0055BBA1 /* Voltage-Bridging-Header.h */,
 				3A0713FC201A7127008E2AEE /* Assets.xcassets */,
 				3A0713FE201A7127008E2AEE /* Main.storyboard */,
 				3A071401201A7127008E2AEE /* Info.plist */,
-				3A071402201A7127008E2AEE /* c_lightning_wallet.entitlements */,
+				3A071402201A7127008E2AEE /* Voltage.entitlements */,
 				3AA2A68F202385B8005664FC /* Extensions */,
 				3AFD6CFE20222C6B001599D2 /* Models */,
 				3AFD6CFD20222BFC001599D2 /* View Controllers */,
 			);
-			path = "c-lightning-wallet";
+			path = Voltage;
 			sourceTree = "<group>";
 		};
-		3A07140A201A7127008E2AEE /* c-lightning-walletTests */ = {
+		3A07140A201A7127008E2AEE /* VoltageTests */ = {
 			isa = PBXGroup;
 			children = (
-				3A07140B201A7127008E2AEE /* c_lightning_walletTests.swift */,
+				3A07140B201A7127008E2AEE /* JSONDecoderTests.swift */,
 				3A07140D201A7127008E2AEE /* Info.plist */,
 				3AA4BDE9201BCADC00000153 /* listpayments.json */,
 				3AA4BDEB201BE13800000153 /* listpeers.json */,
 				3AFD6D01202240E2001599D2 /* LightningRPCSocketTest.swift */,
 			);
-			path = "c-lightning-walletTests";
+			path = VoltageTests;
 			sourceTree = "<group>";
 		};
-		3A071415201A7127008E2AEE /* c-lightning-walletUITests */ = {
+		3A071415201A7127008E2AEE /* VoltageUITests */ = {
 			isa = PBXGroup;
 			children = (
-				3A071416201A7127008E2AEE /* c_lightning_walletUITests.swift */,
+				3A071416201A7127008E2AEE /* VoltageUITests.swift */,
 				3A071418201A7127008E2AEE /* Info.plist */,
 			);
-			path = "c-lightning-walletUITests";
+			path = VoltageUITests;
 			sourceTree = "<group>";
 		};
 		3AA2A68F202385B8005664FC /* Extensions */ = {
@@ -236,9 +236,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3A0713F4201A7127008E2AEE /* c-lightning-wallet */ = {
+		3A0713F4201A7127008E2AEE /* Voltage */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3A07141B201A7127008E2AEE /* Build configuration list for PBXNativeTarget "c-lightning-wallet" */;
+			buildConfigurationList = 3A07141B201A7127008E2AEE /* Build configuration list for PBXNativeTarget "Voltage" */;
 			buildPhases = (
 				187A490185E04BFA3393F715 /* [CP] Check Pods Manifest.lock */,
 				3A0713F1201A7127008E2AEE /* Sources */,
@@ -252,14 +252,14 @@
 			);
 			dependencies = (
 			);
-			name = "c-lightning-wallet";
+			name = Voltage;
 			productName = "c-lightning-wallet";
-			productReference = 3A0713F5201A7127008E2AEE /* c-lightning-wallet.app */;
+			productReference = 3A0713F5201A7127008E2AEE /* Voltage.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3A071406201A7127008E2AEE /* c-lightning-walletTests */ = {
+		3A071406201A7127008E2AEE /* VoltageTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3A07141E201A7127008E2AEE /* Build configuration list for PBXNativeTarget "c-lightning-walletTests" */;
+			buildConfigurationList = 3A07141E201A7127008E2AEE /* Build configuration list for PBXNativeTarget "VoltageTests" */;
 			buildPhases = (
 				69ECFF3B1F9C07F731E882FB /* [CP] Check Pods Manifest.lock */,
 				3A071403201A7127008E2AEE /* Sources */,
@@ -273,14 +273,14 @@
 			dependencies = (
 				3A071409201A7127008E2AEE /* PBXTargetDependency */,
 			);
-			name = "c-lightning-walletTests";
+			name = VoltageTests;
 			productName = "c-lightning-walletTests";
-			productReference = 3A071407201A7127008E2AEE /* c-lightning-walletTests.xctest */;
+			productReference = 3A071407201A7127008E2AEE /* VoltageTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		3A071411201A7127008E2AEE /* c-lightning-walletUITests */ = {
+		3A071411201A7127008E2AEE /* VoltageUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3A071421201A7127008E2AEE /* Build configuration list for PBXNativeTarget "c-lightning-walletUITests" */;
+			buildConfigurationList = 3A071421201A7127008E2AEE /* Build configuration list for PBXNativeTarget "VoltageUITests" */;
 			buildPhases = (
 				619584A79E1A65BCB65B04D6 /* [CP] Check Pods Manifest.lock */,
 				3A07140E201A7127008E2AEE /* Sources */,
@@ -294,9 +294,9 @@
 			dependencies = (
 				3A071414201A7127008E2AEE /* PBXTargetDependency */,
 			);
-			name = "c-lightning-walletUITests";
+			name = VoltageUITests;
 			productName = "c-lightning-walletUITests";
-			productReference = 3A071412201A7127008E2AEE /* c-lightning-walletUITests.xctest */;
+			productReference = 3A071412201A7127008E2AEE /* VoltageUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -325,7 +325,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3A0713F0201A7127008E2AEE /* Build configuration list for PBXProject "c-lightning-wallet" */;
+			buildConfigurationList = 3A0713F0201A7127008E2AEE /* Build configuration list for PBXProject "Voltage" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -338,9 +338,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3A0713F4201A7127008E2AEE /* c-lightning-wallet */,
-				3A071406201A7127008E2AEE /* c-lightning-walletTests */,
-				3A071411201A7127008E2AEE /* c-lightning-walletUITests */,
+				3A0713F4201A7127008E2AEE /* Voltage */,
+				3A071406201A7127008E2AEE /* VoltageTests */,
+				3A071411201A7127008E2AEE /* VoltageUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -565,7 +565,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A07140C201A7127008E2AEE /* c_lightning_walletTests.swift in Sources */,
+				3A07140C201A7127008E2AEE /* JSONDecoderTests.swift in Sources */,
 				3AFD6D02202240E2001599D2 /* LightningRPCSocketTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -574,7 +574,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A071417201A7127008E2AEE /* c_lightning_walletUITests.swift in Sources */,
+				3A071417201A7127008E2AEE /* VoltageUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,12 +583,12 @@
 /* Begin PBXTargetDependency section */
 		3A071409201A7127008E2AEE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3A0713F4201A7127008E2AEE /* c-lightning-wallet */;
+			target = 3A0713F4201A7127008E2AEE /* Voltage */;
 			targetProxy = 3A071408201A7127008E2AEE /* PBXContainerItemProxy */;
 		};
 		3A071414201A7127008E2AEE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3A0713F4201A7127008E2AEE /* c-lightning-wallet */;
+			target = 3A0713F4201A7127008E2AEE /* Voltage */;
 			targetProxy = 3A071413201A7127008E2AEE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -717,14 +717,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "c-lightning-wallet/c_lightning_wallet.entitlements";
+				CODE_SIGN_ENTITLEMENTS = Voltage/Voltage.entitlements;
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "c-lightning-wallet/Info.plist";
+				DEVELOPMENT_TEAM = K5NA8NE576;
+				INFOPLIST_FILE = Voltage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hci.c-lightning-wallet";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hci.Voltage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "c-lightning-wallet/c-lightning-wallet-Bridging-Header.h";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Voltage/Voltage-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -735,14 +738,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "c-lightning-wallet/c_lightning_wallet.entitlements";
+				CODE_SIGN_ENTITLEMENTS = Voltage/Voltage.entitlements;
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "c-lightning-wallet/Info.plist";
+				DEVELOPMENT_TEAM = K5NA8NE576;
+				INFOPLIST_FILE = Voltage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hci.c-lightning-wallet";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hci.Voltage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "c-lightning-wallet/c-lightning-wallet-Bridging-Header.h";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Voltage/Voltage-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -753,16 +759,19 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "c-lightning-walletTests/Info.plist";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = VoltageTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hci.c-lightning-walletTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hci.VoltageTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INSTALL_OBJC_HEADER = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "c-lightning-wallet/c-lightning-wallet-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Voltage/Voltage-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/c-lightning-wallet.app/Contents/MacOS/c-lightning-wallet";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Voltage.app/Contents/MacOS/Voltage";
 			};
 			name = Debug;
 		};
@@ -772,16 +781,19 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "c-lightning-walletTests/Info.plist";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = VoltageTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hci.c-lightning-walletTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hci.VoltageTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INSTALL_OBJC_HEADER = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "c-lightning-wallet/c-lightning-wallet-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Voltage/Voltage-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/c-lightning-wallet.app/Contents/MacOS/c-lightning-wallet";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Voltage.app/Contents/MacOS/Voltage";
 			};
 			name = Release;
 		};
@@ -792,13 +804,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "c-lightning-walletUITests/Info.plist";
+				INFOPLIST_FILE = VoltageUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hci.c-lightning-walletUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hci.VoltagetUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "c-lightning-wallet/c-lightning-wallet-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Voltage/Voltage-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
-				TEST_TARGET_NAME = "c-lightning-wallet";
+				TEST_TARGET_NAME = Voltage;
 			};
 			name = Debug;
 		};
@@ -809,20 +821,20 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "c-lightning-walletUITests/Info.plist";
+				INFOPLIST_FILE = VoltageUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hci.c-lightning-walletUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hci.VoltagetUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "c-lightning-wallet/c-lightning-wallet-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Voltage/Voltage-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
-				TEST_TARGET_NAME = "c-lightning-wallet";
+				TEST_TARGET_NAME = Voltage;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3A0713F0201A7127008E2AEE /* Build configuration list for PBXProject "c-lightning-wallet" */ = {
+		3A0713F0201A7127008E2AEE /* Build configuration list for PBXProject "Voltage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3A071419201A7127008E2AEE /* Debug */,
@@ -831,7 +843,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3A07141B201A7127008E2AEE /* Build configuration list for PBXNativeTarget "c-lightning-wallet" */ = {
+		3A07141B201A7127008E2AEE /* Build configuration list for PBXNativeTarget "Voltage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3A07141C201A7127008E2AEE /* Debug */,
@@ -840,7 +852,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3A07141E201A7127008E2AEE /* Build configuration list for PBXNativeTarget "c-lightning-walletTests" */ = {
+		3A07141E201A7127008E2AEE /* Build configuration list for PBXNativeTarget "VoltageTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3A07141F201A7127008E2AEE /* Debug */,
@@ -849,7 +861,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3A071421201A7127008E2AEE /* Build configuration list for PBXNativeTarget "c-lightning-walletUITests" */ = {
+		3A071421201A7127008E2AEE /* Build configuration list for PBXNativeTarget "VoltageUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3A071422201A7127008E2AEE /* Debug */,

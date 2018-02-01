@@ -11,11 +11,11 @@
                 <application id="hnw-xV-0zn" sceneMemberID="viewController">
                     <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
                         <items>
-                            <menuItem title="c-lightning-wallet" id="1Xt-HY-uBw">
+                            <menuItem title="Voltage" id="1Xt-HY-uBw">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="c-lightning-wallet" systemMenu="apple" id="uQy-DD-JDr">
+                                <menu key="submenu" title="Voltage" systemMenu="apple" id="uQy-DD-JDr">
                                     <items>
-                                        <menuItem title="About c-lightning-wallet" id="5kV-Vb-QxS">
+                                        <menuItem title="About Voltage" id="5kV-Vb-QxS">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
@@ -33,7 +33,7 @@
                                             <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
-                                        <menuItem title="Hide c-lightning-wallet" keyEquivalent="h" id="Olw-nP-bQN">
+                                        <menuItem title="Hide Voltage" keyEquivalent="h" id="Olw-nP-bQN">
                                             <connections>
                                                 <action selector="hide:" target="Ady-hI-5gd" id="PnN-Uc-m68"/>
                                             </connections>
@@ -51,7 +51,7 @@
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
-                                        <menuItem title="Quit c-lightning-wallet" keyEquivalent="q" id="4sb-4s-VLi">
+                                        <menuItem title="Quit Voltage" keyEquivalent="q" id="4sb-4s-VLi">
                                             <connections>
                                                 <action selector="terminate:" target="Ady-hI-5gd" id="Te7-pn-YzF"/>
                                             </connections>
@@ -664,7 +664,7 @@
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="Help" systemMenu="help" id="F2S-fz-NVQ">
                                     <items>
-                                        <menuItem title="c-lightning-wallet Help" keyEquivalent="?" id="FKE-Sm-Kum">
+                                        <menuItem title="Voltage Help" keyEquivalent="?" id="FKE-Sm-Kum">
                                             <connections>
                                                 <action selector="showHelp:" target="Ady-hI-5gd" id="y7X-2Q-9no"/>
                                             </connections>
@@ -678,7 +678,7 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="c_lightning_wallet" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Voltage" customModuleProvider="target"/>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -708,7 +708,7 @@
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="c_lightning_wallet" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="Voltage" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="932" height="412"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -924,7 +924,7 @@
         <!--Preferences View Controller-->
         <scene sceneID="yCS-K0-rVB">
             <objects>
-                <viewController id="wcA-CG-e9h" customClass="PreferencesViewController" customModule="c_lightning_wallet" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="wcA-CG-e9h" customClass="PreferencesViewController" customModule="Voltage" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="H0K-l4-hWL">
                         <rect key="frame" x="0.0" y="0.0" width="584" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>

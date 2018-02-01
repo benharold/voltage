@@ -1,17 +1,16 @@
 //
-//  c_lightning_walletTests.swift
-//  c-lightning-walletTests
+//  JSONDecoderTests.swift
+//  VoltageTests
 //
 //  Created by Ben Harold on 1/25/18.
 //  Copyright © 2018 Harold Consulting. All rights reserved.
 //
-// swiftlint:disable type_name
 
 import XCTest
 import Fakery
-@testable import c_lightning_wallet
+@testable import Voltage
 
-class c_lightning_walletTests: XCTestCase {
+class JSONDecoderTests: XCTestCase {
     
     // Load JSON data from a static file located in the test directory
     func loadJson(file_name: String) -> String? {

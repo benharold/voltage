@@ -1,6 +1,6 @@
 //
 //  LightningRPCSocketTest.swift
-//  c-lightning-walletTests
+//  VoltageTests
 //
 //  Created by Ben Harold on 1/31/18.
 //  Copyright © 2018 Harold Consulting. All rights reserved.
@@ -8,7 +8,7 @@
 
 import XCTest
 import Socket
-@testable import c_lightning_wallet
+@testable import Voltage
 
 class LightningRPCSocketTest: XCTestCase {
     

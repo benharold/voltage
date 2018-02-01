@@ -1,6 +1,6 @@
 //
 //  PreferencesViewController.swift
-//  c-lightning-wallet
+//  Voltage
 //
 //  Created by Ben Harold on 1/30/18.
 //  Copyright © 2018 Harold Consulting. All rights reserved.

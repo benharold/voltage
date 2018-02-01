@@ -1,15 +1,14 @@
 //
-//  c_lightning_walletUITests.swift
-//  c-lightning-walletUITests
+//  VoltageUITests.swift
+//  VoltageUITests
 //
 //  Created by Ben Harold on 1/25/18.
 //  Copyright © 2018 Harold Consulting. All rights reserved.
 //
-// swiftlint:disable type_name
 
 import XCTest
 
-class c_lightning_walletUITests: XCTestCase {
+class VoltageUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()

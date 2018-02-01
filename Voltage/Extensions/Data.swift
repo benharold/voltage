@@ -1,6 +1,6 @@
 //
 //  Data.swift
-//  c-lightning-wallet
+//  Voltage
 //
 //  Created by Ben Harold on 2/1/18.
 //  Copyright © 2018 Harold Consulting. All rights reserved.
