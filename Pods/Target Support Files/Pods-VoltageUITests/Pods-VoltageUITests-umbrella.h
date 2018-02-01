@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_c_lightning_walletVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_c_lightning_walletVersionString[];
+FOUNDATION_EXPORT double Pods_VoltageUITestsVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_VoltageUITestsVersionString[];
 

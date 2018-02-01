@@ -1,0 +1,6 @@
+framework module Pods_VoltageUITests {
+  umbrella header "Pods-VoltageUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

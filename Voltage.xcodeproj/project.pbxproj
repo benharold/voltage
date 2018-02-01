@@ -26,9 +26,9 @@
 		3AFD6CFC202149D0001599D2 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFD6CFB202149D0001599D2 /* Preferences.swift */; };
 		3AFD6D0020223C6F001599D2 /* LightningRPCSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFD6CFF20223C6F001599D2 /* LightningRPCSocket.swift */; };
 		3AFD6D02202240E2001599D2 /* LightningRPCSocketTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFD6D01202240E2001599D2 /* LightningRPCSocketTest.swift */; };
-		6B9FA68BD368EEB050E4FA27 /* Pods_c_lightning_walletTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B742AD0EF7BDD6AEBDD95596 /* Pods_c_lightning_walletTests.framework */; };
-		B00ED6C9BAE2C1ECEAA04211 /* Pods_c_lightning_wallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B965782AA154250D74836F0 /* Pods_c_lightning_wallet.framework */; };
-		EDDD71B9F46AA57C0239AFF8 /* Pods_c_lightning_walletUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1EF40C1FFF1DEF01AA08180 /* Pods_c_lightning_walletUITests.framework */; };
+		7A9A87BF7E1EB5CDADA7F6AA /* Pods_Voltage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 919BD71B073A00D61526A817 /* Pods_Voltage.framework */; };
+		A08436EDB762FF134D092F91 /* Pods_VoltageTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D368F4B330DA9419F9CC4D /* Pods_VoltageTests.framework */; };
+		FF3CE288D8276177D0B35275 /* Pods_VoltageUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B9DBA404466F9AFE4DDAB37 /* Pods_VoltageUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,10 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2239A5071D1BF4137E236D27 /* Pods-c-lightning-wallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-c-lightning-wallet.release.xcconfig"; path = "Pods/Target Support Files/Pods-c-lightning-wallet/Pods-c-lightning-wallet.release.xcconfig"; sourceTree = "<group>"; };
-		25C46BEAB8062EB1EC733396 /* Pods-c-lightning-walletTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-c-lightning-walletTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-c-lightning-walletTests/Pods-c-lightning-walletTests.debug.xcconfig"; sourceTree = "<group>"; };
-		2C76F246BDB8850F514E73B1 /* Pods-c-lightning-walletUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-c-lightning-walletUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-c-lightning-walletUITests/Pods-c-lightning-walletUITests.release.xcconfig"; sourceTree = "<group>"; };
-		2F4261298D5C12BCC3D71CAD /* Pods-c-lightning-walletTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-c-lightning-walletTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-c-lightning-walletTests/Pods-c-lightning-walletTests.release.xcconfig"; sourceTree = "<group>"; };
+		0B9DBA404466F9AFE4DDAB37 /* Pods_VoltageUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VoltageUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A0713F5201A7127008E2AEE /* Voltage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Voltage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A0713F8201A7127008E2AEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A0713FA201A7127008E2AEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -82,11 +79,14 @@
 		3AFD6CFB202149D0001599D2 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
 		3AFD6CFF20223C6F001599D2 /* LightningRPCSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightningRPCSocket.swift; sourceTree = "<group>"; };
 		3AFD6D01202240E2001599D2 /* LightningRPCSocketTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightningRPCSocketTest.swift; sourceTree = "<group>"; };
-		9B965782AA154250D74836F0 /* Pods_c_lightning_wallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_c_lightning_wallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B1EF40C1FFF1DEF01AA08180 /* Pods_c_lightning_walletUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_c_lightning_walletUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B742AD0EF7BDD6AEBDD95596 /* Pods_c_lightning_walletTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_c_lightning_walletTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CADAD3CC30E4236D1EA808CF /* Pods-c-lightning-wallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-c-lightning-wallet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-c-lightning-wallet/Pods-c-lightning-wallet.debug.xcconfig"; sourceTree = "<group>"; };
-		E6035D87E1134C4A130B3A18 /* Pods-c-lightning-walletUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-c-lightning-walletUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-c-lightning-walletUITests/Pods-c-lightning-walletUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		919BD71B073A00D61526A817 /* Pods_Voltage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Voltage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A41EC9104EB5A584C9EFBDC7 /* Pods-Voltage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Voltage.release.xcconfig"; path = "Pods/Target Support Files/Pods-Voltage/Pods-Voltage.release.xcconfig"; sourceTree = "<group>"; };
+		BA873DCB97F157BDF13C3901 /* Pods-VoltageTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoltageTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VoltageTests/Pods-VoltageTests.release.xcconfig"; sourceTree = "<group>"; };
+		D2D368F4B330DA9419F9CC4D /* Pods_VoltageTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VoltageTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC49033F07955E01D2840EF9 /* Pods-VoltageUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoltageUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VoltageUITests/Pods-VoltageUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E392EEE7ACBD0AC83CEA8EFA /* Pods-VoltageUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoltageUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VoltageUITests/Pods-VoltageUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F6107EDB521CE62DC8E4D65E /* Pods-Voltage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Voltage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Voltage/Pods-Voltage.debug.xcconfig"; sourceTree = "<group>"; };
+		F9ACA51E7589786DDBA0C21F /* Pods-VoltageTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoltageTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VoltageTests/Pods-VoltageTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B00ED6C9BAE2C1ECEAA04211 /* Pods_c_lightning_wallet.framework in Frameworks */,
+				7A9A87BF7E1EB5CDADA7F6AA /* Pods_Voltage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,7 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B9FA68BD368EEB050E4FA27 /* Pods_c_lightning_walletTests.framework in Frameworks */,
+				A08436EDB762FF134D092F91 /* Pods_VoltageTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,24 +110,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDDD71B9F46AA57C0239AFF8 /* Pods_c_lightning_walletUITests.framework in Frameworks */,
+				FF3CE288D8276177D0B35275 /* Pods_VoltageUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		37D7FF82BD8B9D4E18DCB5DE /* Pods */ = {
+		19A7B4E9427B1A937B8C6D55 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CADAD3CC30E4236D1EA808CF /* Pods-c-lightning-wallet.debug.xcconfig */,
-				2239A5071D1BF4137E236D27 /* Pods-c-lightning-wallet.release.xcconfig */,
-				25C46BEAB8062EB1EC733396 /* Pods-c-lightning-walletTests.debug.xcconfig */,
-				2F4261298D5C12BCC3D71CAD /* Pods-c-lightning-walletTests.release.xcconfig */,
-				E6035D87E1134C4A130B3A18 /* Pods-c-lightning-walletUITests.debug.xcconfig */,
-				2C76F246BDB8850F514E73B1 /* Pods-c-lightning-walletUITests.release.xcconfig */,
+				F6107EDB521CE62DC8E4D65E /* Pods-Voltage.debug.xcconfig */,
+				A41EC9104EB5A584C9EFBDC7 /* Pods-Voltage.release.xcconfig */,
+				F9ACA51E7589786DDBA0C21F /* Pods-VoltageTests.debug.xcconfig */,
+				BA873DCB97F157BDF13C3901 /* Pods-VoltageTests.release.xcconfig */,
+				DC49033F07955E01D2840EF9 /* Pods-VoltageUITests.debug.xcconfig */,
+				E392EEE7ACBD0AC83CEA8EFA /* Pods-VoltageUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		23F38A2E402575B4D3CFF07B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				919BD71B073A00D61526A817 /* Pods_Voltage.framework */,
+				D2D368F4B330DA9419F9CC4D /* Pods_VoltageTests.framework */,
+				0B9DBA404466F9AFE4DDAB37 /* Pods_VoltageUITests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		3A0713EC201A7127008E2AEE = {
@@ -139,8 +149,8 @@
 				3A07140A201A7127008E2AEE /* VoltageTests */,
 				3A071415201A7127008E2AEE /* VoltageUITests */,
 				3A0713F6201A7127008E2AEE /* Products */,
-				37D7FF82BD8B9D4E18DCB5DE /* Pods */,
-				4F54E42768BBC5040CD934D1 /* Frameworks */,
+				19A7B4E9427B1A937B8C6D55 /* Pods */,
+				23F38A2E402575B4D3CFF07B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -223,16 +233,6 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		4F54E42768BBC5040CD934D1 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				9B965782AA154250D74836F0 /* Pods_c_lightning_wallet.framework */,
-				B742AD0EF7BDD6AEBDD95596 /* Pods_c_lightning_walletTests.framework */,
-				B1EF40C1FFF1DEF01AA08180 /* Pods_c_lightning_walletUITests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -240,13 +240,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A07141B201A7127008E2AEE /* Build configuration list for PBXNativeTarget "Voltage" */;
 			buildPhases = (
-				187A490185E04BFA3393F715 /* [CP] Check Pods Manifest.lock */,
+				740F6B06E6CB1925E34D84DE /* [CP] Check Pods Manifest.lock */,
 				3A0713F1201A7127008E2AEE /* Sources */,
 				3A0713F2201A7127008E2AEE /* Frameworks */,
 				3A0713F3201A7127008E2AEE /* Resources */,
-				7399D77DF7098ED4DFDE2BE1 /* [CP] Embed Pods Frameworks */,
-				FCF1F0EE71BDCE8B59F187A3 /* [CP] Copy Pods Resources */,
 				3A38BDF1201D1F650055BBA1 /* ShellScript */,
+				82B5EE19B34570783B695A20 /* [CP] Embed Pods Frameworks */,
+				E209D49494438A6E63BDF5B1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -261,12 +261,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A07141E201A7127008E2AEE /* Build configuration list for PBXNativeTarget "VoltageTests" */;
 			buildPhases = (
-				69ECFF3B1F9C07F731E882FB /* [CP] Check Pods Manifest.lock */,
+				FDB194D33D61F13391C4DD73 /* [CP] Check Pods Manifest.lock */,
 				3A071403201A7127008E2AEE /* Sources */,
 				3A071404201A7127008E2AEE /* Frameworks */,
 				3A071405201A7127008E2AEE /* Resources */,
-				74C8B135DD5B601916A940E7 /* [CP] Embed Pods Frameworks */,
-				59A8F98BEAEB095E52ED5255 /* [CP] Copy Pods Resources */,
+				5781C41623A8EC5FC7A09FE7 /* [CP] Embed Pods Frameworks */,
+				916D52F54DE7769531696D36 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -282,12 +282,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A071421201A7127008E2AEE /* Build configuration list for PBXNativeTarget "VoltageUITests" */;
 			buildPhases = (
-				619584A79E1A65BCB65B04D6 /* [CP] Check Pods Manifest.lock */,
+				B0370294254DDA0114DD3E06 /* [CP] Check Pods Manifest.lock */,
 				3A07140E201A7127008E2AEE /* Sources */,
 				3A07140F201A7127008E2AEE /* Frameworks */,
 				3A071410201A7127008E2AEE /* Resources */,
-				BF59C9F7EF1728E2BD809566 /* [CP] Embed Pods Frameworks */,
-				5B7EB10F81A6C6E49B3687EF /* [CP] Copy Pods Resources */,
+				F90766D3B0F52DAC5EFC9DC9 /* [CP] Embed Pods Frameworks */,
+				81CA963FB808DF754E4F7F83 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -374,24 +374,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		187A490185E04BFA3393F715 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-c-lightning-wallet-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		3A38BDF1201D1F650055BBA1 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -405,7 +387,43 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
 		};
-		59A8F98BEAEB095E52ED5255 /* [CP] Copy Pods Resources */ = {
+		5781C41623A8EC5FC7A09FE7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-VoltageTests/Pods-VoltageTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Fakery/Fakery.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Fakery.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VoltageTests/Pods-VoltageTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		740F6B06E6CB1925E34D84DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Voltage-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81CA963FB808DF754E4F7F83 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -417,67 +435,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-c-lightning-walletTests/Pods-c-lightning-walletTests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VoltageUITests/Pods-VoltageUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5B7EB10F81A6C6E49B3687EF /* [CP] Copy Pods Resources */ = {
+		82B5EE19B34570783B695A20 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-c-lightning-walletUITests/Pods-c-lightning-walletUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		619584A79E1A65BCB65B04D6 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-c-lightning-walletUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		69ECFF3B1F9C07F731E882FB /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-c-lightning-walletTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7399D77DF7098ED4DFDE2BE1 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-c-lightning-wallet/Pods-c-lightning-wallet-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-Voltage/Pods-Voltage-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BlueSocket/Socket.framework",
 				"${BUILT_PRODUCTS_DIR}/Fakery/Fakery.framework",
 			);
@@ -488,43 +455,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-c-lightning-wallet/Pods-c-lightning-wallet-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Voltage/Pods-Voltage-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		74C8B135DD5B601916A940E7 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-c-lightning-walletTests/Pods-c-lightning-walletTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Fakery/Fakery.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Fakery.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-c-lightning-walletTests/Pods-c-lightning-walletTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BF59C9F7EF1728E2BD809566 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-c-lightning-walletUITests/Pods-c-lightning-walletUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FCF1F0EE71BDCE8B59F187A3 /* [CP] Copy Pods Resources */ = {
+		916D52F54DE7769531696D36 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -536,7 +470,73 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-c-lightning-wallet/Pods-c-lightning-wallet-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VoltageTests/Pods-VoltageTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0370294254DDA0114DD3E06 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VoltageUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E209D49494438A6E63BDF5B1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Voltage/Pods-Voltage-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F90766D3B0F52DAC5EFC9DC9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VoltageUITests/Pods-VoltageUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDB194D33D61F13391C4DD73 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VoltageTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -713,7 +713,7 @@
 		};
 		3A07141C201A7127008E2AEE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CADAD3CC30E4236D1EA808CF /* Pods-c-lightning-wallet.debug.xcconfig */;
+			baseConfigurationReference = F6107EDB521CE62DC8E4D65E /* Pods-Voltage.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -734,7 +734,7 @@
 		};
 		3A07141D201A7127008E2AEE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2239A5071D1BF4137E236D27 /* Pods-c-lightning-wallet.release.xcconfig */;
+			baseConfigurationReference = A41EC9104EB5A584C9EFBDC7 /* Pods-Voltage.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -755,7 +755,7 @@
 		};
 		3A07141F201A7127008E2AEE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 25C46BEAB8062EB1EC733396 /* Pods-c-lightning-walletTests.debug.xcconfig */;
+			baseConfigurationReference = F9ACA51E7589786DDBA0C21F /* Pods-VoltageTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -777,7 +777,7 @@
 		};
 		3A071420201A7127008E2AEE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2F4261298D5C12BCC3D71CAD /* Pods-c-lightning-walletTests.release.xcconfig */;
+			baseConfigurationReference = BA873DCB97F157BDF13C3901 /* Pods-VoltageTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -799,7 +799,7 @@
 		};
 		3A071422201A7127008E2AEE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E6035D87E1134C4A130B3A18 /* Pods-c-lightning-walletUITests.debug.xcconfig */;
+			baseConfigurationReference = DC49033F07955E01D2840EF9 /* Pods-VoltageUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -816,7 +816,7 @@
 		};
 		3A071423201A7127008E2AEE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2C76F246BDB8850F514E73B1 /* Pods-c-lightning-walletUITests.release.xcconfig */;
+			baseConfigurationReference = E392EEE7ACBD0AC83CEA8EFA /* Pods-VoltageUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

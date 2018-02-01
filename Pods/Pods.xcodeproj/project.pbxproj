@@ -3,30 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		01B20E6C10878E4691F25DE30F9427F1 /* nb-NO.json in Resources */ = {isa = PBXBuildFile; fileRef = 9BB2AA923AA869CC400170215AF9EF3A /* nb-NO.json */; };
 		0C2863A77C7C2E34EFA94620362CE2F2 /* Lorem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F59BD49FC6C6D532EB0E26AC1F7E10 /* Lorem.swift */; };
 		0D0BD8E3FC7BEB6F60E722EEC67DBEF8 /* en.json in Resources */ = {isa = PBXBuildFile; fileRef = 80FEDA333176387E83F8113F1AFE3E7F /* en.json */; };
-		12813E7B88E4A6D3E845EBE9863C1B33 /* Pods-c-lightning-wallet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A7A82F49564AFA21364F3666CEAFEC06 /* Pods-c-lightning-wallet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		142D19C098C3C5160BCB7742FD69DA40 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA90E0FA5279AC24087AAA6008EFDB9 /* Team.swift */; };
+		1514361608AABBDFC187B3E86E3B3C5E /* Pods-Voltage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1910050E5C0BDEA999E81935FF4E32 /* Pods-Voltage-dummy.m */; };
 		173135FA575BBDCD901497408156DD8C /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E59BF4C0B71256613815EA2547ECBA /* Address.swift */; };
+		19F2306D8626BC07A425A1F6CFA4200E /* Pods-VoltageTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F5951523F7471678BF20CFF25F955C0 /* Pods-VoltageTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		22857B77815974F6A10208BC71686DB8 /* en-IND.json in Resources */ = {isa = PBXBuildFile; fileRef = 738853F2133C72E90109EC07D8E6A17A /* en-IND.json */; };
 		2406EB22FE1DADAE8F3ED6B9AE62F419 /* ko.json in Resources */ = {isa = PBXBuildFile; fileRef = F3CF11EF9FD8D303704A4B5DB7591E3C /* ko.json */; };
 		24B6656F5497464E60AADCA28936F71B /* SocketUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBA62A8FD4F3F2CE60156B36C262DE8 /* SocketUtils.swift */; };
-		2A8703074E74422684B402D85FE00820 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6526E38143AA3C7320583E142AA64538 /* Cocoa.framework */; };
 		2DE062F459ADB540402950B1EC5B278C /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE87E45F0EE72AAB1CE95E082FA0A1E7 /* ArrayExtension.swift */; };
 		2E1A2D967C45F640F5DE6BC8AEDB69DB /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EF47FE34FF6E183AA7F2C5B290A003 /* Socket.swift */; };
-		2E5E2F7C4603791A5F149DFF53543873 /* Pods-c-lightning-wallet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8891400BA48AC0824E92D4DD48243F37 /* Pods-c-lightning-wallet-dummy.m */; };
 		2F0EBBDC7966C697975F299F0C3972C9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6526E38143AA3C7320583E142AA64538 /* Cocoa.framework */; };
+		3AF8326D136C3DE17A573239F8F7B19F /* Pods-Voltage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4671699EB02B49E3DD354A48C8D2379F /* Pods-Voltage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CF6555E1F7431B729A109814DAE95DA /* Pods-VoltageUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 31B8605385083D2E98A6F59DF2722005 /* Pods-VoltageUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		48114A04CBDE0379B2692902DB0C1612 /* fr.json in Resources */ = {isa = PBXBuildFile; fileRef = 4831119034D761C2F008455D92A1A406 /* fr.json */; };
 		577C9BAC173BAB68C789E5B07156909D /* Faker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C084C7D1F727C660E3D6250CD0D8B711 /* Faker.swift */; };
 		5EA406B77B8527BC4935322A2D9BDAC4 /* sk.json in Resources */ = {isa = PBXBuildFile; fileRef = 1CAEE5F5A63922396A478B0CBC3DF45F /* sk.json */; };
 		5EE2228BBAB5622594FE123098054E99 /* SocketProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F56765A943BA4080589728AEA5A5B12 /* SocketProtocols.swift */; };
 		61F3C404F683DBF21FBD2B8E390AC5CE /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DB69B4CAFEEFB44431FA4ABE6549B5 /* Parser.swift */; };
-		6264FA71E47F1AE693D4200355C2C24A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6526E38143AA3C7320583E142AA64538 /* Cocoa.framework */; };
+		635E11D9F9216A15BDBCA16C42235E60 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6526E38143AA3C7320583E142AA64538 /* Cocoa.framework */; };
 		66DB585030185210A46896085C5E34AC /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3348C7D2B460656BEDE9E52171B217 /* Bank.swift */; };
 		6B2362C95D6A74B2F30252AA0AABAF1D /* nl.json in Resources */ = {isa = PBXBuildFile; fileRef = 074FAA7A563BB306AF9BA0B9CF3C7AE4 /* nl.json */; };
 		6C4B0EFBFD18F7CDBF1FA53AA02DE9F5 /* fa.json in Resources */ = {isa = PBXBuildFile; fileRef = B237A1047326F73F5108570AE960008A /* fa.json */; };
@@ -34,6 +35,7 @@
 		6E961699928E3E9633EB6A59B8A2C6E8 /* Commerce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CF88DC094CAB56F0E59909C4542EEF /* Commerce.swift */; };
 		70119679E2ECF3FA522075C2050D96F3 /* BlueSocket-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C294EEBAD4B349EF85AC16EF346C015 /* BlueSocket-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7731381607D1A6155934DB43D6790F1F /* pl.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B954975EF122DDE839824703787DE91 /* pl.json */; };
+		78F37D00CC8ECEC1B638471445921879 /* Pods-VoltageUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5E72CD30B57D0E12F526A80C8719FE /* Pods-VoltageUITests-dummy.m */; };
 		7BA7A9D1B82D67CFA453C3F0D31BF601 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D38226D3E0605B7527F181057200F36 /* Company.swift */; };
 		816BA5B8B6767F81C3934B661E1071AC /* BlueSocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 294BFD8ED53CCD6D2DD1AEBB10F7CB12 /* BlueSocket-dummy.m */; };
 		89BD82663F79D53A8A82EE9E0A942AA7 /* Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6673EF027B621E5E73E6CBBF0BD98586 /* Number.swift */; };
@@ -42,20 +44,19 @@
 		9EA4091B2B3549ABFD4108FF71FFAE66 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = C977A81BA37A3A3337F42D2430F7B171 /* Business.swift */; };
 		A0F3BBB03FF18070E0A66ED959A56C86 /* Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E571BCA60EAC4748E56BBA656AC4E90 /* Name.swift */; };
 		A158705699A70CDD763DC10A4B6E4E93 /* PhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A782D828B7ADDF1E9961A67095D6154 /* PhoneNumber.swift */; };
-		A3E700764E25E357FB68627977CBCF2C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6526E38143AA3C7320583E142AA64538 /* Cocoa.framework */; };
 		A6195EAFDC9DD82CBA922383992E5003 /* sv.json in Resources */ = {isa = PBXBuildFile; fileRef = 6FBB14E6874232C53A5F685244E34A22 /* sv.json */; };
 		A6F967767F6F0DD1220E094167DD3553 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AD686133E3F2CBD64C2157384B00ED /* Config.swift */; };
 		AD4C259DE0A42411579F5F2EF0A24055 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E110E3518E2D475577D0E2056C8B05D /* Foundation.framework */; };
 		AEB9342999CC813143E36E236BBD81D0 /* en-AU.json in Resources */ = {isa = PBXBuildFile; fileRef = 8A0D8D17742FDAC9C84E6A4C1C7DBD7E /* en-AU.json */; };
 		B006BC9F541F5A1AC40C9F41243D4E15 /* tr-TR.json in Resources */ = {isa = PBXBuildFile; fileRef = B03B2539993BDB09C7A7031250E34545 /* tr-TR.json */; };
-		B0326174DB54A9A66A90D439877A9599 /* Faker.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 106DB90B63EA5B84E67FDFF13A335241 /* Faker.bundle */; };
-		B18976040B38D5C4E84296B090F8204E /* Pods-c-lightning-walletUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BA57F450D052C915C0946F11E2A808B9 /* Pods-c-lightning-walletUITests-dummy.m */; };
-		B4AD6D0783A19DBB94B4B8E8AD87A9F7 /* Pods-c-lightning-walletTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FF99D0681AABB1552D6F1AECAD2FB14 /* Pods-c-lightning-walletTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B01E5D0890E0B382B6A3A3F53486E4E2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6526E38143AA3C7320583E142AA64538 /* Cocoa.framework */; };
+		B0326174DB54A9A66A90D439877A9599 /* Faker.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4065C5C9131D1A766FDB62BBE8AB7BDC /* Faker.bundle */; };
 		B823C3BBCBE39730D917EE3F1A5A91B4 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B34C07B8A19EE050B32BACEE0F75984 /* Provider.swift */; };
+		BBE62B5FC33EE0A7A67BB3202274AF1E /* Pods-VoltageTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8984CE5656AAC81A4C8D4584F2EB7A58 /* Pods-VoltageTests-dummy.m */; };
 		BCA332F4D3D056256209EED51B66868A /* zh-TW.json in Resources */ = {isa = PBXBuildFile; fileRef = 1EC9C34D4D346E61D698651F427D58F8 /* zh-TW.json */; };
+		C1A8F5A3374B6BE40D8D1F0E09DFD06E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6526E38143AA3C7320583E142AA64538 /* Cocoa.framework */; };
 		C70F5173FFA31F8EEF1BF0563B785175 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6526E38143AA3C7320583E142AA64538 /* Cocoa.framework */; };
 		C9C2A0B75F26D16E6A2E8FB7C2E49A47 /* Fakery-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 08A3C39AF496C2997E97A75FDB878B0F /* Fakery-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CA8B0BBA530822E324671A11182C0CEB /* Pods-c-lightning-walletTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 14171294A4A14C8D1430EAD80128DDA6 /* Pods-c-lightning-walletTests-dummy.m */; };
 		CC1F4445EA2CB159924BA8D77012849A /* en-GB.json in Resources */ = {isa = PBXBuildFile; fileRef = EEC761ADC7C854F383F9E322BA1D9937 /* en-GB.json */; };
 		CF95CAFB9B6AC21FE24E12A935564A61 /* it.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E53A52939E3C3296FB85A0E4EF9F408 /* it.json */; };
 		D24D955BBE1420E98D604A6E93463451 /* Internet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD50CD9B07DBF097153A996CB87DF4F /* Internet.swift */; };
@@ -68,12 +69,18 @@
 		EC4267371A8640BA8127B32C1AB649B6 /* ru.json in Resources */ = {isa = PBXBuildFile; fileRef = 61E84FCEEC022CD4535344D20FB23E57 /* ru.json */; };
 		ED36EA301E118B15E6EE318FE315D01B /* de.json in Resources */ = {isa = PBXBuildFile; fileRef = 25AD2CC8E178E66682CB23D6F6EAD693 /* de.json */; };
 		EEFA454E202F1A1559FE811DF139EE72 /* es.json in Resources */ = {isa = PBXBuildFile; fileRef = 03C0709FEEEFC023CB7AEEDD050FA2D7 /* es.json */; };
-		F529407B7EE6AF4728D1781013D6DFED /* Pods-c-lightning-walletUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CDE84E603276E81146A11A3CAC4B365 /* Pods-c-lightning-walletUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F67F2407D02C1D519500893BB6730BE3 /* en-US.json in Resources */ = {isa = PBXBuildFile; fileRef = 261C4A426DFE0ED2053BDF714376FA12 /* en-US.json */; };
 		FBEDE2DBCFA732E6CC86D2222920A95B /* en-TEST.json in Resources */ = {isa = PBXBuildFile; fileRef = 255C165AE9BA8C56752D6218DC212B98 /* en-TEST.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		13D2DE21A6D11B2855517B65711D9FFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6ECD3F3994A371C3AF6F1E552BC744E9;
+			remoteInfo = Fakery;
+		};
 		1D3E86F7EA4A8EA66AC1A656284C94E4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -81,21 +88,14 @@
 			remoteGlobalIDString = D6E3A0311D8A91D96BEAAB01A94F4233;
 			remoteInfo = "Fakery-Faker";
 		};
-		54C1F313DFB05FF48ED7C0DBE5896E03 /* PBXContainerItemProxy */ = {
+		4B38A8D1222CE94EC2D19FDA11DE2846 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 1053405F1F7488B4AD94BD05AC90814D;
 			remoteInfo = BlueSocket;
 		};
-		D3024B561DDCD37A097C8CC0FA3118FF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6ECD3F3994A371C3AF6F1E552BC744E9;
-			remoteInfo = Fakery;
-		};
-		DE0ACB5B54295E772F2D3E66B1F86A8B /* PBXContainerItemProxy */ = {
+		BDBF15B6DB3A9535F07AC8A62600BB7A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -105,120 +105,128 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		020988DA416460F1076D901F52BF715F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		03C0709FEEEFC023CB7AEEDD050FA2D7 /* es.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = es.json; path = Resources/Locales/es.json; sourceTree = "<group>"; };
-		06CE400A293E7CDE545A8D0C8EE7B5FC /* uk.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = uk.json; path = Resources/Locales/uk.json; sourceTree = "<group>"; };
-		074FAA7A563BB306AF9BA0B9CF3C7AE4 /* nl.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = nl.json; path = Resources/Locales/nl.json; sourceTree = "<group>"; };
-		07EC930035426DE28A6F94C73AA62572 /* Pods-c-lightning-wallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-c-lightning-wallet.release.xcconfig"; sourceTree = "<group>"; };
+		03C0709FEEEFC023CB7AEEDD050FA2D7 /* es.json */ = {isa = PBXFileReference; includeInIndex = 1; name = es.json; path = Resources/Locales/es.json; sourceTree = "<group>"; };
+		06CE400A293E7CDE545A8D0C8EE7B5FC /* uk.json */ = {isa = PBXFileReference; includeInIndex = 1; name = uk.json; path = Resources/Locales/uk.json; sourceTree = "<group>"; };
+		074FAA7A563BB306AF9BA0B9CF3C7AE4 /* nl.json */ = {isa = PBXFileReference; includeInIndex = 1; name = nl.json; path = Resources/Locales/nl.json; sourceTree = "<group>"; };
 		08A3C39AF496C2997E97A75FDB878B0F /* Fakery-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Fakery-umbrella.h"; sourceTree = "<group>"; };
 		0A782D828B7ADDF1E9961A67095D6154 /* PhoneNumber.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhoneNumber.swift; path = Sources/Fakery/Generators/PhoneNumber.swift; sourceTree = "<group>"; };
-		0D1B8FC4EF232E9A2183B746AB9599E6 /* Pods-c-lightning-wallet-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-c-lightning-wallet-acknowledgements.plist"; sourceTree = "<group>"; };
-		106DB90B63EA5B84E67FDFF13A335241 /* Faker.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Faker.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		14171294A4A14C8D1430EAD80128DDA6 /* Pods-c-lightning-walletTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-c-lightning-walletTests-dummy.m"; sourceTree = "<group>"; };
-		15A463A99E80AA404AC1CD23EF12713A /* Pods-c-lightning-walletTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-c-lightning-walletTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		17FDE460AFFCB1ABD375BD17A1FCAC29 /* Fakery-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Fakery-dummy.m"; sourceTree = "<group>"; };
-		1ABC9280CCF308B08860ECAB349EDDB9 /* Pods-c-lightning-walletUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-c-lightning-walletUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		1B1D5E3B72DF4A8FEA4FD4F73F8197E1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1CAEE5F5A63922396A478B0CBC3DF45F /* sk.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = sk.json; path = Resources/Locales/sk.json; sourceTree = "<group>"; };
-		1D507332AAF4920A187792905CB3DB20 /* Pods-c-lightning-walletUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-c-lightning-walletUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1CAEE5F5A63922396A478B0CBC3DF45F /* sk.json */ = {isa = PBXFileReference; includeInIndex = 1; name = sk.json; path = Resources/Locales/sk.json; sourceTree = "<group>"; };
 		1E110E3518E2D475577D0E2056C8B05D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		1E571BCA60EAC4748E56BBA656AC4E90 /* Name.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Name.swift; path = Sources/Fakery/Generators/Name.swift; sourceTree = "<group>"; };
-		1EC9C34D4D346E61D698651F427D58F8 /* zh-TW.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = "zh-TW.json"; path = "Resources/Locales/zh-TW.json"; sourceTree = "<group>"; };
-		20F2FC304649B5F23A54077FD166D9CA /* Fakery.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Fakery.modulemap; sourceTree = "<group>"; };
-		2555F000D73B0441301DD80D5473DD01 /* en-CA.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = "en-CA.json"; path = "Resources/Locales/en-CA.json"; sourceTree = "<group>"; };
-		255C165AE9BA8C56752D6218DC212B98 /* en-TEST.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = "en-TEST.json"; path = "Resources/Locales/en-TEST.json"; sourceTree = "<group>"; };
-		25AD2CC8E178E66682CB23D6F6EAD693 /* de.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = de.json; path = Resources/Locales/de.json; sourceTree = "<group>"; };
-		261C4A426DFE0ED2053BDF714376FA12 /* en-US.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = "en-US.json"; path = "Resources/Locales/en-US.json"; sourceTree = "<group>"; };
+		1EC9C34D4D346E61D698651F427D58F8 /* zh-TW.json */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-TW.json"; path = "Resources/Locales/zh-TW.json"; sourceTree = "<group>"; };
+		20F2FC304649B5F23A54077FD166D9CA /* Fakery.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Fakery.modulemap; sourceTree = "<group>"; };
+		2555F000D73B0441301DD80D5473DD01 /* en-CA.json */ = {isa = PBXFileReference; includeInIndex = 1; name = "en-CA.json"; path = "Resources/Locales/en-CA.json"; sourceTree = "<group>"; };
+		255C165AE9BA8C56752D6218DC212B98 /* en-TEST.json */ = {isa = PBXFileReference; includeInIndex = 1; name = "en-TEST.json"; path = "Resources/Locales/en-TEST.json"; sourceTree = "<group>"; };
+		25AD2CC8E178E66682CB23D6F6EAD693 /* de.json */ = {isa = PBXFileReference; includeInIndex = 1; name = de.json; path = Resources/Locales/de.json; sourceTree = "<group>"; };
+		261C4A426DFE0ED2053BDF714376FA12 /* en-US.json */ = {isa = PBXFileReference; includeInIndex = 1; name = "en-US.json"; path = "Resources/Locales/en-US.json"; sourceTree = "<group>"; };
+		286A9302F6584BB3F81E372C4B3BEE43 /* Pods-VoltageUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VoltageUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		294BFD8ED53CCD6D2DD1AEBB10F7CB12 /* BlueSocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BlueSocket-dummy.m"; sourceTree = "<group>"; };
-		2970FF1F540B6C99E9D785C7953BC6AD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2CDE84E603276E81146A11A3CAC4B365 /* Pods-c-lightning-walletUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-c-lightning-walletUITests-umbrella.h"; sourceTree = "<group>"; };
+		29AA516C7EA0426EE22643C0FB3CD791 /* Pods_Voltage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Voltage.framework; path = "Pods-Voltage.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C1910050E5C0BDEA999E81935FF4E32 /* Pods-Voltage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Voltage-dummy.m"; sourceTree = "<group>"; };
+		31B8605385083D2E98A6F59DF2722005 /* Pods-VoltageUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VoltageUITests-umbrella.h"; sourceTree = "<group>"; };
+		35D070DB427AC428B847934E4CAE3A9A /* Pods_VoltageTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_VoltageTests.framework; path = "Pods-VoltageTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		35F2B5479E6B46ED759D6519D704DAD0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37C72ED589919994F19123353B8CD0B1 /* BlueSocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BlueSocket-prefix.pch"; sourceTree = "<group>"; };
 		38EF47FE34FF6E183AA7F2C5B290A003 /* Socket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Socket.swift; path = Sources/Socket/Socket.swift; sourceTree = "<group>"; };
-		3E53A52939E3C3296FB85A0E4EF9F408 /* it.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = it.json; path = Resources/Locales/it.json; sourceTree = "<group>"; };
+		3E53A52939E3C3296FB85A0E4EF9F408 /* it.json */ = {isa = PBXFileReference; includeInIndex = 1; name = it.json; path = Resources/Locales/it.json; sourceTree = "<group>"; };
+		3EA6F6295026F507400836D290ACB7CA /* Fakery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Fakery.framework; path = Fakery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F3D3304972EF5B883EF029E0D50F21E /* Pods-Voltage-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Voltage-acknowledgements.plist"; sourceTree = "<group>"; };
 		3F56765A943BA4080589728AEA5A5B12 /* SocketProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketProtocols.swift; path = Sources/Socket/SocketProtocols.swift; sourceTree = "<group>"; };
-		4460A792D036D7F84F897744B1119D1C /* zh-CN.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = "zh-CN.json"; path = "Resources/Locales/zh-CN.json"; sourceTree = "<group>"; };
-		45F0B029553A1051EB243357F86CF5A7 /* Pods-c-lightning-walletTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-c-lightning-walletTests.debug.xcconfig"; sourceTree = "<group>"; };
-		4831119034D761C2F008455D92A1A406 /* fr.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = fr.json; path = Resources/Locales/fr.json; sourceTree = "<group>"; };
-		4889CAC045062BFA191B52605F80BF5E /* Pods-c-lightning-wallet-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-c-lightning-wallet-resources.sh"; sourceTree = "<group>"; };
+		4065C5C9131D1A766FDB62BBE8AB7BDC /* Faker.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Faker.bundle; path = "Fakery-Faker.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4460A792D036D7F84F897744B1119D1C /* zh-CN.json */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-CN.json"; path = "Resources/Locales/zh-CN.json"; sourceTree = "<group>"; };
+		4671699EB02B49E3DD354A48C8D2379F /* Pods-Voltage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Voltage-umbrella.h"; sourceTree = "<group>"; };
+		46B0015CF4540D2EC359D16E0E56F133 /* Pods-Voltage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Voltage.release.xcconfig"; sourceTree = "<group>"; };
+		4831119034D761C2F008455D92A1A406 /* fr.json */ = {isa = PBXFileReference; includeInIndex = 1; name = fr.json; path = Resources/Locales/fr.json; sourceTree = "<group>"; };
 		49E59BF4C0B71256613815EA2547ECBA /* Address.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Address.swift; path = Sources/Fakery/Generators/Address.swift; sourceTree = "<group>"; };
-		4B954975EF122DDE839824703787DE91 /* pl.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = pl.json; path = Resources/Locales/pl.json; sourceTree = "<group>"; };
-		4C21D9C3AB841A7B41A4ED0868578DC4 /* Pods-c-lightning-walletTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-c-lightning-walletTests.release.xcconfig"; sourceTree = "<group>"; };
+		4B954975EF122DDE839824703787DE91 /* pl.json */ = {isa = PBXFileReference; includeInIndex = 1; name = pl.json; path = Resources/Locales/pl.json; sourceTree = "<group>"; };
 		4DFFE1EBE9CFE5D70B7E3A9F98780797 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		527DF717C781DB861029CF4D40C5D3B7 /* Pods_c_lightning_walletTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_c_lightning_walletTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EE76FE087279482D437EB202C93DEC7 /* Pods-VoltageUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-VoltageUITests.modulemap"; sourceTree = "<group>"; };
+		52B38B10DCF1E223F2934A6FAD6C8239 /* Pods-VoltageTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VoltageTests.release.xcconfig"; sourceTree = "<group>"; };
 		557511A2E61017659C5C13BC1A95AB5A /* Fakery.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Fakery.xcconfig; sourceTree = "<group>"; };
-		56247FB6530FED87A5B7CEF06CC4D648 /* Pods-c-lightning-walletUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-c-lightning-walletUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		5B34C07B8A19EE050B32BACEE0F75984 /* Provider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Provider.swift; path = Sources/Fakery/Data/Provider.swift; sourceTree = "<group>"; };
 		5C294EEBAD4B349EF85AC16EF346C015 /* BlueSocket-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BlueSocket-umbrella.h"; sourceTree = "<group>"; };
-		61E84FCEEC022CD4535344D20FB23E57 /* ru.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = ru.json; path = Resources/Locales/ru.json; sourceTree = "<group>"; };
+		5F5951523F7471678BF20CFF25F955C0 /* Pods-VoltageTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VoltageTests-umbrella.h"; sourceTree = "<group>"; };
+		61E84FCEEC022CD4535344D20FB23E57 /* ru.json */ = {isa = PBXFileReference; includeInIndex = 1; name = ru.json; path = Resources/Locales/ru.json; sourceTree = "<group>"; };
 		62DB69B4CAFEEFB44431FA4ABE6549B5 /* Parser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Parser.swift; path = Sources/Fakery/Data/Parser.swift; sourceTree = "<group>"; };
-		646205F6DB57FFF127DDD1ADCA3BE697 /* Pods-c-lightning-walletUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-c-lightning-walletUITests-resources.sh"; sourceTree = "<group>"; };
 		6526E38143AA3C7320583E142AA64538 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		6673EF027B621E5E73E6CBBF0BD98586 /* Number.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Number.swift; path = Sources/Fakery/Generators/Number.swift; sourceTree = "<group>"; };
-		6CBD31B31E657D31118AB8B8045122DC /* Pods-c-lightning-wallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-c-lightning-wallet.debug.xcconfig"; sourceTree = "<group>"; };
+		6C4A7DB379CBE150B1A42D8CE2ED33ED /* Pods-Voltage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Voltage.debug.xcconfig"; sourceTree = "<group>"; };
 		6D38226D3E0605B7527F181057200F36 /* Company.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Company.swift; path = Sources/Fakery/Generators/Company.swift; sourceTree = "<group>"; };
-		6FBB14E6874232C53A5F685244E34A22 /* sv.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = sv.json; path = Resources/Locales/sv.json; sourceTree = "<group>"; };
-		6FD56D65EF6D3EFD1EDD92661C6E257C /* Pods-c-lightning-wallet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-c-lightning-wallet.modulemap"; sourceTree = "<group>"; };
-		738853F2133C72E90109EC07D8E6A17A /* en-IND.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = "en-IND.json"; path = "Resources/Locales/en-IND.json"; sourceTree = "<group>"; };
+		6E9602B0CED919D03660F113256A199D /* Pods-VoltageUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VoltageUITests-frameworks.sh"; sourceTree = "<group>"; };
+		6FBB14E6874232C53A5F685244E34A22 /* sv.json */ = {isa = PBXFileReference; includeInIndex = 1; name = sv.json; path = Resources/Locales/sv.json; sourceTree = "<group>"; };
+		716224C3427A954D0A5113E0CEC7ED4E /* Pods-VoltageUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VoltageUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		738853F2133C72E90109EC07D8E6A17A /* en-IND.json */ = {isa = PBXFileReference; includeInIndex = 1; name = "en-IND.json"; path = "Resources/Locales/en-IND.json"; sourceTree = "<group>"; };
 		73E0511A0B4225AFDB7B7DF689282506 /* Fakery-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Fakery-prefix.pch"; sourceTree = "<group>"; };
+		75D495078492935F4F82197311428421 /* Pods-VoltageTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-VoltageTests.modulemap"; sourceTree = "<group>"; };
 		7EA90E0FA5279AC24087AAA6008EFDB9 /* Team.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Team.swift; path = Sources/Fakery/Generators/Team.swift; sourceTree = "<group>"; };
 		7EBA62A8FD4F3F2CE60156B36C262DE8 /* SocketUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketUtils.swift; path = Sources/Socket/SocketUtils.swift; sourceTree = "<group>"; };
-		7FF99D0681AABB1552D6F1AECAD2FB14 /* Pods-c-lightning-walletTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-c-lightning-walletTests-umbrella.h"; sourceTree = "<group>"; };
 		80CF88DC094CAB56F0E59909C4542EEF /* Commerce.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Commerce.swift; path = Sources/Fakery/Generators/Commerce.swift; sourceTree = "<group>"; };
-		80FEDA333176387E83F8113F1AFE3E7F /* en.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = en.json; path = Resources/Locales/en.json; sourceTree = "<group>"; };
-		8891400BA48AC0824E92D4DD48243F37 /* Pods-c-lightning-wallet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-c-lightning-wallet-dummy.m"; sourceTree = "<group>"; };
-		8A0D8D17742FDAC9C84E6A4C1C7DBD7E /* en-AU.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = "en-AU.json"; path = "Resources/Locales/en-AU.json"; sourceTree = "<group>"; };
-		919194D30E1D7BB191190E642EF866A1 /* Pods-c-lightning-walletUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-c-lightning-walletUITests-frameworks.sh"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		80FEDA333176387E83F8113F1AFE3E7F /* en.json */ = {isa = PBXFileReference; includeInIndex = 1; name = en.json; path = Resources/Locales/en.json; sourceTree = "<group>"; };
+		82AF5AF6BE2027A9A646A7D77D6D0BFA /* Pods_VoltageUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_VoltageUITests.framework; path = "Pods-VoltageUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8984CE5656AAC81A4C8D4584F2EB7A58 /* Pods-VoltageTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VoltageTests-dummy.m"; sourceTree = "<group>"; };
+		8A0D8D17742FDAC9C84E6A4C1C7DBD7E /* en-AU.json */ = {isa = PBXFileReference; includeInIndex = 1; name = "en-AU.json"; path = "Resources/Locales/en-AU.json"; sourceTree = "<group>"; };
+		8FC5865A8A777732B8574AD2B93C49A1 /* Socket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Socket.framework; path = BlueSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FE3FA03690618E15E6B3544A3787C79 /* Pods-VoltageTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VoltageTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		99AD686133E3F2CBD64C2157384B00ED /* Config.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Config.swift; path = Sources/Fakery/Config.swift; sourceTree = "<group>"; };
-		9BB2AA923AA869CC400170215AF9EF3A /* nb-NO.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = "nb-NO.json"; path = "Resources/Locales/nb-NO.json"; sourceTree = "<group>"; };
-		9DF8EC26E39286E5B70B3A6CB3BDF91E /* Pods-c-lightning-wallet-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-c-lightning-wallet-frameworks.sh"; sourceTree = "<group>"; };
-		9E7CFB6017ADB59F5159B3F5F5672623 /* Pods-c-lightning-wallet-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-c-lightning-wallet-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9BB2AA923AA869CC400170215AF9EF3A /* nb-NO.json */ = {isa = PBXFileReference; includeInIndex = 1; name = "nb-NO.json"; path = "Resources/Locales/nb-NO.json"; sourceTree = "<group>"; };
+		9FBA23617459AC7816FA81A550FD120A /* Pods-VoltageUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VoltageUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A0455EA7E73F47812BD503C8491F089D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0A5CD6A37D0C4C4AE35BAE71CB6762D /* Pods-Voltage-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Voltage-resources.sh"; sourceTree = "<group>"; };
 		A160695C3D8A9C9CE540E0D844831326 /* BlueSocket.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BlueSocket.xcconfig; sourceTree = "<group>"; };
-		A52753C6B07E5A08F559333B4903651A /* Pods-c-lightning-walletTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-c-lightning-walletTests-resources.sh"; sourceTree = "<group>"; };
-		A613F55165154FF01CAD24F0701E3C8D /* ja.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = ja.json; path = Resources/Locales/ja.json; sourceTree = "<group>"; };
-		A70D97F313E28CF287E2C736854EB153 /* de-CH.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = "de-CH.json"; path = "Resources/Locales/de-CH.json"; sourceTree = "<group>"; };
-		A7104C4D5FF8520035F56B8DEC5C0E66 /* Pods-c-lightning-walletTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-c-lightning-walletTests.modulemap"; sourceTree = "<group>"; };
-		A7A82F49564AFA21364F3666CEAFEC06 /* Pods-c-lightning-wallet-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-c-lightning-wallet-umbrella.h"; sourceTree = "<group>"; };
-		AABA537449CAD2808F7A6A8FACC95529 /* Pods-c-lightning-walletTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-c-lightning-walletTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		AD31507B2AD692B59B57F04D1F79E392 /* Pods-c-lightning-walletTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-c-lightning-walletTests-frameworks.sh"; sourceTree = "<group>"; };
-		B03B2539993BDB09C7A7031250E34545 /* tr-TR.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = "tr-TR.json"; path = "Resources/Locales/tr-TR.json"; sourceTree = "<group>"; };
-		B0AC4E65E7CD0AED933FF4194C6AF751 /* Socket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Socket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5BACD893154800E6BACAF85A46C4121 /* Pods-VoltageTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VoltageTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		A613F55165154FF01CAD24F0701E3C8D /* ja.json */ = {isa = PBXFileReference; includeInIndex = 1; name = ja.json; path = Resources/Locales/ja.json; sourceTree = "<group>"; };
+		A68FD9CF70B127E2FCD40CBA71E558E6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A70D97F313E28CF287E2C736854EB153 /* de-CH.json */ = {isa = PBXFileReference; includeInIndex = 1; name = "de-CH.json"; path = "Resources/Locales/de-CH.json"; sourceTree = "<group>"; };
+		AA779B6C76E07BE6213622339B388C5E /* Pods-Voltage-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Voltage-frameworks.sh"; sourceTree = "<group>"; };
+		B03B2539993BDB09C7A7031250E34545 /* tr-TR.json */ = {isa = PBXFileReference; includeInIndex = 1; name = "tr-TR.json"; path = "Resources/Locales/tr-TR.json"; sourceTree = "<group>"; };
 		B0F59BD49FC6C6D532EB0E26AC1F7E10 /* Lorem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Lorem.swift; path = Sources/Fakery/Generators/Lorem.swift; sourceTree = "<group>"; };
-		B237A1047326F73F5108570AE960008A /* fa.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = fa.json; path = Resources/Locales/fa.json; sourceTree = "<group>"; };
-		B81CE31EBDF7F720276F1CDA16C2F733 /* Pods-c-lightning-walletUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-c-lightning-walletUITests.modulemap"; sourceTree = "<group>"; };
-		BA57F450D052C915C0946F11E2A808B9 /* Pods-c-lightning-walletUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-c-lightning-walletUITests-dummy.m"; sourceTree = "<group>"; };
+		B237A1047326F73F5108570AE960008A /* fa.json */ = {isa = PBXFileReference; includeInIndex = 1; name = fa.json; path = Resources/Locales/fa.json; sourceTree = "<group>"; };
+		B6F450D17241665A85F0D9B8E34FC997 /* Pods-VoltageTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VoltageTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BB0B7944619A7D1BF128C9F9810A7583 /* Pods-Voltage-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Voltage-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BCCA04CCA70A5B4F8DF34028E90C10FF /* Pods-VoltageUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VoltageUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		BEEC3399F25A3D5E0E5A807147B09275 /* Generator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Generator.swift; path = Sources/Fakery/Generators/Generator.swift; sourceTree = "<group>"; };
-		BFE1FC2B899ABDF9E33FAC29EC417877 /* Pods_c_lightning_wallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_c_lightning_wallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C084C7D1F727C660E3D6250CD0D8B711 /* Faker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Faker.swift; path = Sources/Fakery/Faker.swift; sourceTree = "<group>"; };
 		C17EE2455DDF908F2519460B4A3AD4D7 /* ResourceBundle-Faker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Faker-Info.plist"; sourceTree = "<group>"; };
-		C48B6F462F00E7C2431A85C0735A0A8A /* BlueSocket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = BlueSocket.modulemap; sourceTree = "<group>"; };
-		C68F41CECF2DF743592F12CA0BE10BC7 /* Fakery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Fakery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C73040DD665FD7D4C8BF63A3685D5DBF /* de-AT.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = "de-AT.json"; path = "Resources/Locales/de-AT.json"; sourceTree = "<group>"; };
+		C48B6F462F00E7C2431A85C0735A0A8A /* BlueSocket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = BlueSocket.modulemap; sourceTree = "<group>"; };
+		C73040DD665FD7D4C8BF63A3685D5DBF /* de-AT.json */ = {isa = PBXFileReference; includeInIndex = 1; name = "de-AT.json"; path = "Resources/Locales/de-AT.json"; sourceTree = "<group>"; };
 		C977A81BA37A3A3337F42D2430F7B171 /* Business.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Business.swift; path = Sources/Fakery/Generators/Business.swift; sourceTree = "<group>"; };
 		CC3348C7D2B460656BEDE9E52171B217 /* Bank.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Bank.swift; path = Sources/Fakery/Generators/Bank.swift; sourceTree = "<group>"; };
 		CCD50CD9B07DBF097153A996CB87DF4F /* Internet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Internet.swift; path = Sources/Fakery/Generators/Internet.swift; sourceTree = "<group>"; };
+		D3C072CEA70A5A3F05094530C7440024 /* Pods-VoltageTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VoltageTests-resources.sh"; sourceTree = "<group>"; };
 		DBD93E64576AB7EC456D6EE6C38BB02F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DE0034A38AA8030CDE3A2B37769070F4 /* Pods_c_lightning_walletUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_c_lightning_walletUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF05AEAAEB1BE47264C8EC57A89AB607 /* Pods-VoltageUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VoltageUITests-resources.sh"; sourceTree = "<group>"; };
 		E7430C5CDC1B3E07E155F01FCC473D86 /* App.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = App.swift; path = Sources/Fakery/Generators/App.swift; sourceTree = "<group>"; };
-		EC3443A75993BDAFD1FE817764ECABD0 /* Pods-c-lightning-walletUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-c-lightning-walletUITests.release.xcconfig"; sourceTree = "<group>"; };
 		EE87E45F0EE72AAB1CE95E082FA0A1E7 /* ArrayExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArrayExtension.swift; path = Sources/Fakery/Extensions/ArrayExtension.swift; sourceTree = "<group>"; };
-		EEC761ADC7C854F383F9E322BA1D9937 /* en-GB.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = "en-GB.json"; path = "Resources/Locales/en-GB.json"; sourceTree = "<group>"; };
-		F3CF11EF9FD8D303704A4B5DB7591E3C /* ko.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = ko.json; path = Resources/Locales/ko.json; sourceTree = "<group>"; };
+		EEC761ADC7C854F383F9E322BA1D9937 /* en-GB.json */ = {isa = PBXFileReference; includeInIndex = 1; name = "en-GB.json"; path = "Resources/Locales/en-GB.json"; sourceTree = "<group>"; };
+		F223ABBA1086200789DBFA276DED48E9 /* Pods-VoltageTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VoltageTests-frameworks.sh"; sourceTree = "<group>"; };
+		F39EBA983CF4BDCFE49A5E44A9168815 /* Pods-Voltage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Voltage.modulemap"; sourceTree = "<group>"; };
+		F3CF11EF9FD8D303704A4B5DB7591E3C /* ko.json */ = {isa = PBXFileReference; includeInIndex = 1; name = ko.json; path = Resources/Locales/ko.json; sourceTree = "<group>"; };
+		FE5E72CD30B57D0E12F526A80C8719FE /* Pods-VoltageUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VoltageUITests-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0AB8873B414557ED899584327FABEF7A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A3E700764E25E357FB68627977CBCF2C /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		100C6FBE21BA17D6C13F77225258DCB2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3833DD2CF30958008F230CE5DDFE2E10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1A8F5A3374B6BE40D8D1F0E09DFD06E /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65CCA7200EC21299FEBAFB96259377DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				635E11D9F9216A15BDBCA16C42235E60 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,51 +247,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F03AFF945BBB64360B99629A30336430 /* Frameworks */ = {
+		EE579C4134D81E74B4F024F3D1FA0B84 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6264FA71E47F1AE693D4200355C2C24A /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FD3925A48D7E6391FB580B65AF18412D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2A8703074E74422684B402D85FE00820 /* Cocoa.framework in Frameworks */,
+				B01E5D0890E0B382B6A3A3F53486E4E2 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2C5483EE4E324D3030987ADEE185F5E0 /* Targets Support Files */ = {
+		0809E781BB9DF4AAC7A91502012954A6 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				EB9D433B28793877EFE4B8F487F037B3 /* Pods-c-lightning-wallet */,
-				321089C5DE7AD440D609F53660CBB031 /* Pods-c-lightning-walletTests */,
-				6622A1857880D6B53C3768936DAD4B29 /* Pods-c-lightning-walletUITests */,
+				4F6E2ED926059C45C6422E7F640567A5 /* Pods-Voltage */,
+				8262501AC49C40D5DE0722B1C8289641 /* Pods-VoltageTests */,
+				99F7B2AB26C571B8C1DEE65AF769D252 /* Pods-VoltageUITests */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		321089C5DE7AD440D609F53660CBB031 /* Pods-c-lightning-walletTests */ = {
-			isa = PBXGroup;
-			children = (
-				020988DA416460F1076D901F52BF715F /* Info.plist */,
-				A7104C4D5FF8520035F56B8DEC5C0E66 /* Pods-c-lightning-walletTests.modulemap */,
-				15A463A99E80AA404AC1CD23EF12713A /* Pods-c-lightning-walletTests-acknowledgements.markdown */,
-				AABA537449CAD2808F7A6A8FACC95529 /* Pods-c-lightning-walletTests-acknowledgements.plist */,
-				14171294A4A14C8D1430EAD80128DDA6 /* Pods-c-lightning-walletTests-dummy.m */,
-				AD31507B2AD692B59B57F04D1F79E392 /* Pods-c-lightning-walletTests-frameworks.sh */,
-				A52753C6B07E5A08F559333B4903651A /* Pods-c-lightning-walletTests-resources.sh */,
-				7FF99D0681AABB1552D6F1AECAD2FB14 /* Pods-c-lightning-walletTests-umbrella.h */,
-				45F0B029553A1051EB243357F86CF5A7 /* Pods-c-lightning-walletTests.debug.xcconfig */,
-				4C21D9C3AB841A7B41A4ED0868578DC4 /* Pods-c-lightning-walletTests.release.xcconfig */,
-			);
-			name = "Pods-c-lightning-walletTests";
-			path = "Target Support Files/Pods-c-lightning-walletTests";
 			sourceTree = "<group>";
 		};
 		48BE7E2CB6FDC2A40D0A090DCB45D297 /* Support Files */ = {
@@ -300,22 +282,22 @@
 			path = "../Target Support Files/BlueSocket";
 			sourceTree = "<group>";
 		};
-		6622A1857880D6B53C3768936DAD4B29 /* Pods-c-lightning-walletUITests */ = {
+		4F6E2ED926059C45C6422E7F640567A5 /* Pods-Voltage */ = {
 			isa = PBXGroup;
 			children = (
-				1B1D5E3B72DF4A8FEA4FD4F73F8197E1 /* Info.plist */,
-				B81CE31EBDF7F720276F1CDA16C2F733 /* Pods-c-lightning-walletUITests.modulemap */,
-				56247FB6530FED87A5B7CEF06CC4D648 /* Pods-c-lightning-walletUITests-acknowledgements.markdown */,
-				1ABC9280CCF308B08860ECAB349EDDB9 /* Pods-c-lightning-walletUITests-acknowledgements.plist */,
-				BA57F450D052C915C0946F11E2A808B9 /* Pods-c-lightning-walletUITests-dummy.m */,
-				919194D30E1D7BB191190E642EF866A1 /* Pods-c-lightning-walletUITests-frameworks.sh */,
-				646205F6DB57FFF127DDD1ADCA3BE697 /* Pods-c-lightning-walletUITests-resources.sh */,
-				2CDE84E603276E81146A11A3CAC4B365 /* Pods-c-lightning-walletUITests-umbrella.h */,
-				1D507332AAF4920A187792905CB3DB20 /* Pods-c-lightning-walletUITests.debug.xcconfig */,
-				EC3443A75993BDAFD1FE817764ECABD0 /* Pods-c-lightning-walletUITests.release.xcconfig */,
+				A68FD9CF70B127E2FCD40CBA71E558E6 /* Info.plist */,
+				F39EBA983CF4BDCFE49A5E44A9168815 /* Pods-Voltage.modulemap */,
+				BB0B7944619A7D1BF128C9F9810A7583 /* Pods-Voltage-acknowledgements.markdown */,
+				3F3D3304972EF5B883EF029E0D50F21E /* Pods-Voltage-acknowledgements.plist */,
+				2C1910050E5C0BDEA999E81935FF4E32 /* Pods-Voltage-dummy.m */,
+				AA779B6C76E07BE6213622339B388C5E /* Pods-Voltage-frameworks.sh */,
+				A0A5CD6A37D0C4C4AE35BAE71CB6762D /* Pods-Voltage-resources.sh */,
+				4671699EB02B49E3DD354A48C8D2379F /* Pods-Voltage-umbrella.h */,
+				6C4A7DB379CBE150B1A42D8CE2ED33ED /* Pods-Voltage.debug.xcconfig */,
+				46B0015CF4540D2EC359D16E0E56F133 /* Pods-Voltage.release.xcconfig */,
 			);
-			name = "Pods-c-lightning-walletUITests";
-			path = "Target Support Files/Pods-c-lightning-walletUITests";
+			name = "Pods-Voltage";
+			path = "Target Support Files/Pods-Voltage";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -324,8 +306,8 @@
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				D648CE86F139C7CCFD55D5B8A03BE74B /* Frameworks */,
 				D0B7CC9E4E932A629322BE92D4F7F1F4 /* Pods */,
-				CA9B012B538EFE6EB0DA34D9DB1BFB4E /* Products */,
-				2C5483EE4E324D3030987ADEE185F5E0 /* Targets Support Files */,
+				F83E1EA8E47F7C90C52ED12FAAD033EE /* Products */,
+				0809E781BB9DF4AAC7A91502012954A6 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -333,7 +315,26 @@
 			isa = PBXGroup;
 			children = (
 			);
+			name = SwiftLint;
 			path = SwiftLint;
+			sourceTree = "<group>";
+		};
+		8262501AC49C40D5DE0722B1C8289641 /* Pods-VoltageTests */ = {
+			isa = PBXGroup;
+			children = (
+				35F2B5479E6B46ED759D6519D704DAD0 /* Info.plist */,
+				75D495078492935F4F82197311428421 /* Pods-VoltageTests.modulemap */,
+				8FE3FA03690618E15E6B3544A3787C79 /* Pods-VoltageTests-acknowledgements.markdown */,
+				A5BACD893154800E6BACAF85A46C4121 /* Pods-VoltageTests-acknowledgements.plist */,
+				8984CE5656AAC81A4C8D4584F2EB7A58 /* Pods-VoltageTests-dummy.m */,
+				F223ABBA1086200789DBFA276DED48E9 /* Pods-VoltageTests-frameworks.sh */,
+				D3C072CEA70A5A3F05094530C7440024 /* Pods-VoltageTests-resources.sh */,
+				5F5951523F7471678BF20CFF25F955C0 /* Pods-VoltageTests-umbrella.h */,
+				B6F450D17241665A85F0D9B8E34FC997 /* Pods-VoltageTests.debug.xcconfig */,
+				52B38B10DCF1E223F2934A6FAD6C8239 /* Pods-VoltageTests.release.xcconfig */,
+			);
+			name = "Pods-VoltageTests";
+			path = "Target Support Files/Pods-VoltageTests";
 			sourceTree = "<group>";
 		};
 		92FC4590B3B6C6A2141FDC7D1DA8879E /* OS X */ = {
@@ -378,6 +379,24 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		99F7B2AB26C571B8C1DEE65AF769D252 /* Pods-VoltageUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A0455EA7E73F47812BD503C8491F089D /* Info.plist */,
+				4EE76FE087279482D437EB202C93DEC7 /* Pods-VoltageUITests.modulemap */,
+				BCCA04CCA70A5B4F8DF34028E90C10FF /* Pods-VoltageUITests-acknowledgements.markdown */,
+				716224C3427A954D0A5113E0CEC7ED4E /* Pods-VoltageUITests-acknowledgements.plist */,
+				FE5E72CD30B57D0E12F526A80C8719FE /* Pods-VoltageUITests-dummy.m */,
+				6E9602B0CED919D03660F113256A199D /* Pods-VoltageUITests-frameworks.sh */,
+				DF05AEAAEB1BE47264C8EC57A89AB607 /* Pods-VoltageUITests-resources.sh */,
+				31B8605385083D2E98A6F59DF2722005 /* Pods-VoltageUITests-umbrella.h */,
+				286A9302F6584BB3F81E372C4B3BEE43 /* Pods-VoltageUITests.debug.xcconfig */,
+				9FBA23617459AC7816FA81A550FD120A /* Pods-VoltageUITests.release.xcconfig */,
+			);
+			name = "Pods-VoltageUITests";
+			path = "Target Support Files/Pods-VoltageUITests";
+			sourceTree = "<group>";
+		};
 		AAB84B86980D0E6B8AFFF820B4FA144B /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -401,20 +420,8 @@
 				7EBA62A8FD4F3F2CE60156B36C262DE8 /* SocketUtils.swift */,
 				48BE7E2CB6FDC2A40D0A090DCB45D297 /* Support Files */,
 			);
+			name = BlueSocket;
 			path = BlueSocket;
-			sourceTree = "<group>";
-		};
-		CA9B012B538EFE6EB0DA34D9DB1BFB4E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				106DB90B63EA5B84E67FDFF13A335241 /* Faker.bundle */,
-				C68F41CECF2DF743592F12CA0BE10BC7 /* Fakery.framework */,
-				BFE1FC2B899ABDF9E33FAC29EC417877 /* Pods_c_lightning_wallet.framework */,
-				527DF717C781DB861029CF4D40C5D3B7 /* Pods_c_lightning_walletTests.framework */,
-				DE0034A38AA8030CDE3A2B37769070F4 /* Pods_c_lightning_walletUITests.framework */,
-				B0AC4E65E7CD0AED933FF4194C6AF751 /* Socket.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		D0B7CC9E4E932A629322BE92D4F7F1F4 /* Pods */ = {
@@ -435,22 +442,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		EB9D433B28793877EFE4B8F487F037B3 /* Pods-c-lightning-wallet */ = {
+		F83E1EA8E47F7C90C52ED12FAAD033EE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2970FF1F540B6C99E9D785C7953BC6AD /* Info.plist */,
-				6FD56D65EF6D3EFD1EDD92661C6E257C /* Pods-c-lightning-wallet.modulemap */,
-				9E7CFB6017ADB59F5159B3F5F5672623 /* Pods-c-lightning-wallet-acknowledgements.markdown */,
-				0D1B8FC4EF232E9A2183B746AB9599E6 /* Pods-c-lightning-wallet-acknowledgements.plist */,
-				8891400BA48AC0824E92D4DD48243F37 /* Pods-c-lightning-wallet-dummy.m */,
-				9DF8EC26E39286E5B70B3A6CB3BDF91E /* Pods-c-lightning-wallet-frameworks.sh */,
-				4889CAC045062BFA191B52605F80BF5E /* Pods-c-lightning-wallet-resources.sh */,
-				A7A82F49564AFA21364F3666CEAFEC06 /* Pods-c-lightning-wallet-umbrella.h */,
-				6CBD31B31E657D31118AB8B8045122DC /* Pods-c-lightning-wallet.debug.xcconfig */,
-				07EC930035426DE28A6F94C73AA62572 /* Pods-c-lightning-wallet.release.xcconfig */,
+				4065C5C9131D1A766FDB62BBE8AB7BDC /* Faker.bundle */,
+				3EA6F6295026F507400836D290ACB7CA /* Fakery.framework */,
+				29AA516C7EA0426EE22643C0FB3CD791 /* Pods_Voltage.framework */,
+				35D070DB427AC428B847934E4CAE3A9A /* Pods_VoltageTests.framework */,
+				82AF5AF6BE2027A9A646A7D77D6D0BFA /* Pods_VoltageUITests.framework */,
+				8FC5865A8A777732B8574AD2B93C49A1 /* Socket.framework */,
 			);
-			name = "Pods-c-lightning-wallet";
-			path = "Target Support Files/Pods-c-lightning-wallet";
+			name = Products;
 			sourceTree = "<group>";
 		};
 		FCE9B864586D00DD9E60AA86AB3A7636 /* Fakery */ = {
@@ -477,12 +479,29 @@
 				98A0092C2393268C569EC3CAC9FD2FFB /* Resources */,
 				AAB84B86980D0E6B8AFFF820B4FA144B /* Support Files */,
 			);
+			name = Fakery;
 			path = Fakery;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		3C8B6E449FC1A652EA50173B0BE993B2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AF8326D136C3DE17A573239F8F7B19F /* Pods-Voltage-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		404FCB881E103EA0ACA00AA007764667 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CF6555E1F7431B729A109814DAE95DA /* Pods-VoltageUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6D4D3139A8AE3B027E150B0CA36DE95B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -499,33 +518,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BD87C9B017C529DD85C2F2ABD2E08306 /* Headers */ = {
+		F3056FCAE643D669256F86EBF629C5CE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4AD6D0783A19DBB94B4B8E8AD87A9F7 /* Pods-c-lightning-walletTests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F54E8A6A3134F697015862DE372AB059 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F529407B7EE6AF4728D1781013D6DFED /* Pods-c-lightning-walletUITests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F7BECC5C2599774BEF08C2D244DF8918 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				12813E7B88E4A6D3E845EBE9863C1B33 /* Pods-c-lightning-wallet-umbrella.h in Headers */,
+				19F2306D8626BC07A425A1F6CFA4200E /* Pods-VoltageTests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		0C1485B804320B45661C4E3207EC7BC5 /* Pods-VoltageUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0928E5153BD3204D7B7192667CB27808 /* Build configuration list for PBXNativeTarget "Pods-VoltageUITests" */;
+			buildPhases = (
+				D46D1CB0A9B59D53072FC7FDF83BFB06 /* Sources */,
+				3833DD2CF30958008F230CE5DDFE2E10 /* Frameworks */,
+				404FCB881E103EA0ACA00AA007764667 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-VoltageUITests";
+			productName = "Pods-VoltageUITests";
+			productReference = 82AF5AF6BE2027A9A646A7D77D6D0BFA /* Pods_VoltageUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		1053405F1F7488B4AD94BD05AC90814D /* BlueSocket */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 144F6878767568E5277D30049E90B28D /* Build configuration list for PBXNativeTarget "BlueSocket" */;
@@ -540,25 +560,26 @@
 			);
 			name = BlueSocket;
 			productName = BlueSocket;
-			productReference = B0AC4E65E7CD0AED933FF4194C6AF751 /* Socket.framework */;
+			productReference = 8FC5865A8A777732B8574AD2B93C49A1 /* Socket.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		29B919D645B0A8517B88B106A02542EC /* Pods-c-lightning-walletTests */ = {
+		357FB2F4D27609B4A5FF782ACE1336EF /* Pods-Voltage */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 34E543F1CD098042D52BA968D0642CC6 /* Build configuration list for PBXNativeTarget "Pods-c-lightning-walletTests" */;
+			buildConfigurationList = 7865120D5366BFAB4F288CB61668B082 /* Build configuration list for PBXNativeTarget "Pods-Voltage" */;
 			buildPhases = (
-				914AF1D59EE7EAC6529E1151517B7229 /* Sources */,
-				0AB8873B414557ED899584327FABEF7A /* Frameworks */,
-				BD87C9B017C529DD85C2F2ABD2E08306 /* Headers */,
+				0390705DC5ECD2D2E2757C72D09627EA /* Sources */,
+				65CCA7200EC21299FEBAFB96259377DC /* Frameworks */,
+				3C8B6E449FC1A652EA50173B0BE993B2 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				975508C6AF55B98515B555196A603D84 /* PBXTargetDependency */,
+				D2757E41AA916D4C536104D254DF3949 /* PBXTargetDependency */,
+				0F2BC8C07E6E7771A6DB2055B9F83B78 /* PBXTargetDependency */,
 			);
-			name = "Pods-c-lightning-walletTests";
-			productName = "Pods-c-lightning-walletTests";
-			productReference = 527DF717C781DB861029CF4D40C5D3B7 /* Pods_c_lightning_walletTests.framework */;
+			name = "Pods-Voltage";
+			productName = "Pods-Voltage";
+			productReference = 29AA516C7EA0426EE22643C0FB3CD791 /* Pods_Voltage.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		6ECD3F3994A371C3AF6F1E552BC744E9 /* Fakery */ = {
@@ -577,24 +598,25 @@
 			);
 			name = Fakery;
 			productName = Fakery;
-			productReference = C68F41CECF2DF743592F12CA0BE10BC7 /* Fakery.framework */;
+			productReference = 3EA6F6295026F507400836D290ACB7CA /* Fakery.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		C9AEF4951E6B5246B6DD368059BF2E27 /* Pods-c-lightning-walletUITests */ = {
+		ADB5C8E936253A3292E5C41256E9A0D9 /* Pods-VoltageTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1F1668E5BF0FBE49A680B4DF68AA772B /* Build configuration list for PBXNativeTarget "Pods-c-lightning-walletUITests" */;
+			buildConfigurationList = 28C33311770352BD3002A3747E48ED22 /* Build configuration list for PBXNativeTarget "Pods-VoltageTests" */;
 			buildPhases = (
-				38EA86E3A8B0B059C192B31094B37FAA /* Sources */,
-				F03AFF945BBB64360B99629A30336430 /* Frameworks */,
-				F54E8A6A3134F697015862DE372AB059 /* Headers */,
+				1A7C6AA2AD9990E8CDA4A05C644974D0 /* Sources */,
+				EE579C4134D81E74B4F024F3D1FA0B84 /* Frameworks */,
+				F3056FCAE643D669256F86EBF629C5CE /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4D81EBD2C8F618020F31B9DF1E912018 /* PBXTargetDependency */,
 			);
-			name = "Pods-c-lightning-walletUITests";
-			productName = "Pods-c-lightning-walletUITests";
-			productReference = DE0034A38AA8030CDE3A2B37769070F4 /* Pods_c_lightning_walletUITests.framework */;
+			name = "Pods-VoltageTests";
+			productName = "Pods-VoltageTests";
+			productReference = 35D070DB427AC428B847934E4CAE3A9A /* Pods_VoltageTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		D6E3A0311D8A91D96BEAAB01A94F4233 /* Fakery-Faker */ = {
@@ -611,27 +633,8 @@
 			);
 			name = "Fakery-Faker";
 			productName = "Fakery-Faker";
-			productReference = 106DB90B63EA5B84E67FDFF13A335241 /* Faker.bundle */;
+			productReference = 4065C5C9131D1A766FDB62BBE8AB7BDC /* Faker.bundle */;
 			productType = "com.apple.product-type.bundle";
-		};
-		F0BE0D80B0FA98D3A1E9DEC19657923C /* Pods-c-lightning-wallet */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 748259B1D5AC7FC8AC810C54105C8948 /* Build configuration list for PBXNativeTarget "Pods-c-lightning-wallet" */;
-			buildPhases = (
-				B0560043BB6A03A444E5A5CE65039020 /* Sources */,
-				FD3925A48D7E6391FB580B65AF18412D /* Frameworks */,
-				F7BECC5C2599774BEF08C2D244DF8918 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4DF4F3D9EE8212C9A3DFBFDAED27F905 /* PBXTargetDependency */,
-				391273CCDCD155CCBCA92F1B5F2A9893 /* PBXTargetDependency */,
-			);
-			name = "Pods-c-lightning-wallet";
-			productName = "Pods-c-lightning-wallet";
-			productReference = BFE1FC2B899ABDF9E33FAC29EC417877 /* Pods_c_lightning_wallet.framework */;
-			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -640,7 +643,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -650,16 +653,16 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = CA9B012B538EFE6EB0DA34D9DB1BFB4E /* Products */;
+			productRefGroup = F83E1EA8E47F7C90C52ED12FAAD033EE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				1053405F1F7488B4AD94BD05AC90814D /* BlueSocket */,
 				6ECD3F3994A371C3AF6F1E552BC744E9 /* Fakery */,
 				D6E3A0311D8A91D96BEAAB01A94F4233 /* Fakery-Faker */,
-				F0BE0D80B0FA98D3A1E9DEC19657923C /* Pods-c-lightning-wallet */,
-				29B919D645B0A8517B88B106A02542EC /* Pods-c-lightning-walletTests */,
-				C9AEF4951E6B5246B6DD368059BF2E27 /* Pods-c-lightning-walletUITests */,
+				357FB2F4D27609B4A5FF782ACE1336EF /* Pods-Voltage */,
+				ADB5C8E936253A3292E5C41256E9A0D9 /* Pods-VoltageTests */,
+				0C1485B804320B45661C4E3207EC7BC5 /* Pods-VoltageUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -709,34 +712,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0390705DC5ECD2D2E2757C72D09627EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1514361608AABBDFC187B3E86E3B3C5E /* Pods-Voltage-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A7C6AA2AD9990E8CDA4A05C644974D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBE62B5FC33EE0A7A67BB3202274AF1E /* Pods-VoltageTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		312C397CC4693824D2C1DA4DC01588F6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		38EA86E3A8B0B059C192B31094B37FAA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B18976040B38D5C4E84296B090F8204E /* Pods-c-lightning-walletUITests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		914AF1D59EE7EAC6529E1151517B7229 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CA8B0BBA530822E324671A11182C0CEB /* Pods-c-lightning-walletTests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B0560043BB6A03A444E5A5CE65039020 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2E5E2F7C4603791A5F149DFF53543873 /* Pods-c-lightning-wallet-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -766,6 +761,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D46D1CB0A9B59D53072FC7FDF83BFB06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78F37D00CC8ECEC1B638471445921879 /* Pods-VoltageUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E6AD96B4663FB4D22595F718A09A0B1E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -780,17 +783,17 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		391273CCDCD155CCBCA92F1B5F2A9893 /* PBXTargetDependency */ = {
+		0F2BC8C07E6E7771A6DB2055B9F83B78 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Fakery;
 			target = 6ECD3F3994A371C3AF6F1E552BC744E9 /* Fakery */;
-			targetProxy = DE0ACB5B54295E772F2D3E66B1F86A8B /* PBXContainerItemProxy */;
+			targetProxy = BDBF15B6DB3A9535F07AC8A62600BB7A /* PBXContainerItemProxy */;
 		};
-		4DF4F3D9EE8212C9A3DFBFDAED27F905 /* PBXTargetDependency */ = {
+		4D81EBD2C8F618020F31B9DF1E912018 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = BlueSocket;
-			target = 1053405F1F7488B4AD94BD05AC90814D /* BlueSocket */;
-			targetProxy = 54C1F313DFB05FF48ED7C0DBE5896E03 /* PBXContainerItemProxy */;
+			name = Fakery;
+			target = 6ECD3F3994A371C3AF6F1E552BC744E9 /* Fakery */;
+			targetProxy = 13D2DE21A6D11B2855517B65711D9FFA /* PBXContainerItemProxy */;
 		};
 		605604F8D4F0CB247F0AF8DBDB43C8D4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -798,11 +801,11 @@
 			target = D6E3A0311D8A91D96BEAAB01A94F4233 /* Fakery-Faker */;
 			targetProxy = 1D3E86F7EA4A8EA66AC1A656284C94E4 /* PBXContainerItemProxy */;
 		};
-		975508C6AF55B98515B555196A603D84 /* PBXTargetDependency */ = {
+		D2757E41AA916D4C536104D254DF3949 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Fakery;
-			target = 6ECD3F3994A371C3AF6F1E552BC744E9 /* Fakery */;
-			targetProxy = D3024B561DDCD37A097C8CC0FA3118FF /* PBXContainerItemProxy */;
+			name = BlueSocket;
+			target = 1053405F1F7488B4AD94BD05AC90814D /* BlueSocket */;
+			targetProxy = 4B38A8D1222CE94EC2D19FDA11DE2846 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -888,9 +891,9 @@
 			};
 			name = Release;
 		};
-		3F7AFF9ECDEB9204910AA7729509683F /* Debug */ = {
+		393CB05189C131A6AC256892703B4CDC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1D507332AAF4920A187792905CB3DB20 /* Pods-c-lightning-walletUITests.debug.xcconfig */;
+			baseConfigurationReference = B6F450D17241665A85F0D9B8E34FC997 /* Pods-VoltageTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -903,56 +906,25 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Target Support Files/Pods-c-lightning-walletUITests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-VoltageTests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MODULEMAP_FILE = "Target Support Files/Pods-c-lightning-walletUITests/Pods-c-lightning-walletUITests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-VoltageTests/Pods-VoltageTests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_c_lightning_walletUITests;
+				PRODUCT_NAME = Pods_VoltageTests;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		56D3DF2D1F62B3073534CDDF7C2C92B4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EC3443A75993BDAFD1FE817764ECABD0 /* Pods-c-lightning-walletUITests.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Target Support Files/Pods-c-lightning-walletUITests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MODULEMAP_FILE = "Target Support Files/Pods-c-lightning-walletUITests/Pods-c-lightning-walletUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_c_lightning_walletUITests;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		57326BC558B8685461310C5B244739F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -986,6 +958,39 @@
 			};
 			name = Debug;
 		};
+		5BE4DDBE49328B70EECE9E64D273F76A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 286A9302F6584BB3F81E372C4B3BEE43 /* Pods-VoltageUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-VoltageUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MODULEMAP_FILE = "Target Support Files/Pods-VoltageUITests/Pods-VoltageUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_VoltageUITests;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		7734531C9DAB02C648A135E29CC958AF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 557511A2E61017659C5C13BC1A95AB5A /* Fakery.xcconfig */;
@@ -1003,9 +1008,9 @@
 			};
 			name = Debug;
 		};
-		794480869D7D6B7447EE7202EEADEF8E /* Debug */ = {
+		8316112E0199C4854216147EBD3CBC90 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6CBD31B31E657D31118AB8B8045122DC /* Pods-c-lightning-wallet.debug.xcconfig */;
+			baseConfigurationReference = 46B0015CF4540D2EC359D16E0E56F133 /* Pods-Voltage.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1018,52 +1023,17 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Target Support Files/Pods-c-lightning-wallet/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Voltage/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MODULEMAP_FILE = "Target Support Files/Pods-c-lightning-wallet/Pods-c-lightning-wallet.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-Voltage/Pods-Voltage.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_c_lightning_wallet;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		8C4DB15B23648A77FE065C0565592240 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4C21D9C3AB841A7B41A4ED0868578DC4 /* Pods-c-lightning-walletTests.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Target Support Files/Pods-c-lightning-walletTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MODULEMAP_FILE = "Target Support Files/Pods-c-lightning-walletTests/Pods-c-lightning-walletTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_c_lightning_walletTests;
+				PRODUCT_NAME = Pods_Voltage;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -1072,9 +1042,9 @@
 			};
 			name = Release;
 		};
-		BE094CA808DE6462B7D1132C11E87839 /* Debug */ = {
+		982AB25DC650803A6EC20B84F01793FB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 45F0B029553A1051EB243357F86CF5A7 /* Pods-c-lightning-walletTests.debug.xcconfig */;
+			baseConfigurationReference = 6C4A7DB379CBE150B1A42D8CE2ED33ED /* Pods-Voltage.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1087,17 +1057,17 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Target Support Files/Pods-c-lightning-walletTests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Voltage/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MODULEMAP_FILE = "Target Support Files/Pods-c-lightning-walletTests/Pods-c-lightning-walletTests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-Voltage/Pods-Voltage.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_c_lightning_walletTests;
+				PRODUCT_NAME = Pods_Voltage;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -1158,7 +1128,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
@@ -1195,9 +1164,9 @@
 			};
 			name = Debug;
 		};
-		E56CC0431C36E5C2B937147E4FEF20AF /* Release */ = {
+		CEE40BC1B701C33AD26ABA20628A9DD1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 07EC930035426DE28A6F94C73AA62572 /* Pods-c-lightning-wallet.release.xcconfig */;
+			baseConfigurationReference = 52B38B10DCF1E223F2934A6FAD6C8239 /* Pods-VoltageTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1210,20 +1179,53 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Target Support Files/Pods-c-lightning-wallet/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-VoltageTests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MODULEMAP_FILE = "Target Support Files/Pods-c-lightning-wallet/Pods-c-lightning-wallet.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-VoltageTests/Pods-VoltageTests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_c_lightning_wallet;
+				PRODUCT_NAME = Pods_VoltageTests;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D6624537B869566B3F437C9B2F49656D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FBA23617459AC7816FA81A550FD120A /* Pods-VoltageUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-VoltageUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MODULEMAP_FILE = "Target Support Files/Pods-VoltageUITests/Pods-VoltageUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_VoltageUITests;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1292,6 +1294,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0928E5153BD3204D7B7192667CB27808 /* Build configuration list for PBXNativeTarget "Pods-VoltageUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BE4DDBE49328B70EECE9E64D273F76A /* Debug */,
+				D6624537B869566B3F437C9B2F49656D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		144F6878767568E5277D30049E90B28D /* Build configuration list for PBXNativeTarget "BlueSocket" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1301,11 +1312,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1F1668E5BF0FBE49A680B4DF68AA772B /* Build configuration list for PBXNativeTarget "Pods-c-lightning-walletUITests" */ = {
+		28C33311770352BD3002A3747E48ED22 /* Build configuration list for PBXNativeTarget "Pods-VoltageTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3F7AFF9ECDEB9204910AA7729509683F /* Debug */,
-				56D3DF2D1F62B3073534CDDF7C2C92B4 /* Release */,
+				393CB05189C131A6AC256892703B4CDC /* Debug */,
+				CEE40BC1B701C33AD26ABA20628A9DD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1319,20 +1330,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		34E543F1CD098042D52BA968D0642CC6 /* Build configuration list for PBXNativeTarget "Pods-c-lightning-walletTests" */ = {
+		7865120D5366BFAB4F288CB61668B082 /* Build configuration list for PBXNativeTarget "Pods-Voltage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BE094CA808DE6462B7D1132C11E87839 /* Debug */,
-				8C4DB15B23648A77FE065C0565592240 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		748259B1D5AC7FC8AC810C54105C8948 /* Build configuration list for PBXNativeTarget "Pods-c-lightning-wallet" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				794480869D7D6B7447EE7202EEADEF8E /* Debug */,
-				E56CC0431C36E5C2B937147E4FEF20AF /* Release */,
+				982AB25DC650803A6EC20B84F01793FB /* Debug */,
+				8316112E0199C4854216147EBD3CBC90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
