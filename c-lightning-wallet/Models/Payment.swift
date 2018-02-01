@@ -46,4 +46,14 @@ struct Payment: Codable, PaymentFactory {
 
 struct PaymentList: Codable {
     let payments: [Payment]
+    
+    enum ResultKey: String, CodingKey {
+        case result
+    }
+}
+
+struct PaymentResult: Codable {
+    let id: Int
+    let jsonrpc: String
+    let result: PaymentList
 }

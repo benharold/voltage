@@ -11,6 +11,8 @@ import Cocoa
 class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSource {
     var payment_list: [Payment]!
     
+    var decoder: JSONDecoder = JSONDecoder.init()
+    
     @IBOutlet weak var payments_table_view: NSTableView!
     
     @IBOutlet weak var payment_hash: NSTextFieldCell!
@@ -44,18 +46,27 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
     }
     
     func load_payments() {
-        let payments = runCommand(cmd: "/Users/haroldbr/Development/lightning/cli/lightning-cli", args: "listpayments")
-        
-        let decoder = JSONDecoder.init()
+        let service: LightningRPCSocket = LightningRPCSocket.create()
+        let listpayments: LightningRPCQuery = LightningRPCQuery(id: 1, method: "listpayments", params: [])
+        let response: Data = service.send(query: listpayments)
         do {
-            let result = try decoder.decode(PaymentList.self, from: payments.output[0].data(using: .utf8)!)
-            //print(result)
+            let result: PaymentList = try decoder.decode(PaymentResult.self, from: response).result
             payment_list = result.payments
         } catch {
-            print("Error: \(error)")
+            //alert(message: "There was an error decoding the list of payments. Is your c-lightning node running?")
+            print("ViewController::load_payments() JSON decoder error: \(error)")
         }
         
         payments_table_view.reloadData()
+    }
+    
+    func alert(message: String) -> Bool {
+        let alert = NSAlert()
+        alert.messageText = message
+        alert.alertStyle = .critical
+        alert.addButton(withTitle: "Dang")
+        
+        return alert.runModal() == .alertFirstButtonReturn
     }
 
     override var representedObject: Any? {

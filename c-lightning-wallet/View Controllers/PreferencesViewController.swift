@@ -13,13 +13,20 @@ class PreferencesViewController: NSViewController {
     
     @IBOutlet weak var socket_location: NSTextFieldCell!
     
+    @IBOutlet weak var socket_status: NSTextField!
+    
     @IBAction func save_button(_ sender: Any) {
         save_preferences()
         view.window?.close()
     }
+    @IBOutlet weak var other: NSTextField!
     
     @IBAction func cancel_button(_ sender: Any) {
         view.window?.close()
+    }
+    
+    @IBAction func test_connection_button(_ sender: Any) {
+        test_connection()
     }
     
     func show_existing_preferences() {
@@ -30,8 +37,20 @@ class PreferencesViewController: NSViewController {
         preferences.socket_path = socket_location.stringValue
     }
     
+    func test_connection() {
+        let service = LightningRPCSocket(path: socket_location.stringValue)
+        if (service.socket?.isConnected)! {
+            socket_status.stringValue = "Connected"
+            socket_status.textColor = NSColor.black
+        } else {
+            socket_status.stringValue = "Disconnected"
+            socket_status.textColor = NSColor.red
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         show_existing_preferences()
+        test_connection()
     }
 }
