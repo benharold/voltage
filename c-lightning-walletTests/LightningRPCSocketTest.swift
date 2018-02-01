@@ -14,15 +14,15 @@ class LightningRPCSocketTest: XCTestCase {
     
     // This must be a path to an active c-lightning node socket in order for
     // these tests to pass. The default is ~/.lightning/lightning-rpc
-    var relative_path = "~/Development/sockets/lightning-rpc.sock"
+    var relative_path = "~/.lightning/lightning-rpc"
     
     let decoder = JSONDecoder.init()
     
     // The socket path must be an absolute path without `file://` in the front.
     // Here I was just figuring out the best way to support the `~` character.
     func testPaths() {
-        let path_with_tilde = "~/lightning/lightning-rpc"
-        let full_path = FileManager.default.homeDirectoryForCurrentUser.path + "/lightning/lightning-rpc"
+        let path_with_tilde = "~/.lightning/lightning-rpc"
+        let full_path = FileManager.default.homeDirectoryForCurrentUser.path + "/.lightning/lightning-rpc"
         XCTAssertEqual(NSString(string: path_with_tilde).expandingTildeInPath, full_path)
         
         let path_without_tilde = "/dev/null"
@@ -58,11 +58,14 @@ class LightningRPCSocketTest: XCTestCase {
             params: []
         )
         let result = socket.send(query: query)
+        // I need to update this after I create the `getinfo` struct.
         print("testSendQuery", String(data: result, encoding: .utf8)!)
-        
-        // This is pretty lame. I should really be testing for a successful
-        // getinfo object here but I don't have that structure setup yet.
-        // XCTAssert(result != "error")
+//        do {
+//            result = try decoder.decode(GetInfo.self, from: response)
+//            XCTAssert(result is GetInfo) // Ignore the warning https://bugs.swift.org/browse/SR-1703
+//        } catch {
+//            print("Error: \(error)")
+//        }
     }
     
     func testListPaymentsIsDecodable() {
