@@ -21,6 +21,7 @@ class PreferencesViewController: NSViewController {
         save_preferences()
         view.window?.close()
     }
+    
     @IBOutlet weak var other: NSTextField!
     
     @IBAction func cancel_button(_ sender: Any) {
