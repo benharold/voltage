@@ -32,12 +32,14 @@ class LightningRPCSocket: NSObject, RPCProtocol {
         do {
             try socket = Socket.create(family: socket_family, type: socket_type, proto: socket_protocol)
             guard let socket = socket else {
-                print("Unable to unwrap socket")
+                print("unable to unwrap socket")
                 throw SocketError.unwrap_error
             }
             socket.readBufferSize = buffer_size
             try socket.connect(to: path)
         } catch {
+            // This really should broadcast a message so that a logger can
+            // pick it up and/or the user can be notified in some manner.
             print("socket connection error: \(error)")
         }
     }
