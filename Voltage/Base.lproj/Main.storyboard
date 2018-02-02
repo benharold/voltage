@@ -736,7 +736,7 @@
         <!--Tab View Controller-->
         <scene sceneID="J5h-yD-05D">
             <objects>
-                <tabViewController selectedTabViewItemIndex="1" id="lgS-5q-6gh" sceneMemberID="viewController">
+                <tabViewController selectedTabViewItemIndex="0" id="lgS-5q-6gh" sceneMemberID="viewController">
                     <tabViewItems>
                         <tabViewItem label="Payments" identifier="payments_tab" id="kZp-Z7-LNd"/>
                         <tabViewItem label="Channels" identifier="channels_tab" id="hwW-Yk-HgC"/>
@@ -973,7 +973,7 @@
                             <scrollView autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hoh-ed-SQe">
                                 <rect key="frame" x="0.0" y="67" width="933" height="233"/>
                                 <clipView key="contentView" id="7w2-7H-dFm">
-                                    <rect key="frame" x="1" y="23" width="931" height="209"/>
+                                    <rect key="frame" x="1" y="0.0" width="931" height="232"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" headerView="FgI-Mn-95y" viewBased="YES" id="Qzh-lf-yYO">
