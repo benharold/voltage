@@ -17,12 +17,12 @@ class PreferencesViewController: NSViewController {
     
     @IBOutlet weak var socket_status: NSTextField!
     
+    @IBOutlet weak var other: NSTextField!
+    
     @IBAction func save_button(_ sender: Any) {
         save_preferences()
         view.window?.close()
     }
-    
-    @IBOutlet weak var other: NSTextField!
     
     @IBAction func cancel_button(_ sender: Any) {
         view.window?.close()
