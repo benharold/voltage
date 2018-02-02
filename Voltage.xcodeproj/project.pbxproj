@@ -1,0 +1,896 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A0713F9201A7127008E2AEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0713F8201A7127008E2AEE /* AppDelegate.swift */; };
+		3A0713FB201A7127008E2AEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0713FA201A7127008E2AEE /* ViewController.swift */; };
+		3A0713FD201A7127008E2AEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A0713FC201A7127008E2AEE /* Assets.xcassets */; };
+		3A071400201A7127008E2AEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0713FE201A7127008E2AEE /* Main.storyboard */; };
+		3A07140C201A7127008E2AEE /* JSONDecoderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A07140B201A7127008E2AEE /* JSONDecoderTest.swift */; };
+		3A071417201A7127008E2AEE /* VoltageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A071416201A7127008E2AEE /* VoltageUITests.swift */; };
+		3A38BDE9201C55B40055BBA1 /* PaymentHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A38BDE8201C55B40055BBA1 /* PaymentHash.swift */; };
+		3A38BDED201CF8D70055BBA1 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A38BDEC201CF8D70055BBA1 /* String.swift */; };
+		3A5565642023B1DD003CEBEA /* Output.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5565632023B1DD003CEBEA /* Output.swift */; };
+		3A5565662023BFDE003CEBEA /* PaymentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5565652023BFDE003CEBEA /* PaymentsViewController.swift */; };
+		3A5565682023C9F0003CEBEA /* ChannelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5565672023C9F0003CEBEA /* ChannelsViewController.swift */; };
+		3A55656A2023CF2F003CEBEA /* ChannelsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5565692023CF2F003CEBEA /* ChannelsTest.swift */; };
+		3A55656C2023DB7E003CEBEA /* Bool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A55656B2023DB7E003CEBEA /* Bool.swift */; };
+		3AA2A68420227AC2005664FC /* LightningRPCQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA2A68320227AC2005664FC /* LightningRPCQuery.swift */; };
+		3AA2A68E202385AC005664FC /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA2A68D202385AC005664FC /* Data.swift */; };
+		3AA4BDEA201BCADC00000153 /* listpayments.json in Resources */ = {isa = PBXBuildFile; fileRef = 3AA4BDE9201BCADC00000153 /* listpayments.json */; };
+		3AA4BDEC201BE13800000153 /* listpeers.json in Resources */ = {isa = PBXBuildFile; fileRef = 3AA4BDEB201BE13800000153 /* listpeers.json */; };
+		3AA4BDEE201BE8A300000153 /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA4BDED201BE8A300000153 /* Payment.swift */; };
+		3AA4BDF0201BE8F400000153 /* Peer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA4BDEF201BE8F400000153 /* Peer.swift */; };
+		3AA4BDF3201BE91B00000153 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA4BDF2201BE91B00000153 /* Channel.swift */; };
+		3AFD6CFA20213EAA001599D2 /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFD6CF920213EAA001599D2 /* PreferencesViewController.swift */; };
+		3AFD6CFC202149D0001599D2 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFD6CFB202149D0001599D2 /* Preferences.swift */; };
+		3AFD6D0020223C6F001599D2 /* LightningRPCSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFD6CFF20223C6F001599D2 /* LightningRPCSocket.swift */; };
+		3AFD6D02202240E2001599D2 /* LightningRPCSocketTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFD6D01202240E2001599D2 /* LightningRPCSocketTest.swift */; };
+		7A9A87BF7E1EB5CDADA7F6AA /* Pods_Voltage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 919BD71B073A00D61526A817 /* Pods_Voltage.framework */; };
+		A08436EDB762FF134D092F91 /* Pods_VoltageTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D368F4B330DA9419F9CC4D /* Pods_VoltageTests.framework */; };
+		FF3CE288D8276177D0B35275 /* Pods_VoltageUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B9DBA404466F9AFE4DDAB37 /* Pods_VoltageUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3A071408201A7127008E2AEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A0713ED201A7127008E2AEE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A0713F4201A7127008E2AEE;
+			remoteInfo = "c-lightning-wallet";
+		};
+		3A071413201A7127008E2AEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A0713ED201A7127008E2AEE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A0713F4201A7127008E2AEE;
+			remoteInfo = "c-lightning-wallet";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B9DBA404466F9AFE4DDAB37 /* Pods_VoltageUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VoltageUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A0713F5201A7127008E2AEE /* Voltage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Voltage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A0713F8201A7127008E2AEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3A0713FA201A7127008E2AEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3A0713FC201A7127008E2AEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3A0713FF201A7127008E2AEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3A071401201A7127008E2AEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A071402201A7127008E2AEE /* Voltage.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Voltage.entitlements; sourceTree = "<group>"; };
+		3A071407201A7127008E2AEE /* VoltageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoltageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A07140B201A7127008E2AEE /* JSONDecoderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoderTest.swift; sourceTree = "<group>"; };
+		3A07140D201A7127008E2AEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A071412201A7127008E2AEE /* VoltageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoltageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A071416201A7127008E2AEE /* VoltageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoltageUITests.swift; sourceTree = "<group>"; };
+		3A071418201A7127008E2AEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A38BDE8201C55B40055BBA1 /* PaymentHash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHash.swift; sourceTree = "<group>"; };
+		3A38BDEB201CF59C0055BBA1 /* Voltage-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Voltage-Bridging-Header.h"; sourceTree = "<group>"; };
+		3A38BDEC201CF8D70055BBA1 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		3A38BDEE201D16DE0055BBA1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3A5565632023B1DD003CEBEA /* Output.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Output.swift; sourceTree = "<group>"; };
+		3A5565652023BFDE003CEBEA /* PaymentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsViewController.swift; sourceTree = "<group>"; };
+		3A5565672023C9F0003CEBEA /* ChannelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsViewController.swift; sourceTree = "<group>"; };
+		3A5565692023CF2F003CEBEA /* ChannelsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsTest.swift; sourceTree = "<group>"; };
+		3A55656B2023DB7E003CEBEA /* Bool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bool.swift; sourceTree = "<group>"; };
+		3AA2A68320227AC2005664FC /* LightningRPCQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightningRPCQuery.swift; sourceTree = "<group>"; };
+		3AA2A68D202385AC005664FC /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		3AA2A69020239073005664FC /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		3AA4BDE9201BCADC00000153 /* listpayments.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = listpayments.json; sourceTree = "<group>"; };
+		3AA4BDEB201BE13800000153 /* listpeers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = listpeers.json; sourceTree = "<group>"; };
+		3AA4BDED201BE8A300000153 /* Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
+		3AA4BDEF201BE8F400000153 /* Peer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Peer.swift; sourceTree = "<group>"; };
+		3AA4BDF2201BE91B00000153 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		3AFD6CF920213EAA001599D2 /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
+		3AFD6CFB202149D0001599D2 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		3AFD6CFF20223C6F001599D2 /* LightningRPCSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightningRPCSocket.swift; sourceTree = "<group>"; };
+		3AFD6D01202240E2001599D2 /* LightningRPCSocketTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightningRPCSocketTest.swift; sourceTree = "<group>"; };
+		919BD71B073A00D61526A817 /* Pods_Voltage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Voltage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A41EC9104EB5A584C9EFBDC7 /* Pods-Voltage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Voltage.release.xcconfig"; path = "Pods/Target Support Files/Pods-Voltage/Pods-Voltage.release.xcconfig"; sourceTree = "<group>"; };
+		BA873DCB97F157BDF13C3901 /* Pods-VoltageTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoltageTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VoltageTests/Pods-VoltageTests.release.xcconfig"; sourceTree = "<group>"; };
+		D2D368F4B330DA9419F9CC4D /* Pods_VoltageTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VoltageTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC49033F07955E01D2840EF9 /* Pods-VoltageUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoltageUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VoltageUITests/Pods-VoltageUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E392EEE7ACBD0AC83CEA8EFA /* Pods-VoltageUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoltageUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VoltageUITests/Pods-VoltageUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F6107EDB521CE62DC8E4D65E /* Pods-Voltage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Voltage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Voltage/Pods-Voltage.debug.xcconfig"; sourceTree = "<group>"; };
+		F9ACA51E7589786DDBA0C21F /* Pods-VoltageTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoltageTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VoltageTests/Pods-VoltageTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A0713F2201A7127008E2AEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A9A87BF7E1EB5CDADA7F6AA /* Pods_Voltage.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A071404201A7127008E2AEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A08436EDB762FF134D092F91 /* Pods_VoltageTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A07140F201A7127008E2AEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF3CE288D8276177D0B35275 /* Pods_VoltageUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19A7B4E9427B1A937B8C6D55 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F6107EDB521CE62DC8E4D65E /* Pods-Voltage.debug.xcconfig */,
+				A41EC9104EB5A584C9EFBDC7 /* Pods-Voltage.release.xcconfig */,
+				F9ACA51E7589786DDBA0C21F /* Pods-VoltageTests.debug.xcconfig */,
+				BA873DCB97F157BDF13C3901 /* Pods-VoltageTests.release.xcconfig */,
+				DC49033F07955E01D2840EF9 /* Pods-VoltageUITests.debug.xcconfig */,
+				E392EEE7ACBD0AC83CEA8EFA /* Pods-VoltageUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		23F38A2E402575B4D3CFF07B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				919BD71B073A00D61526A817 /* Pods_Voltage.framework */,
+				D2D368F4B330DA9419F9CC4D /* Pods_VoltageTests.framework */,
+				0B9DBA404466F9AFE4DDAB37 /* Pods_VoltageUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3A0713EC201A7127008E2AEE = {
+			isa = PBXGroup;
+			children = (
+				3AA2A69020239073005664FC /* LICENSE.md */,
+				3A38BDEE201D16DE0055BBA1 /* README.md */,
+				3A0713F7201A7127008E2AEE /* Voltage */,
+				3A07140A201A7127008E2AEE /* VoltageTests */,
+				3A071415201A7127008E2AEE /* VoltageUITests */,
+				3A0713F6201A7127008E2AEE /* Products */,
+				19A7B4E9427B1A937B8C6D55 /* Pods */,
+				23F38A2E402575B4D3CFF07B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3A0713F6201A7127008E2AEE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A0713F5201A7127008E2AEE /* Voltage.app */,
+				3A071407201A7127008E2AEE /* VoltageTests.xctest */,
+				3A071412201A7127008E2AEE /* VoltageUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A0713F7201A7127008E2AEE /* Voltage */ = {
+			isa = PBXGroup;
+			children = (
+				3A0713F8201A7127008E2AEE /* AppDelegate.swift */,
+				3A38BDEB201CF59C0055BBA1 /* Voltage-Bridging-Header.h */,
+				3A0713FC201A7127008E2AEE /* Assets.xcassets */,
+				3A0713FE201A7127008E2AEE /* Main.storyboard */,
+				3A071401201A7127008E2AEE /* Info.plist */,
+				3A071402201A7127008E2AEE /* Voltage.entitlements */,
+				3AA2A68F202385B8005664FC /* Extensions */,
+				3AFD6CFE20222C6B001599D2 /* Models */,
+				3AFD6CFD20222BFC001599D2 /* View Controllers */,
+			);
+			path = Voltage;
+			sourceTree = "<group>";
+		};
+		3A07140A201A7127008E2AEE /* VoltageTests */ = {
+			isa = PBXGroup;
+			children = (
+				3A07140B201A7127008E2AEE /* JSONDecoderTest.swift */,
+				3A07140D201A7127008E2AEE /* Info.plist */,
+				3AA4BDE9201BCADC00000153 /* listpayments.json */,
+				3AA4BDEB201BE13800000153 /* listpeers.json */,
+				3AFD6D01202240E2001599D2 /* LightningRPCSocketTest.swift */,
+				3A5565692023CF2F003CEBEA /* ChannelsTest.swift */,
+			);
+			path = VoltageTests;
+			sourceTree = "<group>";
+		};
+		3A071415201A7127008E2AEE /* VoltageUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3A071416201A7127008E2AEE /* VoltageUITests.swift */,
+				3A071418201A7127008E2AEE /* Info.plist */,
+			);
+			path = VoltageUITests;
+			sourceTree = "<group>";
+		};
+		3AA2A68F202385B8005664FC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3AA2A68D202385AC005664FC /* Data.swift */,
+				3A38BDEC201CF8D70055BBA1 /* String.swift */,
+				3A55656B2023DB7E003CEBEA /* Bool.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3AFD6CFD20222BFC001599D2 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3A5565672023C9F0003CEBEA /* ChannelsViewController.swift */,
+				3A5565652023BFDE003CEBEA /* PaymentsViewController.swift */,
+				3AFD6CF920213EAA001599D2 /* PreferencesViewController.swift */,
+				3A0713FA201A7127008E2AEE /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		3AFD6CFE20222C6B001599D2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3AA4BDF2201BE91B00000153 /* Channel.swift */,
+				3AA2A68320227AC2005664FC /* LightningRPCQuery.swift */,
+				3AFD6CFF20223C6F001599D2 /* LightningRPCSocket.swift */,
+				3AA4BDED201BE8A300000153 /* Payment.swift */,
+				3A38BDE8201C55B40055BBA1 /* PaymentHash.swift */,
+				3AA4BDEF201BE8F400000153 /* Peer.swift */,
+				3AFD6CFB202149D0001599D2 /* Preferences.swift */,
+				3A5565632023B1DD003CEBEA /* Output.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A0713F4201A7127008E2AEE /* Voltage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A07141B201A7127008E2AEE /* Build configuration list for PBXNativeTarget "Voltage" */;
+			buildPhases = (
+				740F6B06E6CB1925E34D84DE /* [CP] Check Pods Manifest.lock */,
+				3A0713F1201A7127008E2AEE /* Sources */,
+				3A0713F2201A7127008E2AEE /* Frameworks */,
+				3A0713F3201A7127008E2AEE /* Resources */,
+				3A38BDF1201D1F650055BBA1 /* ShellScript */,
+				82B5EE19B34570783B695A20 /* [CP] Embed Pods Frameworks */,
+				E209D49494438A6E63BDF5B1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Voltage;
+			productName = "c-lightning-wallet";
+			productReference = 3A0713F5201A7127008E2AEE /* Voltage.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3A071406201A7127008E2AEE /* VoltageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A07141E201A7127008E2AEE /* Build configuration list for PBXNativeTarget "VoltageTests" */;
+			buildPhases = (
+				FDB194D33D61F13391C4DD73 /* [CP] Check Pods Manifest.lock */,
+				3A071403201A7127008E2AEE /* Sources */,
+				3A071404201A7127008E2AEE /* Frameworks */,
+				3A071405201A7127008E2AEE /* Resources */,
+				5781C41623A8EC5FC7A09FE7 /* [CP] Embed Pods Frameworks */,
+				916D52F54DE7769531696D36 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A071409201A7127008E2AEE /* PBXTargetDependency */,
+			);
+			name = VoltageTests;
+			productName = "c-lightning-walletTests";
+			productReference = 3A071407201A7127008E2AEE /* VoltageTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3A071411201A7127008E2AEE /* VoltageUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A071421201A7127008E2AEE /* Build configuration list for PBXNativeTarget "VoltageUITests" */;
+			buildPhases = (
+				B0370294254DDA0114DD3E06 /* [CP] Check Pods Manifest.lock */,
+				3A07140E201A7127008E2AEE /* Sources */,
+				3A07140F201A7127008E2AEE /* Frameworks */,
+				3A071410201A7127008E2AEE /* Resources */,
+				F90766D3B0F52DAC5EFC9DC9 /* [CP] Embed Pods Frameworks */,
+				81CA963FB808DF754E4F7F83 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A071414201A7127008E2AEE /* PBXTargetDependency */,
+			);
+			name = VoltageUITests;
+			productName = "c-lightning-walletUITests";
+			productReference = 3A071412201A7127008E2AEE /* VoltageUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A0713ED201A7127008E2AEE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Harold Consulting";
+				TargetAttributes = {
+					3A0713F4201A7127008E2AEE = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					3A071406201A7127008E2AEE = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3A0713F4201A7127008E2AEE;
+					};
+					3A071411201A7127008E2AEE = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3A0713F4201A7127008E2AEE;
+					};
+				};
+			};
+			buildConfigurationList = 3A0713F0201A7127008E2AEE /* Build configuration list for PBXProject "Voltage" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3A0713EC201A7127008E2AEE;
+			productRefGroup = 3A0713F6201A7127008E2AEE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A0713F4201A7127008E2AEE /* Voltage */,
+				3A071406201A7127008E2AEE /* VoltageTests */,
+				3A071411201A7127008E2AEE /* VoltageUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A0713F3201A7127008E2AEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A0713FD201A7127008E2AEE /* Assets.xcassets in Resources */,
+				3A071400201A7127008E2AEE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A071405201A7127008E2AEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AA4BDEA201BCADC00000153 /* listpayments.json in Resources */,
+				3AA4BDEC201BE13800000153 /* listpeers.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A071410201A7127008E2AEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A38BDF1201D1F650055BBA1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
+		};
+		5781C41623A8EC5FC7A09FE7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-VoltageTests/Pods-VoltageTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Fakery/Fakery.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Fakery.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VoltageTests/Pods-VoltageTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		740F6B06E6CB1925E34D84DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Voltage-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81CA963FB808DF754E4F7F83 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VoltageUITests/Pods-VoltageUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82B5EE19B34570783B695A20 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Voltage/Pods-Voltage-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BlueSocket/Socket.framework",
+				"${BUILT_PRODUCTS_DIR}/Fakery/Fakery.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Socket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Fakery.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Voltage/Pods-Voltage-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		916D52F54DE7769531696D36 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VoltageTests/Pods-VoltageTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0370294254DDA0114DD3E06 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VoltageUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E209D49494438A6E63BDF5B1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Voltage/Pods-Voltage-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F90766D3B0F52DAC5EFC9DC9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VoltageUITests/Pods-VoltageUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDB194D33D61F13391C4DD73 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VoltageTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A0713F1201A7127008E2AEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A5565682023C9F0003CEBEA /* ChannelsViewController.swift in Sources */,
+				3A55656C2023DB7E003CEBEA /* Bool.swift in Sources */,
+				3A0713FB201A7127008E2AEE /* ViewController.swift in Sources */,
+				3A5565662023BFDE003CEBEA /* PaymentsViewController.swift in Sources */,
+				3AFD6D0020223C6F001599D2 /* LightningRPCSocket.swift in Sources */,
+				3AFD6CFC202149D0001599D2 /* Preferences.swift in Sources */,
+				3AFD6CFA20213EAA001599D2 /* PreferencesViewController.swift in Sources */,
+				3AA2A68420227AC2005664FC /* LightningRPCQuery.swift in Sources */,
+				3A38BDE9201C55B40055BBA1 /* PaymentHash.swift in Sources */,
+				3AA4BDF3201BE91B00000153 /* Channel.swift in Sources */,
+				3AA4BDF0201BE8F400000153 /* Peer.swift in Sources */,
+				3AA2A68E202385AC005664FC /* Data.swift in Sources */,
+				3AA4BDEE201BE8A300000153 /* Payment.swift in Sources */,
+				3A0713F9201A7127008E2AEE /* AppDelegate.swift in Sources */,
+				3A38BDED201CF8D70055BBA1 /* String.swift in Sources */,
+				3A5565642023B1DD003CEBEA /* Output.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A071403201A7127008E2AEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A55656A2023CF2F003CEBEA /* ChannelsTest.swift in Sources */,
+				3A07140C201A7127008E2AEE /* JSONDecoderTest.swift in Sources */,
+				3AFD6D02202240E2001599D2 /* LightningRPCSocketTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A07140E201A7127008E2AEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A071417201A7127008E2AEE /* VoltageUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3A071409201A7127008E2AEE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A0713F4201A7127008E2AEE /* Voltage */;
+			targetProxy = 3A071408201A7127008E2AEE /* PBXContainerItemProxy */;
+		};
+		3A071414201A7127008E2AEE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A0713F4201A7127008E2AEE /* Voltage */;
+			targetProxy = 3A071413201A7127008E2AEE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3A0713FE201A7127008E2AEE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A0713FF201A7127008E2AEE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3A071419201A7127008E2AEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3A07141A201A7127008E2AEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		3A07141C201A7127008E2AEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6107EDB521CE62DC8E4D65E /* Pods-Voltage.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Voltage/Voltage.entitlements;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = K5NA8NE576;
+				INFOPLIST_FILE = Voltage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hci.Voltage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Voltage/Voltage-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		3A07141D201A7127008E2AEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A41EC9104EB5A584C9EFBDC7 /* Pods-Voltage.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Voltage/Voltage.entitlements;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = K5NA8NE576;
+				INFOPLIST_FILE = Voltage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hci.Voltage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Voltage/Voltage-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		3A07141F201A7127008E2AEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9ACA51E7589786DDBA0C21F /* Pods-VoltageTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = VoltageTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hci.VoltageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Voltage/Voltage-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Voltage.app/Contents/MacOS/Voltage";
+			};
+			name = Debug;
+		};
+		3A071420201A7127008E2AEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA873DCB97F157BDF13C3901 /* Pods-VoltageTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = VoltageTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hci.VoltageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Voltage/Voltage-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Voltage.app/Contents/MacOS/Voltage";
+			};
+			name = Release;
+		};
+		3A071422201A7127008E2AEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC49033F07955E01D2840EF9 /* Pods-VoltageUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = VoltageUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hci.VoltagetUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Voltage/Voltage-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = Voltage;
+			};
+			name = Debug;
+		};
+		3A071423201A7127008E2AEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E392EEE7ACBD0AC83CEA8EFA /* Pods-VoltageUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = VoltageUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hci.VoltagetUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Voltage/Voltage-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = Voltage;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A0713F0201A7127008E2AEE /* Build configuration list for PBXProject "Voltage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A071419201A7127008E2AEE /* Debug */,
+				3A07141A201A7127008E2AEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A07141B201A7127008E2AEE /* Build configuration list for PBXNativeTarget "Voltage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A07141C201A7127008E2AEE /* Debug */,
+				3A07141D201A7127008E2AEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A07141E201A7127008E2AEE /* Build configuration list for PBXNativeTarget "VoltageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A07141F201A7127008E2AEE /* Debug */,
+				3A071420201A7127008E2AEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A071421201A7127008E2AEE /* Build configuration list for PBXNativeTarget "VoltageUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A071422201A7127008E2AEE /* Debug */,
+				3A071423201A7127008E2AEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3A0713ED201A7127008E2AEE /* Project object */;
+}
