@@ -12,8 +12,7 @@ I haven't built any binaries yet, so if you want to try it out you'll need to op
 
 - [X] Payment list
 - [X] Channel list
-- [X] Format this list better
-- [ ] Receive on-chain payments
+- [X ] Receive on-chain payments
 - [ ] Send on-chain payments
 - [ ] Open lightning channels
 - [ ] Close lightning channels
