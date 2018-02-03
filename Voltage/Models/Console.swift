@@ -1,35 +1,15 @@
 //
-//  ViewController.swift
+//  Console.swift
 //  Voltage
 //
-//  Created by Ben Harold on 1/25/18.
+//  Created by Ben Harold on 2/2/18.
 //  Copyright © 2018 Harold Consulting. All rights reserved.
 //
 
 import Cocoa
 
-class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSource {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
-    func alert(message: String) -> Bool {
-        let alert = NSAlert()
-        alert.messageText = message
-        alert.alertStyle = .critical
-        alert.addButton(withTitle: "Dang")
-        
-        return alert.runModal() == .alertFirstButtonReturn
-    }
-    
-    override var representedObject: Any? {
-        didSet {
-        // Update the view, if already loaded.
-        }
-    }
-    
-    func runCommand(cmd: String, args: String...) -> (output: [String], error: [String], exitCode: Int32) {
+class Console: NSObject {
+    class func command(cmd: String, args: String...) -> (output: [String], error: [String], exitCode: Int32) {
         var output: [String] = []
         var error: [String] = []
         
