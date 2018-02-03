@@ -10,12 +10,8 @@ import Foundation
 
 struct Output: Codable {
     let txid: String
-    let output: Bool
+    let output: Int
     let value: Int
-    
-    enum OutputKeys: String, CodingKey {
-        case outputs
-    }
 }
 
 struct OutputList: Codable {
@@ -31,5 +27,3 @@ struct OutputResult: Codable {
     let jsonrpc: String
     let result: OutputList
 }
-
-
