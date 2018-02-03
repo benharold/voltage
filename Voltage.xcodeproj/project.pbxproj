@@ -8,11 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		3A0713F9201A7127008E2AEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0713F8201A7127008E2AEE /* AppDelegate.swift */; };
-		3A0713FB201A7127008E2AEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0713FA201A7127008E2AEE /* ViewController.swift */; };
 		3A0713FD201A7127008E2AEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A0713FC201A7127008E2AEE /* Assets.xcassets */; };
 		3A071400201A7127008E2AEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0713FE201A7127008E2AEE /* Main.storyboard */; };
 		3A07140C201A7127008E2AEE /* JSONDecoderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A07140B201A7127008E2AEE /* JSONDecoderTest.swift */; };
 		3A071417201A7127008E2AEE /* VoltageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A071416201A7127008E2AEE /* VoltageUITests.swift */; };
+		3A18B5872024E80000D6C2DF /* Console.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B5862024E80000D6C2DF /* Console.swift */; };
+		3A18B5892024F51700D6C2DF /* Invoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B5882024F51700D6C2DF /* Invoice.swift */; };
+		3A18B58B2024F61900D6C2DF /* InvoiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B58A2024F61900D6C2DF /* InvoiceTest.swift */; };
+		3A18B58D2024F8DD00D6C2DF /* InvoicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B58C2024F8DD00D6C2DF /* InvoicesViewController.swift */; };
+		3A18B58F202503B100D6C2DF /* MoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B58E202503B100D6C2DF /* MoneyViewController.swift */; };
+		3A18B5912025054B00D6C2DF /* OutputTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B5902025054B00D6C2DF /* OutputTest.swift */; };
+		3A18B59320250A0900D6C2DF /* ErrorResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B59220250A0900D6C2DF /* ErrorResult.swift */; };
+		3A18B5962025108400D6C2DF /* AddressService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B5952025108400D6C2DF /* AddressService.swift */; };
+		3A18B5982025111200D6C2DF /* AddressServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B5972025111200D6C2DF /* AddressServiceTest.swift */; };
+		3A18B59A2025120B00D6C2DF /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B5992025120B00D6C2DF /* Address.swift */; };
+		3A18B59C202515A500D6C2DF /* GetMoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B59B202515A500D6C2DF /* GetMoneyViewController.swift */; };
+		3A18B697202529A400D6C2DF /* libqrencode.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A18B59D202521CE00D6C2DF /* libqrencode.4.dylib */; };
+		3A18B69920254FC800D6C2DF /* SendMoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B69820254FC800D6C2DF /* SendMoneyViewController.swift */; };
+		3A18B69B20255B3600D6C2DF /* Withdraw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B69A20255B3600D6C2DF /* Withdraw.swift */; };
+		3A18B69E202563BD00D6C2DF /* RPCService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B69D202563BD00D6C2DF /* RPCService.swift */; };
+		3A18B6A2202572E200D6C2DF /* LightningRPC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B6A1202572E200D6C2DF /* LightningRPC.swift */; };
+		3A18B6A4202573D700D6C2DF /* LightningRPCTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B6A3202573D700D6C2DF /* LightningRPCTest.swift */; };
 		3A38BDE9201C55B40055BBA1 /* PaymentHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A38BDE8201C55B40055BBA1 /* PaymentHash.swift */; };
 		3A38BDED201CF8D70055BBA1 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A38BDEC201CF8D70055BBA1 /* String.swift */; };
 		3A5565642023B1DD003CEBEA /* Output.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5565632023B1DD003CEBEA /* Output.swift */; };
@@ -57,7 +73,6 @@
 		0B9DBA404466F9AFE4DDAB37 /* Pods_VoltageUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VoltageUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A0713F5201A7127008E2AEE /* Voltage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Voltage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A0713F8201A7127008E2AEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3A0713FA201A7127008E2AEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3A0713FC201A7127008E2AEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A0713FF201A7127008E2AEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3A071401201A7127008E2AEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -68,6 +83,184 @@
 		3A071412201A7127008E2AEE /* VoltageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoltageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A071416201A7127008E2AEE /* VoltageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoltageUITests.swift; sourceTree = "<group>"; };
 		3A071418201A7127008E2AEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A18B5862024E80000D6C2DF /* Console.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Console.swift; sourceTree = "<group>"; };
+		3A18B5882024F51700D6C2DF /* Invoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Invoice.swift; sourceTree = "<group>"; };
+		3A18B58A2024F61900D6C2DF /* InvoiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceTest.swift; sourceTree = "<group>"; };
+		3A18B58C2024F8DD00D6C2DF /* InvoicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoicesViewController.swift; sourceTree = "<group>"; };
+		3A18B58E202503B100D6C2DF /* MoneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyViewController.swift; sourceTree = "<group>"; };
+		3A18B5902025054B00D6C2DF /* OutputTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputTest.swift; sourceTree = "<group>"; };
+		3A18B59220250A0900D6C2DF /* ErrorResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResult.swift; sourceTree = "<group>"; };
+		3A18B5952025108400D6C2DF /* AddressService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressService.swift; sourceTree = "<group>"; };
+		3A18B5972025111200D6C2DF /* AddressServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressServiceTest.swift; sourceTree = "<group>"; };
+		3A18B5992025120B00D6C2DF /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		3A18B59B202515A500D6C2DF /* GetMoneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMoneyViewController.swift; sourceTree = "<group>"; };
+		3A18B59D202521CE00D6C2DF /* libqrencode.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libqrencode.4.dylib; path = ../../../../usr/local/lib/libqrencode.4.dylib; sourceTree = "<group>"; };
+		3A18B5EC2025264400D6C2DF /* qrencode_inner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = qrencode_inner.h; sourceTree = "<group>"; };
+		3A18B5ED2025264400D6C2DF /* mask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mask.h; sourceTree = "<group>"; };
+		3A18B5EE2025264400D6C2DF /* mmask.lo */ = {isa = PBXFileReference; lastKnownFileType = text; path = mmask.lo; sourceTree = "<group>"; };
+		3A18B5EF2025264400D6C2DF /* acinclude.m4 */ = {isa = PBXFileReference; lastKnownFileType = text; path = acinclude.m4; sourceTree = "<group>"; };
+		3A18B5F02025264400D6C2DF /* libtool */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = libtool; sourceTree = "<group>"; };
+		3A18B5F12025264400D6C2DF /* qrinput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = qrinput.h; sourceTree = "<group>"; };
+		3A18B5F22025264400D6C2DF /* libqrencode.pc */ = {isa = PBXFileReference; lastKnownFileType = text; path = libqrencode.pc; sourceTree = "<group>"; };
+		3A18B5F32025264400D6C2DF /* bitstream.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bitstream.c; sourceTree = "<group>"; };
+		3A18B5F42025264400D6C2DF /* configure.ac */ = {isa = PBXFileReference; lastKnownFileType = text; path = configure.ac; sourceTree = "<group>"; };
+		3A18B5F52025264400D6C2DF /* rsecc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rsecc.h; sourceTree = "<group>"; };
+		3A18B5F62025264400D6C2DF /* CMakeLists.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		3A18B5F72025264400D6C2DF /* libqrencode.pc.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = libqrencode.pc.in; sourceTree = "<group>"; };
+		3A18B5F92025264400D6C2DF /* FindIconv.cmake */ = {isa = PBXFileReference; lastKnownFileType = text; path = FindIconv.cmake; sourceTree = "<group>"; };
+		3A18B5FA2025264400D6C2DF /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		3A18B5FB2025264400D6C2DF /* configure */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = configure; sourceTree = "<group>"; };
+		3A18B5FC2025264400D6C2DF /* ChangeLog */ = {isa = PBXFileReference; lastKnownFileType = text; path = ChangeLog; sourceTree = "<group>"; };
+		3A18B5FD2025264400D6C2DF /* qrencode.lo */ = {isa = PBXFileReference; lastKnownFileType = text; path = qrencode.lo; sourceTree = "<group>"; };
+		3A18B5FF2025264400D6C2DF /* traces.0 */ = {isa = PBXFileReference; lastKnownFileType = text; path = traces.0; sourceTree = "<group>"; };
+		3A18B6002025264400D6C2DF /* traces.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = traces.1; sourceTree = "<group>"; };
+		3A18B6012025264400D6C2DF /* output.0 */ = {isa = PBXFileReference; lastKnownFileType = text; path = output.0; sourceTree = "<group>"; };
+		3A18B6022025264400D6C2DF /* output.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = output.1; sourceTree = "<group>"; };
+		3A18B6032025264400D6C2DF /* requests */ = {isa = PBXFileReference; lastKnownFileType = text; path = requests; sourceTree = "<group>"; };
+		3A18B6042025264400D6C2DF /* qrencode.1.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = qrencode.1.in; sourceTree = "<group>"; };
+		3A18B6052025264400D6C2DF /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		3A18B6062025264400D6C2DF /* mmask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mmask.h; sourceTree = "<group>"; };
+		3A18B6072025264400D6C2DF /* mqrspec.lo */ = {isa = PBXFileReference; lastKnownFileType = text; path = mqrspec.lo; sourceTree = "<group>"; };
+		3A18B6082025264400D6C2DF /* qrencode.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = qrencode.c; sourceTree = "<group>"; };
+		3A18B6092025264400D6C2DF /* stamp-h1 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "stamp-h1"; sourceTree = "<group>"; };
+		3A18B60A2025264400D6C2DF /* qrspec.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = qrspec.h; sourceTree = "<group>"; };
+		3A18B60B2025264400D6C2DF /* qrinput.lo */ = {isa = PBXFileReference; lastKnownFileType = text; path = qrinput.lo; sourceTree = "<group>"; };
+		3A18B60C2025264400D6C2DF /* qrencode-qrenc.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = "qrencode-qrenc.o"; sourceTree = "<group>"; };
+		3A18B60D2025264400D6C2DF /* split.lo */ = {isa = PBXFileReference; lastKnownFileType = text; path = split.lo; sourceTree = "<group>"; };
+		3A18B60E2025264400D6C2DF /* mqrspec.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mqrspec.h; sourceTree = "<group>"; };
+		3A18B6102025264400D6C2DF /* test_configure.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = test_configure.sh; sourceTree = "<group>"; };
+		3A18B6112025264400D6C2DF /* common.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = common.c; sourceTree = "<group>"; };
+		3A18B6122025264400D6C2DF /* rsecc_decoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rsecc_decoder.h; sourceTree = "<group>"; };
+		3A18B6132025264400D6C2DF /* test_qrinput.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = test_qrinput.c; sourceTree = "<group>"; };
+		3A18B6142025264400D6C2DF /* datachunk.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = datachunk.c; sourceTree = "<group>"; };
+		3A18B6152025264400D6C2DF /* prof_qrencode.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = prof_qrencode.c; sourceTree = "<group>"; };
+		3A18B6162025264400D6C2DF /* CMakeLists.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		3A18B6172025264400D6C2DF /* test_estimatebit.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = test_estimatebit.c; sourceTree = "<group>"; };
+		3A18B6182025264400D6C2DF /* test_bitstream.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = test_bitstream.c; sourceTree = "<group>"; };
+		3A18B6192025264400D6C2DF /* test_mqrspec.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = test_mqrspec.c; sourceTree = "<group>"; };
+		3A18B61A2025264400D6C2DF /* test_qrspec.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = test_qrspec.c; sourceTree = "<group>"; };
+		3A18B61B2025264400D6C2DF /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		3A18B61C2025264400D6C2DF /* pthread_qrencode.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pthread_qrencode.c; sourceTree = "<group>"; };
+		3A18B61D2025264400D6C2DF /* decoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = decoder.h; sourceTree = "<group>"; };
+		3A18B61E2025264400D6C2DF /* test_split.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = test_split.c; sourceTree = "<group>"; };
+		3A18B61F2025264400D6C2DF /* test_qrencode.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = test_qrencode.c; sourceTree = "<group>"; };
+		3A18B6202025264400D6C2DF /* frame */ = {isa = PBXFileReference; lastKnownFileType = file; path = frame; sourceTree = "<group>"; };
+		3A18B6212025264400D6C2DF /* rscode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rscode.h; sourceTree = "<group>"; };
+		3A18B6222025264400D6C2DF /* test_rs.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = test_rs.c; sourceTree = "<group>"; };
+		3A18B6232025264400D6C2DF /* create_mqr_frame_pattern.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = create_mqr_frame_pattern.c; sourceTree = "<group>"; };
+		3A18B6242025264400D6C2DF /* datachunk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = datachunk.h; sourceTree = "<group>"; };
+		3A18B6252025264400D6C2DF /* Makefile.am */ = {isa = PBXFileReference; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		3A18B6262025264400D6C2DF /* view_qrcode.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = view_qrcode.c; sourceTree = "<group>"; };
+		3A18B6272025264400D6C2DF /* rsecc_decoder.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = rsecc_decoder.c; sourceTree = "<group>"; };
+		3A18B6282025264400D6C2DF /* common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		3A18B6292025264400D6C2DF /* URI_testset.inc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.pascal; path = URI_testset.inc; sourceTree = "<group>"; };
+		3A18B62A2025264400D6C2DF /* test_all.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = test_all.sh; sourceTree = "<group>"; };
+		3A18B62B2025264400D6C2DF /* create_frame_pattern.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = create_frame_pattern.c; sourceTree = "<group>"; };
+		3A18B62C2025264400D6C2DF /* test_split_urls.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = test_split_urls.c; sourceTree = "<group>"; };
+		3A18B62D2025264400D6C2DF /* decoder.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = decoder.c; sourceTree = "<group>"; };
+		3A18B62E2025264400D6C2DF /* test_monkey.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = test_monkey.c; sourceTree = "<group>"; };
+		3A18B62F2025264400D6C2DF /* test_mask.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = test_mask.c; sourceTree = "<group>"; };
+		3A18B6312025264400D6C2DF /* datachunk.Po */ = {isa = PBXFileReference; lastKnownFileType = text; path = datachunk.Po; sourceTree = "<group>"; };
+		3A18B6322025264400D6C2DF /* test_rs.Po */ = {isa = PBXFileReference; lastKnownFileType = text; path = test_rs.Po; sourceTree = "<group>"; };
+		3A18B6332025264400D6C2DF /* common.Po */ = {isa = PBXFileReference; lastKnownFileType = text; path = common.Po; sourceTree = "<group>"; };
+		3A18B6342025264400D6C2DF /* test_mqrspec.Po */ = {isa = PBXFileReference; lastKnownFileType = text; path = test_mqrspec.Po; sourceTree = "<group>"; };
+		3A18B6352025264400D6C2DF /* test_qrinput.Po */ = {isa = PBXFileReference; lastKnownFileType = text; path = test_qrinput.Po; sourceTree = "<group>"; };
+		3A18B6362025264400D6C2DF /* test_qrencode.Po */ = {isa = PBXFileReference; lastKnownFileType = text; path = test_qrencode.Po; sourceTree = "<group>"; };
+		3A18B6372025264400D6C2DF /* rscode.Po */ = {isa = PBXFileReference; lastKnownFileType = text; path = rscode.Po; sourceTree = "<group>"; };
+		3A18B6382025264400D6C2DF /* view_qrcode.Po */ = {isa = PBXFileReference; lastKnownFileType = text; path = view_qrcode.Po; sourceTree = "<group>"; };
+		3A18B6392025264400D6C2DF /* test_bitstream.Po */ = {isa = PBXFileReference; lastKnownFileType = text; path = test_bitstream.Po; sourceTree = "<group>"; };
+		3A18B63A2025264400D6C2DF /* test_qrspec.Po */ = {isa = PBXFileReference; lastKnownFileType = text; path = test_qrspec.Po; sourceTree = "<group>"; };
+		3A18B63B2025264400D6C2DF /* decoder.Po */ = {isa = PBXFileReference; lastKnownFileType = text; path = decoder.Po; sourceTree = "<group>"; };
+		3A18B63C2025264400D6C2DF /* test_split.Po */ = {isa = PBXFileReference; lastKnownFileType = text; path = test_split.Po; sourceTree = "<group>"; };
+		3A18B63D2025264400D6C2DF /* create_frame_pattern-common.Po */ = {isa = PBXFileReference; lastKnownFileType = text; path = "create_frame_pattern-common.Po"; sourceTree = "<group>"; };
+		3A18B63E2025264400D6C2DF /* test_split_urls.Po */ = {isa = PBXFileReference; lastKnownFileType = text; path = test_split_urls.Po; sourceTree = "<group>"; };
+		3A18B63F2025264400D6C2DF /* test_monkey.Po */ = {isa = PBXFileReference; lastKnownFileType = text; path = test_monkey.Po; sourceTree = "<group>"; };
+		3A18B6402025264400D6C2DF /* create_mqr_frame_pattern-create_mqr_frame_pattern.Po */ = {isa = PBXFileReference; lastKnownFileType = text; path = "create_mqr_frame_pattern-create_mqr_frame_pattern.Po"; sourceTree = "<group>"; };
+		3A18B6412025264400D6C2DF /* test_mask.Po */ = {isa = PBXFileReference; lastKnownFileType = text; path = test_mask.Po; sourceTree = "<group>"; };
+		3A18B6422025264400D6C2DF /* create_frame_pattern-create_frame_pattern.Po */ = {isa = PBXFileReference; lastKnownFileType = text; path = "create_frame_pattern-create_frame_pattern.Po"; sourceTree = "<group>"; };
+		3A18B6432025264400D6C2DF /* rsecc_decoder.Po */ = {isa = PBXFileReference; lastKnownFileType = text; path = rsecc_decoder.Po; sourceTree = "<group>"; };
+		3A18B6442025264400D6C2DF /* test_mmask.Po */ = {isa = PBXFileReference; lastKnownFileType = text; path = test_mmask.Po; sourceTree = "<group>"; };
+		3A18B6452025264400D6C2DF /* prof_qrencode.Po */ = {isa = PBXFileReference; lastKnownFileType = text; path = prof_qrencode.Po; sourceTree = "<group>"; };
+		3A18B6462025264400D6C2DF /* pthread_qrencode.Po */ = {isa = PBXFileReference; lastKnownFileType = text; path = pthread_qrencode.Po; sourceTree = "<group>"; };
+		3A18B6472025264400D6C2DF /* test_estimatebit.Po */ = {isa = PBXFileReference; lastKnownFileType = text; path = test_estimatebit.Po; sourceTree = "<group>"; };
+		3A18B6482025264400D6C2DF /* create_mqr_frame_pattern-common.Po */ = {isa = PBXFileReference; lastKnownFileType = text; path = "create_mqr_frame_pattern-common.Po"; sourceTree = "<group>"; };
+		3A18B6492025264400D6C2DF /* Makefile.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		3A18B64A2025264400D6C2DF /* test_mmask.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = test_mmask.c; sourceTree = "<group>"; };
+		3A18B64B2025264400D6C2DF /* rscode.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = rscode.c; sourceTree = "<group>"; };
+		3A18B64C2025264400D6C2DF /* config.h.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = config.h.in; sourceTree = "<group>"; };
+		3A18B64D2025264400D6C2DF /* split.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = split.c; sourceTree = "<group>"; };
+		3A18B64E2025264400D6C2DF /* qrenc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = qrenc.c; sourceTree = "<group>"; };
+		3A18B64F2025264400D6C2DF /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		3A18B6502025264400D6C2DF /* rsecc.lo */ = {isa = PBXFileReference; lastKnownFileType = text; path = rsecc.lo; sourceTree = "<group>"; };
+		3A18B6512025264400D6C2DF /* TODO */ = {isa = PBXFileReference; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
+		3A18B6522025264400D6C2DF /* Makefile.am */ = {isa = PBXFileReference; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		3A18B6542025264400D6C2DF /* install-sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "install-sh"; sourceTree = "<group>"; };
+		3A18B6552025264400D6C2DF /* config.rpath */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = config.rpath; sourceTree = "<group>"; };
+		3A18B6562025264400D6C2DF /* ltmain.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ltmain.sh; sourceTree = "<group>"; };
+		3A18B6572025264400D6C2DF /* config.guess */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = config.guess; sourceTree = "<group>"; };
+		3A18B6582025264400D6C2DF /* depcomp */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = depcomp; sourceTree = "<group>"; };
+		3A18B6592025264400D6C2DF /* missing */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = missing; sourceTree = "<group>"; };
+		3A18B65A2025264400D6C2DF /* config.sub */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = config.sub; sourceTree = "<group>"; };
+		3A18B65B2025264400D6C2DF /* compile */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = compile; sourceTree = "<group>"; };
+		3A18B65C2025264400D6C2DF /* config.status */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = config.status; sourceTree = "<group>"; };
+		3A18B65D2025264400D6C2DF /* bitstream.lo */ = {isa = PBXFileReference; lastKnownFileType = text; path = bitstream.lo; sourceTree = "<group>"; };
+		3A18B65E2025264400D6C2DF /* qrinput.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = qrinput.c; sourceTree = "<group>"; };
+		3A18B65F2025264400D6C2DF /* COPYING */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
+		3A18B6602025264400D6C2DF /* bitstream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bitstream.h; sourceTree = "<group>"; };
+		3A18B6612025264400D6C2DF /* NEWS */ = {isa = PBXFileReference; lastKnownFileType = text; path = NEWS; sourceTree = "<group>"; };
+		3A18B6622025264400D6C2DF /* mask.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mask.c; sourceTree = "<group>"; };
+		3A18B6632025264400D6C2DF /* qrspec.lo */ = {isa = PBXFileReference; lastKnownFileType = text; path = qrspec.lo; sourceTree = "<group>"; };
+		3A18B6642025264400D6C2DF /* rsecc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = rsecc.c; sourceTree = "<group>"; };
+		3A18B6662025264400D6C2DF /* ltversion.m4 */ = {isa = PBXFileReference; lastKnownFileType = text; path = ltversion.m4; sourceTree = "<group>"; };
+		3A18B6672025264400D6C2DF /* libtool.m4 */ = {isa = PBXFileReference; lastKnownFileType = text; path = libtool.m4; sourceTree = "<group>"; };
+		3A18B6682025264400D6C2DF /* ltoptions.m4 */ = {isa = PBXFileReference; lastKnownFileType = text; path = ltoptions.m4; sourceTree = "<group>"; };
+		3A18B6692025264400D6C2DF /* ltsugar.m4 */ = {isa = PBXFileReference; lastKnownFileType = text; path = ltsugar.m4; sourceTree = "<group>"; };
+		3A18B66A2025264400D6C2DF /* lt~obsolete.m4 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "lt~obsolete.m4"; sourceTree = "<group>"; };
+		3A18B66B2025264400D6C2DF /* qrencode */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = qrencode; sourceTree = "<group>"; };
+		3A18B66C2025264400D6C2DF /* config.log */ = {isa = PBXFileReference; lastKnownFileType = text; path = config.log; sourceTree = "<group>"; };
+		3A18B66D2025264400D6C2DF /* mqrspec.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mqrspec.c; sourceTree = "<group>"; };
+		3A18B66E2025264400D6C2DF /* qrspec.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = qrspec.c; sourceTree = "<group>"; };
+		3A18B66F2025264400D6C2DF /* mask.lo */ = {isa = PBXFileReference; lastKnownFileType = text; path = mask.lo; sourceTree = "<group>"; };
+		3A18B6702025264400D6C2DF /* qrencode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = qrencode.h; sourceTree = "<group>"; };
+		3A18B6712025264400D6C2DF /* Doxyfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Doxyfile; sourceTree = "<group>"; };
+		3A18B6722025264400D6C2DF /* libqrencode.la */ = {isa = PBXFileReference; lastKnownFileType = text; path = libqrencode.la; sourceTree = "<group>"; };
+		3A18B6732025264400D6C2DF /* qrencode.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = qrencode.1; sourceTree = "<group>"; };
+		3A18B6742025264400D6C2DF /* mmask.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mmask.c; sourceTree = "<group>"; };
+		3A18B6762025264400D6C2DF /* bitstream.Plo */ = {isa = PBXFileReference; lastKnownFileType = text; path = bitstream.Plo; sourceTree = "<group>"; };
+		3A18B6772025264400D6C2DF /* mmask.Plo */ = {isa = PBXFileReference; lastKnownFileType = text; path = mmask.Plo; sourceTree = "<group>"; };
+		3A18B6782025264400D6C2DF /* split.Plo */ = {isa = PBXFileReference; lastKnownFileType = text; path = split.Plo; sourceTree = "<group>"; };
+		3A18B6792025264400D6C2DF /* mask.Plo */ = {isa = PBXFileReference; lastKnownFileType = text; path = mask.Plo; sourceTree = "<group>"; };
+		3A18B67A2025264400D6C2DF /* qrencode-qrenc.Po */ = {isa = PBXFileReference; lastKnownFileType = text; path = "qrencode-qrenc.Po"; sourceTree = "<group>"; };
+		3A18B67B2025264400D6C2DF /* mqrspec.Plo */ = {isa = PBXFileReference; lastKnownFileType = text; path = mqrspec.Plo; sourceTree = "<group>"; };
+		3A18B67C2025264400D6C2DF /* rsecc.Plo */ = {isa = PBXFileReference; lastKnownFileType = text; path = rsecc.Plo; sourceTree = "<group>"; };
+		3A18B67D2025264400D6C2DF /* qrspec.Plo */ = {isa = PBXFileReference; lastKnownFileType = text; path = qrspec.Plo; sourceTree = "<group>"; };
+		3A18B67E2025264400D6C2DF /* qrencode.Plo */ = {isa = PBXFileReference; lastKnownFileType = text; path = qrencode.Plo; sourceTree = "<group>"; };
+		3A18B67F2025264400D6C2DF /* qrinput.Plo */ = {isa = PBXFileReference; lastKnownFileType = text; path = qrinput.Plo; sourceTree = "<group>"; };
+		3A18B6812025264400D6C2DF /* mask.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = mask.o; sourceTree = "<group>"; };
+		3A18B6822025264400D6C2DF /* qrinput.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = qrinput.o; sourceTree = "<group>"; };
+		3A18B6832025264400D6C2DF /* rsecc.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = rsecc.o; sourceTree = "<group>"; };
+		3A18B6842025264400D6C2DF /* mmask.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = mmask.o; sourceTree = "<group>"; };
+		3A18B6852025264400D6C2DF /* qrspec.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = qrspec.o; sourceTree = "<group>"; };
+		3A18B6862025264400D6C2DF /* mqrspec.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = mqrspec.o; sourceTree = "<group>"; };
+		3A18B6872025264400D6C2DF /* libqrencode.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libqrencode.dylib; sourceTree = "<group>"; };
+		3A18B6882025264400D6C2DF /* libqrencode.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libqrencode.4.dylib; sourceTree = "<group>"; };
+		3A18B6892025264400D6C2DF /* libqrencode.lai */ = {isa = PBXFileReference; lastKnownFileType = text; path = libqrencode.lai; sourceTree = "<group>"; };
+		3A18B68A2025264400D6C2DF /* bitstream.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = bitstream.o; sourceTree = "<group>"; };
+		3A18B68B2025264400D6C2DF /* qrencode */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = qrencode; sourceTree = "<group>"; };
+		3A18B68C2025264400D6C2DF /* libqrencode.la */ = {isa = PBXFileReference; lastKnownFileType = text; path = libqrencode.la; sourceTree = "<group>"; };
+		3A18B68D2025264400D6C2DF /* qrencode.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = qrencode.o; sourceTree = "<group>"; };
+		3A18B68E2025264400D6C2DF /* split.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = split.o; sourceTree = "<group>"; };
+		3A18B68F2025264400D6C2DF /* Makefile.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		3A18B6902025264400D6C2DF /* aclocal.m4 */ = {isa = PBXFileReference; lastKnownFileType = text; path = aclocal.m4; sourceTree = "<group>"; };
+		3A18B6912025264400D6C2DF /* qrencode-4.0.0.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "qrencode-4.0.0.xcodeproj"; sourceTree = "<group>"; };
+		3A18B6942025264400D6C2DF /* split.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = split.h; sourceTree = "<group>"; };
+		3A18B6952025264400D6C2DF /* autogen.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = autogen.sh; sourceTree = "<group>"; };
+		3A18B69820254FC800D6C2DF /* SendMoneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMoneyViewController.swift; sourceTree = "<group>"; };
+		3A18B69A20255B3600D6C2DF /* Withdraw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Withdraw.swift; sourceTree = "<group>"; };
+		3A18B69C2025626F00D6C2DF /* RPC.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = RPC.md; path = docs/RPC.md; sourceTree = "<group>"; };
+		3A18B69D202563BD00D6C2DF /* RPCService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPCService.swift; sourceTree = "<group>"; };
+		3A18B6A1202572E200D6C2DF /* LightningRPC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightningRPC.swift; sourceTree = "<group>"; };
+		3A18B6A3202573D700D6C2DF /* LightningRPCTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightningRPCTest.swift; sourceTree = "<group>"; };
 		3A38BDE8201C55B40055BBA1 /* PaymentHash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHash.swift; sourceTree = "<group>"; };
 		3A38BDEB201CF59C0055BBA1 /* Voltage-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Voltage-Bridging-Header.h"; sourceTree = "<group>"; };
 		3A38BDEC201CF8D70055BBA1 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
@@ -105,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A9A87BF7E1EB5CDADA7F6AA /* Pods_Voltage.framework in Frameworks */,
+				3A18B697202529A400D6C2DF /* libqrencode.4.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +337,8 @@
 		23F38A2E402575B4D3CFF07B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3A18B5EB2025264400D6C2DF /* qrencode-4.0.0 */,
+				3A18B59D202521CE00D6C2DF /* libqrencode.4.dylib */,
 				919BD71B073A00D61526A817 /* Pods_Voltage.framework */,
 				D2D368F4B330DA9419F9CC4D /* Pods_VoltageTests.framework */,
 				0B9DBA404466F9AFE4DDAB37 /* Pods_VoltageUITests.framework */,
@@ -153,6 +349,7 @@
 		3A0713EC201A7127008E2AEE = {
 			isa = PBXGroup;
 			children = (
+				3A18B69C2025626F00D6C2DF /* RPC.md */,
 				3AA2A69020239073005664FC /* LICENSE.md */,
 				3A38BDEE201D16DE0055BBA1 /* README.md */,
 				3A0713F7201A7127008E2AEE /* Voltage */,
@@ -185,6 +382,7 @@
 				3A071402201A7127008E2AEE /* Voltage.entitlements */,
 				3AA2A68F202385B8005664FC /* Extensions */,
 				3AFD6CFE20222C6B001599D2 /* Models */,
+				3A18B5942025106700D6C2DF /* Services */,
 				3AFD6CFD20222BFC001599D2 /* View Controllers */,
 			);
 			path = Voltage;
@@ -199,6 +397,10 @@
 				3AA4BDEB201BE13800000153 /* listpeers.json */,
 				3AFD6D01202240E2001599D2 /* LightningRPCSocketTest.swift */,
 				3A5565692023CF2F003CEBEA /* ChannelsTest.swift */,
+				3A18B58A2024F61900D6C2DF /* InvoiceTest.swift */,
+				3A18B5902025054B00D6C2DF /* OutputTest.swift */,
+				3A18B5972025111200D6C2DF /* AddressServiceTest.swift */,
+				3A18B6A3202573D700D6C2DF /* LightningRPCTest.swift */,
 			);
 			path = VoltageTests;
 			sourceTree = "<group>";
@@ -210,6 +412,254 @@
 				3A071418201A7127008E2AEE /* Info.plist */,
 			);
 			path = VoltageUITests;
+			sourceTree = "<group>";
+		};
+		3A18B5942025106700D6C2DF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3A18B5952025108400D6C2DF /* AddressService.swift */,
+				3A18B69D202563BD00D6C2DF /* RPCService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3A18B5EB2025264400D6C2DF /* qrencode-4.0.0 */ = {
+			isa = PBXGroup;
+			children = (
+				3A18B5EC2025264400D6C2DF /* qrencode_inner.h */,
+				3A18B5ED2025264400D6C2DF /* mask.h */,
+				3A18B5EE2025264400D6C2DF /* mmask.lo */,
+				3A18B5EF2025264400D6C2DF /* acinclude.m4 */,
+				3A18B5F02025264400D6C2DF /* libtool */,
+				3A18B5F12025264400D6C2DF /* qrinput.h */,
+				3A18B5F22025264400D6C2DF /* libqrencode.pc */,
+				3A18B5F32025264400D6C2DF /* bitstream.c */,
+				3A18B5F42025264400D6C2DF /* configure.ac */,
+				3A18B5F52025264400D6C2DF /* rsecc.h */,
+				3A18B5F62025264400D6C2DF /* CMakeLists.txt */,
+				3A18B5F72025264400D6C2DF /* libqrencode.pc.in */,
+				3A18B5F82025264400D6C2DF /* cmake */,
+				3A18B5FA2025264400D6C2DF /* config.h */,
+				3A18B5FB2025264400D6C2DF /* configure */,
+				3A18B5FC2025264400D6C2DF /* ChangeLog */,
+				3A18B5FD2025264400D6C2DF /* qrencode.lo */,
+				3A18B5FE2025264400D6C2DF /* autom4te.cache */,
+				3A18B6042025264400D6C2DF /* qrencode.1.in */,
+				3A18B6052025264400D6C2DF /* Makefile */,
+				3A18B6062025264400D6C2DF /* mmask.h */,
+				3A18B6072025264400D6C2DF /* mqrspec.lo */,
+				3A18B6082025264400D6C2DF /* qrencode.c */,
+				3A18B6092025264400D6C2DF /* stamp-h1 */,
+				3A18B60A2025264400D6C2DF /* qrspec.h */,
+				3A18B60B2025264400D6C2DF /* qrinput.lo */,
+				3A18B60C2025264400D6C2DF /* qrencode-qrenc.o */,
+				3A18B60D2025264400D6C2DF /* split.lo */,
+				3A18B60E2025264400D6C2DF /* mqrspec.h */,
+				3A18B60F2025264400D6C2DF /* tests */,
+				3A18B64C2025264400D6C2DF /* config.h.in */,
+				3A18B64D2025264400D6C2DF /* split.c */,
+				3A18B64E2025264400D6C2DF /* qrenc.c */,
+				3A18B64F2025264400D6C2DF /* README */,
+				3A18B6502025264400D6C2DF /* rsecc.lo */,
+				3A18B6512025264400D6C2DF /* TODO */,
+				3A18B6522025264400D6C2DF /* Makefile.am */,
+				3A18B6532025264400D6C2DF /* use */,
+				3A18B65C2025264400D6C2DF /* config.status */,
+				3A18B65D2025264400D6C2DF /* bitstream.lo */,
+				3A18B65E2025264400D6C2DF /* qrinput.c */,
+				3A18B65F2025264400D6C2DF /* COPYING */,
+				3A18B6602025264400D6C2DF /* bitstream.h */,
+				3A18B6612025264400D6C2DF /* NEWS */,
+				3A18B6622025264400D6C2DF /* mask.c */,
+				3A18B6632025264400D6C2DF /* qrspec.lo */,
+				3A18B6642025264400D6C2DF /* rsecc.c */,
+				3A18B6652025264400D6C2DF /* m4 */,
+				3A18B66B2025264400D6C2DF /* qrencode */,
+				3A18B66C2025264400D6C2DF /* config.log */,
+				3A18B66D2025264400D6C2DF /* mqrspec.c */,
+				3A18B66E2025264400D6C2DF /* qrspec.c */,
+				3A18B66F2025264400D6C2DF /* mask.lo */,
+				3A18B6702025264400D6C2DF /* qrencode.h */,
+				3A18B6712025264400D6C2DF /* Doxyfile */,
+				3A18B6722025264400D6C2DF /* libqrencode.la */,
+				3A18B6732025264400D6C2DF /* qrencode.1 */,
+				3A18B6742025264400D6C2DF /* mmask.c */,
+				3A18B6752025264400D6C2DF /* .deps */,
+				3A18B6802025264400D6C2DF /* .libs */,
+				3A18B68F2025264400D6C2DF /* Makefile.in */,
+				3A18B6902025264400D6C2DF /* aclocal.m4 */,
+				3A18B6912025264400D6C2DF /* qrencode-4.0.0.xcodeproj */,
+				3A18B6942025264400D6C2DF /* split.h */,
+				3A18B6952025264400D6C2DF /* autogen.sh */,
+			);
+			name = "qrencode-4.0.0";
+			path = "../../Downloads/qrencode-4.0.0";
+			sourceTree = "<group>";
+		};
+		3A18B5F82025264400D6C2DF /* cmake */ = {
+			isa = PBXGroup;
+			children = (
+				3A18B5F92025264400D6C2DF /* FindIconv.cmake */,
+			);
+			path = cmake;
+			sourceTree = "<group>";
+		};
+		3A18B5FE2025264400D6C2DF /* autom4te.cache */ = {
+			isa = PBXGroup;
+			children = (
+				3A18B5FF2025264400D6C2DF /* traces.0 */,
+				3A18B6002025264400D6C2DF /* traces.1 */,
+				3A18B6012025264400D6C2DF /* output.0 */,
+				3A18B6022025264400D6C2DF /* output.1 */,
+				3A18B6032025264400D6C2DF /* requests */,
+			);
+			path = autom4te.cache;
+			sourceTree = "<group>";
+		};
+		3A18B60F2025264400D6C2DF /* tests */ = {
+			isa = PBXGroup;
+			children = (
+				3A18B6102025264400D6C2DF /* test_configure.sh */,
+				3A18B6112025264400D6C2DF /* common.c */,
+				3A18B6122025264400D6C2DF /* rsecc_decoder.h */,
+				3A18B6132025264400D6C2DF /* test_qrinput.c */,
+				3A18B6142025264400D6C2DF /* datachunk.c */,
+				3A18B6152025264400D6C2DF /* prof_qrencode.c */,
+				3A18B6162025264400D6C2DF /* CMakeLists.txt */,
+				3A18B6172025264400D6C2DF /* test_estimatebit.c */,
+				3A18B6182025264400D6C2DF /* test_bitstream.c */,
+				3A18B6192025264400D6C2DF /* test_mqrspec.c */,
+				3A18B61A2025264400D6C2DF /* test_qrspec.c */,
+				3A18B61B2025264400D6C2DF /* Makefile */,
+				3A18B61C2025264400D6C2DF /* pthread_qrencode.c */,
+				3A18B61D2025264400D6C2DF /* decoder.h */,
+				3A18B61E2025264400D6C2DF /* test_split.c */,
+				3A18B61F2025264400D6C2DF /* test_qrencode.c */,
+				3A18B6202025264400D6C2DF /* frame */,
+				3A18B6212025264400D6C2DF /* rscode.h */,
+				3A18B6222025264400D6C2DF /* test_rs.c */,
+				3A18B6232025264400D6C2DF /* create_mqr_frame_pattern.c */,
+				3A18B6242025264400D6C2DF /* datachunk.h */,
+				3A18B6252025264400D6C2DF /* Makefile.am */,
+				3A18B6262025264400D6C2DF /* view_qrcode.c */,
+				3A18B6272025264400D6C2DF /* rsecc_decoder.c */,
+				3A18B6282025264400D6C2DF /* common.h */,
+				3A18B6292025264400D6C2DF /* URI_testset.inc */,
+				3A18B62A2025264400D6C2DF /* test_all.sh */,
+				3A18B62B2025264400D6C2DF /* create_frame_pattern.c */,
+				3A18B62C2025264400D6C2DF /* test_split_urls.c */,
+				3A18B62D2025264400D6C2DF /* decoder.c */,
+				3A18B62E2025264400D6C2DF /* test_monkey.c */,
+				3A18B62F2025264400D6C2DF /* test_mask.c */,
+				3A18B6302025264400D6C2DF /* .deps */,
+				3A18B6492025264400D6C2DF /* Makefile.in */,
+				3A18B64A2025264400D6C2DF /* test_mmask.c */,
+				3A18B64B2025264400D6C2DF /* rscode.c */,
+			);
+			path = tests;
+			sourceTree = "<group>";
+		};
+		3A18B6302025264400D6C2DF /* .deps */ = {
+			isa = PBXGroup;
+			children = (
+				3A18B6312025264400D6C2DF /* datachunk.Po */,
+				3A18B6322025264400D6C2DF /* test_rs.Po */,
+				3A18B6332025264400D6C2DF /* common.Po */,
+				3A18B6342025264400D6C2DF /* test_mqrspec.Po */,
+				3A18B6352025264400D6C2DF /* test_qrinput.Po */,
+				3A18B6362025264400D6C2DF /* test_qrencode.Po */,
+				3A18B6372025264400D6C2DF /* rscode.Po */,
+				3A18B6382025264400D6C2DF /* view_qrcode.Po */,
+				3A18B6392025264400D6C2DF /* test_bitstream.Po */,
+				3A18B63A2025264400D6C2DF /* test_qrspec.Po */,
+				3A18B63B2025264400D6C2DF /* decoder.Po */,
+				3A18B63C2025264400D6C2DF /* test_split.Po */,
+				3A18B63D2025264400D6C2DF /* create_frame_pattern-common.Po */,
+				3A18B63E2025264400D6C2DF /* test_split_urls.Po */,
+				3A18B63F2025264400D6C2DF /* test_monkey.Po */,
+				3A18B6402025264400D6C2DF /* create_mqr_frame_pattern-create_mqr_frame_pattern.Po */,
+				3A18B6412025264400D6C2DF /* test_mask.Po */,
+				3A18B6422025264400D6C2DF /* create_frame_pattern-create_frame_pattern.Po */,
+				3A18B6432025264400D6C2DF /* rsecc_decoder.Po */,
+				3A18B6442025264400D6C2DF /* test_mmask.Po */,
+				3A18B6452025264400D6C2DF /* prof_qrencode.Po */,
+				3A18B6462025264400D6C2DF /* pthread_qrencode.Po */,
+				3A18B6472025264400D6C2DF /* test_estimatebit.Po */,
+				3A18B6482025264400D6C2DF /* create_mqr_frame_pattern-common.Po */,
+			);
+			path = .deps;
+			sourceTree = "<group>";
+		};
+		3A18B6532025264400D6C2DF /* use */ = {
+			isa = PBXGroup;
+			children = (
+				3A18B6542025264400D6C2DF /* install-sh */,
+				3A18B6552025264400D6C2DF /* config.rpath */,
+				3A18B6562025264400D6C2DF /* ltmain.sh */,
+				3A18B6572025264400D6C2DF /* config.guess */,
+				3A18B6582025264400D6C2DF /* depcomp */,
+				3A18B6592025264400D6C2DF /* missing */,
+				3A18B65A2025264400D6C2DF /* config.sub */,
+				3A18B65B2025264400D6C2DF /* compile */,
+			);
+			path = use;
+			sourceTree = "<group>";
+		};
+		3A18B6652025264400D6C2DF /* m4 */ = {
+			isa = PBXGroup;
+			children = (
+				3A18B6662025264400D6C2DF /* ltversion.m4 */,
+				3A18B6672025264400D6C2DF /* libtool.m4 */,
+				3A18B6682025264400D6C2DF /* ltoptions.m4 */,
+				3A18B6692025264400D6C2DF /* ltsugar.m4 */,
+				3A18B66A2025264400D6C2DF /* lt~obsolete.m4 */,
+			);
+			path = m4;
+			sourceTree = "<group>";
+		};
+		3A18B6752025264400D6C2DF /* .deps */ = {
+			isa = PBXGroup;
+			children = (
+				3A18B6762025264400D6C2DF /* bitstream.Plo */,
+				3A18B6772025264400D6C2DF /* mmask.Plo */,
+				3A18B6782025264400D6C2DF /* split.Plo */,
+				3A18B6792025264400D6C2DF /* mask.Plo */,
+				3A18B67A2025264400D6C2DF /* qrencode-qrenc.Po */,
+				3A18B67B2025264400D6C2DF /* mqrspec.Plo */,
+				3A18B67C2025264400D6C2DF /* rsecc.Plo */,
+				3A18B67D2025264400D6C2DF /* qrspec.Plo */,
+				3A18B67E2025264400D6C2DF /* qrencode.Plo */,
+				3A18B67F2025264400D6C2DF /* qrinput.Plo */,
+			);
+			path = .deps;
+			sourceTree = "<group>";
+		};
+		3A18B6802025264400D6C2DF /* .libs */ = {
+			isa = PBXGroup;
+			children = (
+				3A18B6812025264400D6C2DF /* mask.o */,
+				3A18B6822025264400D6C2DF /* qrinput.o */,
+				3A18B6832025264400D6C2DF /* rsecc.o */,
+				3A18B6842025264400D6C2DF /* mmask.o */,
+				3A18B6852025264400D6C2DF /* qrspec.o */,
+				3A18B6862025264400D6C2DF /* mqrspec.o */,
+				3A18B6872025264400D6C2DF /* libqrencode.dylib */,
+				3A18B6882025264400D6C2DF /* libqrencode.4.dylib */,
+				3A18B6892025264400D6C2DF /* libqrencode.lai */,
+				3A18B68A2025264400D6C2DF /* bitstream.o */,
+				3A18B68B2025264400D6C2DF /* qrencode */,
+				3A18B68C2025264400D6C2DF /* libqrencode.la */,
+				3A18B68D2025264400D6C2DF /* qrencode.o */,
+				3A18B68E2025264400D6C2DF /* split.o */,
+			);
+			path = .libs;
+			sourceTree = "<group>";
+		};
+		3A18B6922025264400D6C2DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		3AA2A68F202385B8005664FC /* Extensions */ = {
@@ -226,9 +676,12 @@
 			isa = PBXGroup;
 			children = (
 				3A5565672023C9F0003CEBEA /* ChannelsViewController.swift */,
+				3A18B58C2024F8DD00D6C2DF /* InvoicesViewController.swift */,
+				3A18B58E202503B100D6C2DF /* MoneyViewController.swift */,
 				3A5565652023BFDE003CEBEA /* PaymentsViewController.swift */,
 				3AFD6CF920213EAA001599D2 /* PreferencesViewController.swift */,
-				3A0713FA201A7127008E2AEE /* ViewController.swift */,
+				3A18B59B202515A500D6C2DF /* GetMoneyViewController.swift */,
+				3A18B69820254FC800D6C2DF /* SendMoneyViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -236,14 +689,20 @@
 		3AFD6CFE20222C6B001599D2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				3A18B5992025120B00D6C2DF /* Address.swift */,
 				3AA4BDF2201BE91B00000153 /* Channel.swift */,
+				3A18B5862024E80000D6C2DF /* Console.swift */,
+				3A18B5882024F51700D6C2DF /* Invoice.swift */,
 				3AA2A68320227AC2005664FC /* LightningRPCQuery.swift */,
 				3AFD6CFF20223C6F001599D2 /* LightningRPCSocket.swift */,
+				3A5565632023B1DD003CEBEA /* Output.swift */,
 				3AA4BDED201BE8A300000153 /* Payment.swift */,
 				3A38BDE8201C55B40055BBA1 /* PaymentHash.swift */,
 				3AA4BDEF201BE8F400000153 /* Peer.swift */,
 				3AFD6CFB202149D0001599D2 /* Preferences.swift */,
-				3A5565632023B1DD003CEBEA /* Output.swift */,
+				3A18B59220250A0900D6C2DF /* ErrorResult.swift */,
+				3A18B69A20255B3600D6C2DF /* Withdraw.swift */,
+				3A18B6A1202572E200D6C2DF /* LightningRPC.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -351,6 +810,12 @@
 			mainGroup = 3A0713EC201A7127008E2AEE;
 			productRefGroup = 3A0713F6201A7127008E2AEE /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3A18B6922025264400D6C2DF /* Products */;
+					ProjectRef = 3A18B6912025264400D6C2DF /* qrencode-4.0.0.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				3A0713F4201A7127008E2AEE /* Voltage */,
@@ -561,22 +1026,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A18B59C202515A500D6C2DF /* GetMoneyViewController.swift in Sources */,
 				3A5565682023C9F0003CEBEA /* ChannelsViewController.swift in Sources */,
 				3A55656C2023DB7E003CEBEA /* Bool.swift in Sources */,
-				3A0713FB201A7127008E2AEE /* ViewController.swift in Sources */,
+				3A18B69E202563BD00D6C2DF /* RPCService.swift in Sources */,
+				3A18B59320250A0900D6C2DF /* ErrorResult.swift in Sources */,
+				3A18B58F202503B100D6C2DF /* MoneyViewController.swift in Sources */,
 				3A5565662023BFDE003CEBEA /* PaymentsViewController.swift in Sources */,
 				3AFD6D0020223C6F001599D2 /* LightningRPCSocket.swift in Sources */,
 				3AFD6CFC202149D0001599D2 /* Preferences.swift in Sources */,
+				3A18B5962025108400D6C2DF /* AddressService.swift in Sources */,
+				3A18B6A2202572E200D6C2DF /* LightningRPC.swift in Sources */,
 				3AFD6CFA20213EAA001599D2 /* PreferencesViewController.swift in Sources */,
 				3AA2A68420227AC2005664FC /* LightningRPCQuery.swift in Sources */,
 				3A38BDE9201C55B40055BBA1 /* PaymentHash.swift in Sources */,
+				3A18B58D2024F8DD00D6C2DF /* InvoicesViewController.swift in Sources */,
 				3AA4BDF3201BE91B00000153 /* Channel.swift in Sources */,
 				3AA4BDF0201BE8F400000153 /* Peer.swift in Sources */,
 				3AA2A68E202385AC005664FC /* Data.swift in Sources */,
+				3A18B69B20255B3600D6C2DF /* Withdraw.swift in Sources */,
+				3A18B59A2025120B00D6C2DF /* Address.swift in Sources */,
+				3A18B69920254FC800D6C2DF /* SendMoneyViewController.swift in Sources */,
 				3AA4BDEE201BE8A300000153 /* Payment.swift in Sources */,
+				3A18B5892024F51700D6C2DF /* Invoice.swift in Sources */,
 				3A0713F9201A7127008E2AEE /* AppDelegate.swift in Sources */,
 				3A38BDED201CF8D70055BBA1 /* String.swift in Sources */,
 				3A5565642023B1DD003CEBEA /* Output.swift in Sources */,
+				3A18B5872024E80000D6C2DF /* Console.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -584,9 +1060,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A18B5912025054B00D6C2DF /* OutputTest.swift in Sources */,
 				3A55656A2023CF2F003CEBEA /* ChannelsTest.swift in Sources */,
 				3A07140C201A7127008E2AEE /* JSONDecoderTest.swift in Sources */,
+				3A18B5982025111200D6C2DF /* AddressServiceTest.swift in Sources */,
+				3A18B58B2024F61900D6C2DF /* InvoiceTest.swift in Sources */,
 				3AFD6D02202240E2001599D2 /* LightningRPCSocketTest.swift in Sources */,
+				3A18B6A4202573D700D6C2DF /* LightningRPCTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -741,9 +1221,11 @@
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = K5NA8NE576;
 				INFOPLIST_FILE = Voltage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hci.Voltage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -762,9 +1244,11 @@
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = K5NA8NE576;
 				INFOPLIST_FILE = Voltage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hci.Voltage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

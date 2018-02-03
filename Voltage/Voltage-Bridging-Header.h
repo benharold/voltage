@@ -10,5 +10,6 @@
 #define Voltage_Bridging_Header_h
 
 #import <CommonCrypto/CommonHMAC.h>
+#import "qrencode.h"
 
 #endif /* Voltage_Bridging_Header_h */
