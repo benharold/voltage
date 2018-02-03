@@ -1,6 +1,6 @@
 # Voltage
 
-Voltage is an experimental implementation of a GUI interface for `c-lightning` on macOS. It uses JSON-RPC to communicate with the daemon via a UNIX socket.
+Voltage is an experimental implementation of a GUI for `c-lightning` on macOS. It uses JSON-RPC to communicate with the daemon via a UNIX socket.
 
 ## Current Status
 
