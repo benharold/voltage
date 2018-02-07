@@ -9,24 +9,24 @@
 import Cocoa
 
 class MoneyViewController: NSViewController {
+    
     var output_list: [Output] = []
     
     var wallet_balance: Int = 0
     
     var decoder: JSONDecoder = JSONDecoder.init()
-
-    @IBOutlet weak var wallet_balance_field: NSTextFieldCell!
+    
+    @IBOutlet weak var balance_satoshis: NSTextFieldCell!
     
     @IBOutlet weak var balance_bits: NSTextFieldCell!
     
     @IBOutlet weak var balance_µbtc: NSTextFieldCell!
     
-    @IBOutlet weak var balance_btc: NSButton!
+    @IBOutlet weak var balance_btc: NSTextFieldCell!
     
-    @IBAction func get_money_button(_ sender: Any) {
-    }
-    
-    @IBAction func spend_money_button(_ sender: Any) {
+    @IBAction func hodl_button(_ sender: Any) {
+        let sound_name = NSSound.Name(rawValue: "horn")
+        NSSound(named: sound_name)?.play()
     }
     
     override func viewDidLoad() {
@@ -39,11 +39,10 @@ class MoneyViewController: NSViewController {
         for output in output_list {
             wallet_balance += output.value
         }
-        wallet_balance_field.intValue = Int32(wallet_balance)
-        balance_bits.objectValue = Int32(wallet_balance / 100)
-        balance_µbtc.objectValue = Int32(wallet_balance / 100000)
-        balance_btc.objectValue = (wallet_balance / 10000000)
-        print("wallat balance", wallet_balance / 10000000)
+        balance_satoshis.intValue = Int32(wallet_balance)
+        balance_bits.stringValue = String(describing: Decimal(wallet_balance) / 100)
+        balance_µbtc.stringValue = String(describing: Decimal(wallet_balance) / 100000)
+        balance_btc.stringValue = String(describing: Decimal(wallet_balance) / 100000000)
     }
     
     func load_outputs() {
