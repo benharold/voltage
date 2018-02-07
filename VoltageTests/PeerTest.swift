@@ -5,7 +5,6 @@
 //  Created by Ben Harold on 2/6/18.
 //  Copyright © 2018 Harold Consulting. All rights reserved.
 //
-// swiftlint:disable force_cast
 
 import XCTest
 @testable import Voltage
@@ -28,7 +27,6 @@ class PeerTest: XCTestCase {
             print(result)
             // I need to figure out how to assert that the result object
             // is the expected type
-            XCTAssert(result as! PeerResult)
         } catch {
             print("Error: \(error)")
         }
