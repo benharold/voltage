@@ -1,23 +1,44 @@
 # Voltage
 
+The only wallet with a HODL button.
+
 Voltage is an experimental implementation of a GUI for `c-lightning` on macOS. It uses JSON-RPC to communicate with the daemon via a UNIX socket.
+
+If you've got a `c-lightning` node and a Mac, then this project *might* be of remote interest to _you_!
 
 ## Current Status
 
-Voltage is functional! It's still very rough around the edges, but you can use it to view a list of payments and channels. The channels tab in particular can take quite a while to load, as the `listchannels` RPC call can be rather heafty and RPC calls are (currently) blocking the main thread.
+This is pre-alpha software. Everything is done in the main thread, so the interface lags a bit when you click tabs or buttons which make RPC calls. The channels tab in particular can take quite a while to load, as the `listchannels` RPC call can be rather heafty.
 
 I haven't built any binaries yet, so if you want to try it out you'll need to open the project in Xcode and build it from there.
+
+Right now Voltage has five tabs:
+
+- Money - Send and receieve on-chain testnet Bitcoin
+- Invoices - Corresponds to `lightning-cli listinvoices`
+- Payments - Corresponds to `lightning-cli listpayments`
+- Peers - Corresponds to `lightning-cli listpeers`
+- Channels - Corresponds to `lightning-cli listchannels`
+
+Please be aware that there are no confirmations when you send or receive testnet Bitcoin. Also, there's currently no way to re-run RPC calls except on the payments tab. Like I said, pre-alpha.
 
 ### Short Term Goals
 
 - [X] Payment list
 - [X] Channel list
-- [X ] Receive on-chain payments
-- [ ] Send on-chain payments
+- [X] Invoices list
+- [X] Peers list
+- [X] Receive on-chain payments
+- [X] Send on-chain payments
 - [ ] Open lightning channels
 - [ ] Close lightning channels
+- [ ] Create lightning invoices
+- [ ] Pay lightning invoices
+- [ ] Make all of the lists sortable
+- [ ] Integrate [CoreBitcoin](https://github.com/oleganza/CoreBitcoin)
 - [ ] Getinfo from the "About Voltage" menu item maybe?
 - [ ] Make RPC calls in a background thread
+- [ ] Use `NotificationCenter` to handle RPC errors
 
 ## Usage
 
