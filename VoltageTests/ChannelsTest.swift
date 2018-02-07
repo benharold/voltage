@@ -14,7 +14,6 @@ class ChannelsTest: XCTestCase {
 
     func testListChannelsIsDecodable() {
 //        self.measure {
-            let result: ChannelResult
             let socket = LightningRPCSocket.create()
             let query = LightningRPCQuery(
                 id: Int(getpid()),
@@ -23,7 +22,8 @@ class ChannelsTest: XCTestCase {
             )
             let response: Data = socket.send(query: query)
             do {
-                result = try decoder.decode(ChannelResult.self, from: response)
+                let result = try decoder.decode(ChannelResult.self, from: response)
+                print(result)
                 // I need to figure out how to assert that the result object
                 // is the expected type
             } catch {

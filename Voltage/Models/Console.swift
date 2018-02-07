@@ -5,6 +5,7 @@
 //  Created by Ben Harold on 2/2/18.
 //  Copyright © 2018 Harold Consulting. All rights reserved.
 //
+// swiftlint:disable large_tuple
 
 import Cocoa
 

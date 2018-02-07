@@ -5,10 +5,12 @@
 //  Created by Ben Harold on 2/1/18.
 //  Copyright © 2018 Harold Consulting. All rights reserved.
 //
+// swiftlint:disable line_length
 
 import Cocoa
 
 class PaymentsViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSource {
+
     var payment_list: [Payment]!
     
     var decoder: JSONDecoder = JSONDecoder.init()
