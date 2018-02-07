@@ -20,5 +20,10 @@ class LightningRPCTest: XCTestCase {
         let rpc = LightningRPC(method: "invalid")
         XCTAssert((rpc == nil) as Bool)
     }
+    
+    func test_get_info() {
+        let rpc = LightningRPC(method: "getinfo")
+        print(rpc!.method)
+    }
 
 }
