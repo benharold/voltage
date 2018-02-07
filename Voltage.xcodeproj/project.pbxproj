@@ -26,9 +26,11 @@
 		3A18B697202529A400D6C2DF /* libqrencode.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A18B59D202521CE00D6C2DF /* libqrencode.4.dylib */; };
 		3A18B69920254FC800D6C2DF /* SendMoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B69820254FC800D6C2DF /* SendMoneyViewController.swift */; };
 		3A18B69B20255B3600D6C2DF /* Withdraw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B69A20255B3600D6C2DF /* Withdraw.swift */; };
-		3A18B69E202563BD00D6C2DF /* RPCService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B69D202563BD00D6C2DF /* RPCService.swift */; };
 		3A18B6A2202572E200D6C2DF /* LightningRPC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B6A1202572E200D6C2DF /* LightningRPC.swift */; };
 		3A18B6A4202573D700D6C2DF /* LightningRPCTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B6A3202573D700D6C2DF /* LightningRPCTest.swift */; };
+		3A18B6AB20277B9C00D6C2DF /* LightningRPCConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B6AA20277B9C00D6C2DF /* LightningRPCConstants.swift */; };
+		3A18B6B120296B1C00D6C2DF /* PeersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B6B020296B1C00D6C2DF /* PeersViewController.swift */; };
+		3A18B6B32029748300D6C2DF /* PeerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B6B22029748300D6C2DF /* PeerTest.swift */; };
 		3A38BDE9201C55B40055BBA1 /* PaymentHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A38BDE8201C55B40055BBA1 /* PaymentHash.swift */; };
 		3A38BDED201CF8D70055BBA1 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A38BDEC201CF8D70055BBA1 /* String.swift */; };
 		3A5565642023B1DD003CEBEA /* Output.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5565632023B1DD003CEBEA /* Output.swift */; };
@@ -43,6 +45,7 @@
 		3AA4BDEE201BE8A300000153 /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA4BDED201BE8A300000153 /* Payment.swift */; };
 		3AA4BDF0201BE8F400000153 /* Peer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA4BDEF201BE8F400000153 /* Peer.swift */; };
 		3AA4BDF3201BE91B00000153 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA4BDF2201BE91B00000153 /* Channel.swift */; };
+		3AC2B843202B601F00216D55 /* horn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3AC2B841202B601F00216D55 /* horn.mp3 */; };
 		3AFD6CFA20213EAA001599D2 /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFD6CF920213EAA001599D2 /* PreferencesViewController.swift */; };
 		3AFD6CFC202149D0001599D2 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFD6CFB202149D0001599D2 /* Preferences.swift */; };
 		3AFD6D0020223C6F001599D2 /* LightningRPCSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFD6CFF20223C6F001599D2 /* LightningRPCSocket.swift */; };
@@ -257,10 +260,11 @@
 		3A18B6952025264400D6C2DF /* autogen.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = autogen.sh; sourceTree = "<group>"; };
 		3A18B69820254FC800D6C2DF /* SendMoneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMoneyViewController.swift; sourceTree = "<group>"; };
 		3A18B69A20255B3600D6C2DF /* Withdraw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Withdraw.swift; sourceTree = "<group>"; };
-		3A18B69C2025626F00D6C2DF /* RPC.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = RPC.md; path = docs/RPC.md; sourceTree = "<group>"; };
-		3A18B69D202563BD00D6C2DF /* RPCService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPCService.swift; sourceTree = "<group>"; };
 		3A18B6A1202572E200D6C2DF /* LightningRPC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightningRPC.swift; sourceTree = "<group>"; };
 		3A18B6A3202573D700D6C2DF /* LightningRPCTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightningRPCTest.swift; sourceTree = "<group>"; };
+		3A18B6AA20277B9C00D6C2DF /* LightningRPCConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightningRPCConstants.swift; sourceTree = "<group>"; };
+		3A18B6B020296B1C00D6C2DF /* PeersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeersViewController.swift; sourceTree = "<group>"; };
+		3A18B6B22029748300D6C2DF /* PeerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeerTest.swift; sourceTree = "<group>"; };
 		3A38BDE8201C55B40055BBA1 /* PaymentHash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHash.swift; sourceTree = "<group>"; };
 		3A38BDEB201CF59C0055BBA1 /* Voltage-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Voltage-Bridging-Header.h"; sourceTree = "<group>"; };
 		3A38BDEC201CF8D70055BBA1 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
@@ -278,6 +282,7 @@
 		3AA4BDED201BE8A300000153 /* Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
 		3AA4BDEF201BE8F400000153 /* Peer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Peer.swift; sourceTree = "<group>"; };
 		3AA4BDF2201BE91B00000153 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		3AC2B841202B601F00216D55 /* horn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = horn.mp3; sourceTree = "<group>"; };
 		3AFD6CF920213EAA001599D2 /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
 		3AFD6CFB202149D0001599D2 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
 		3AFD6CFF20223C6F001599D2 /* LightningRPCSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightningRPCSocket.swift; sourceTree = "<group>"; };
@@ -349,7 +354,6 @@
 		3A0713EC201A7127008E2AEE = {
 			isa = PBXGroup;
 			children = (
-				3A18B69C2025626F00D6C2DF /* RPC.md */,
 				3AA2A69020239073005664FC /* LICENSE.md */,
 				3A38BDEE201D16DE0055BBA1 /* README.md */,
 				3A0713F7201A7127008E2AEE /* Voltage */,
@@ -380,8 +384,10 @@
 				3A0713FE201A7127008E2AEE /* Main.storyboard */,
 				3A071401201A7127008E2AEE /* Info.plist */,
 				3A071402201A7127008E2AEE /* Voltage.entitlements */,
+				3AC2B841202B601F00216D55 /* horn.mp3 */,
 				3AA2A68F202385B8005664FC /* Extensions */,
 				3AFD6CFE20222C6B001599D2 /* Models */,
+				3A18B6A7202779D600D6C2DF /* RPC */,
 				3A18B5942025106700D6C2DF /* Services */,
 				3AFD6CFD20222BFC001599D2 /* View Controllers */,
 			);
@@ -391,16 +397,17 @@
 		3A07140A201A7127008E2AEE /* VoltageTests */ = {
 			isa = PBXGroup;
 			children = (
-				3A07140B201A7127008E2AEE /* JSONDecoderTest.swift */,
+				3A18B5972025111200D6C2DF /* AddressServiceTest.swift */,
+				3A5565692023CF2F003CEBEA /* ChannelsTest.swift */,
 				3A07140D201A7127008E2AEE /* Info.plist */,
+				3A18B58A2024F61900D6C2DF /* InvoiceTest.swift */,
+				3A07140B201A7127008E2AEE /* JSONDecoderTest.swift */,
+				3AFD6D01202240E2001599D2 /* LightningRPCSocketTest.swift */,
+				3A18B6A3202573D700D6C2DF /* LightningRPCTest.swift */,
 				3AA4BDE9201BCADC00000153 /* listpayments.json */,
 				3AA4BDEB201BE13800000153 /* listpeers.json */,
-				3AFD6D01202240E2001599D2 /* LightningRPCSocketTest.swift */,
-				3A5565692023CF2F003CEBEA /* ChannelsTest.swift */,
-				3A18B58A2024F61900D6C2DF /* InvoiceTest.swift */,
 				3A18B5902025054B00D6C2DF /* OutputTest.swift */,
-				3A18B5972025111200D6C2DF /* AddressServiceTest.swift */,
-				3A18B6A3202573D700D6C2DF /* LightningRPCTest.swift */,
+				3A18B6B22029748300D6C2DF /* PeerTest.swift */,
 			);
 			path = VoltageTests;
 			sourceTree = "<group>";
@@ -418,7 +425,6 @@
 			isa = PBXGroup;
 			children = (
 				3A18B5952025108400D6C2DF /* AddressService.swift */,
-				3A18B69D202563BD00D6C2DF /* RPCService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -662,6 +668,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		3A18B6A7202779D600D6C2DF /* RPC */ = {
+			isa = PBXGroup;
+			children = (
+				3A18B6A1202572E200D6C2DF /* LightningRPC.swift */,
+				3A18B6AA20277B9C00D6C2DF /* LightningRPCConstants.swift */,
+				3AA2A68320227AC2005664FC /* LightningRPCQuery.swift */,
+				3AFD6CFF20223C6F001599D2 /* LightningRPCSocket.swift */,
+			);
+			path = RPC;
+			sourceTree = "<group>";
+		};
 		3AA2A68F202385B8005664FC /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -676,11 +693,12 @@
 			isa = PBXGroup;
 			children = (
 				3A5565672023C9F0003CEBEA /* ChannelsViewController.swift */,
+				3A18B59B202515A500D6C2DF /* GetMoneyViewController.swift */,
 				3A18B58C2024F8DD00D6C2DF /* InvoicesViewController.swift */,
 				3A18B58E202503B100D6C2DF /* MoneyViewController.swift */,
 				3A5565652023BFDE003CEBEA /* PaymentsViewController.swift */,
+				3A18B6B020296B1C00D6C2DF /* PeersViewController.swift */,
 				3AFD6CF920213EAA001599D2 /* PreferencesViewController.swift */,
-				3A18B59B202515A500D6C2DF /* GetMoneyViewController.swift */,
 				3A18B69820254FC800D6C2DF /* SendMoneyViewController.swift */,
 			);
 			path = "View Controllers";
@@ -693,8 +711,6 @@
 				3AA4BDF2201BE91B00000153 /* Channel.swift */,
 				3A18B5862024E80000D6C2DF /* Console.swift */,
 				3A18B5882024F51700D6C2DF /* Invoice.swift */,
-				3AA2A68320227AC2005664FC /* LightningRPCQuery.swift */,
-				3AFD6CFF20223C6F001599D2 /* LightningRPCSocket.swift */,
 				3A5565632023B1DD003CEBEA /* Output.swift */,
 				3AA4BDED201BE8A300000153 /* Payment.swift */,
 				3A38BDE8201C55B40055BBA1 /* PaymentHash.swift */,
@@ -702,7 +718,6 @@
 				3AFD6CFB202149D0001599D2 /* Preferences.swift */,
 				3A18B59220250A0900D6C2DF /* ErrorResult.swift */,
 				3A18B69A20255B3600D6C2DF /* Withdraw.swift */,
-				3A18B6A1202572E200D6C2DF /* LightningRPC.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -830,6 +845,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AC2B843202B601F00216D55 /* horn.mp3 in Resources */,
 				3A0713FD201A7127008E2AEE /* Assets.xcassets in Resources */,
 				3A071400201A7127008E2AEE /* Main.storyboard in Resources */,
 			);
@@ -1029,14 +1045,15 @@
 				3A18B59C202515A500D6C2DF /* GetMoneyViewController.swift in Sources */,
 				3A5565682023C9F0003CEBEA /* ChannelsViewController.swift in Sources */,
 				3A55656C2023DB7E003CEBEA /* Bool.swift in Sources */,
-				3A18B69E202563BD00D6C2DF /* RPCService.swift in Sources */,
 				3A18B59320250A0900D6C2DF /* ErrorResult.swift in Sources */,
 				3A18B58F202503B100D6C2DF /* MoneyViewController.swift in Sources */,
 				3A5565662023BFDE003CEBEA /* PaymentsViewController.swift in Sources */,
 				3AFD6D0020223C6F001599D2 /* LightningRPCSocket.swift in Sources */,
 				3AFD6CFC202149D0001599D2 /* Preferences.swift in Sources */,
 				3A18B5962025108400D6C2DF /* AddressService.swift in Sources */,
+				3A18B6AB20277B9C00D6C2DF /* LightningRPCConstants.swift in Sources */,
 				3A18B6A2202572E200D6C2DF /* LightningRPC.swift in Sources */,
+				3A18B6B120296B1C00D6C2DF /* PeersViewController.swift in Sources */,
 				3AFD6CFA20213EAA001599D2 /* PreferencesViewController.swift in Sources */,
 				3AA2A68420227AC2005664FC /* LightningRPCQuery.swift in Sources */,
 				3A38BDE9201C55B40055BBA1 /* PaymentHash.swift in Sources */,
@@ -1064,6 +1081,7 @@
 				3A55656A2023CF2F003CEBEA /* ChannelsTest.swift in Sources */,
 				3A07140C201A7127008E2AEE /* JSONDecoderTest.swift in Sources */,
 				3A18B5982025111200D6C2DF /* AddressServiceTest.swift in Sources */,
+				3A18B6B32029748300D6C2DF /* PeerTest.swift in Sources */,
 				3A18B58B2024F61900D6C2DF /* InvoiceTest.swift in Sources */,
 				3AFD6D02202240E2001599D2 /* LightningRPCSocketTest.swift in Sources */,
 				3A18B6A4202573D700D6C2DF /* LightningRPCTest.swift in Sources */,
