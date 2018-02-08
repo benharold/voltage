@@ -4,11 +4,13 @@ The only wallet with a HODL button.
 
 Voltage is an experimental implementation of a GUI for `c-lightning` on macOS. It uses JSON-RPC to communicate with the daemon via a UNIX socket.
 
-If you've got a `c-lightning` node and a Mac, then this project *might* be of remote interest to _you_!
+If you've got a `c-lightning` node and a Mac, then this project *might* be of remote interest to **you**!
 
 ## Current Status
 
-This is pre-alpha software. Everything is done in the main thread, so the interface lags a bit when you click tabs or buttons which make RPC calls. The channels tab in particular can take quite a while to load, as the `listchannels` RPC call can be rather heafty.
+This is pre-alpha software. ~~Everything is done in the main thread, so the interface lags a bit when you click tabs or buttons which make RPC calls.~~  Table loading is now done in a background thread. This can be further improved by pre-loading all tables when the app is opened, and updating them as necessary.
+
+The channels tab in particular can take quite a while to load, as the `listchannels` RPC call can be rather heafty.
 
 I haven't built any binaries yet, so if you want to try it out you'll need to open the project in Xcode and build it from there.
 
@@ -24,10 +26,6 @@ Please be aware that there are no confirmations when you send or receive testnet
 
 ### Short Term Goals
 
-- [X] Payment list
-- [X] Channel list
-- [X] Invoices list
-- [X] Peers list
 - [X] Receive on-chain payments
 - [X] Send on-chain payments
 - [ ] Open lightning channels
@@ -37,8 +35,11 @@ Please be aware that there are no confirmations when you send or receive testnet
 - [ ] Make all of the lists sortable
 - [ ] Integrate [CoreBitcoin](https://github.com/oleganza/CoreBitcoin)
 - [ ] Getinfo from the "About Voltage" menu item maybe?
-- [ ] Make RPC calls in a background thread
+- [X] Make RPC calls in a background thread
 - [ ] Use `NotificationCenter` to handle RPC errors
+- [ ] Pre-load all tables when application launches
+- [ ] Pre-load receiving address for "Get Money" button
+- [ ] Validate lightning invoices
 
 ## Usage
 
@@ -58,7 +59,9 @@ Once you've established the socket, Voltage should work. If you setup the socket
 
 ## Contributing
 
-Pull requests are welcome!
+Pull requests are welcome! Criticism encouraged!
+
+There is a lot of verbose code in the view controllers that I would like to abstract out. If you're a Swift veteran, please take a look in the `View Controllers` group and holler back.
 
 ## License
 

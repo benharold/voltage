@@ -8,34 +8,35 @@
 
 import Cocoa
 
-class PeersViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSource {
+class PeersViewController: VoltageTableViewController, NSTableViewDelegate, NSTableViewDataSource {
 
     var peer_list: [Peer]!
-
-    var decoder: JSONDecoder = JSONDecoder.init()
     
     @IBOutlet weak var peers_table_view: NSTableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        load_peers()
-        
         peers_table_view.delegate = self
         peers_table_view.dataSource = self
     }
+    
+    override func load_table_data() {
+        load_peers()
+    }
+    
+    override func reload_table_view() {
+        peers_table_view.reloadData()
+    }
 
     func load_peers() {
-        let service: LightningRPCSocket = LightningRPCSocket.create()
         let listpeers: LightningRPCQuery = LightningRPCQuery(id: Int(getpid()), method: "listpeers", params: [])
-        let response: Data = service.send(query: listpeers)
+        let response: Data = socket.send(query: listpeers)
         do {
             let result: PeerList = try decoder.decode(PeerResult.self, from: response).result
             peer_list = result.peers
         } catch {
             print("ViewController::load_peers() JSON decoder error: \(error)")
         }
-        
-        peers_table_view.reloadData()
     }
     
     func numberOfRows(in tableView: NSTableView) -> Int {

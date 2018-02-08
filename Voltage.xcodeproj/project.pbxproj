@@ -38,6 +38,8 @@
 		3A5565682023C9F0003CEBEA /* ChannelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5565672023C9F0003CEBEA /* ChannelsViewController.swift */; };
 		3A55656A2023CF2F003CEBEA /* ChannelsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5565692023CF2F003CEBEA /* ChannelsTest.swift */; };
 		3A55656C2023DB7E003CEBEA /* Bool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A55656B2023DB7E003CEBEA /* Bool.swift */; };
+		3A605DFA202C0C6A0076EF45 /* VoltageTableViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A605DF9202C0C6A0076EF45 /* VoltageTableViewProtocol.swift */; };
+		3A605DFC202C0D260076EF45 /* VoltageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A605DFB202C0D260076EF45 /* VoltageTableViewController.swift */; };
 		3AA2A68420227AC2005664FC /* LightningRPCQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA2A68320227AC2005664FC /* LightningRPCQuery.swift */; };
 		3AA2A68E202385AC005664FC /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA2A68D202385AC005664FC /* Data.swift */; };
 		3AA4BDEA201BCADC00000153 /* listpayments.json in Resources */ = {isa = PBXBuildFile; fileRef = 3AA4BDE9201BCADC00000153 /* listpayments.json */; };
@@ -274,6 +276,8 @@
 		3A5565672023C9F0003CEBEA /* ChannelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsViewController.swift; sourceTree = "<group>"; };
 		3A5565692023CF2F003CEBEA /* ChannelsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsTest.swift; sourceTree = "<group>"; };
 		3A55656B2023DB7E003CEBEA /* Bool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bool.swift; sourceTree = "<group>"; };
+		3A605DF9202C0C6A0076EF45 /* VoltageTableViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoltageTableViewProtocol.swift; sourceTree = "<group>"; };
+		3A605DFB202C0D260076EF45 /* VoltageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoltageTableViewController.swift; sourceTree = "<group>"; };
 		3AA2A68320227AC2005664FC /* LightningRPCQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightningRPCQuery.swift; sourceTree = "<group>"; };
 		3AA2A68D202385AC005664FC /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		3AA2A69020239073005664FC /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
@@ -387,6 +391,7 @@
 				3AC2B841202B601F00216D55 /* horn.mp3 */,
 				3AA2A68F202385B8005664FC /* Extensions */,
 				3AFD6CFE20222C6B001599D2 /* Models */,
+				3A605DF8202C0C410076EF45 /* Protocols */,
 				3A18B6A7202779D600D6C2DF /* RPC */,
 				3A18B5942025106700D6C2DF /* Services */,
 				3AFD6CFD20222BFC001599D2 /* View Controllers */,
@@ -679,6 +684,14 @@
 			path = RPC;
 			sourceTree = "<group>";
 		};
+		3A605DF8202C0C410076EF45 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				3A605DF9202C0C6A0076EF45 /* VoltageTableViewProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		3AA2A68F202385B8005664FC /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -700,6 +713,7 @@
 				3A18B6B020296B1C00D6C2DF /* PeersViewController.swift */,
 				3AFD6CF920213EAA001599D2 /* PreferencesViewController.swift */,
 				3A18B69820254FC800D6C2DF /* SendMoneyViewController.swift */,
+				3A605DFB202C0D260076EF45 /* VoltageTableViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -1056,11 +1070,13 @@
 				3A18B6B120296B1C00D6C2DF /* PeersViewController.swift in Sources */,
 				3AFD6CFA20213EAA001599D2 /* PreferencesViewController.swift in Sources */,
 				3AA2A68420227AC2005664FC /* LightningRPCQuery.swift in Sources */,
+				3A605DFA202C0C6A0076EF45 /* VoltageTableViewProtocol.swift in Sources */,
 				3A38BDE9201C55B40055BBA1 /* PaymentHash.swift in Sources */,
 				3A18B58D2024F8DD00D6C2DF /* InvoicesViewController.swift in Sources */,
 				3AA4BDF3201BE91B00000153 /* Channel.swift in Sources */,
 				3AA4BDF0201BE8F400000153 /* Peer.swift in Sources */,
 				3AA2A68E202385AC005664FC /* Data.swift in Sources */,
+				3A605DFC202C0D260076EF45 /* VoltageTableViewController.swift in Sources */,
 				3A18B69B20255B3600D6C2DF /* Withdraw.swift in Sources */,
 				3A18B59A2025120B00D6C2DF /* Address.swift in Sources */,
 				3A18B69920254FC800D6C2DF /* SendMoneyViewController.swift in Sources */,
