@@ -4,11 +4,13 @@ The only wallet with a HODL button.
 
 Voltage is an experimental implementation of a GUI for `c-lightning` on macOS. It uses JSON-RPC to communicate with the daemon via a UNIX socket.
 
-If you've got a `c-lightning` node and a Mac, then this project *might* be of remote interest to _you_!
+If you've got a `c-lightning` node and a Mac, then this project *might* be of remote interest to **you**!
 
 ## Current Status
 
-This is pre-alpha software. Everything is done in the main thread, so the interface lags a bit when you click tabs or buttons which make RPC calls. The channels tab in particular can take quite a while to load, as the `listchannels` RPC call can be rather heafty.
+This is pre-alpha software. ~~Everything is done in the main thread, so the interface lags a bit when you click tabs or buttons which make RPC calls.~~  Table loading is now done in a background thread. This can be further improved by pre-loading all tables when the app is opened, and updating them as necessary.
+
+The channels tab in particular can take quite a while to load, as the `listchannels` RPC call can be rather heafty.
 
 I haven't built any binaries yet, so if you want to try it out you'll need to open the project in Xcode and build it from there.
 
@@ -35,6 +37,9 @@ Please be aware that there are no confirmations when you send or receive testnet
 - [ ] Getinfo from the "About Voltage" menu item maybe?
 - [X] Make RPC calls in a background thread
 - [ ] Use `NotificationCenter` to handle RPC errors
+- [ ] Pre-load all tables when application launches
+- [ ] Pre-load receiving address for "Get Money" button
+- [ ] Validate lightning invoices
 
 ## Usage
 
