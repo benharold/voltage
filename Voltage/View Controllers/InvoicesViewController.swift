@@ -8,33 +8,35 @@
 
 import Cocoa
 
-class InvoicesViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSource {
+class InvoicesViewController: VoltageTableViewController, NSTableViewDelegate, NSTableViewDataSource {
+
     var invoice_list: [Invoice]!
-    
-    var decoder: JSONDecoder = JSONDecoder.init()
     
     @IBOutlet weak var invoices_table_view: NSTableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        load_invoices()
-        
         invoices_table_view.delegate = self
         invoices_table_view.dataSource = self
     }
     
+    override func load_table_data() {
+        load_invoices()
+    }
+    
+    override func reload_table_view() {
+        invoices_table_view.reloadData()
+    }
+    
     func load_invoices() {
-        let service: LightningRPCSocket = LightningRPCSocket.create()
         let listinvoices: LightningRPCQuery = LightningRPCQuery(id: Int(getpid()), method: "listinvoices", params: [])
-        let response: Data = service.send(query: listinvoices)
+        let response: Data = socket.send(query: listinvoices)
         do {
             let result: InvoiceList = try decoder.decode(InvoiceResult.self, from: response).result
             invoice_list = result.invoices
         } catch {
             print("ViewController::load_invoices() JSON decoder error: \(error)")
         }
-        
-        invoices_table_view.reloadData()
     }
     
     func numberOfRows(in tableView: NSTableView) -> Int {

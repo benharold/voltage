@@ -8,33 +8,35 @@
 
 import Cocoa
 
-class ChannelsViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSource {
+class ChannelsViewController: VoltageTableViewController, NSTableViewDelegate, NSTableViewDataSource {
+
     var channel_list: [Channel]!
-    
-    var decoder: JSONDecoder = JSONDecoder.init()
     
     @IBOutlet weak var channels_table_view: NSTableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        load_channels()
-        
         channels_table_view.delegate = self
         channels_table_view.dataSource = self
     }
     
+    override func load_table_data() {
+        load_channels()
+    }
+    
+    override func reload_table_view() {
+        channels_table_view.reloadData()
+    }
+    
     func load_channels() {
-        let service: LightningRPCSocket = LightningRPCSocket.create()
         let listchannels: LightningRPCQuery = LightningRPCQuery(id: Int(getpid()), method: "listchannels", params: [])
-        let response: Data = service.send(query: listchannels)
+        let response: Data = socket.send(query: listchannels)
         do {
             let result: ChannelList = try decoder.decode(ChannelResult.self, from: response).result
             channel_list = result.channels
         } catch {
             print("ViewController::load_channels() JSON decoder error: \(error)")
         }
-        
-        channels_table_view.reloadData()
     }
     
     func numberOfRows(in tableView: NSTableView) -> Int {

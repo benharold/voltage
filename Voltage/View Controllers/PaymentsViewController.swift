@@ -9,11 +9,9 @@
 
 import Cocoa
 
-class PaymentsViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSource {
+class PaymentsViewController: VoltageTableViewController, NSTableViewDelegate, NSTableViewDataSource {
 
     var payment_list: [Payment]!
-    
-    var decoder: JSONDecoder = JSONDecoder.init()
     
     @IBOutlet weak var payments_table_view: NSTableView!
     
@@ -27,15 +25,20 @@ class PaymentsViewController: NSViewController, NSTableViewDelegate, NSTableView
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        load_payments()
-        
-        //for _ in 1...5 {
-        //    payment_list.append(Payment.fake())
-        //}
-        //print(payment_list)
-
         payments_table_view.delegate = self
         payments_table_view.dataSource = self
+        set_sort_descriptors()
+    }
+    
+    override func load_table_data() {
+        load_payments()
+    }
+    
+    override func reload_table_view() {
+        payments_table_view.reloadData()
+    }
+    
+    func set_sort_descriptors() {
         payments_table_view.tableColumns[0].sortDescriptorPrototype = NSSortDescriptor(key: "id", ascending: true)
         payments_table_view.tableColumns[1].sortDescriptorPrototype = NSSortDescriptor(key: "payment_hash", ascending: true)
         payments_table_view.tableColumns[2].sortDescriptorPrototype = NSSortDescriptor(key: "destination", ascending: true)
@@ -45,9 +48,8 @@ class PaymentsViewController: NSViewController, NSTableViewDelegate, NSTableView
     }
     
     func load_payments() {
-        let service: LightningRPCSocket = LightningRPCSocket.create()
         let listpayments: LightningRPCQuery = LightningRPCQuery(id: Int(getpid()), method: "listpayments", params: [])
-        let response: Data = service.send(query: listpayments)
+        let response: Data = socket.send(query: listpayments)
         do {
             let result: PaymentList = try decoder.decode(PaymentResult.self, from: response).result
             payment_list = result.payments
@@ -55,8 +57,6 @@ class PaymentsViewController: NSViewController, NSTableViewDelegate, NSTableView
             //alert(message: "There was an error decoding the list of payments. Is your c-lightning node running?")
             print("ViewController::load_payments() JSON decoder error: \(error)")
         }
-        
-        payments_table_view.reloadData()
     }
     
     func numberOfRows(in tableView: NSTableView) -> Int {

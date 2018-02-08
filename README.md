@@ -24,10 +24,6 @@ Please be aware that there are no confirmations when you send or receive testnet
 
 ### Short Term Goals
 
-- [X] Payment list
-- [X] Channel list
-- [X] Invoices list
-- [X] Peers list
 - [X] Receive on-chain payments
 - [X] Send on-chain payments
 - [ ] Open lightning channels
@@ -37,7 +33,7 @@ Please be aware that there are no confirmations when you send or receive testnet
 - [ ] Make all of the lists sortable
 - [ ] Integrate [CoreBitcoin](https://github.com/oleganza/CoreBitcoin)
 - [ ] Getinfo from the "About Voltage" menu item maybe?
-- [ ] Make RPC calls in a background thread
+- [X] Make RPC calls in a background thread
 - [ ] Use `NotificationCenter` to handle RPC errors
 
 ## Usage
@@ -58,7 +54,9 @@ Once you've established the socket, Voltage should work. If you setup the socket
 
 ## Contributing
 
-Pull requests are welcome!
+Pull requests are welcome! Criticism encouraged!
+
+There is a lot of verbose code in the view controllers that I would like to abstract out. If you're a Swift veteran, please take a look in the `View Controllers` group and holler back.
 
 ## License
 
