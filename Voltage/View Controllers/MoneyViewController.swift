@@ -7,12 +7,15 @@
 //
 
 import Cocoa
+import AVFoundation
 
 class MoneyViewController: NSViewController {
     
-    var output_list: [Output] = []
+    var output_list = [Output]()
     
     var wallet_balance: Int = 0
+    
+    var audio_players = [AVAudioPlayer]()
     
     var decoder: JSONDecoder = JSONDecoder.init()
     
@@ -25,8 +28,7 @@ class MoneyViewController: NSViewController {
     @IBOutlet weak var balance_btc: NSTextFieldCell!
     
     @IBAction func hodl_button(_ sender: Any) {
-        let sound_name = NSSound.Name(rawValue: "horn")
-        NSSound(named: sound_name)?.play()
+        instant_rap_air_horn()
     }
     
     override func viewDidLoad() {
@@ -64,4 +66,24 @@ class MoneyViewController: NSViewController {
         }
         calculate_wallat_balance()
     }
+    
+    // I have not measured the memory usage of this. I presume that since the
+    // `audio_players` list is never emptied, it just continues to eat memory as
+    // you mash the HODL button. Maybe someday when literally everything else in
+    // the world has been done I'll make time to *look into* cleaning this up.
+    func instant_rap_air_horn() {
+        do {
+            let sound_name = NSSound.Name(rawValue: "horn")
+            if let bundle = Bundle.main.path(forSoundResource: sound_name) {
+                let sound_url = URL(fileURLWithPath: bundle)
+                let audio_player = try AVAudioPlayer(contentsOf: sound_url)
+                audio_players.append(audio_player)
+                audio_players.last?.prepareToPlay()
+                audio_players.last?.play()
+            }
+        } catch {
+            print(error)
+        }
+    }
+    
 }
