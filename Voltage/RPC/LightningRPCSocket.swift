@@ -41,6 +41,7 @@ class LightningRPCSocket: NSObject, RPCProtocol {
         } catch {
             // This really should broadcast a message so that a logger can
             // pick it up and/or the user can be notified in some manner.
+            NotificationCenter.default.post(name: Notification.Name(rawValue: "RPC Error"), object: error)
             print("socket connection error: \(error)", socket_path)
         }
     }
@@ -86,11 +87,14 @@ class LightningRPCSocket: NSObject, RPCProtocol {
             
             return read_data
         } catch {
+            // Send the error to the notification center. This should be caught
+            // by an observer that will trigger an alert in the main thread.
+            NotificationCenter.default.post(name: Notification.Name(rawValue: "RPC Error"), object: error)
             print("error communicating with RPC server", error)
             
             // Probably not the best way to handle this but for now...
-            let response = "error".data(using: .utf8)
-            return response!
+            let response = "{\"message\":\"error\"}".data(using: .utf8)!
+            return response
         }
     }
 }
