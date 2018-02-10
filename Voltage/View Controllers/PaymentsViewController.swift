@@ -10,8 +10,17 @@
 import Cocoa
 
 class PaymentsViewController: VoltageTableViewController, NSTableViewDelegate, NSTableViewDataSource {
-
+    
     var payment_list: [Payment]!
+    
+    let table_keys = [
+        "id",
+        "payment_hash",
+        "destination",
+        "msatoshi",
+        "status",
+        "created_at",
+    ]
     
     @IBOutlet weak var payments_table_view: NSTableView!
     
@@ -39,12 +48,9 @@ class PaymentsViewController: VoltageTableViewController, NSTableViewDelegate, N
     }
     
     func set_sort_descriptors() {
-        payments_table_view.tableColumns[0].sortDescriptorPrototype = NSSortDescriptor(key: "id", ascending: true)
-        payments_table_view.tableColumns[1].sortDescriptorPrototype = NSSortDescriptor(key: "payment_hash", ascending: true)
-        payments_table_view.tableColumns[2].sortDescriptorPrototype = NSSortDescriptor(key: "destination", ascending: true)
-        payments_table_view.tableColumns[3].sortDescriptorPrototype = NSSortDescriptor(key: "msatoshi", ascending: true)
-        payments_table_view.tableColumns[4].sortDescriptorPrototype = NSSortDescriptor(key: "status", ascending: true)
-        payments_table_view.tableColumns[5].sortDescriptorPrototype = NSSortDescriptor(key: "created_at", ascending: true)
+        for (index, _) in table_keys.enumerated() {
+            payments_table_view.tableColumns[index].sortDescriptorPrototype = NSSortDescriptor(key: table_keys[index], ascending: true)
+        }
     }
     
     func load_payments() {

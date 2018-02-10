@@ -22,9 +22,7 @@ class MoneyViewController: NSViewController {
     @IBOutlet weak var balance_satoshis: NSTextFieldCell!
     
     @IBOutlet weak var balance_bits: NSTextFieldCell!
-    
-    @IBOutlet weak var balance_µbtc: NSTextFieldCell!
-    
+        
     @IBOutlet weak var balance_btc: NSTextFieldCell!
     
     @IBAction func hodl_button(_ sender: Any) {
@@ -43,7 +41,6 @@ class MoneyViewController: NSViewController {
         }
         balance_satoshis.intValue = Int32(wallet_balance)
         balance_bits.stringValue = String(describing: Decimal(wallet_balance) / 100)
-        balance_µbtc.stringValue = String(describing: Decimal(wallet_balance) / 100000)
         balance_btc.stringValue = String(describing: Decimal(wallet_balance) / 100000000)
     }
     

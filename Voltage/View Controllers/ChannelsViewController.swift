@@ -12,12 +12,23 @@ class ChannelsViewController: VoltageTableViewController, NSTableViewDelegate, N
 
     var channel_list: [Channel]!
     
+    let table_keys = [
+        "short_channel_id",
+        "base_fee_millisatoshi",
+        "flags",
+        "active",
+        "public",
+        "delay",
+        "last_update",
+    ]
+    
     @IBOutlet weak var channels_table_view: NSTableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         channels_table_view.delegate = self
         channels_table_view.dataSource = self
+        set_sort_descriptors()
     }
     
     override func load_table_data() {
@@ -26,6 +37,12 @@ class ChannelsViewController: VoltageTableViewController, NSTableViewDelegate, N
     
     override func reload_table_view() {
         channels_table_view.reloadData()
+    }
+    
+    func set_sort_descriptors() {
+        for (index, _) in table_keys.enumerated() {
+            channels_table_view.tableColumns[index].sortDescriptorPrototype = NSSortDescriptor(key: table_keys[index], ascending: true)
+        }
     }
     
     func load_channels() {
@@ -79,7 +96,6 @@ class ChannelsViewController: VoltageTableViewController, NSTableViewDelegate, N
         return nil
     }
     
-    // This can probably be improved upon. See https://stackoverflow.com/questions/48511745/how-can-i-simplify-this-swift-sorting-code/48511962
     func tableView(_ tableView: NSTableView, sortDescriptorsDidChange oldDescriptors: [NSSortDescriptor]) {
         guard let sortDescriptor = tableView.sortDescriptors.first else {
             return
@@ -87,37 +103,37 @@ class ChannelsViewController: VoltageTableViewController, NSTableViewDelegate, N
         
         let key = sortDescriptor.key!
         
-//        if sortDescriptor.ascending == true {
-//            switch key {
-//            case "flags":
-//                channel_list.sort { $0.flags < $1.flags }
-//            case "active":
-//                channel_list.sort { $0.active < $1.active }
-//            case "public":
-//                channel_list.sort { $0.`public` < $1.`public` }
-//            case "last_update":
-//                channel_list.sort { $0.last_update < $1.last_update }
-//            case "delay":
-//                channel_list.sort { $0.delay < $1.delay }
-//            default:
-//                channel_list.sort { $0.short_channel_id < $1.short_channel_id }
-//            }
-//        } else {
-//            switch key {
-//            case "flags":
-//                channel_list.sort { $0.flags > $1.flags }
-//            case "active":
-//                channel_list.sort { $0.active > $1.active }
-//            case "public":
-//                channel_list.sort { $0.`public` > $1.`public` }
-//            case "updated":
-//                channel_list.sort { $0.updated > $1.updated }
-//            case "delay":
-//                channel_list.sort { $0.delay > $1.delay }
-//            default:
-//                channel_list.sort { $0.short_channel_id > $1.short_channel_id }
-//            }
-//        }
+        if sortDescriptor.ascending == true {
+            switch key {
+            case "flags":
+                channel_list.sort { $0.flags < $1.flags }
+            case "active":
+                channel_list.sort { $0.active && !$1.active }
+            case "public":
+                channel_list.sort { $0.`public` && !$1.`public` }
+            case "last_update":
+                channel_list.sort { Int($0.last_update ?? -1) < Int($1.last_update ?? -1) }
+            case "delay":
+                channel_list.sort { Int($0.delay ?? -1) < Int($1.delay ?? -1) }
+            default:
+                channel_list.sort { $0.short_channel_id < $1.short_channel_id }
+            }
+        } else {
+            switch key {
+            case "flags":
+                channel_list.sort { $0.flags > $1.flags }
+            case "active":
+                channel_list.sort { !$0.active && $1.active }
+            case "public":
+                channel_list.sort { !$0.`public` && $1.`public` }
+            case "last_update":
+                channel_list.sort { Int($0.last_update ?? -1) > Int($1.last_update ?? -1) }
+            case "delay":
+                channel_list.sort { Int($0.delay ?? -1) > Int($1.delay ?? -1) }
+            default:
+                channel_list.sort { $0.short_channel_id > $1.short_channel_id }
+            }
+        }
         
         tableView.reloadData()
     }
