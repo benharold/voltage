@@ -31,6 +31,8 @@ struct PeerChannel: Codable {
 struct Peer: Codable {
     let id: String
     let connected: Bool
+    let state: String?
+    let owner: String?
     let netaddr: [String]?
     let channels: [PeerChannel]?
     
