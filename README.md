@@ -32,14 +32,15 @@ Please be aware that there are no confirmations when you send or receive testnet
 - [ ] Close lightning channels
 - [ ] Create lightning invoices
 - [ ] Pay lightning invoices
-- [ ] Make all of the lists sortable
+- [X] Make all of the lists sortable
 - [ ] Integrate [CoreBitcoin](https://github.com/oleganza/CoreBitcoin)
 - [ ] Getinfo from the "About Voltage" menu item maybe?
 - [X] Make RPC calls in a background thread
-- [ ] Use `NotificationCenter` to handle RPC errors
+- [X] Use `NotificationCenter` to handle RPC errors
 - [ ] Pre-load all tables when application launches
 - [ ] Pre-load receiving address for "Get Money" button
 - [ ] Validate lightning invoices
+- [ ] Use a single socket instance for all RPC calls
 
 ## Usage
 
