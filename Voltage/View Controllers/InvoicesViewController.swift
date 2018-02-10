@@ -12,12 +12,23 @@ class InvoicesViewController: VoltageTableViewController, NSTableViewDelegate, N
 
     var invoice_list: [Invoice]!
     
+    let table_keys = [
+        "label",
+        "status",
+        "msatoshi",
+        "msatoshi_received",
+        "pay_index",
+        "paid_at",
+        "expires_at",
+    ]
+    
     @IBOutlet weak var invoices_table_view: NSTableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         invoices_table_view.delegate = self
         invoices_table_view.dataSource = self
+        set_sort_descriptors()
     }
     
     override func load_table_data() {
@@ -26,6 +37,12 @@ class InvoicesViewController: VoltageTableViewController, NSTableViewDelegate, N
     
     override func reload_table_view() {
         invoices_table_view.reloadData()
+    }
+    
+    func set_sort_descriptors() {
+        for (index, _) in table_keys.enumerated() {
+            invoices_table_view.tableColumns[index].sortDescriptorPrototype = NSSortDescriptor(key: table_keys[index], ascending: true)
+        }
     }
     
     func load_invoices() {
@@ -53,46 +70,17 @@ class InvoicesViewController: VoltageTableViewController, NSTableViewDelegate, N
             return invoice_list[row].label
         } else if key == "status" {
             return invoice_list[row].status
-        } else if key == "billed" {
+        } else if key == "msatoshi" {
             return invoice_list[row].msatoshi / 1000
         } else if key == "pay_index" {
             return invoice_list[row].pay_index
-        } else if key == "paid" {
+        } else if key == "msatoshi_received" {
             return msatoshi_received / 1000
         } else if key == "paid_at" {
             return pretty_date(timestamp: invoice_list[row].paid_at)
         } else if key == "expires_at" {
             return pretty_date(timestamp: invoice_list[row].expires_at)
         }
-        
-//        if key == "short_invoice_id" {
-//            return invoice_list[row].short_invoice_id
-//        } else if key == "base_fee" {
-//            if invoice_list[row].base_fee_millisatoshi != nil {
-//                return invoice_list[row].base_fee_millisatoshi! / 1000
-//            }
-//            return 0
-//        } else if key == "flags" {
-//            return invoice_list[row].flags
-//        } else if key == "active" {
-//            return invoice_list[row].active.to_yes_no()
-//        } else if key == "last_update" {
-//            if invoice_list[row].last_update != nil {
-//                let date = Date(timeIntervalSince1970: TimeInterval(invoice_list[row].last_update!))
-//                let dateFormatter = DateFormatter()
-//                dateFormatter.dateStyle = .medium
-//                dateFormatter.timeStyle = .medium
-//                dateFormatter.timeZone = TimeZone.current
-//                dateFormatter.locale = NSLocale.current
-//                let strDate = dateFormatter.string(from: date)
-//                return strDate
-//            }
-//            return ""
-//        } else if key == "public" {
-//            return invoice_list[row].`public`.to_yes_no()
-//        } else if key == "delay" {
-//            return invoice_list[row].delay
-//        }
         
         return nil
     }
@@ -112,7 +100,6 @@ class InvoicesViewController: VoltageTableViewController, NSTableViewDelegate, N
         return dateFormatter.string(from: date)
     }
     
-    // This can probably be improved upon. See https://stackoverflow.com/questions/48511745/how-can-i-simplify-this-swift-sorting-code/48511962
     func tableView(_ tableView: NSTableView, sortDescriptorsDidChange oldDescriptors: [NSSortDescriptor]) {
         guard let sortDescriptor = tableView.sortDescriptors.first else {
             return
@@ -120,38 +107,42 @@ class InvoicesViewController: VoltageTableViewController, NSTableViewDelegate, N
         
         let key = sortDescriptor.key!
         
-        //        if sortDescriptor.ascending == true {
-        //            switch key {
-        //            case "flags":
-        //                invoice_list.sort { $0.flags < $1.flags }
-        //            case "active":
-        //                invoice_list.sort { $0.active < $1.active }
-        //            case "public":
-        //                invoice_list.sort { $0.`public` < $1.`public` }
-        //            case "last_update":
-        //                invoice_list.sort { $0.last_update < $1.last_update }
-        //            case "delay":
-        //                invoice_list.sort { $0.delay < $1.delay }
-        //            default:
-        //                invoice_list.sort { $0.short_invoice_id < $1.short_invoice_id }
-        //            }
-        //        } else {
-        //            switch key {
-        //            case "flags":
-        //                invoice_list.sort { $0.flags > $1.flags }
-        //            case "active":
-        //                invoice_list.sort { $0.active > $1.active }
-        //            case "public":
-        //                invoice_list.sort { $0.`public` > $1.`public` }
-        //            case "updated":
-        //                invoice_list.sort { $0.updated > $1.updated }
-        //            case "delay":
-        //                invoice_list.sort { $0.delay > $1.delay }
-        //            default:
-        //                invoice_list.sort { $0.short_invoice_id > $1.short_invoice_id }
-        //            }
-        //        }
-        
+        if sortDescriptor.ascending == true {
+            switch key {
+            case "label":
+                invoice_list.sort { $0.label < $1.label }
+            case "msatoshi":
+                invoice_list.sort { $0.msatoshi < $1.msatoshi }
+            case "status":
+                invoice_list.sort { $0.status < $1.status }
+            case "pay_index":
+                invoice_list.sort { Int($0.pay_index ?? -1) < Int($1.pay_index ?? -1) }
+            case "msatoshi_received":
+                invoice_list.sort { Int($0.msatoshi_received ?? -1) < Int($1.msatoshi_received ?? -1) }
+            case "paid_at":
+                invoice_list.sort { Int($0.paid_at ?? -1) < Int($1.paid_at ?? -1) }
+            default:
+                invoice_list.sort { $0.expires_at < $1.expires_at }
+            }
+        } else {
+            switch key {
+            case "label":
+                invoice_list.sort { $0.label > $1.label }
+            case "msatoshi":
+                invoice_list.sort { $0.msatoshi > $1.msatoshi }
+            case "status":
+                invoice_list.sort { $0.status > $1.status }
+            case "pay_index":
+                invoice_list.sort { Int($0.pay_index ?? -1) > Int($1.pay_index ?? -1) }
+            case "msatoshi_received":
+                invoice_list.sort { Int($0.msatoshi_received ?? -1) > Int($1.msatoshi_received ?? -1) }
+            case "paid_at":
+                invoice_list.sort { Int($0.paid_at ?? -1) > Int($1.paid_at ?? -1) }
+            default:
+                invoice_list.sort { $0.expires_at > $1.expires_at }
+            }
+        }
+
         tableView.reloadData()
     }
     
