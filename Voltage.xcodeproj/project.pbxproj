@@ -13,19 +13,19 @@
 		3A07140C201A7127008E2AEE /* JSONDecoderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A07140B201A7127008E2AEE /* JSONDecoderTest.swift */; };
 		3A071417201A7127008E2AEE /* VoltageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A071416201A7127008E2AEE /* VoltageUITests.swift */; };
 		3A18B5872024E80000D6C2DF /* Console.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B5862024E80000D6C2DF /* Console.swift */; };
-		3A18B5892024F51700D6C2DF /* Invoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B5882024F51700D6C2DF /* Invoice.swift */; };
+		3A18B5892024F51700D6C2DF /* listinvoices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B5882024F51700D6C2DF /* listinvoices.swift */; };
 		3A18B58B2024F61900D6C2DF /* InvoiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B58A2024F61900D6C2DF /* InvoiceTest.swift */; };
 		3A18B58D2024F8DD00D6C2DF /* InvoicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B58C2024F8DD00D6C2DF /* InvoicesViewController.swift */; };
 		3A18B58F202503B100D6C2DF /* MoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B58E202503B100D6C2DF /* MoneyViewController.swift */; };
 		3A18B5912025054B00D6C2DF /* OutputTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B5902025054B00D6C2DF /* OutputTest.swift */; };
-		3A18B59320250A0900D6C2DF /* ErrorResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B59220250A0900D6C2DF /* ErrorResult.swift */; };
+		3A18B59320250A0900D6C2DF /* error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B59220250A0900D6C2DF /* error.swift */; };
 		3A18B5962025108400D6C2DF /* AddressService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B5952025108400D6C2DF /* AddressService.swift */; };
 		3A18B5982025111200D6C2DF /* AddressServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B5972025111200D6C2DF /* AddressServiceTest.swift */; };
 		3A18B59A2025120B00D6C2DF /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B5992025120B00D6C2DF /* Address.swift */; };
 		3A18B59C202515A500D6C2DF /* GetMoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B59B202515A500D6C2DF /* GetMoneyViewController.swift */; };
 		3A18B697202529A400D6C2DF /* libqrencode.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A18B59D202521CE00D6C2DF /* libqrencode.4.dylib */; };
 		3A18B69920254FC800D6C2DF /* SendMoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B69820254FC800D6C2DF /* SendMoneyViewController.swift */; };
-		3A18B69B20255B3600D6C2DF /* Withdraw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B69A20255B3600D6C2DF /* Withdraw.swift */; };
+		3A18B69B20255B3600D6C2DF /* withdraw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B69A20255B3600D6C2DF /* withdraw.swift */; };
 		3A18B6A2202572E200D6C2DF /* LightningRPC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B6A1202572E200D6C2DF /* LightningRPC.swift */; };
 		3A18B6A4202573D700D6C2DF /* LightningRPCTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B6A3202573D700D6C2DF /* LightningRPCTest.swift */; };
 		3A18B6AB20277B9C00D6C2DF /* LightningRPCConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B6AA20277B9C00D6C2DF /* LightningRPCConstants.swift */; };
@@ -33,7 +33,7 @@
 		3A18B6B32029748300D6C2DF /* PeerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B6B22029748300D6C2DF /* PeerTest.swift */; };
 		3A38BDE9201C55B40055BBA1 /* PaymentHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A38BDE8201C55B40055BBA1 /* PaymentHash.swift */; };
 		3A38BDED201CF8D70055BBA1 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A38BDEC201CF8D70055BBA1 /* String.swift */; };
-		3A5565642023B1DD003CEBEA /* Output.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5565632023B1DD003CEBEA /* Output.swift */; };
+		3A5565642023B1DD003CEBEA /* listfunds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5565632023B1DD003CEBEA /* listfunds.swift */; };
 		3A5565662023BFDE003CEBEA /* PaymentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5565652023BFDE003CEBEA /* PaymentsViewController.swift */; };
 		3A5565682023C9F0003CEBEA /* ChannelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5565672023C9F0003CEBEA /* ChannelsViewController.swift */; };
 		3A55656A2023CF2F003CEBEA /* ChannelsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5565692023CF2F003CEBEA /* ChannelsTest.swift */; };
@@ -44,9 +44,9 @@
 		3AA2A68E202385AC005664FC /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA2A68D202385AC005664FC /* Data.swift */; };
 		3AA4BDEA201BCADC00000153 /* listpayments.json in Resources */ = {isa = PBXBuildFile; fileRef = 3AA4BDE9201BCADC00000153 /* listpayments.json */; };
 		3AA4BDEC201BE13800000153 /* listpeers.json in Resources */ = {isa = PBXBuildFile; fileRef = 3AA4BDEB201BE13800000153 /* listpeers.json */; };
-		3AA4BDEE201BE8A300000153 /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA4BDED201BE8A300000153 /* Payment.swift */; };
-		3AA4BDF0201BE8F400000153 /* Peer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA4BDEF201BE8F400000153 /* Peer.swift */; };
-		3AA4BDF3201BE91B00000153 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA4BDF2201BE91B00000153 /* Channel.swift */; };
+		3AA4BDEE201BE8A300000153 /* listpayments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA4BDED201BE8A300000153 /* listpayments.swift */; };
+		3AA4BDF0201BE8F400000153 /* listpeers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA4BDEF201BE8F400000153 /* listpeers.swift */; };
+		3AA4BDF3201BE91B00000153 /* listchannels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA4BDF2201BE91B00000153 /* listchannels.swift */; };
 		3AC2B843202B601F00216D55 /* horn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3AC2B841202B601F00216D55 /* horn.mp3 */; };
 		3AF04905202F8AB700BABE2F /* ArrayTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF04904202F8AB700BABE2F /* ArrayTest.swift */; };
 		3AFD6CFA20213EAA001599D2 /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFD6CF920213EAA001599D2 /* PreferencesViewController.swift */; };
@@ -90,12 +90,12 @@
 		3A071416201A7127008E2AEE /* VoltageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoltageUITests.swift; sourceTree = "<group>"; };
 		3A071418201A7127008E2AEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A18B5862024E80000D6C2DF /* Console.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Console.swift; sourceTree = "<group>"; };
-		3A18B5882024F51700D6C2DF /* Invoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Invoice.swift; sourceTree = "<group>"; };
+		3A18B5882024F51700D6C2DF /* listinvoices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listinvoices.swift; sourceTree = "<group>"; };
 		3A18B58A2024F61900D6C2DF /* InvoiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceTest.swift; sourceTree = "<group>"; };
 		3A18B58C2024F8DD00D6C2DF /* InvoicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoicesViewController.swift; sourceTree = "<group>"; };
 		3A18B58E202503B100D6C2DF /* MoneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyViewController.swift; sourceTree = "<group>"; };
 		3A18B5902025054B00D6C2DF /* OutputTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputTest.swift; sourceTree = "<group>"; };
-		3A18B59220250A0900D6C2DF /* ErrorResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResult.swift; sourceTree = "<group>"; };
+		3A18B59220250A0900D6C2DF /* error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = error.swift; sourceTree = "<group>"; };
 		3A18B5952025108400D6C2DF /* AddressService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressService.swift; sourceTree = "<group>"; };
 		3A18B5972025111200D6C2DF /* AddressServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressServiceTest.swift; sourceTree = "<group>"; };
 		3A18B5992025120B00D6C2DF /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
@@ -262,7 +262,7 @@
 		3A18B6942025264400D6C2DF /* split.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = split.h; sourceTree = "<group>"; };
 		3A18B6952025264400D6C2DF /* autogen.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = autogen.sh; sourceTree = "<group>"; };
 		3A18B69820254FC800D6C2DF /* SendMoneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMoneyViewController.swift; sourceTree = "<group>"; };
-		3A18B69A20255B3600D6C2DF /* Withdraw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Withdraw.swift; sourceTree = "<group>"; };
+		3A18B69A20255B3600D6C2DF /* withdraw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = withdraw.swift; sourceTree = "<group>"; };
 		3A18B6A1202572E200D6C2DF /* LightningRPC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightningRPC.swift; sourceTree = "<group>"; };
 		3A18B6A3202573D700D6C2DF /* LightningRPCTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightningRPCTest.swift; sourceTree = "<group>"; };
 		3A18B6AA20277B9C00D6C2DF /* LightningRPCConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightningRPCConstants.swift; sourceTree = "<group>"; };
@@ -272,7 +272,7 @@
 		3A38BDEB201CF59C0055BBA1 /* Voltage-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Voltage-Bridging-Header.h"; sourceTree = "<group>"; };
 		3A38BDEC201CF8D70055BBA1 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		3A38BDEE201D16DE0055BBA1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		3A5565632023B1DD003CEBEA /* Output.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Output.swift; sourceTree = "<group>"; };
+		3A5565632023B1DD003CEBEA /* listfunds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listfunds.swift; sourceTree = "<group>"; };
 		3A5565652023BFDE003CEBEA /* PaymentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsViewController.swift; sourceTree = "<group>"; };
 		3A5565672023C9F0003CEBEA /* ChannelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsViewController.swift; sourceTree = "<group>"; };
 		3A5565692023CF2F003CEBEA /* ChannelsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsTest.swift; sourceTree = "<group>"; };
@@ -284,9 +284,9 @@
 		3AA2A69020239073005664FC /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		3AA4BDE9201BCADC00000153 /* listpayments.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = listpayments.json; sourceTree = "<group>"; };
 		3AA4BDEB201BE13800000153 /* listpeers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = listpeers.json; sourceTree = "<group>"; };
-		3AA4BDED201BE8A300000153 /* Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
-		3AA4BDEF201BE8F400000153 /* Peer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Peer.swift; sourceTree = "<group>"; };
-		3AA4BDF2201BE91B00000153 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		3AA4BDED201BE8A300000153 /* listpayments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listpayments.swift; sourceTree = "<group>"; };
+		3AA4BDEF201BE8F400000153 /* listpeers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listpeers.swift; sourceTree = "<group>"; };
+		3AA4BDF2201BE91B00000153 /* listchannels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listchannels.swift; sourceTree = "<group>"; };
 		3AC2B841202B601F00216D55 /* horn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = horn.mp3; sourceTree = "<group>"; };
 		3AF04904202F8AB700BABE2F /* ArrayTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayTest.swift; sourceTree = "<group>"; };
 		3AFD6CF920213EAA001599D2 /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
@@ -705,6 +705,20 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		3AF0490D202FBA5700BABE2F /* JSON-RPC Methods */ = {
+			isa = PBXGroup;
+			children = (
+				3A18B59220250A0900D6C2DF /* error.swift */,
+				3AA4BDF2201BE91B00000153 /* listchannels.swift */,
+				3A5565632023B1DD003CEBEA /* listfunds.swift */,
+				3A18B5882024F51700D6C2DF /* listinvoices.swift */,
+				3AA4BDED201BE8A300000153 /* listpayments.swift */,
+				3AA4BDEF201BE8F400000153 /* listpeers.swift */,
+				3A18B69A20255B3600D6C2DF /* withdraw.swift */,
+			);
+			path = "JSON-RPC Methods";
+			sourceTree = "<group>";
+		};
 		3AFD6CFD20222BFC001599D2 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -724,17 +738,11 @@
 		3AFD6CFE20222C6B001599D2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				3AF0490D202FBA5700BABE2F /* JSON-RPC Methods */,
 				3A18B5992025120B00D6C2DF /* Address.swift */,
-				3AA4BDF2201BE91B00000153 /* Channel.swift */,
 				3A18B5862024E80000D6C2DF /* Console.swift */,
-				3A18B5882024F51700D6C2DF /* Invoice.swift */,
-				3A5565632023B1DD003CEBEA /* Output.swift */,
-				3AA4BDED201BE8A300000153 /* Payment.swift */,
 				3A38BDE8201C55B40055BBA1 /* PaymentHash.swift */,
-				3AA4BDEF201BE8F400000153 /* Peer.swift */,
 				3AFD6CFB202149D0001599D2 /* Preferences.swift */,
-				3A18B59220250A0900D6C2DF /* ErrorResult.swift */,
-				3A18B69A20255B3600D6C2DF /* Withdraw.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1062,7 +1070,7 @@
 				3A18B59C202515A500D6C2DF /* GetMoneyViewController.swift in Sources */,
 				3A5565682023C9F0003CEBEA /* ChannelsViewController.swift in Sources */,
 				3A55656C2023DB7E003CEBEA /* Bool.swift in Sources */,
-				3A18B59320250A0900D6C2DF /* ErrorResult.swift in Sources */,
+				3A18B59320250A0900D6C2DF /* error.swift in Sources */,
 				3A18B58F202503B100D6C2DF /* MoneyViewController.swift in Sources */,
 				3A5565662023BFDE003CEBEA /* PaymentsViewController.swift in Sources */,
 				3AFD6D0020223C6F001599D2 /* LightningRPCSocket.swift in Sources */,
@@ -1076,18 +1084,18 @@
 				3A605DFA202C0C6A0076EF45 /* VoltageTableViewProtocol.swift in Sources */,
 				3A38BDE9201C55B40055BBA1 /* PaymentHash.swift in Sources */,
 				3A18B58D2024F8DD00D6C2DF /* InvoicesViewController.swift in Sources */,
-				3AA4BDF3201BE91B00000153 /* Channel.swift in Sources */,
-				3AA4BDF0201BE8F400000153 /* Peer.swift in Sources */,
+				3AA4BDF3201BE91B00000153 /* listchannels.swift in Sources */,
+				3AA4BDF0201BE8F400000153 /* listpeers.swift in Sources */,
 				3AA2A68E202385AC005664FC /* Data.swift in Sources */,
 				3A605DFC202C0D260076EF45 /* VoltageTableViewController.swift in Sources */,
-				3A18B69B20255B3600D6C2DF /* Withdraw.swift in Sources */,
+				3A18B69B20255B3600D6C2DF /* withdraw.swift in Sources */,
 				3A18B59A2025120B00D6C2DF /* Address.swift in Sources */,
 				3A18B69920254FC800D6C2DF /* SendMoneyViewController.swift in Sources */,
-				3AA4BDEE201BE8A300000153 /* Payment.swift in Sources */,
-				3A18B5892024F51700D6C2DF /* Invoice.swift in Sources */,
+				3AA4BDEE201BE8A300000153 /* listpayments.swift in Sources */,
+				3A18B5892024F51700D6C2DF /* listinvoices.swift in Sources */,
 				3A0713F9201A7127008E2AEE /* AppDelegate.swift in Sources */,
 				3A38BDED201CF8D70055BBA1 /* String.swift in Sources */,
-				3A5565642023B1DD003CEBEA /* Output.swift in Sources */,
+				3A5565642023B1DD003CEBEA /* listfunds.swift in Sources */,
 				3A18B5872024E80000D6C2DF /* Console.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
