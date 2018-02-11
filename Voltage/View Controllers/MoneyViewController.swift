@@ -11,9 +11,15 @@ import AVFoundation
 
 class MoneyViewController: NSViewController {
     
-    var output_list = [Output]()
+    var output_list = [FundOutput]()
     
-    var wallet_balance: Int = 0
+    var channel_list = [FundChannel]()
+    
+    var on_chain_balance: Int = 0
+    
+    var channel_balance: Int = 0
+    
+    var channel_capacity: Int = 0
     
     var audio_players = [AVAudioPlayer]()
     
@@ -25,6 +31,12 @@ class MoneyViewController: NSViewController {
         
     @IBOutlet weak var balance_btc: NSTextFieldCell!
     
+    @IBOutlet weak var channel_capacity_bits: NSTextField!
+    
+    @IBOutlet weak var channel_balance_bits: NSTextField!
+    
+    @IBOutlet weak var channel_receivable_bits: NSTextField!
+    
     @IBAction func hodl_button(_ sender: Any) {
         instant_rap_air_horn()
     }
@@ -34,14 +46,41 @@ class MoneyViewController: NSViewController {
         load_outputs()
     }
     
-    func calculate_wallat_balance() {
-        wallet_balance = 0
+    func recalculate_balances() {
+        calculate_on_chain_balance()
+        calculate_channel_balance()
+        calculate_channel_capacity()
+        calculate_channel_receivable()
+    }
+    
+    func calculate_on_chain_balance() {
+        on_chain_balance = 0
         for output in output_list {
-            wallet_balance += output.value
+            on_chain_balance += output.value
         }
-        balance_satoshis.intValue = Int32(wallet_balance)
-        balance_bits.stringValue = String(describing: Decimal(wallet_balance) / 100)
-        balance_btc.stringValue = String(describing: Decimal(wallet_balance) / 100000000)
+        balance_satoshis.intValue = Int32(on_chain_balance)
+        balance_bits.stringValue = String(describing: Decimal(on_chain_balance) / 100)
+        balance_btc.stringValue = String(describing: Decimal(on_chain_balance) / 100000000)
+    }
+    
+    func calculate_channel_balance() {
+        channel_balance = 0
+        for channel in channel_list {
+            channel_balance += channel.channel_sat
+        }
+        channel_balance_bits.stringValue = String(describing: Decimal(channel_balance) / 100)
+    }
+    
+    func calculate_channel_capacity() {
+        channel_capacity = 0
+        for channel in channel_list {
+            channel_capacity += channel.channel_total_sat
+        }
+        channel_capacity_bits.stringValue = String(describing: Decimal(channel_capacity) / 100)
+    }
+    
+    func calculate_channel_receivable() {
+        channel_receivable_bits.stringValue = String(describing: (channel_capacity_bits.floatValue - channel_balance_bits.floatValue))
     }
     
     func load_outputs() {
@@ -49,19 +88,21 @@ class MoneyViewController: NSViewController {
         let listoutputs: LightningRPCQuery = LightningRPCQuery(id: Int(getpid()), method: "listfunds", params: [])
         let response: Data = service.send(query: listoutputs)
         do {
-            let result: OutputList = try decoder.decode(OutputResult.self, from: response).result
+            let result: FundList = try decoder.decode(FundResult.self, from: response).result
             output_list = result.outputs
+            channel_list = result.channels
         } catch {
             do {
                 let error_message = try decoder.decode(ErrorResult.self, from: response).error
-                print("RPC error: " + error_message)
+                print("MoneyViewController.load_outputs() RPC error: " + error_message)
             } catch {
-                print("RPC error: \(error)")
+                print("MoneyViewController.load_outputs() RPC error: \(error)")
             }
             //alert(message: "There was an error decoding the list of outputs. Is your c-lightning node running?")
-            print("MoneyViewController::load_outputs() JSON decoder error: \(error)")
+            print("MoneyViewController.load_outputs() JSON decoder error: \(error)")
         }
-        calculate_wallat_balance()
+
+        recalculate_balances()
     }
     
     // I have not measured the memory usage of this. I presume that since the
