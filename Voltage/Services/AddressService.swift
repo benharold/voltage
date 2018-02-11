@@ -23,9 +23,9 @@ class AddressService: NSObject {
             do {
                 NotificationCenter.default.post(name: Notification.Name(rawValue: "RPC Error"), object: error)
                 let error_message = try decoder.decode(ErrorResult.self, from: response).error
-                print("RPC error: " + error_message)
+                print("AddressService RPC error: " + error_message)
             } catch {
-                print("RPC error: \(error)")
+                print("AddressService RPC error: \(error)")
             }
             print("AddressService JSON decoder error: \(error)")
         }
