@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A00034F2034EE0500A68E68 /* Voltage.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 3A00034E2034EE0500A68E68 /* Voltage.iconset */; };
 		3A0713F9201A7127008E2AEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0713F8201A7127008E2AEE /* AppDelegate.swift */; };
 		3A0713FD201A7127008E2AEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A0713FC201A7127008E2AEE /* Assets.xcassets */; };
 		3A071400201A7127008E2AEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0713FE201A7127008E2AEE /* Main.storyboard */; };
@@ -77,6 +78,7 @@
 
 /* Begin PBXFileReference section */
 		0B9DBA404466F9AFE4DDAB37 /* Pods_VoltageUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VoltageUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A00034E2034EE0500A68E68 /* Voltage.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; name = Voltage.iconset; path = art/Voltage.iconset; sourceTree = SOURCE_ROOT; };
 		3A0713F5201A7127008E2AEE /* Voltage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Voltage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A0713F8201A7127008E2AEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A0713FC201A7127008E2AEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -150,7 +152,7 @@
 		3A18B61D2025264400D6C2DF /* decoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = decoder.h; sourceTree = "<group>"; };
 		3A18B61E2025264400D6C2DF /* test_split.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = test_split.c; sourceTree = "<group>"; };
 		3A18B61F2025264400D6C2DF /* test_qrencode.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = test_qrencode.c; sourceTree = "<group>"; };
-		3A18B6202025264400D6C2DF /* frame */ = {isa = PBXFileReference; lastKnownFileType = file; path = frame; sourceTree = "<group>"; };
+		3A18B6202025264400D6C2DF /* frame */ = {isa = PBXFileReference; lastKnownFileType = text; path = frame; sourceTree = "<group>"; };
 		3A18B6212025264400D6C2DF /* rscode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rscode.h; sourceTree = "<group>"; };
 		3A18B6222025264400D6C2DF /* test_rs.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = test_rs.c; sourceTree = "<group>"; };
 		3A18B6232025264400D6C2DF /* create_mqr_frame_pattern.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = create_mqr_frame_pattern.c; sourceTree = "<group>"; };
@@ -387,6 +389,7 @@
 				3A0713F8201A7127008E2AEE /* AppDelegate.swift */,
 				3A38BDEB201CF59C0055BBA1 /* Voltage-Bridging-Header.h */,
 				3A0713FC201A7127008E2AEE /* Assets.xcassets */,
+				3A00034E2034EE0500A68E68 /* Voltage.iconset */,
 				3A0713FE201A7127008E2AEE /* Main.storyboard */,
 				3A071401201A7127008E2AEE /* Info.plist */,
 				3A071402201A7127008E2AEE /* Voltage.entitlements */,
@@ -870,6 +873,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A00034F2034EE0500A68E68 /* Voltage.iconset in Resources */,
 				3AC2B843202B601F00216D55 /* horn.mp3 in Resources */,
 				3A0713FD201A7127008E2AEE /* Assets.xcassets in Resources */,
 				3A071400201A7127008E2AEE /* Main.storyboard in Resources */,
