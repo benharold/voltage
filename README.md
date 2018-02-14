@@ -41,6 +41,8 @@ Please be aware that there are no confirmations when you send or receive testnet
 - [ ] Pre-load receiving address for "Get Money" button
 - [ ] Validate lightning invoices
 - [ ] Use a single socket instance for all RPC calls
+- [ ] Remove `Faker` as a dependency in the Voltage target. It should only be required in tests.
+- [ ] Figure out code signing
 
 ## Usage
 
