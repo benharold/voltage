@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3A00034F2034EE0500A68E68 /* Voltage.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 3A00034E2034EE0500A68E68 /* Voltage.iconset */; };
+		3A0003532034F0DC00A68E68 /* libqrencode.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0003512034F00F00A68E68 /* libqrencode.4.dylib */; };
 		3A0713F9201A7127008E2AEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0713F8201A7127008E2AEE /* AppDelegate.swift */; };
 		3A0713FD201A7127008E2AEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A0713FC201A7127008E2AEE /* Assets.xcassets */; };
 		3A071400201A7127008E2AEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0713FE201A7127008E2AEE /* Main.storyboard */; };
@@ -24,7 +25,6 @@
 		3A18B5982025111200D6C2DF /* AddressServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B5972025111200D6C2DF /* AddressServiceTest.swift */; };
 		3A18B59A2025120B00D6C2DF /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B5992025120B00D6C2DF /* Address.swift */; };
 		3A18B59C202515A500D6C2DF /* GetMoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B59B202515A500D6C2DF /* GetMoneyViewController.swift */; };
-		3A18B697202529A400D6C2DF /* libqrencode.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A18B59D202521CE00D6C2DF /* libqrencode.4.dylib */; };
 		3A18B69920254FC800D6C2DF /* SendMoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B69820254FC800D6C2DF /* SendMoneyViewController.swift */; };
 		3A18B69B20255B3600D6C2DF /* withdraw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B69A20255B3600D6C2DF /* withdraw.swift */; };
 		3A18B6A2202572E200D6C2DF /* LightningRPC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B6A1202572E200D6C2DF /* LightningRPC.swift */; };
@@ -79,6 +79,7 @@
 /* Begin PBXFileReference section */
 		0B9DBA404466F9AFE4DDAB37 /* Pods_VoltageUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VoltageUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A00034E2034EE0500A68E68 /* Voltage.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; name = Voltage.iconset; path = art/Voltage.iconset; sourceTree = SOURCE_ROOT; };
+		3A0003512034F00F00A68E68 /* libqrencode.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libqrencode.4.dylib; path = lib/libqrencode.4.dylib; sourceTree = "<group>"; };
 		3A0713F5201A7127008E2AEE /* Voltage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Voltage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A0713F8201A7127008E2AEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A0713FC201A7127008E2AEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -102,7 +103,6 @@
 		3A18B5972025111200D6C2DF /* AddressServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressServiceTest.swift; sourceTree = "<group>"; };
 		3A18B5992025120B00D6C2DF /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 		3A18B59B202515A500D6C2DF /* GetMoneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMoneyViewController.swift; sourceTree = "<group>"; };
-		3A18B59D202521CE00D6C2DF /* libqrencode.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libqrencode.4.dylib; path = ../../../../usr/local/lib/libqrencode.4.dylib; sourceTree = "<group>"; };
 		3A18B5EC2025264400D6C2DF /* qrencode_inner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = qrencode_inner.h; sourceTree = "<group>"; };
 		3A18B5ED2025264400D6C2DF /* mask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mask.h; sourceTree = "<group>"; };
 		3A18B5EE2025264400D6C2DF /* mmask.lo */ = {isa = PBXFileReference; lastKnownFileType = text; path = mmask.lo; sourceTree = "<group>"; };
@@ -310,8 +310,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A0003532034F0DC00A68E68 /* libqrencode.4.dylib in Frameworks */,
 				7A9A87BF7E1EB5CDADA7F6AA /* Pods_Voltage.framework in Frameworks */,
-				3A18B697202529A400D6C2DF /* libqrencode.4.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,8 +350,8 @@
 		23F38A2E402575B4D3CFF07B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3A0003512034F00F00A68E68 /* libqrencode.4.dylib */,
 				3A18B5EB2025264400D6C2DF /* qrencode-4.0.0 */,
-				3A18B59D202521CE00D6C2DF /* libqrencode.4.dylib */,
 				919BD71B073A00D61526A817 /* Pods_Voltage.framework */,
 				D2D368F4B330DA9419F9CC4D /* Pods_VoltageTests.framework */,
 				0B9DBA404466F9AFE4DDAB37 /* Pods_VoltageUITests.framework */,
@@ -510,7 +510,7 @@
 				3A18B6952025264400D6C2DF /* autogen.sh */,
 			);
 			name = "qrencode-4.0.0";
-			path = "../../Downloads/qrencode-4.0.0";
+			path = "lib/qrencode-4.0.0";
 			sourceTree = "<group>";
 		};
 		3A18B5F82025264400D6C2DF /* cmake */ = {
@@ -1275,7 +1275,10 @@
 				DEVELOPMENT_TEAM = K5NA8NE576;
 				INFOPLIST_FILE = Voltage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					"$(PROJECT_DIR)/lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hci.Voltage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1298,7 +1301,10 @@
 				DEVELOPMENT_TEAM = K5NA8NE576;
 				INFOPLIST_FILE = Voltage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					"$(PROJECT_DIR)/lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hci.Voltage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
