@@ -39,7 +39,7 @@ class InfoViewController: ReloadableViewController {
         let getinfo: LightningRPCQuery = LightningRPCQuery(id: Int(getpid()), method: "getinfo", params: [])
         let response: Data = service.send(query: getinfo)
         do {
-            let result: Info = try decoder.decode(GetInfoResult.self, from: response).result
+            let result: GetInfo = try decoder.decode(GetInfoResult.self, from: response).result
             DispatchQueue.main.async {
                 self.node_id.stringValue = result.id
                 self.port.stringValue = String(result.port)

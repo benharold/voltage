@@ -12,10 +12,12 @@ import XCTest
 class OutputTest: XCTestCase {
     let decoder: JSONDecoder = JSONDecoder.init()
     
-    func testListFundsIsDecodable() {
+    func testListFundsIsDecodable() throws {
         //        self.measure {
         let result: FundResult
-        let socket = LightningRPCSocket.create()
+        guard let socket = LightningRPCSocket.create() else {
+            throw SocketError.unwrap_error
+        }
         let query = LightningRPCQuery(
             id: Int(getpid()),
             method: "listfunds",

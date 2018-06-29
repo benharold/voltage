@@ -12,9 +12,11 @@ import XCTest
 class ChannelsTest: XCTestCase {
     let decoder: JSONDecoder = JSONDecoder.init()
 
-    func testListChannelsIsDecodable() {
+    func testListChannelsIsDecodable() throws {
 //        self.measure {
-            let socket = LightningRPCSocket.create()
+        guard let socket = LightningRPCSocket.create() else {
+            throw SocketError.unwrap_error
+        }
             let query = LightningRPCQuery(
                 id: Int(getpid()),
                 method: "listchannels",

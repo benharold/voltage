@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Info: Codable {
+struct GetInfo: Codable {
     let id: String
     let port: Int
     let version: String
@@ -19,5 +19,5 @@ struct Info: Codable {
 struct GetInfoResult: Codable {
     let id: Int
     let jsonrpc: String
-    let result: Info
+    let result: GetInfo
 }

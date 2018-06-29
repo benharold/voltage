@@ -21,9 +21,4 @@ class LightningRPCTest: XCTestCase {
         XCTAssert((rpc == nil) as Bool)
     }
     
-    func test_get_info() {
-        let rpc = LightningRPC(method: "getinfo")
-        print(rpc!.method)
-    }
-
 }

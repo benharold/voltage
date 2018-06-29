@@ -12,10 +12,12 @@ import XCTest
 class AddressServiceTest: XCTestCase {
 
     func test_get_new_address() {
-        let new_address = AddressService.generate()
-        
-        XCTAssert(new_address!.count >= 26)
-        XCTAssert(new_address!.count <= 35)
+        if let new_address = AddressService.generate() {
+            XCTAssert(new_address.count >= 26)
+            XCTAssert(new_address.count <= 35)
+        } else {
+            XCTAssert(false)
+        }
     }
 
 }

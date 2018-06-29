@@ -12,10 +12,12 @@ import XCTest
 class InvoiceTest: XCTestCase {
     let decoder: JSONDecoder = JSONDecoder.init()
     
-    func testListInvoicesIsDecodable() {
+    func testListInvoicesIsDecodable() throws {
         //        self.measure {
         let result: InvoiceResult
-        let socket = LightningRPCSocket.create()
+        guard let socket = LightningRPCSocket.create() else {
+            throw SocketError.unwrap_error
+        }
         let query = LightningRPCQuery(
             id: Int(getpid()),
             method: "listinvoices",

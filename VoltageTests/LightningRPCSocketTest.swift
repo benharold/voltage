@@ -50,27 +50,30 @@ class LightningRPCSocketTest: XCTestCase {
         XCTAssert((socket?.isConnected)!)
     }
     
-    func testSendGetInfoQuery() {
-        let socket = LightningRPCSocket(path: relative_path)
+    func testSendGetInfoQuery() throws {
+        let result: GetInfoResult
+        guard let socket = LightningRPCSocket(path: relative_path) else {
+            throw SocketError.unwrap_error
+        }
         let query = LightningRPCQuery(
             id: Int(getpid()),
             method: "getinfo",
             params: []
         )
-        let result = socket.send(query: query)
-        // I need to update this after I create the `getinfo` struct.
-        print("testSendQuery", String(data: result, encoding: .utf8)!)
-//        do {
-//            result = try decoder.decode(GetInfo.self, from: response)
-//            XCTAssert(result is GetInfo) // Ignore the warning https://bugs.swift.org/browse/SR-1703
-//        } catch {
-//            print("Error: \(error)")
-//        }
+        let response: Data = socket.send(query: query)
+        do {
+            result = try decoder.decode(GetInfoResult.self, from: response)
+            XCTAssert(result is GetInfoResult) // Ignore the warning https://bugs.swift.org/browse/SR-1703
+        } catch {
+            print("Error: \(error)")
+        }
     }
     
-    func testListPaymentsIsDecodable() {
+    func testListPaymentsIsDecodable() throws {
         let result: PaymentResult
-        let socket = LightningRPCSocket(path: relative_path)
+        guard let socket = LightningRPCSocket(path: relative_path) else {
+            throw SocketError.unwrap_error
+        }
         let query = LightningRPCQuery(
             id: Int(getpid()),
             method: "listpayments",
