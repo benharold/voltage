@@ -28,11 +28,26 @@ class PeersViewController: VoltageTableViewController, NSTableViewDelegate, NSTa
     
     @IBOutlet weak var peers_table_view: NSTableView!
     
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        self.tab_index = 3
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         peers_table_view.delegate = self
         peers_table_view.dataSource = self
         set_sort_descriptors()
+    }
+    
+    override func reload() {
+        if peer_list != nil {
+            peer_list.removeAll()
+        }
+        load_table_data()
+        DispatchQueue.main.async {
+            self.reload_table_view()
+        }
     }
     
     override func load_table_data() {
@@ -51,6 +66,9 @@ class PeersViewController: VoltageTableViewController, NSTableViewDelegate, NSTa
 
     func load_peers() {
         let listpeers: LightningRPCQuery = LightningRPCQuery(id: Int(getpid()), method: "listpeers", params: [])
+        guard let socket = LightningRPCSocket.create() else {
+            return
+        }
         let response: Data = socket.send(query: listpeers)
         do {
             let result: PeerList = try decoder.decode(PeerResult.self, from: response).result

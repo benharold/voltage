@@ -27,7 +27,9 @@ class SendMoneyViewController: NSViewController {
         let amount = amount_field.stringValue
         let address = send_to_field.stringValue
         let decoder: JSONDecoder = JSONDecoder.init()
-        let service: LightningRPCSocket = LightningRPCSocket.create()
+        guard let service = LightningRPCSocket.create() else {
+            return
+        }
         let newaddr: LightningRPCQuery = LightningRPCQuery(id: Int(getpid()), method: "withdraw", params: [address, amount])
         let response: Data = service.send(query: newaddr)
         print(response.to_string())

@@ -16,13 +16,14 @@ I haven't built any binaries yet, so if you want to try it out you'll need to op
 
 Right now Voltage has five tabs:
 
-- Money - Send and receieve on-chain testnet Bitcoin
+- Money - Send and receieve on-chain Bitcoin
 - Invoices - Corresponds to `lightning-cli listinvoices`
 - Payments - Corresponds to `lightning-cli listpayments`
 - Peers - Corresponds to `lightning-cli listpeers`
 - Channels - Corresponds to `lightning-cli listchannels`
+- Info - Corresponds to `lightning-cli getinfo`
 
-Please be aware that there are no confirmations when you send or receive testnet Bitcoin. Also, there's currently no way to re-run RPC calls except on the payments tab. Like I said, pre-alpha.
+Please be aware that there are no confirmations when you send or receive testnet Bitcoin. ~~Also, there's currently no way to re-run RPC calls except on the payments tab.~~ Like I said, pre-alpha.
 
 ### Short Term Goals
 
@@ -34,13 +35,13 @@ Please be aware that there are no confirmations when you send or receive testnet
 - [ ] Pay lightning invoices
 - [X] Make all of the lists sortable
 - [ ] Integrate [CoreBitcoin](https://github.com/oleganza/CoreBitcoin)
-- [ ] Getinfo from the "About Voltage" menu item maybe?
+- [X] Getinfo from the "About Voltage" menu item maybe?
 - [X] Make RPC calls in a background thread
 - [X] Use `NotificationCenter` to handle RPC errors
 - [ ] Pre-load all tables when application launches
-- [ ] Pre-load receiving address for "Get Money" button
+- [X] Pre-load receiving address for "Get Money" button
 - [ ] Validate lightning invoices
-- [ ] Use a single socket instance for all RPC calls
+- [ ] ~~Use a single socket instance for all RPC calls~~ bad idea
 - [ ] Remove `Faker` as a dependency in the Voltage target. It should only be required in tests.
 - [ ] Figure out code signing
 

@@ -9,7 +9,7 @@
 import Cocoa
 
 class InvoicesViewController: VoltageTableViewController, NSTableViewDelegate, NSTableViewDataSource {
-
+    
     var invoice_list: [Invoice]!
     
     let table_keys = [
@@ -24,6 +24,11 @@ class InvoicesViewController: VoltageTableViewController, NSTableViewDelegate, N
     
     @IBOutlet weak var invoices_table_view: NSTableView!
     
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        self.tab_index = 1
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         invoices_table_view.delegate = self
@@ -31,6 +36,16 @@ class InvoicesViewController: VoltageTableViewController, NSTableViewDelegate, N
         set_sort_descriptors()
     }
     
+    override func reload() {
+        if invoice_list != nil {
+            invoice_list.removeAll()
+        }
+        load_table_data()
+        DispatchQueue.main.async {
+            self.reload_table_view()
+        }
+    }
+
     override func load_table_data() {
         load_invoices()
     }
@@ -47,6 +62,9 @@ class InvoicesViewController: VoltageTableViewController, NSTableViewDelegate, N
     
     func load_invoices() {
         let listinvoices: LightningRPCQuery = LightningRPCQuery(id: Int(getpid()), method: "listinvoices", params: [])
+        guard let socket = LightningRPCSocket.create() else {
+            return
+        }
         let response: Data = socket.send(query: listinvoices)
         do {
             let result: InvoiceList = try decoder.decode(InvoiceResult.self, from: response).result

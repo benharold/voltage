@@ -12,7 +12,9 @@ class AddressService: NSObject {
     
     class func generate() -> String? {
         let decoder: JSONDecoder = JSONDecoder.init()
-        let service: LightningRPCSocket = LightningRPCSocket.create()
+        guard let service = LightningRPCSocket.create() else {
+            return nil
+        }
         let newaddr: LightningRPCQuery = LightningRPCQuery(id: Int(getpid()), method: "newaddr", params: [])
         let response: Data = service.send(query: newaddr)
         

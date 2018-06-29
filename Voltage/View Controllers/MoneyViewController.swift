@@ -9,7 +9,7 @@
 import Cocoa
 import AVFoundation
 
-class MoneyViewController: NSViewController {
+class MoneyViewController: ReloadableViewController {
     
     var output_list = [FundOutput]()
     
@@ -41,8 +41,15 @@ class MoneyViewController: NSViewController {
         instant_rap_air_horn()
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear() {
+        super.viewWillAppear()
+        NotificationCenter.default.post(name: Notification.Name(rawValue: "loading_start"), object: nil)
+        DispatchQueue.global(qos: .userInitiated).async {
+            self.load_outputs()
+        }
+    }
+    
+    override func reload() {
         load_outputs()
     }
     
@@ -84,7 +91,9 @@ class MoneyViewController: NSViewController {
     }
     
     func load_outputs() {
-        let service: LightningRPCSocket = LightningRPCSocket.create()
+        guard let service = LightningRPCSocket.create() else {
+            return
+        }
         let listoutputs: LightningRPCQuery = LightningRPCQuery(id: Int(getpid()), method: "listfunds", params: [])
         let response: Data = service.send(query: listoutputs)
         do {
@@ -101,8 +110,11 @@ class MoneyViewController: NSViewController {
             //alert(message: "There was an error decoding the list of outputs. Is your c-lightning node running?")
             print("MoneyViewController.load_outputs() JSON decoder error: \(error)")
         }
-
-        recalculate_balances()
+        
+        DispatchQueue.main.async {
+            self.recalculate_balances()
+            NotificationCenter.default.post(name: Notification.Name(rawValue: "loading_finish"), object: nil)
+        }
     }
     
     // I have not measured the memory usage of this. I presume that since the

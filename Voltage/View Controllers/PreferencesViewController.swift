@@ -11,7 +11,7 @@ import Cocoa
 class PreferencesViewController: NSViewController {
     var preferences = Preferences()
     
-    var default_socket_path: String = "~/.lightning/lightning-rpc"
+    let default_socket_path: String = "~/.lightning/lightning-rpc"
     
     @IBOutlet weak var socket_location: NSTextFieldCell!
     
@@ -45,7 +45,11 @@ class PreferencesViewController: NSViewController {
     }
     
     func test_connection() {
-        let service = LightningRPCSocket(path: socket_location.stringValue)
+        guard let service = LightningRPCSocket(path: socket_location.stringValue) else {
+            socket_status.stringValue = "Disconnected"
+            socket_status.textColor = NSColor.red
+            return
+        }
         if (service.socket?.isConnected)! {
             socket_status.stringValue = "Connected"
             socket_status.textColor = NSColor.black
