@@ -24,7 +24,7 @@ class LightningRPCSocket: NSObject, RPCProtocol {
     
     var wait_timeout: UInt = 5000
     
-    init(path: String) {
+    init?(path: String) {
         let socket_family = Socket.ProtocolFamily.unix
         let socket_type = Socket.SocketType.stream
         let socket_protocol = Socket.SocketProtocol.unix
@@ -39,15 +39,14 @@ class LightningRPCSocket: NSObject, RPCProtocol {
             socket.readBufferSize = buffer_size
             try socket.connect(to: socket_path)
         } catch {
-            // This really should broadcast a message so that a logger can
-            // pick it up and/or the user can be notified in some manner.
             NotificationCenter.default.post(name: Notification.Name(rawValue: "RPC Error"), object: error)
             print("socket connection error: \(error)", socket_path)
+            return nil
         }
     }
     
     // This is just `init` using the preferences value for the path
-    class func create() -> LightningRPCSocket {
+    class func create() -> LightningRPCSocket? {
         let prefs = Preferences()
         let socket_path = prefs.socket_path
         
