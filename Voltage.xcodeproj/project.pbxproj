@@ -14,6 +14,8 @@
 		3A071400201A7127008E2AEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0713FE201A7127008E2AEE /* Main.storyboard */; };
 		3A07140C201A7127008E2AEE /* JSONDecoderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A07140B201A7127008E2AEE /* JSONDecoderTest.swift */; };
 		3A071417201A7127008E2AEE /* VoltageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A071416201A7127008E2AEE /* VoltageUITests.swift */; };
+		3A13B26620DB3F7A000FCC53 /* getinfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A13B26520DB3F79000FCC53 /* getinfo.swift */; };
+		3A13B26820DDA303000FCC53 /* ReloadableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A13B26720DDA303000FCC53 /* ReloadableViewController.swift */; };
 		3A18B5872024E80000D6C2DF /* Console.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B5862024E80000D6C2DF /* Console.swift */; };
 		3A18B5892024F51700D6C2DF /* listinvoices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B5882024F51700D6C2DF /* listinvoices.swift */; };
 		3A18B58B2024F61900D6C2DF /* InvoiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B58A2024F61900D6C2DF /* InvoiceTest.swift */; };
@@ -41,6 +43,7 @@
 		3A55656C2023DB7E003CEBEA /* Bool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A55656B2023DB7E003CEBEA /* Bool.swift */; };
 		3A605DFA202C0C6A0076EF45 /* VoltageTableViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A605DF9202C0C6A0076EF45 /* VoltageTableViewProtocol.swift */; };
 		3A605DFC202C0D260076EF45 /* VoltageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A605DFB202C0D260076EF45 /* VoltageTableViewController.swift */; };
+		3A7B0A0120DAF459006AEBF1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7B0A0020DAF459006AEBF1 /* MainViewController.swift */; };
 		3AA2A68420227AC2005664FC /* LightningRPCQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA2A68320227AC2005664FC /* LightningRPCQuery.swift */; };
 		3AA2A68E202385AC005664FC /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA2A68D202385AC005664FC /* Data.swift */; };
 		3AA4BDEA201BCADC00000153 /* listpayments.json in Resources */ = {isa = PBXBuildFile; fileRef = 3AA4BDE9201BCADC00000153 /* listpayments.json */; };
@@ -48,6 +51,7 @@
 		3AA4BDEE201BE8A300000153 /* listpayments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA4BDED201BE8A300000153 /* listpayments.swift */; };
 		3AA4BDF0201BE8F400000153 /* listpeers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA4BDEF201BE8F400000153 /* listpeers.swift */; };
 		3AA4BDF3201BE91B00000153 /* listchannels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA4BDF2201BE91B00000153 /* listchannels.swift */; };
+		3AABB80B20D8662100173861 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AABB80A20D8662100173861 /* InfoViewController.swift */; };
 		3AC2B843202B601F00216D55 /* horn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3AC2B841202B601F00216D55 /* horn.mp3 */; };
 		3AF04905202F8AB700BABE2F /* ArrayTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF04904202F8AB700BABE2F /* ArrayTest.swift */; };
 		3AFD6CFA20213EAA001599D2 /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFD6CF920213EAA001599D2 /* PreferencesViewController.swift */; };
@@ -92,6 +96,8 @@
 		3A071412201A7127008E2AEE /* VoltageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoltageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A071416201A7127008E2AEE /* VoltageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoltageUITests.swift; sourceTree = "<group>"; };
 		3A071418201A7127008E2AEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A13B26520DB3F79000FCC53 /* getinfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = getinfo.swift; sourceTree = "<group>"; };
+		3A13B26720DDA303000FCC53 /* ReloadableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReloadableViewController.swift; sourceTree = "<group>"; };
 		3A18B5862024E80000D6C2DF /* Console.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Console.swift; sourceTree = "<group>"; };
 		3A18B5882024F51700D6C2DF /* listinvoices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listinvoices.swift; sourceTree = "<group>"; };
 		3A18B58A2024F61900D6C2DF /* InvoiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceTest.swift; sourceTree = "<group>"; };
@@ -281,6 +287,7 @@
 		3A55656B2023DB7E003CEBEA /* Bool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bool.swift; sourceTree = "<group>"; };
 		3A605DF9202C0C6A0076EF45 /* VoltageTableViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoltageTableViewProtocol.swift; sourceTree = "<group>"; };
 		3A605DFB202C0D260076EF45 /* VoltageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoltageTableViewController.swift; sourceTree = "<group>"; };
+		3A7B0A0020DAF459006AEBF1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		3AA2A68320227AC2005664FC /* LightningRPCQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightningRPCQuery.swift; sourceTree = "<group>"; };
 		3AA2A68D202385AC005664FC /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		3AA2A69020239073005664FC /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
@@ -289,6 +296,7 @@
 		3AA4BDED201BE8A300000153 /* listpayments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listpayments.swift; sourceTree = "<group>"; };
 		3AA4BDEF201BE8F400000153 /* listpeers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listpeers.swift; sourceTree = "<group>"; };
 		3AA4BDF2201BE91B00000153 /* listchannels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listchannels.swift; sourceTree = "<group>"; };
+		3AABB80A20D8662100173861 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		3AC2B841202B601F00216D55 /* horn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = horn.mp3; sourceTree = "<group>"; };
 		3AF04904202F8AB700BABE2F /* ArrayTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayTest.swift; sourceTree = "<group>"; };
 		3AFD6CF920213EAA001599D2 /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
@@ -711,6 +719,7 @@
 		3AF0490D202FBA5700BABE2F /* JSON-RPC Methods */ = {
 			isa = PBXGroup;
 			children = (
+				3A13B26520DB3F79000FCC53 /* getinfo.swift */,
 				3A18B59220250A0900D6C2DF /* error.swift */,
 				3AA4BDF2201BE91B00000153 /* listchannels.swift */,
 				3A5565632023B1DD003CEBEA /* listfunds.swift */,
@@ -727,11 +736,14 @@
 			children = (
 				3A5565672023C9F0003CEBEA /* ChannelsViewController.swift */,
 				3A18B59B202515A500D6C2DF /* GetMoneyViewController.swift */,
+				3AABB80A20D8662100173861 /* InfoViewController.swift */,
 				3A18B58C2024F8DD00D6C2DF /* InvoicesViewController.swift */,
+				3A7B0A0020DAF459006AEBF1 /* MainViewController.swift */,
 				3A18B58E202503B100D6C2DF /* MoneyViewController.swift */,
 				3A5565652023BFDE003CEBEA /* PaymentsViewController.swift */,
 				3A18B6B020296B1C00D6C2DF /* PeersViewController.swift */,
 				3AFD6CF920213EAA001599D2 /* PreferencesViewController.swift */,
+				3A13B26720DDA303000FCC53 /* ReloadableViewController.swift */,
 				3A18B69820254FC800D6C2DF /* SendMoneyViewController.swift */,
 				3A605DFB202C0D260076EF45 /* VoltageTableViewController.swift */,
 			);
@@ -823,7 +835,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Harold Consulting";
 				TargetAttributes = {
 					3A0713F4201A7127008E2AEE = {
@@ -1076,6 +1088,7 @@
 				3A55656C2023DB7E003CEBEA /* Bool.swift in Sources */,
 				3A18B59320250A0900D6C2DF /* error.swift in Sources */,
 				3A18B58F202503B100D6C2DF /* MoneyViewController.swift in Sources */,
+				3AABB80B20D8662100173861 /* InfoViewController.swift in Sources */,
 				3A5565662023BFDE003CEBEA /* PaymentsViewController.swift in Sources */,
 				3AFD6D0020223C6F001599D2 /* LightningRPCSocket.swift in Sources */,
 				3AFD6CFC202149D0001599D2 /* Preferences.swift in Sources */,
@@ -1084,15 +1097,18 @@
 				3A18B6A2202572E200D6C2DF /* LightningRPC.swift in Sources */,
 				3A18B6B120296B1C00D6C2DF /* PeersViewController.swift in Sources */,
 				3AFD6CFA20213EAA001599D2 /* PreferencesViewController.swift in Sources */,
+				3A13B26620DB3F7A000FCC53 /* getinfo.swift in Sources */,
 				3AA2A68420227AC2005664FC /* LightningRPCQuery.swift in Sources */,
 				3A605DFA202C0C6A0076EF45 /* VoltageTableViewProtocol.swift in Sources */,
 				3A38BDE9201C55B40055BBA1 /* PaymentHash.swift in Sources */,
 				3A18B58D2024F8DD00D6C2DF /* InvoicesViewController.swift in Sources */,
 				3AA4BDF3201BE91B00000153 /* listchannels.swift in Sources */,
 				3AA4BDF0201BE8F400000153 /* listpeers.swift in Sources */,
+				3A13B26820DDA303000FCC53 /* ReloadableViewController.swift in Sources */,
 				3AA2A68E202385AC005664FC /* Data.swift in Sources */,
 				3A605DFC202C0D260076EF45 /* VoltageTableViewController.swift in Sources */,
 				3A18B69B20255B3600D6C2DF /* withdraw.swift in Sources */,
+				3A7B0A0120DAF459006AEBF1 /* MainViewController.swift in Sources */,
 				3A18B59A2025120B00D6C2DF /* Address.swift in Sources */,
 				3A18B69920254FC800D6C2DF /* SendMoneyViewController.swift in Sources */,
 				3AA4BDEE201BE8A300000153 /* listpayments.swift in Sources */,
@@ -1169,6 +1185,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -1176,6 +1193,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -1226,6 +1244,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -1233,6 +1252,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
