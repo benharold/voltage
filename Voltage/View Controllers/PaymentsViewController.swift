@@ -28,8 +28,9 @@ class PaymentsViewController: VoltageTableViewController, NSTableViewDelegate, N
     
     @IBOutlet weak var destination: NSTextFieldCell!
     
-    @IBAction func reload_button(_ sender: Any) {
-        load_payments()
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        self.tab_index = 2
     }
     
     override func viewDidLoad() {
@@ -37,6 +38,16 @@ class PaymentsViewController: VoltageTableViewController, NSTableViewDelegate, N
         payments_table_view.delegate = self
         payments_table_view.dataSource = self
         set_sort_descriptors()
+    }
+    
+    override func reload() {
+        if payment_list != nil {
+            payment_list.removeAll()
+        }
+        load_table_data()
+        DispatchQueue.main.async {
+            self.reload_table_view()
+        }
     }
     
     override func load_table_data() {
@@ -55,6 +66,9 @@ class PaymentsViewController: VoltageTableViewController, NSTableViewDelegate, N
     
     func load_payments() {
         let listpayments: LightningRPCQuery = LightningRPCQuery(id: Int(getpid()), method: "listpayments", params: [])
+        guard let socket = LightningRPCSocket.create() else {
+            return
+        }
         let response: Data = socket.send(query: listpayments)
         do {
             let result: PaymentList = try decoder.decode(PaymentResult.self, from: response).result

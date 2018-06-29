@@ -23,12 +23,27 @@ class ChannelsViewController: VoltageTableViewController, NSTableViewDelegate, N
     ]
     
     @IBOutlet weak var channels_table_view: NSTableView!
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        self.tab_index = 4
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         channels_table_view.delegate = self
         channels_table_view.dataSource = self
         set_sort_descriptors()
+    }
+    
+    override func reload() {
+        if channel_list != nil {
+            channel_list.removeAll()
+        }
+        load_table_data()
+        DispatchQueue.main.async {
+            self.reload_table_view()
+        }
     }
     
     override func load_table_data() {
@@ -47,6 +62,9 @@ class ChannelsViewController: VoltageTableViewController, NSTableViewDelegate, N
     
     func load_channels() {
         let listchannels: LightningRPCQuery = LightningRPCQuery(id: Int(getpid()), method: "listchannels", params: [])
+        guard let socket = LightningRPCSocket.create() else {
+            return
+        }
         let response: Data = socket.send(query: listchannels)
         do {
             let result: ChannelList = try decoder.decode(ChannelResult.self, from: response).result
@@ -105,6 +123,8 @@ class ChannelsViewController: VoltageTableViewController, NSTableViewDelegate, N
         
         if sortDescriptor.ascending == true {
             switch key {
+            case "base_fee_millisatoshi":
+                channel_list.sort { Int($0.base_fee_millisatoshi ?? -1) < Int($1.base_fee_millisatoshi ?? -1) }
             case "flags":
                 channel_list.sort { $0.flags < $1.flags }
             case "active":
@@ -120,6 +140,8 @@ class ChannelsViewController: VoltageTableViewController, NSTableViewDelegate, N
             }
         } else {
             switch key {
+            case "base_fee_millisatoshi":
+                channel_list.sort { Int($0.base_fee_millisatoshi ?? -1) > Int($1.base_fee_millisatoshi ?? -1) }
             case "flags":
                 channel_list.sort { $0.flags > $1.flags }
             case "active":
