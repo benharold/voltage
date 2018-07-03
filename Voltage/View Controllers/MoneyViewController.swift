@@ -94,7 +94,9 @@ class MoneyViewController: ReloadableViewController {
     
     func load_outputs() {
         guard let service = LightningRPCSocket.create() else {
-            NotificationCenter.default.post(name: Notification.Name.loading_finish, object: nil)
+            DispatchQueue.main.async {
+                NotificationCenter.default.post(name: Notification.Name.loading_finish, object: nil)
+            }
             return
         }
         let listoutputs: LightningRPCQuery = LightningRPCQuery(id: Int(getpid()), method: "listfunds", params: [])
