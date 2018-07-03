@@ -38,12 +38,12 @@ class MainViewController: NSViewController {
     
     func listen_for_loading_start() {
         NotificationCenter.default.addObserver(self, selector: #selector(MainViewController.start_indicator),
-                                               name: Notification.Name(rawValue: "loading_start"), object: nil)
+                                               name: Notification.Name.loading_start, object: nil)
     }
     
     func listen_for_loading_finish() {
         NotificationCenter.default.addObserver(self, selector: #selector(MainViewController.stop_indicator),
-                                               name: Notification.Name(rawValue: "loading_finish"), object: nil)
+                                               name: Notification.Name.loading_finish, object: nil)
     }
     
     @objc func start_indicator() {

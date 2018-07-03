@@ -17,7 +17,7 @@ class VoltageTableViewController: ReloadableViewController, VoltageTableView {
     
     override func viewWillAppear() {
         super.viewWillAppear()
-        NotificationCenter.default.post(name: Notification.Name(rawValue: "loading_start"), object: nil)
+        NotificationCenter.default.post(name: Notification.Name.loading_start, object: nil)
         load_table()
     }
     
@@ -40,7 +40,7 @@ class VoltageTableViewController: ReloadableViewController, VoltageTableView {
         }
         
         group.notify(queue: .main) {
-            NotificationCenter.default.post(name: Notification.Name(rawValue: "loading_finish"), object: nil)
+            NotificationCenter.default.post(name: Notification.Name.loading_finish, object: nil)
         }
     }
     
