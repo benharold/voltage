@@ -40,7 +40,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             }
             // Anything that messes with the UI has to be done in the main thread
             DispatchQueue.main.async {
-                self.alert_rpc_error(header: notification.name.rawValue, body: error_text)
+                self.alert_rpc_error(header: "RPC Error", body: error_text)
             }
         })
     }

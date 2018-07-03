@@ -107,8 +107,8 @@ class MoneyViewController: ReloadableViewController {
             channel_list = result.channels
         } catch {
             do {
-                let error_message = try decoder.decode(ErrorResult.self, from: response).error
-                print("MoneyViewController.load_outputs() RPC error: " + error_message)
+                let rpc_error = try decoder.decode(ErrorResult.self, from: response).error
+                print("MoneyViewController.load_outputs() RPC error: " + rpc_error.message)
             } catch {
                 print("MoneyViewController.load_outputs() RPC error: \(error)")
             }

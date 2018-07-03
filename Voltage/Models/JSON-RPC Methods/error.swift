@@ -8,8 +8,13 @@
 
 import Foundation
 
+struct RPCError: Codable {
+    let code: Int
+    let message: String
+}
+
 struct ErrorResult: Codable {
     let id: Int
     let jsonrpc: String
-    let error: String
+    let error: RPCError
 }

@@ -49,8 +49,8 @@ class InfoViewController: ReloadableViewController {
             }
         } catch {
             do {
-                let error_message = try decoder.decode(ErrorResult.self, from: response).error
-                print("InfoViewController.load_info() RPC error: " + error_message)
+                let rpc_error = try decoder.decode(ErrorResult.self, from: response).error
+                print("InfoViewController.load_info() RPC error: " + rpc_error.message)
             } catch {
                 print("InfoViewController.load_info() RPC error: \(error)")
             }

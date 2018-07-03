@@ -40,8 +40,8 @@ class SendMoneyViewController: NSViewController {
 //            return result
         } catch {
             do {
-                let error_message = try decoder.decode(ErrorResult.self, from: response).error
-                print("SendMoneyViewController.send_money() RPC error: " + error_message)
+                let rpc_error = try decoder.decode(ErrorResult.self, from: response).error
+                print("SendMoneyViewController.send_money() RPC error: " + rpc_error.message)
             } catch {
                 print("SendMoneyViewController.send_money() RPC error: \(error)")
             }
