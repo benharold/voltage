@@ -39,7 +39,9 @@ class LightningRPCSocket: NSObject, RPCProtocol {
             socket.readBufferSize = buffer_size
             try socket.connect(to: socket_path)
         } catch {
-            NotificationCenter.default.post(name: Notification.Name(rawValue: "RPC Error"), object: error)
+            let path: [String: String] = ["socket_path": socket_path]
+            NotificationCenter.default.post(name: Notification.Name.rpc_error,
+                                            object: error, userInfo: path)
             print("socket connection error: \(error)", socket_path)
             return nil
         }
@@ -73,8 +75,7 @@ class LightningRPCSocket: NSObject, RPCProtocol {
                 if readable {
                     _ = try socket.read(into: &read_data)
                     // RPC calls with large payloads can take longer than one
-                    // second to return. This all needs to be moved to another
-                    // thread anyway. Good enough for the demo lol!!1!
+                    // second to return.
                     sleep(1)
                     let still_readable = try socket.isReadableOrWritable().readable
                     if !still_readable {
@@ -88,7 +89,7 @@ class LightningRPCSocket: NSObject, RPCProtocol {
         } catch {
             // Send the error to the notification center. This should be caught
             // by an observer that will trigger an alert in the main thread.
-            NotificationCenter.default.post(name: Notification.Name(rawValue: "RPC Error"), object: error)
+            NotificationCenter.default.post(name: Notification.Name.rpc_error, object: error)
             print("error communicating with RPC server", error)
             
             // Probably not the best way to handle this but for now...

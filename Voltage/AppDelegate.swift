@@ -13,7 +13,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Setup the RPC error observer. It watches for `Notification`s of type
-        // "RPC Error" and displays an alert when it sees them.
+        // "rpc_rror" and displays an alert when it sees them.
         add_rpc_error_observer()
         
         // Check the RPC connection after setting up the observer. If there is a
@@ -28,10 +28,16 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     func add_rpc_error_observer() {
-        let notification_name = Notification.Name(rawValue: "RPC Error")
+        let notification_name = Notification.Name.rpc_error
         NotificationCenter.default.addObserver(forName: notification_name, object: nil, queue: nil, using: { (notification) in
             print("rpc observer notification", notification)
-            let error_text: String = String(describing: notification.object!)
+            var error_text: String = String(describing: notification.object!)
+            if let user_info: [AnyHashable: Any] = notification.userInfo {
+                if var socket_path = user_info["socket_path"] as? String {
+                    socket_path = "Socket path: " + socket_path
+                    error_text += "\n\n" + socket_path
+                }
+            }
             // Anything that messes with the UI has to be done in the main thread
             DispatchQueue.main.async {
                 self.alert_rpc_error(header: notification.name.rawValue, body: error_text)
