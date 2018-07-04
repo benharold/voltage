@@ -18,11 +18,6 @@ class SendMoneyViewController: NSViewController {
         send_money()
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do view setup here.
-    }
-    
     func send_money() {
         let amount = amount_field.stringValue
         let address = send_to_field.stringValue
@@ -30,10 +25,11 @@ class SendMoneyViewController: NSViewController {
         guard let service = LightningRPCSocket.create() else {
             return
         }
-        let newaddr: LightningRPCQuery = LightningRPCQuery(id: Int(getpid()), method: "withdraw", params: [address, amount])
+        let newaddr: LightningRPCQuery = LightningRPCQuery(id: Int(getpid()),
+                                                           method: "withdraw",
+                                                           params: [address, amount])
         let response: Data = service.send(query: newaddr)
         print(response.to_string())
-        
         do {
             let result: Withdraw = try decoder.decode(WithdrawResult.self, from: response).result
             print(result)

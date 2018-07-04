@@ -10,7 +10,7 @@ import Foundation
 
 extension Data {
     func to_string() -> String {
-        let string_value = String(data: self, encoding: .utf8) as String!
+        let string_value = String(data: self, encoding: .utf8) as String?
         return string_value!
     }
 }
