@@ -53,6 +53,15 @@
 		3AA4BDF3201BE91B00000153 /* listchannels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA4BDF2201BE91B00000153 /* listchannels.swift */; };
 		3AABB80B20D8662100173861 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AABB80A20D8662100173861 /* InfoViewController.swift */; };
 		3AC2B843202B601F00216D55 /* horn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3AC2B841202B601F00216D55 /* horn.mp3 */; };
+		3AD8894920EAB70100B807D3 /* SocketStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD8894820EAB70100B807D3 /* SocketStatus.swift */; };
+		3AD8894B20EAC9BF00B807D3 /* CreateInvoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD8894A20EAC9BF00B807D3 /* CreateInvoiceViewController.swift */; };
+		3AD8894E20EACE9400B807D3 /* IntegerFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD8894D20EACE9400B807D3 /* IntegerFormatter.swift */; };
+		3AD8895020EAD6AB00B807D3 /* Amount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD8894F20EAD6AB00B807D3 /* Amount.swift */; };
+		3AD8895220EAD75E00B807D3 /* Denomination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD8895120EAD75E00B807D3 /* Denomination.swift */; };
+		3AD8895420EADC3400B807D3 /* createdinvoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD8895320EADC3400B807D3 /* createdinvoice.swift */; };
+		3AD8895620EADDE400B807D3 /* CreatedInvoiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD8895520EADDE400B807D3 /* CreatedInvoiceTest.swift */; };
+		3AD8895820EBF6AD00B807D3 /* LoadingStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD8895720EBF6AD00B807D3 /* LoadingStatus.swift */; };
+		3AD8895A20EBFA6000B807D3 /* NotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD8895920EBFA6000B807D3 /* NotificationName.swift */; };
 		3AF04905202F8AB700BABE2F /* ArrayTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF04904202F8AB700BABE2F /* ArrayTest.swift */; };
 		3AFD6CFA20213EAA001599D2 /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFD6CF920213EAA001599D2 /* PreferencesViewController.swift */; };
 		3AFD6CFC202149D0001599D2 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFD6CFB202149D0001599D2 /* Preferences.swift */; };
@@ -298,6 +307,15 @@
 		3AA4BDF2201BE91B00000153 /* listchannels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listchannels.swift; sourceTree = "<group>"; };
 		3AABB80A20D8662100173861 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		3AC2B841202B601F00216D55 /* horn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = horn.mp3; sourceTree = "<group>"; };
+		3AD8894820EAB70100B807D3 /* SocketStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketStatus.swift; sourceTree = "<group>"; };
+		3AD8894A20EAC9BF00B807D3 /* CreateInvoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateInvoiceViewController.swift; sourceTree = "<group>"; };
+		3AD8894D20EACE9400B807D3 /* IntegerFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegerFormatter.swift; sourceTree = "<group>"; };
+		3AD8894F20EAD6AB00B807D3 /* Amount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amount.swift; sourceTree = "<group>"; };
+		3AD8895120EAD75E00B807D3 /* Denomination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Denomination.swift; sourceTree = "<group>"; };
+		3AD8895320EADC3400B807D3 /* createdinvoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createdinvoice.swift; sourceTree = "<group>"; };
+		3AD8895520EADDE400B807D3 /* CreatedInvoiceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatedInvoiceTest.swift; sourceTree = "<group>"; };
+		3AD8895720EBF6AD00B807D3 /* LoadingStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingStatus.swift; sourceTree = "<group>"; };
+		3AD8895920EBFA6000B807D3 /* NotificationName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationName.swift; sourceTree = "<group>"; };
 		3AF04904202F8AB700BABE2F /* ArrayTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayTest.swift; sourceTree = "<group>"; };
 		3AFD6CF920213EAA001599D2 /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
 		3AFD6CFB202149D0001599D2 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
@@ -403,6 +421,7 @@
 				3A071402201A7127008E2AEE /* Voltage.entitlements */,
 				3AC2B841202B601F00216D55 /* horn.mp3 */,
 				3AA2A68F202385B8005664FC /* Extensions */,
+				3AD8894C20EACE5F00B807D3 /* Formatters */,
 				3AFD6CFE20222C6B001599D2 /* Models */,
 				3A605DF8202C0C410076EF45 /* Protocols */,
 				3A18B6A7202779D600D6C2DF /* RPC */,
@@ -415,6 +434,7 @@
 		3A07140A201A7127008E2AEE /* VoltageTests */ = {
 			isa = PBXGroup;
 			children = (
+				3AD8895520EADDE400B807D3 /* CreatedInvoiceTest.swift */,
 				3A18B5972025111200D6C2DF /* AddressServiceTest.swift */,
 				3A5565692023CF2F003CEBEA /* ChannelsTest.swift */,
 				3A07140D201A7127008E2AEE /* Info.plist */,
@@ -709,18 +729,28 @@
 		3AA2A68F202385B8005664FC /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				3AA2A68D202385AC005664FC /* Data.swift */,
-				3A38BDEC201CF8D70055BBA1 /* String.swift */,
 				3A55656B2023DB7E003CEBEA /* Bool.swift */,
+				3AA2A68D202385AC005664FC /* Data.swift */,
+				3AD8895920EBFA6000B807D3 /* NotificationName.swift */,
+				3A38BDEC201CF8D70055BBA1 /* String.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3AD8894C20EACE5F00B807D3 /* Formatters */ = {
+			isa = PBXGroup;
+			children = (
+				3AD8894D20EACE9400B807D3 /* IntegerFormatter.swift */,
+			);
+			path = Formatters;
 			sourceTree = "<group>";
 		};
 		3AF0490D202FBA5700BABE2F /* JSON-RPC Methods */ = {
 			isa = PBXGroup;
 			children = (
-				3A13B26520DB3F79000FCC53 /* getinfo.swift */,
+				3AD8895320EADC3400B807D3 /* createdinvoice.swift */,
 				3A18B59220250A0900D6C2DF /* error.swift */,
+				3A13B26520DB3F79000FCC53 /* getinfo.swift */,
 				3AA4BDF2201BE91B00000153 /* listchannels.swift */,
 				3A5565632023B1DD003CEBEA /* listfunds.swift */,
 				3A18B5882024F51700D6C2DF /* listinvoices.swift */,
@@ -735,6 +765,7 @@
 			isa = PBXGroup;
 			children = (
 				3A5565672023C9F0003CEBEA /* ChannelsViewController.swift */,
+				3AD8894A20EAC9BF00B807D3 /* CreateInvoiceViewController.swift */,
 				3A18B59B202515A500D6C2DF /* GetMoneyViewController.swift */,
 				3AABB80A20D8662100173861 /* InfoViewController.swift */,
 				3A18B58C2024F8DD00D6C2DF /* InvoicesViewController.swift */,
@@ -755,9 +786,13 @@
 			children = (
 				3AF0490D202FBA5700BABE2F /* JSON-RPC Methods */,
 				3A18B5992025120B00D6C2DF /* Address.swift */,
+				3AD8894F20EAD6AB00B807D3 /* Amount.swift */,
 				3A18B5862024E80000D6C2DF /* Console.swift */,
+				3AD8895120EAD75E00B807D3 /* Denomination.swift */,
 				3A38BDE8201C55B40055BBA1 /* PaymentHash.swift */,
 				3AFD6CFB202149D0001599D2 /* Preferences.swift */,
+				3AD8894820EAB70100B807D3 /* SocketStatus.swift */,
+				3AD8895720EBF6AD00B807D3 /* LoadingStatus.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1086,14 +1121,18 @@
 				3A18B59C202515A500D6C2DF /* GetMoneyViewController.swift in Sources */,
 				3A5565682023C9F0003CEBEA /* ChannelsViewController.swift in Sources */,
 				3A55656C2023DB7E003CEBEA /* Bool.swift in Sources */,
+				3AD8895020EAD6AB00B807D3 /* Amount.swift in Sources */,
 				3A18B59320250A0900D6C2DF /* error.swift in Sources */,
+				3AD8894B20EAC9BF00B807D3 /* CreateInvoiceViewController.swift in Sources */,
 				3A18B58F202503B100D6C2DF /* MoneyViewController.swift in Sources */,
+				3AD8894E20EACE9400B807D3 /* IntegerFormatter.swift in Sources */,
 				3AABB80B20D8662100173861 /* InfoViewController.swift in Sources */,
 				3A5565662023BFDE003CEBEA /* PaymentsViewController.swift in Sources */,
 				3AFD6D0020223C6F001599D2 /* LightningRPCSocket.swift in Sources */,
 				3AFD6CFC202149D0001599D2 /* Preferences.swift in Sources */,
 				3A18B5962025108400D6C2DF /* AddressService.swift in Sources */,
 				3A18B6AB20277B9C00D6C2DF /* LightningRPCConstants.swift in Sources */,
+				3AD8895220EAD75E00B807D3 /* Denomination.swift in Sources */,
 				3A18B6A2202572E200D6C2DF /* LightningRPC.swift in Sources */,
 				3A18B6B120296B1C00D6C2DF /* PeersViewController.swift in Sources */,
 				3AFD6CFA20213EAA001599D2 /* PreferencesViewController.swift in Sources */,
@@ -1101,6 +1140,8 @@
 				3AA2A68420227AC2005664FC /* LightningRPCQuery.swift in Sources */,
 				3A605DFA202C0C6A0076EF45 /* VoltageTableViewProtocol.swift in Sources */,
 				3A38BDE9201C55B40055BBA1 /* PaymentHash.swift in Sources */,
+				3AD8894920EAB70100B807D3 /* SocketStatus.swift in Sources */,
+				3AD8895420EADC3400B807D3 /* createdinvoice.swift in Sources */,
 				3A18B58D2024F8DD00D6C2DF /* InvoicesViewController.swift in Sources */,
 				3AA4BDF3201BE91B00000153 /* listchannels.swift in Sources */,
 				3AA4BDF0201BE8F400000153 /* listpeers.swift in Sources */,
@@ -1108,11 +1149,13 @@
 				3AA2A68E202385AC005664FC /* Data.swift in Sources */,
 				3A605DFC202C0D260076EF45 /* VoltageTableViewController.swift in Sources */,
 				3A18B69B20255B3600D6C2DF /* withdraw.swift in Sources */,
+				3AD8895A20EBFA6000B807D3 /* NotificationName.swift in Sources */,
 				3A7B0A0120DAF459006AEBF1 /* MainViewController.swift in Sources */,
 				3A18B59A2025120B00D6C2DF /* Address.swift in Sources */,
 				3A18B69920254FC800D6C2DF /* SendMoneyViewController.swift in Sources */,
 				3AA4BDEE201BE8A300000153 /* listpayments.swift in Sources */,
 				3A18B5892024F51700D6C2DF /* listinvoices.swift in Sources */,
+				3AD8895820EBF6AD00B807D3 /* LoadingStatus.swift in Sources */,
 				3A0713F9201A7127008E2AEE /* AppDelegate.swift in Sources */,
 				3A38BDED201CF8D70055BBA1 /* String.swift in Sources */,
 				3A5565642023B1DD003CEBEA /* listfunds.swift in Sources */,
@@ -1132,6 +1175,7 @@
 				3A18B6B32029748300D6C2DF /* PeerTest.swift in Sources */,
 				3A18B58B2024F61900D6C2DF /* InvoiceTest.swift in Sources */,
 				3AFD6D02202240E2001599D2 /* LightningRPCSocketTest.swift in Sources */,
+				3AD8895620EADDE400B807D3 /* CreatedInvoiceTest.swift in Sources */,
 				3A18B6A4202573D700D6C2DF /* LightningRPCTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
