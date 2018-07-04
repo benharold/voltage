@@ -60,7 +60,6 @@
 		3AD8895220EAD75E00B807D3 /* Denomination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD8895120EAD75E00B807D3 /* Denomination.swift */; };
 		3AD8895420EADC3400B807D3 /* createdinvoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD8895320EADC3400B807D3 /* createdinvoice.swift */; };
 		3AD8895620EADDE400B807D3 /* CreatedInvoiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD8895520EADDE400B807D3 /* CreatedInvoiceTest.swift */; };
-		3AD8895820EBF6AD00B807D3 /* LoadingStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD8895720EBF6AD00B807D3 /* LoadingStatus.swift */; };
 		3AD8895A20EBFA6000B807D3 /* NotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD8895920EBFA6000B807D3 /* NotificationName.swift */; };
 		3AF04905202F8AB700BABE2F /* ArrayTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF04904202F8AB700BABE2F /* ArrayTest.swift */; };
 		3AFD6CFA20213EAA001599D2 /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFD6CF920213EAA001599D2 /* PreferencesViewController.swift */; };
@@ -314,7 +313,6 @@
 		3AD8895120EAD75E00B807D3 /* Denomination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Denomination.swift; sourceTree = "<group>"; };
 		3AD8895320EADC3400B807D3 /* createdinvoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createdinvoice.swift; sourceTree = "<group>"; };
 		3AD8895520EADDE400B807D3 /* CreatedInvoiceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatedInvoiceTest.swift; sourceTree = "<group>"; };
-		3AD8895720EBF6AD00B807D3 /* LoadingStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingStatus.swift; sourceTree = "<group>"; };
 		3AD8895920EBFA6000B807D3 /* NotificationName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationName.swift; sourceTree = "<group>"; };
 		3AF04904202F8AB700BABE2F /* ArrayTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayTest.swift; sourceTree = "<group>"; };
 		3AFD6CF920213EAA001599D2 /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
@@ -792,7 +790,6 @@
 				3A38BDE8201C55B40055BBA1 /* PaymentHash.swift */,
 				3AFD6CFB202149D0001599D2 /* Preferences.swift */,
 				3AD8894820EAB70100B807D3 /* SocketStatus.swift */,
-				3AD8895720EBF6AD00B807D3 /* LoadingStatus.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1155,7 +1152,6 @@
 				3A18B69920254FC800D6C2DF /* SendMoneyViewController.swift in Sources */,
 				3AA4BDEE201BE8A300000153 /* listpayments.swift in Sources */,
 				3A18B5892024F51700D6C2DF /* listinvoices.swift in Sources */,
-				3AD8895820EBF6AD00B807D3 /* LoadingStatus.swift in Sources */,
 				3A0713F9201A7127008E2AEE /* AppDelegate.swift in Sources */,
 				3A38BDED201CF8D70055BBA1 /* String.swift in Sources */,
 				3A5565642023B1DD003CEBEA /* listfunds.swift in Sources */,
