@@ -10,7 +10,8 @@ import Cocoa
 import Socket
 
 enum SocketError: Error {
-    case unwrap_error
+    case unwrap
+    case no_response
 }
 
 protocol RPCProtocol {
@@ -18,11 +19,14 @@ protocol RPCProtocol {
 }
 
 class LightningRPCSocket: NSObject, RPCProtocol {
+    
+    let encoder: JSONEncoder = JSONEncoder.init()
+    
     var socket: Socket?
     
-    var buffer_size: Int = 4096
+    let buffer_size: Int = 4096
     
-    var wait_timeout: UInt = 5000
+    let timeout: UInt = 5
     
     init?(path: String) {
         let socket_family = Socket.ProtocolFamily.unix
@@ -33,8 +37,7 @@ class LightningRPCSocket: NSObject, RPCProtocol {
         do {
             try socket = Socket.create(family: socket_family, type: socket_type, proto: socket_protocol)
             guard let socket = socket else {
-                print("unable to unwrap socket")
-                throw SocketError.unwrap_error
+                throw SocketError.unwrap
             }
             socket.readBufferSize = buffer_size
             try socket.connect(to: socket_path)
@@ -47,7 +50,8 @@ class LightningRPCSocket: NSObject, RPCProtocol {
         }
     }
     
-    // This is just `init` using the preferences value for the path
+    // This is just `init` using the preferences value for the path.
+    // It mainly exists to make testing easier.
     class func create() -> LightningRPCSocket? {
         let prefs = Preferences()
         let socket_path = prefs.socket_path
@@ -56,36 +60,20 @@ class LightningRPCSocket: NSObject, RPCProtocol {
     }
     
     func send(query: LightningRPCQuery) -> Data {
-        var read_data = Data(capacity: buffer_size)
+        var response = Data(capacity: buffer_size)
         do {
-            let encoder = JSONEncoder()
-            let data = try encoder.encode(query)
+            let request = try encoder.encode(query)
             guard let socket = socket else {
-                print("Unable to unwrap socket")
-                throw SocketError.unwrap_error
+                throw SocketError.unwrap
             }
-            try socket.write(from: data)
-            
-            // I'm pretty sure I should be using Socket.wait() here, but I was
-            // having trouble getting it to work. This is fine for now, but it
-            // should be sent to a background thread and have a timeout.
-            // See https://github.com/IBM-Swift/BlueSocket#miscellaneous-utility-functions
-            while true {
-                let readable = try socket.isReadableOrWritable().readable
-                if readable {
-                    _ = try socket.read(into: &read_data)
-                    // RPC calls with large payloads can take longer than one
-                    // second to return.
-                    sleep(1)
-                    let still_readable = try socket.isReadableOrWritable().readable
-                    if !still_readable {
-                        break
-                    }
-                }
-                sleep(1)
+            try socket.write(from: request)
+            _ = try Socket.wait(for: [socket], timeout: timeout)
+            _ = try socket.read(into: &response)
+            if response.isEmpty {
+                throw SocketError.no_response
             }
             
-            return read_data
+            return response
         } catch {
             // Send the error to the notification center. This should be caught
             // by an observer that will trigger an alert in the main thread.
