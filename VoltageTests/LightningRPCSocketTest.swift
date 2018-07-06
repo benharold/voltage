@@ -40,7 +40,7 @@ class LightningRPCSocketTest: XCTestCase {
             try socket = Socket.create(family: socket_family, type: socket_type, proto: socket_protocol)
             guard let socket = socket else {
                 print("Unable to unwrap socket")
-                throw SocketError.unwrap_error
+                throw SocketError.unwrap
             }
             socket.readBufferSize = 4096
             try socket.connect(to: absolute_path)
@@ -53,7 +53,7 @@ class LightningRPCSocketTest: XCTestCase {
     func testSendGetInfoQuery() throws {
         let result: GetInfoResult
         guard let socket = LightningRPCSocket(path: relative_path) else {
-            throw SocketError.unwrap_error
+            throw SocketError.unwrap
         }
         let query = LightningRPCQuery(
             id: Int(getpid()),
@@ -72,7 +72,7 @@ class LightningRPCSocketTest: XCTestCase {
     func testListPaymentsIsDecodable() throws {
         let result: PaymentResult
         guard let socket = LightningRPCSocket(path: relative_path) else {
-            throw SocketError.unwrap_error
+            throw SocketError.unwrap
         }
         let query = LightningRPCQuery(
             id: Int(getpid()),

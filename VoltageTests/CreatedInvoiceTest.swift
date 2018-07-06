@@ -19,7 +19,7 @@ class CreatedInvoiceTest: XCTestCase {
         //        self.measure {
         let result: CreatedInvoiceResult
         guard let socket = LightningRPCSocket.create() else {
-            throw SocketError.unwrap_error
+            throw SocketError.unwrap
         }
         let label = "\"test" + faker.lorem.word() + "\""
         let query = LightningRPCQuery(

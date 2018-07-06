@@ -16,7 +16,7 @@ class InvoiceTest: XCTestCase {
         //        self.measure {
         let result: InvoiceResult
         guard let socket = LightningRPCSocket.create() else {
-            throw SocketError.unwrap_error
+            throw SocketError.unwrap
         }
         let query = LightningRPCQuery(
             id: Int(getpid()),
