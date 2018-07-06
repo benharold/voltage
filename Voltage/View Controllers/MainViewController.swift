@@ -19,7 +19,7 @@ class MainViewController: NSViewController {
         group.enter()
         
         DispatchQueue.global(qos: .userInitiated).async {
-            NotificationCenter.default.post(name: Notification.Name(rawValue: "reload_button_pressed"), object: nil)
+            NotificationCenter.default.post(name: Notification.Name.reload, object: nil)
             group.leave()
         }
         
@@ -37,13 +37,17 @@ class MainViewController: NSViewController {
     }
     
     func listen_for_loading_start() {
-        NotificationCenter.default.addObserver(self, selector: #selector(MainViewController.start_indicator),
-                                               name: Notification.Name.loading_start, object: nil)
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(MainViewController.start_indicator),
+                                               name: Notification.Name.loading_start,
+                                               object: nil)
     }
     
     func listen_for_loading_finish() {
-        NotificationCenter.default.addObserver(self, selector: #selector(MainViewController.stop_indicator),
-                                               name: Notification.Name.loading_finish, object: nil)
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(MainViewController.stop_indicator),
+                                               name: Notification.Name.loading_finish,
+                                               object: nil)
     }
     
     @objc func start_indicator() {
