@@ -23,11 +23,6 @@ class InfoViewController: ReloadableViewController {
         self.tab_index = 5
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        load_info()
-    }
-    
     override func reload() {
         load_info()
     }

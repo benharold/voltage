@@ -15,12 +15,6 @@ class VoltageTableViewController: ReloadableViewController, VoltageTableView {
 
     let decoder: JSONDecoder = JSONDecoder.init()
     
-    override func viewWillAppear() {
-        super.viewWillAppear()
-        NotificationCenter.default.post(name: Notification.Name.loading_start, object: nil)
-        load_table()
-    }
-    
     func load_table_data() {
     }
     
@@ -28,19 +22,11 @@ class VoltageTableViewController: ReloadableViewController, VoltageTableView {
     }
     
     func load_table() {
-        let group = DispatchGroup()
-        group.enter()
-        
         DispatchQueue.global(qos: .userInitiated).async {
             self.load_table_data()
             DispatchQueue.main.async {
                 self.reload_table_view()
-                group.leave()
             }
-        }
-        
-        group.notify(queue: .main) {
-            NotificationCenter.default.post(name: Notification.Name.loading_finish, object: nil)
         }
     }
     

@@ -43,14 +43,6 @@ class MoneyViewController: ReloadableViewController {
     @IBAction func create_invoice_button(_ sender: Any) {
     }
     
-    override func viewWillAppear() {
-        super.viewWillAppear()
-        NotificationCenter.default.post(name: Notification.Name.loading_start, object: nil)
-        DispatchQueue.global(qos: .userInitiated).async {
-            self.load_outputs()
-        }
-    }
-    
     override func reload() {
         load_outputs()
     }
@@ -94,9 +86,6 @@ class MoneyViewController: ReloadableViewController {
     
     func load_outputs() {
         guard let service = LightningRPCSocket.create() else {
-            DispatchQueue.main.async {
-                NotificationCenter.default.post(name: Notification.Name.loading_finish, object: nil)
-            }
             return
         }
         let listoutputs: LightningRPCQuery = LightningRPCQuery(id: Int(getpid()), method: "listfunds", params: [])
@@ -118,7 +107,6 @@ class MoneyViewController: ReloadableViewController {
         
         DispatchQueue.main.async {
             self.recalculate_balances()
-            NotificationCenter.default.post(name: Notification.Name.loading_finish, object: nil)
         }
     }
     
