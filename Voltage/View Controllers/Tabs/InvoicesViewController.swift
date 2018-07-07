@@ -33,6 +33,8 @@ class InvoicesViewController: VoltageTableViewController, NSTableViewDelegate, N
         super.viewDidLoad()
         invoices_table_view.delegate = self
         invoices_table_view.dataSource = self
+        invoices_table_view.target = self
+        invoices_table_view.doubleAction = #selector(double_click(_:))
         set_sort_descriptors()
     }
     
@@ -44,6 +46,12 @@ class InvoicesViewController: VoltageTableViewController, NSTableViewDelegate, N
         DispatchQueue.main.async {
             self.reload_table_view()
         }
+    }
+    
+    @objc func double_click(_ sender: AnyObject) {
+        print(sender)
+        let controller = NSWindowController(windowNibName: NSNib.Name(rawValue: "InvoiceViewController"))
+        controller.showWindow(self)
     }
 
     override func load_table_data() {

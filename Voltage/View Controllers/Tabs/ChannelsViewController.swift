@@ -37,9 +37,6 @@ class ChannelsViewController: VoltageTableViewController, NSTableViewDelegate, N
     }
     
     override func reload() {
-        if channel_list != nil {
-            channel_list.removeAll()
-        }
         load_table_data()
         DispatchQueue.main.async {
             self.reload_table_view()
@@ -70,7 +67,14 @@ class ChannelsViewController: VoltageTableViewController, NSTableViewDelegate, N
             let result: ChannelList = try decoder.decode(ChannelResult.self, from: response).result
             channel_list = result.channels
         } catch {
-            print("ViewController::load_channels() JSON decoder error: \(error)")
+            do {
+                NotificationCenter.default.post(name: Notification.Name.rpc_error, object: error)
+                let rpc_error = try decoder.decode(ErrorResult.self, from: response).error
+                print("ChannelsViewController.load_channels RPC error: " + rpc_error.message)
+            } catch {
+                print("ChannelsViewController.load_channels RPC error: \(error)")
+            }
+            print("ChannelsViewController.load_channels() JSON decoder error: \(error)")
         }
     }
     
