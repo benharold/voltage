@@ -26,8 +26,6 @@ class LightningRPCSocket: NSObject, RPCProtocol {
     
     let buffer_size: Int = 4096
     
-    let timeout: UInt = 5
-    
     init?(path: String) {
         let socket_family = Socket.ProtocolFamily.unix
         let socket_type = Socket.SocketType.stream
@@ -60,6 +58,7 @@ class LightningRPCSocket: NSObject, RPCProtocol {
     }
     
     func send(query: LightningRPCQuery) -> Data {
+        print(query)
         var response = Data(capacity: buffer_size)
         do {
             let request = try encoder.encode(query)
@@ -67,7 +66,6 @@ class LightningRPCSocket: NSObject, RPCProtocol {
                 throw SocketError.unwrap
             }
             try socket.write(from: request)
-            _ = try Socket.wait(for: [socket], timeout: timeout)
             _ = try socket.read(into: &response)
             if response.isEmpty {
                 throw SocketError.no_response
@@ -75,8 +73,6 @@ class LightningRPCSocket: NSObject, RPCProtocol {
             
             return response
         } catch {
-            // Send the error to the notification center. This should be caught
-            // by an observer that will trigger an alert in the main thread.
             NotificationCenter.default.post(name: Notification.Name.rpc_error, object: error)
             print("error communicating with RPC server", error)
             
