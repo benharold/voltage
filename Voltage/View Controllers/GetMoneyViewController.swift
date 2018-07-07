@@ -9,6 +9,7 @@
 import Cocoa
 
 class GetMoneyViewController: NSViewController {
+    
     var funding_address: String = ""
     
     @IBOutlet weak var funding_address_text_field: NSTextField!
@@ -23,7 +24,6 @@ class GetMoneyViewController: NSViewController {
     
     func get_new_address() {
         funding_address = AddressService.generate() ?? "error"
-        print(funding_address)
         funding_address_text_field.stringValue = funding_address
     }
     
@@ -42,10 +42,10 @@ class GetMoneyViewController: NSViewController {
                     terminator = "\n"
                 }
                 if image_data![height_index * 29 + width_index] % 2 == 1 {
-                    print("⬜", terminator: terminator)
+//                    print("⬜", terminator: terminator)
                     bitmap += "⬜"
                 } else {
-                    print("⬛", terminator: terminator)
+//                    print("⬛", terminator: terminator)
                     bitmap += "⬛"
                 }
                 bitmap += terminator
