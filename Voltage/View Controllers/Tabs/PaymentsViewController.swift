@@ -9,9 +9,9 @@
 
 import Cocoa
 
-class PaymentsViewController: VoltageTableViewController, NSTableViewDelegate, NSTableViewDataSource {
+class PaymentsViewController: VoltageTableViewController {
     
-    var payment_list: [Payment]!
+    var payment_list: [Payment] = [Payment]()
     
     let table_keys = [
         "id",
@@ -41,9 +41,7 @@ class PaymentsViewController: VoltageTableViewController, NSTableViewDelegate, N
     }
     
     override func reload() {
-        if payment_list != nil {
-            payment_list.removeAll()
-        }
+        payment_list.removeAll()
         load_table_data()
         DispatchQueue.main.async {
             self.reload_table_view()
@@ -74,16 +72,19 @@ class PaymentsViewController: VoltageTableViewController, NSTableViewDelegate, N
             let result: PaymentList = try decoder.decode(PaymentResult.self, from: response).result
             payment_list = result.payments
         } catch {
-            //alert(message: "There was an error decoding the list of payments. Is your c-lightning node running?")
-            print("ViewController::load_payments() JSON decoder error: \(error)")
+            print("PaymentsViewController.load_payments() JSON decoder error: \(error)")
         }
     }
     
     func numberOfRows(in tableView: NSTableView) -> Int {
-        return payment_list?.count ?? 0
+        return payment_list.count
     }
     
     func tableView(_ tableView: NSTableView, objectValueFor tableColumn: NSTableColumn?, row: Int) -> Any? {
+        if payment_list.count == 0 {
+            return nil
+        }
+
         var key = ""
         key = tableColumn!.identifier.rawValue
         
@@ -95,15 +96,7 @@ class PaymentsViewController: VoltageTableViewController, NSTableViewDelegate, N
         } else if key == "status" {
             return payment_list[row].status
         } else if key == "created" {
-            let date = Date(timeIntervalSince1970: TimeInterval(payment_list[row].created_at))
-            let dateFormatter = DateFormatter()
-            dateFormatter.dateStyle = .medium
-            dateFormatter.timeStyle = .medium
-            dateFormatter.timeZone = TimeZone.current
-            dateFormatter.locale = NSLocale.current
-            //dateFormatter.dateFormat = "yyyy-MM-dd"
-            let strDate = dateFormatter.string(from: date)
-            return strDate
+            return payment_list[row].created_at.to_date_string()
         } else if key == "msatoshi" {
             return payment_list[row].msatoshi / 1000
         } else if key == "destination" {

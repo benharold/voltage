@@ -11,7 +11,7 @@ import Cocoa
 // The idea is to allow loading of table data in the background without
 // interrupitng the UI. This is common to several tabs. The JSON decoder
 // probably belongs in a different spot, as well as the socket. We'll get there.
-class VoltageTableViewController: ReloadableViewController, VoltageTableView {
+class VoltageTableViewController: ReloadableViewController, VoltageTableView, NSTableViewDelegate, NSTableViewDataSource {
 
     let decoder: JSONDecoder = JSONDecoder.init()
     

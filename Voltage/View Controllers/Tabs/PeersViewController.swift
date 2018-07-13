@@ -13,9 +13,9 @@ import Cocoa
 // a Channel object. Further muddying the waters, both the Peer and PeerChannel
 // object contain an optional `owner` field, while the `state` field is
 // required for a PeerChannel and optional for a peer.
-class PeersViewController: VoltageTableViewController, NSTableViewDelegate, NSTableViewDataSource {
+class PeersViewController: VoltageTableViewController {
 
-    var peer_list: [Peer]!
+    var peer_list: [Peer] = [Peer]()
     
     let table_keys = [
         "id",
@@ -41,9 +41,7 @@ class PeersViewController: VoltageTableViewController, NSTableViewDelegate, NSTa
     }
     
     override func reload() {
-        if peer_list != nil {
-            peer_list.removeAll()
-        }
+        peer_list.removeAll()
         load_table_data()
         DispatchQueue.main.async {
             self.reload_table_view()
@@ -79,10 +77,14 @@ class PeersViewController: VoltageTableViewController, NSTableViewDelegate, NSTa
     }
     
     func numberOfRows(in tableView: NSTableView) -> Int {
-        return peer_list?.count ?? 0
+        return peer_list.count
     }
     
     func tableView(_ tableView: NSTableView, objectValueFor tableColumn: NSTableColumn?, row: Int) -> Any? {
+        if peer_list.count == 0 {
+            return nil
+        }
+        
         var key = ""
         key = tableColumn!.identifier.rawValue
         

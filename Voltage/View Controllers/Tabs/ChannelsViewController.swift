@@ -8,9 +8,9 @@
 
 import Cocoa
 
-class ChannelsViewController: VoltageTableViewController, NSTableViewDelegate, NSTableViewDataSource {
+class ChannelsViewController: VoltageTableViewController {
 
-    var channel_list: [Channel]!
+    var channel_list: [Channel] = [Channel]()
     
     let table_keys = [
         "short_channel_id",
@@ -37,6 +37,7 @@ class ChannelsViewController: VoltageTableViewController, NSTableViewDelegate, N
     }
     
     override func reload() {
+        channel_list.removeAll()
         load_table_data()
         DispatchQueue.main.async {
             self.reload_table_view()
@@ -79,7 +80,7 @@ class ChannelsViewController: VoltageTableViewController, NSTableViewDelegate, N
     }
     
     func numberOfRows(in tableView: NSTableView) -> Int {
-        return channel_list?.count ?? 0
+        return channel_list.count
     }
     
     func tableView(_ tableView: NSTableView, objectValueFor tableColumn: NSTableColumn?, row: Int) -> Any? {
