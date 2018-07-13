@@ -99,14 +99,7 @@ class ChannelsViewController: VoltageTableViewController, NSTableViewDelegate, N
             return channel_list[row].active.to_yes_no()
         } else if key == "last_update" {
             if channel_list[row].last_update != nil {
-                let date = Date(timeIntervalSince1970: TimeInterval(channel_list[row].last_update!))
-                let dateFormatter = DateFormatter()
-                dateFormatter.dateStyle = .medium
-                dateFormatter.timeStyle = .medium
-                dateFormatter.timeZone = TimeZone.current
-                dateFormatter.locale = NSLocale.current
-                let strDate = dateFormatter.string(from: date)
-                return strDate
+                return channel_list[row].last_update?.to_date_string()
             }
             return ""
         } else if key == "public" {
