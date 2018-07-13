@@ -10,6 +10,7 @@ import Foundation
 
 struct Invoice: Codable {
     let label: String
+    let bolt11: String?
     let payment_hash: String
     let msatoshi: Int
     let status: String
