@@ -23,6 +23,7 @@
 		3A07FA0520FD22CA000CDDCF /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A07F9FF20FD22C9000CDDCF /* InfoViewController.swift */; };
 		3A07FA0920FD4A74000CDDCF /* libqrencode.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0003512034F00F00A68E68 /* libqrencode.4.dylib */; };
 		3A07FA0E20FD4ED7000CDDCF /* libqrencode.4.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = 3A0003512034F00F00A68E68 /* libqrencode.4.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		3A07FA1320FD532F000CDDCF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A07FA1220FD532E000CDDCF /* Constants.swift */; };
 		3A13B26620DB3F7A000FCC53 /* getinfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A13B26520DB3F79000FCC53 /* getinfo.swift */; };
 		3A13B26820DDA303000FCC53 /* ReloadableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A13B26720DDA303000FCC53 /* ReloadableViewController.swift */; };
 		3A18B5872024E80000D6C2DF /* Console.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B5862024E80000D6C2DF /* Console.swift */; };
@@ -129,6 +130,7 @@
 		3A07F9FD20FD22C9000CDDCF /* MoneyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyViewController.swift; sourceTree = "<group>"; };
 		3A07F9FE20FD22C9000CDDCF /* PeersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeersViewController.swift; sourceTree = "<group>"; };
 		3A07F9FF20FD22C9000CDDCF /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		3A07FA1220FD532E000CDDCF /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3A13B26520DB3F79000FCC53 /* getinfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = getinfo.swift; sourceTree = "<group>"; };
 		3A13B26720DDA303000FCC53 /* ReloadableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReloadableViewController.swift; sourceTree = "<group>"; };
 		3A18B5862024E80000D6C2DF /* Console.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Console.swift; sourceTree = "<group>"; };
@@ -430,6 +432,7 @@
 			isa = PBXGroup;
 			children = (
 				3A0713F8201A7127008E2AEE /* AppDelegate.swift */,
+				3A07FA1220FD532E000CDDCF /* Constants.swift */,
 				3A38BDEB201CF59C0055BBA1 /* Voltage-Bridging-Header.h */,
 				3A0713FC201A7127008E2AEE /* Assets.xcassets */,
 				3A00034E2034EE0500A68E68 /* Voltage.iconset */,
@@ -1173,6 +1176,7 @@
 				3A605DFA202C0C6A0076EF45 /* VoltageTableViewProtocol.swift in Sources */,
 				3A38BDE9201C55B40055BBA1 /* PaymentHash.swift in Sources */,
 				3AD8894920EAB70100B807D3 /* SocketStatus.swift in Sources */,
+				3A07FA1320FD532F000CDDCF /* Constants.swift in Sources */,
 				3A07F9F720FD2006000CDDCF /* InvoiceViewController.swift in Sources */,
 				3AD8895420EADC3400B807D3 /* createdinvoice.swift in Sources */,
 				3AA4BDF3201BE91B00000153 /* listchannels.swift in Sources */,
