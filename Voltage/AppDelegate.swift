@@ -19,12 +19,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // Check the RPC connection after setting up the observer. If there is a
         // problem the error observer should alert the user of the tragedy.
         _ = LightningRPCSocket.create()
-        
-        // Now that socket is okay, load all of the main table view data.
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
+    }
+    
+    func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
+        return true
     }
     
     func add_rpc_error_observer() {
