@@ -5,12 +5,13 @@
 //  Created by Ben Harold on 2/2/18.
 //  Copyright © 2018 Harold Consulting. All rights reserved.
 //
+// swiftlint:disable force_cast
 
 import Cocoa
 
-class InvoicesViewController: VoltageTableViewController, NSTableViewDelegate, NSTableViewDataSource {
+class InvoicesViewController: VoltageTableViewController {
     
-    var invoice_list: [Invoice]!
+    var invoice_list: [Invoice] = [Invoice]()
     
     let table_keys = [
         "label",
@@ -23,6 +24,10 @@ class InvoicesViewController: VoltageTableViewController, NSTableViewDelegate, N
     ]
     
     @IBOutlet weak var invoices_table_view: NSTableView!
+    
+    lazy var invoice_view_controller: InvoiceViewController = {
+        return self.storyboard!.instantiateController(withIdentifier: NSStoryboard.SceneIdentifier(rawValue: "invoice_view_controller")) as! InvoiceViewController
+    }()
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
@@ -39,19 +44,16 @@ class InvoicesViewController: VoltageTableViewController, NSTableViewDelegate, N
     }
     
     override func reload() {
-        if invoice_list != nil {
-            invoice_list.removeAll()
-        }
+        invoice_list.removeAll()
         load_table_data()
         DispatchQueue.main.async {
             self.reload_table_view()
         }
     }
     
-    @objc func double_click(_ sender: AnyObject) {
-        print(sender)
-        let controller = NSWindowController(windowNibName: NSNib.Name(rawValue: "InvoiceViewController"))
-        controller.showWindow(self)
+    @objc func double_click(_ sender: NSTableView) {
+        self.presentViewControllerAsModalWindow(invoice_view_controller)
+        invoice_view_controller.set_existing(invoice: invoice_list[sender.clickedRow])
     }
 
     override func load_table_data() {
@@ -78,15 +80,19 @@ class InvoicesViewController: VoltageTableViewController, NSTableViewDelegate, N
             let result: InvoiceList = try decoder.decode(InvoiceResult.self, from: response).result
             invoice_list = result.invoices
         } catch {
-            print("ViewController::load_invoices() JSON decoder error: \(error)")
+            print("InvoicesViewController.load_invoices() JSON decoder error: \(error)")
         }
     }
     
     func numberOfRows(in tableView: NSTableView) -> Int {
-        return invoice_list?.count ?? 0
+        return invoice_list.count
     }
     
     func tableView(_ tableView: NSTableView, objectValueFor tableColumn: NSTableColumn?, row: Int) -> Any? {
+        if invoice_list.count == 0 {
+            return nil
+        }
+        
         var key = ""
         key = tableColumn!.identifier.rawValue
 
@@ -103,27 +109,12 @@ class InvoicesViewController: VoltageTableViewController, NSTableViewDelegate, N
         } else if key == "msatoshi_received" {
             return msatoshi_received / 1000
         } else if key == "paid_at" {
-            return pretty_date(timestamp: invoice_list[row].paid_at)
+            return invoice_list[row].paid_at?.to_date_string()
         } else if key == "expires_at" {
-            return pretty_date(timestamp: invoice_list[row].expires_at)
+            return invoice_list[row].expires_at.to_date_string()
         }
         
         return nil
-    }
-    
-    func pretty_date(timestamp: Int?) -> String {
-        if timestamp == nil {
-            return "N/A"
-        }
-        
-        let date = Date(timeIntervalSince1970: TimeInterval(timestamp!))
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateStyle = .medium
-        dateFormatter.timeStyle = .medium
-        dateFormatter.timeZone = TimeZone.current
-        dateFormatter.locale = NSLocale.current
-        
-        return dateFormatter.string(from: date)
     }
     
     func tableView(_ tableView: NSTableView, sortDescriptorsDidChange oldDescriptors: [NSSortDescriptor]) {
