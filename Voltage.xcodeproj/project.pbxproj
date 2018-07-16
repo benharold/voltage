@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3A00034F2034EE0500A68E68 /* Voltage.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 3A00034E2034EE0500A68E68 /* Voltage.iconset */; };
-		3A0003532034F0DC00A68E68 /* libqrencode.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0003512034F00F00A68E68 /* libqrencode.4.dylib */; };
 		3A0713F9201A7127008E2AEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0713F8201A7127008E2AEE /* AppDelegate.swift */; };
 		3A0713FD201A7127008E2AEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A0713FC201A7127008E2AEE /* Assets.xcassets */; };
 		3A071400201A7127008E2AEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0713FE201A7127008E2AEE /* Main.storyboard */; };
@@ -22,6 +21,8 @@
 		3A07FA0320FD22CA000CDDCF /* MoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A07F9FD20FD22C9000CDDCF /* MoneyViewController.swift */; };
 		3A07FA0420FD22CA000CDDCF /* PeersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A07F9FE20FD22C9000CDDCF /* PeersViewController.swift */; };
 		3A07FA0520FD22CA000CDDCF /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A07F9FF20FD22C9000CDDCF /* InfoViewController.swift */; };
+		3A07FA0920FD4A74000CDDCF /* libqrencode.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0003512034F00F00A68E68 /* libqrencode.4.dylib */; };
+		3A07FA0E20FD4ED7000CDDCF /* libqrencode.4.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = 3A0003512034F00F00A68E68 /* libqrencode.4.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		3A13B26620DB3F7A000FCC53 /* getinfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A13B26520DB3F79000FCC53 /* getinfo.swift */; };
 		3A13B26820DDA303000FCC53 /* ReloadableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A13B26720DDA303000FCC53 /* ReloadableViewController.swift */; };
 		3A18B5872024E80000D6C2DF /* Console.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B5862024E80000D6C2DF /* Console.swift */; };
@@ -89,6 +90,20 @@
 			remoteInfo = "c-lightning-wallet";
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3A07FA0C20FD4BC0000CDDCF /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3A07FA0E20FD4ED7000CDDCF /* libqrencode.4.dylib in Copy Files */,
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0B9DBA404466F9AFE4DDAB37 /* Pods_VoltageUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VoltageUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -338,8 +353,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A0003532034F0DC00A68E68 /* libqrencode.4.dylib in Frameworks */,
 				7A9A87BF7E1EB5CDADA7F6AA /* Pods_Voltage.framework in Frameworks */,
+				3A07FA0920FD4A74000CDDCF /* libqrencode.4.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -816,6 +831,7 @@
 			buildConfigurationList = 3A07141B201A7127008E2AEE /* Build configuration list for PBXNativeTarget "Voltage" */;
 			buildPhases = (
 				740F6B06E6CB1925E34D84DE /* [CP] Check Pods Manifest.lock */,
+				3A07FA0C20FD4BC0000CDDCF /* Copy Files */,
 				3A0713F1201A7127008E2AEE /* Sources */,
 				3A0713F2201A7127008E2AEE /* Frameworks */,
 				3A0713F3201A7127008E2AEE /* Resources */,
@@ -887,6 +903,11 @@
 					3A0713F4201A7127008E2AEE = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
 					};
 					3A071406201A7127008E2AEE = {
 						CreatedOnToolsVersion = 9.2;
@@ -1341,9 +1362,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F6107EDB521CE62DC8E4D65E /* Pods-Voltage.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Voltage/Voltage.entitlements;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1351,10 +1370,7 @@
 				DEVELOPMENT_TEAM = K5NA8NE576;
 				INFOPLIST_FILE = Voltage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					/usr/local/lib,
-					"$(PROJECT_DIR)/lib",
-				);
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/lib";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hci.Voltage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1367,9 +1383,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A41EC9104EB5A584C9EFBDC7 /* Pods-Voltage.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Voltage/Voltage.entitlements;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1377,10 +1391,7 @@
 				DEVELOPMENT_TEAM = K5NA8NE576;
 				INFOPLIST_FILE = Voltage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					/usr/local/lib,
-					"$(PROJECT_DIR)/lib",
-				);
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/lib";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hci.Voltage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
