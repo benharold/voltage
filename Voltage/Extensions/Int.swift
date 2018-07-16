@@ -7,3 +7,16 @@
 //
 
 import Foundation
+
+extension Int {
+    func to_date_string() -> String {
+        let date = Date(timeIntervalSince1970: TimeInterval(self))
+        let formatter = DateFormatter()
+        formatter.dateStyle = .medium
+        formatter.timeStyle = .medium
+        formatter.timeZone = TimeZone.current
+        formatter.locale = NSLocale.current
+        
+        return formatter.string(from: date)
+    }
+}
