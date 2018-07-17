@@ -5,12 +5,20 @@
 //  Created by Ben Harold on 7/2/18.
 //  Copyright © 2018 Harold Consulting. All rights reserved.
 //
+//  swiftlint:disable force_cast
 
 import Cocoa
 
 class CreateInvoiceViewController: NSViewController, NSPopoverDelegate {
     
     let decoder = JSONDecoder.init()
+    
+    var popover: NSPopover?
+    
+    lazy var invoice_view_controller: InvoiceViewController = {
+        return self.storyboard!.instantiateController(withIdentifier: NSStoryboard.SceneIdentifier(rawValue: "invoice_view_controller"))
+            as! InvoiceViewController
+    }()
 
     @IBOutlet weak var invoice_amount: NSTextField!
     @IBOutlet weak var invoice_label: NSTextField!
@@ -28,15 +36,14 @@ class CreateInvoiceViewController: NSViewController, NSPopoverDelegate {
     func popoverWillShow(_ notification: Notification) {
         invoice_amount.formatter = IntegerFormatter()
         
-        // Set the default invoic expiration to 60 minutes
+        // Set the default invoice expiration to 60 minutes
         let calendar = Calendar.current
         let date = calendar.date(byAdding: .minute, value: 60, to: Date())
         invoice_expiry.dateValue = date!
         
         // Don't close the popover when a validaton alert is shown
-        if let popover = notification.object as? NSPopover {
-            popover.behavior = .semitransient
-        }
+        popover = notification.object as? NSPopover
+        popover?.behavior = .semitransient
     }
     
     func create_invoice() {
@@ -64,13 +71,21 @@ class CreateInvoiceViewController: NSViewController, NSPopoverDelegate {
             if let error = json_error {
                 NotificationCenter.default.post(name: Notification.Name.rpc_error, object: error.message)
             } else {
-                let result = try decoder.decode(CreatedInvoiceResult.self, from: response).result
+                var result: CreatedInvoice = try decoder.decode(CreatedInvoiceResult.self, from: response).result
+                result.label = label
+                self.display_invoice(sender: self, created_invoice: result)
             }
         } catch let error as Swift.DecodingError {
             NotificationCenter.default.post(name: Notification.Name.rpc_error, object: error)
         } catch {
             print("unknown error", error)
         }
+    }
+    
+    func display_invoice(sender: AnyObject, created_invoice: CreatedInvoice) {
+        popover?.close()
+        self.presentViewControllerAsModalWindow(invoice_view_controller)
+        invoice_view_controller.set_created(invoice: created_invoice)
     }
 
     func validate_input() -> Bool {
@@ -93,13 +108,13 @@ class CreateInvoiceViewController: NSViewController, NSPopoverDelegate {
         return true
     }
     
-    func alert_validation_failed(header: String, body: String) -> Bool {
+    func alert_validation_failed(header: String, body: String) {
         let alert = NSAlert()
         alert.messageText = header
         alert.informativeText = body
         alert.alertStyle = .warning
         alert.addButton(withTitle: "Okay")
         
-        return alert.runModal() == .alertFirstButtonReturn
+        alert.runModal()
     }
 }
