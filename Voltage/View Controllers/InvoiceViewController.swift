@@ -50,7 +50,7 @@ class InvoiceViewController: NSViewController {
         show_lower_fields()
         self.title = invoice.label
         payment_hash.stringValue = invoice.payment_hash
-        if let bolt11: String = invoice.bolt12 {
+        if let bolt11: String = invoice.bolt11_value {
             show_bolt_11()
             bolt_11.stringValue = bolt11
         } else {
