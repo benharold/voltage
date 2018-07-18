@@ -80,6 +80,13 @@ class InvoicesViewController: VoltageTableViewController {
             let result: InvoiceList = try decoder.decode(InvoiceResult.self, from: response).result
             invoice_list = result.invoices
         } catch {
+            do {
+                NotificationCenter.default.post(name: Notification.Name.rpc_error, object: error)
+                let rpc_error = try decoder.decode(ErrorResult.self, from: response).error
+                print("InvoicesViewController.load_channels RPC error: " + rpc_error.message)
+            } catch {
+                print("InvoicesViewController.load_channels RPC error: \(error)")
+            }
             print("InvoicesViewController.load_invoices() JSON decoder error: \(error)")
         }
     }
