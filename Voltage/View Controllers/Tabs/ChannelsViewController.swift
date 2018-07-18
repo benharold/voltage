@@ -84,6 +84,10 @@ class ChannelsViewController: VoltageTableViewController {
     }
     
     func tableView(_ tableView: NSTableView, objectValueFor tableColumn: NSTableColumn?, row: Int) -> Any? {
+        if channel_list.count == 0 {
+            return nil
+        }
+        
         var key = ""
         key = tableColumn!.identifier.rawValue
         
