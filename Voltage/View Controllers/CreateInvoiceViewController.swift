@@ -66,7 +66,6 @@ class CreateInvoiceViewController: NSViewController, NSPopoverDelegate {
         let createinvoice = LightningRPCQuery(id: Int(getpid()), method: "invoice", params: params)
         let response: Data = socket.send(query: createinvoice)
         do {
-            print(response.to_string())
             let json_error = try? decoder.decode(ErrorResult.self, from: response).error
             if let error = json_error {
                 NotificationCenter.default.post(name: Notification.Name.rpc_error, object: error.message)
