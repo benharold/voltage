@@ -24,7 +24,7 @@ class LightningRPCSocket: NSObject, RPCProtocol {
     
     var socket: Socket?
     
-    let buffer_size: Int = 4096
+    let buffer_size: Int = Socket.SOCKET_DEFAULT_READ_BUFFER_SIZE // 4096
     
     init?(path: String) {
         let socket_family = Socket.ProtocolFamily.unix
@@ -54,7 +54,7 @@ class LightningRPCSocket: NSObject, RPCProtocol {
         let prefs = Preferences()
         let socket_path = prefs.socket_path
         
-        return  LightningRPCSocket(path: socket_path)
+        return LightningRPCSocket(path: socket_path)
     }
     
     func send(query: LightningRPCQuery) -> Data {
@@ -66,7 +66,19 @@ class LightningRPCSocket: NSObject, RPCProtocol {
                 throw SocketError.unwrap
             }
             try socket.write(from: request)
-            _ = try socket.read(into: &response)
+            var bytes_read: Int = try socket.read(into: &response)
+            
+            // Payloads larger than 36544 bytes may or may not be split up into
+            // chunks of 36544 bytes. In that case, we need to wait for more
+            // data to be available on the socket, then read again.
+            //
+            // If the next chunk of data is 36544 bytes, we continue to wait for
+            // more data, otherwise we assume the payload is complete.
+            while bytes_read == 36544 {
+                try Socket.wait(for: [socket], timeout: 10)
+                bytes_read = try socket.read(into: &response)
+            }
+            
             if response.isEmpty {
                 throw SocketError.no_response
             }
