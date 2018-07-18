@@ -26,23 +26,16 @@ class MoneyViewController: ReloadableViewController {
     var decoder: JSONDecoder = JSONDecoder.init()
     
     @IBOutlet weak var balance_satoshis: NSTextFieldCell!
-    
     @IBOutlet weak var balance_bits: NSTextFieldCell!
-        
     @IBOutlet weak var balance_btc: NSTextFieldCell!
-    
     @IBOutlet weak var channel_capacity_bits: NSTextField!
-    
     @IBOutlet weak var channel_balance_bits: NSTextField!
-    
     @IBOutlet weak var channel_receivable_bits: NSTextField!
     
     @IBAction func hodl_button(_ sender: Any) {
         instant_rap_air_horn()
     }
-    @IBAction func create_invoice_button(_ sender: Any) {
-    }
-    
+
     override func reload() {
         load_outputs()
     }
