@@ -74,8 +74,6 @@ class InvoiceViewController: NSViewController {
             paid_at.stringValue = "N/A"
         }
         expires.stringValue = invoice.expires_at.to_date_string()
-
-        print("done")
     }
     
     func hide_bolt_11() {
