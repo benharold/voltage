@@ -15,7 +15,7 @@ enum SocketError: Error {
 }
 
 protocol RPCProtocol {
-    func send(query: LightningRPCQuery) -> Data
+    func send(_ query: LightningRPCQuery) -> Data
 }
 
 class LightningRPCSocket: NSObject, RPCProtocol {
@@ -40,6 +40,7 @@ class LightningRPCSocket: NSObject, RPCProtocol {
             socket.readBufferSize = buffer_size
             try socket.connect(to: socket_path)
         } catch {
+            print(type(of: error))
             let path: [String: String] = ["socket_path": socket_path]
             NotificationCenter.default.post(name: Notification.Name.rpc_error,
                                             object: error, userInfo: path)
@@ -57,7 +58,7 @@ class LightningRPCSocket: NSObject, RPCProtocol {
         return LightningRPCSocket(path: socket_path)
     }
     
-    func send(query: LightningRPCQuery) -> Data {
+    func send(_ query: LightningRPCQuery) -> Data {
         print(query)
         var response = Data(capacity: buffer_size)
         do {
@@ -75,7 +76,7 @@ class LightningRPCSocket: NSObject, RPCProtocol {
             // If the next chunk of data is 36544 bytes, we continue to wait for
             // more data, otherwise we assume the payload is complete.
             while bytes_read == 36544 {
-                try Socket.wait(for: [socket], timeout: 10)
+                _ = try Socket.wait(for: [socket], timeout: 10)
                 bytes_read = try socket.read(into: &response)
             }
             
