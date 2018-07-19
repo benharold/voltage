@@ -63,16 +63,15 @@ class PeersViewController: VoltageTableViewController {
     }
 
     func load_peers() {
-        let listpeers: LightningRPCQuery = LightningRPCQuery(id: Int(getpid()), method: "listpeers", params: [])
-        guard let socket = LightningRPCSocket.create() else {
-            return
-        }
-        let response: Data = socket.send(query: listpeers)
+        guard let socket = LightningRPCSocket.create() else { return }
+        let query = LightningRPCQuery(LightningRPC.Method.listpeers)
+        let response: Data = socket.send(query)
         do {
             let result: PeerList = try decoder.decode(PeerResult.self, from: response).result
             peer_list = result.peers
         } catch {
-            print("ViewController::load_peers() JSON decoder error: \(error)")
+            if is_rpc_error(response: response) { return }
+            print("PeersViewController.load_peers() JSON decoder error: \(error)")
         }
     }
     

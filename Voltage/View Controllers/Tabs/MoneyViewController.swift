@@ -38,6 +38,9 @@ class MoneyViewController: ReloadableViewController {
 
     override func reload() {
         load_outputs()
+        DispatchQueue.main.async {
+            self.recalculate_balances()
+        }
     }
     
     func recalculate_balances() {
@@ -78,28 +81,16 @@ class MoneyViewController: ReloadableViewController {
     }
     
     func load_outputs() {
-        guard let service = LightningRPCSocket.create() else {
-            return
-        }
-        let listoutputs: LightningRPCQuery = LightningRPCQuery(id: Int(getpid()), method: "listfunds", params: [])
-        let response: Data = service.send(query: listoutputs)
+        guard let socket = LightningRPCSocket.create() else { return }
+        let query = LightningRPCQuery(LightningRPC.Method.listfunds)
+        let response: Data = socket.send(query)
         do {
             let result: FundList = try decoder.decode(FundResult.self, from: response).result
             output_list = result.outputs
             channel_list = result.channels
         } catch {
-            do {
-                let rpc_error = try decoder.decode(ErrorResult.self, from: response).error
-                print("MoneyViewController.load_outputs() RPC error: " + rpc_error.message)
-            } catch {
-                print("MoneyViewController.load_outputs() RPC error: \(error)")
-            }
-            //alert(message: "There was an error decoding the list of outputs. Is your c-lightning node running?")
+            if is_rpc_error(response: response) { return }
             print("MoneyViewController.load_outputs() JSON decoder error: \(error)")
-        }
-        
-        DispatchQueue.main.async {
-            self.recalculate_balances()
         }
     }
     

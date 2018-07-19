@@ -59,22 +59,14 @@ class ChannelsViewController: VoltageTableViewController {
     }
     
     func load_channels() {
-        let listchannels: LightningRPCQuery = LightningRPCQuery(id: Int(getpid()), method: "listchannels", params: [])
-        guard let socket = LightningRPCSocket.create() else {
-            return
-        }
-        let response: Data = socket.send(query: listchannels)
+        guard let socket = LightningRPCSocket.create() else { return }
+        let query = LightningRPCQuery(LightningRPC.Method.listchannels)
+        let response: Data = socket.send(query)
         do {
             let result: ChannelList = try decoder.decode(ChannelResult.self, from: response).result
             channel_list = result.channels
         } catch {
-            do {
-                NotificationCenter.default.post(name: Notification.Name.rpc_error, object: error)
-                let rpc_error = try decoder.decode(ErrorResult.self, from: response).error
-                print("ChannelsViewController.load_channels RPC error: " + rpc_error.message)
-            } catch {
-                print("ChannelsViewController.load_channels RPC error: \(error)")
-            }
+            if is_rpc_error(response: response) { return }
             print("ChannelsViewController.load_channels() JSON decoder error: \(error)")
         }
     }

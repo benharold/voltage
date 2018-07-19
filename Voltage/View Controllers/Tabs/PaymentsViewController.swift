@@ -63,15 +63,14 @@ class PaymentsViewController: VoltageTableViewController {
     }
     
     func load_payments() {
-        let listpayments: LightningRPCQuery = LightningRPCQuery(id: Int(getpid()), method: "listpayments", params: [])
-        guard let socket = LightningRPCSocket.create() else {
-            return
-        }
-        let response: Data = socket.send(query: listpayments)
+        guard let socket = LightningRPCSocket.create() else { return }
+        let query = LightningRPCQuery(LightningRPC.Method.listpayments)
+        let response: Data = socket.send(query)
         do {
             let result: PaymentList = try decoder.decode(PaymentResult.self, from: response).result
             payment_list = result.payments
         } catch {
+            if is_rpc_error(response: response) { return }
             print("PaymentsViewController.load_payments() JSON decoder error: \(error)")
         }
     }

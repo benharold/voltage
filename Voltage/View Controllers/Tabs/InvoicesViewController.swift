@@ -71,22 +71,14 @@ class InvoicesViewController: VoltageTableViewController {
     }
     
     func load_invoices() {
-        let listinvoices: LightningRPCQuery = LightningRPCQuery(id: Int(getpid()), method: "listinvoices", params: [])
-        guard let socket = LightningRPCSocket.create() else {
-            return
-        }
-        let response: Data = socket.send(query: listinvoices)
+        guard let socket = LightningRPCSocket.create() else { return }
+        let query = LightningRPCQuery(LightningRPC.Method.listinvoices)
+        let response: Data = socket.send(query)
         do {
             let result: InvoiceList = try decoder.decode(InvoiceResult.self, from: response).result
             invoice_list = result.invoices
         } catch {
-            do {
-                NotificationCenter.default.post(name: Notification.Name.rpc_error, object: error)
-                let rpc_error = try decoder.decode(ErrorResult.self, from: response).error
-                print("InvoicesViewController.load_channels RPC error: " + rpc_error.message)
-            } catch {
-                print("InvoicesViewController.load_channels RPC error: \(error)")
-            }
+            if is_rpc_error(response: response) { return }
             print("InvoicesViewController.load_invoices() JSON decoder error: \(error)")
         }
     }

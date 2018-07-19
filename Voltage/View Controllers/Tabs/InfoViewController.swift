@@ -11,7 +11,7 @@ import Cocoa
 class InfoViewController: ReloadableViewController {
     
     var decoder: JSONDecoder = JSONDecoder.init()
-
+    
     @IBOutlet weak var node_id: NSTextField!
     @IBOutlet weak var port: NSTextField!
     @IBOutlet weak var version: NSTextField!
@@ -28,11 +28,9 @@ class InfoViewController: ReloadableViewController {
     }
     
     func load_info() {
-        guard let service = LightningRPCSocket.create() else {
-            return
-        }
-        let getinfo: LightningRPCQuery = LightningRPCQuery(id: Int(getpid()), method: "getinfo", params: [])
-        let response: Data = service.send(query: getinfo)
+        guard let service = LightningRPCSocket.create() else { return }
+        let query = LightningRPCQuery(LightningRPC.Method.getinfo)
+        let response: Data = service.send(query)
         do {
             let result: GetInfo = try decoder.decode(GetInfoResult.self, from: response).result
             DispatchQueue.main.async {
@@ -43,12 +41,7 @@ class InfoViewController: ReloadableViewController {
                 self.network.stringValue = result.network
             }
         } catch {
-            do {
-                let rpc_error = try decoder.decode(ErrorResult.self, from: response).error
-                print("InfoViewController.load_info() RPC error: " + rpc_error.message)
-            } catch {
-                print("InfoViewController.load_info() RPC error: \(error)")
-            }
+            if is_rpc_error(response: response) { return }
             print("InfoViewController.load_info() JSON decoder error: \(error)")
         }
     }
