@@ -9,7 +9,7 @@
 
 import Cocoa
 
-class CreateInvoiceViewController: NSViewController, NSPopoverDelegate {
+class CreateInvoiceViewController: NSViewController, NSPopoverDelegate, HandlesRPCErrors {
     
     let decoder = JSONDecoder.init()
     
@@ -44,6 +44,8 @@ class CreateInvoiceViewController: NSViewController, NSPopoverDelegate {
         // Don't close the popover when a validaton alert is shown
         popover = notification.object as? NSPopover
         popover?.behavior = .semitransient
+        
+        PopoverManager.current = popover
     }
     
     func create_invoice() {
@@ -60,23 +62,15 @@ class CreateInvoiceViewController: NSViewController, NSPopoverDelegate {
         if preimage != "" {
             params.append(preimage)
         }
-        guard let socket = LightningRPCSocket.create() else {
-            return
-        }
-        let createinvoice = LightningRPCQuery(id: Int(getpid()), method: "invoice", params: params)
-        let response: Data = socket.send(query: createinvoice)
+        guard let socket = LightningRPCSocket.create() else { return }
+        let query = LightningRPCQuery(method: LightningRPC.Method.invoice, params: params)
+        let response: Data = socket.send(query)
         do {
-            let json_error = try? decoder.decode(ErrorResult.self, from: response).error
-            if let error = json_error {
-                NotificationCenter.default.post(name: Notification.Name.rpc_error, object: error)
-            } else {
-                var result: CreatedInvoice = try decoder.decode(CreatedInvoiceResult.self, from: response).result
-                result.label = label
-                self.display_invoice(sender: self, created_invoice: result)
-            }
-        } catch let error as Swift.DecodingError {
-            NotificationCenter.default.post(name: Notification.Name.rpc_error, object: error)
+            var result: CreatedInvoice = try decoder.decode(CreatedInvoiceResult.self, from: response).result
+            result.label = label
+            self.display_invoice(sender: self, created_invoice: result)
         } catch {
+            if is_rpc_error(response: response) { return }
             print("unknown error", error)
         }
     }
