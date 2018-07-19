@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class SendMoneyViewController: NSViewController {
+class SendMoneyViewController: NSViewController, HandlesRPCErrors {
 
     @IBOutlet weak var send_to_field: NSTextField!
     
@@ -25,22 +25,15 @@ class SendMoneyViewController: NSViewController {
         guard let service = LightningRPCSocket.create() else {
             return
         }
-        let newaddr: LightningRPCQuery = LightningRPCQuery(id: Int(getpid()),
-                                                           method: "withdraw",
-                                                           params: [address, amount])
-        let response: Data = service.send(query: newaddr)
+        let query = LightningRPCQuery(method: LightningRPC.Method.withdraw, params: [address, amount])
+        let response: Data = service.send(query)
         print(response.to_string())
         do {
             let result: Withdraw = try decoder.decode(WithdrawResult.self, from: response).result
             print(result)
-//            return result
+            // TODO: something with the result
         } catch {
-            do {
-                let rpc_error = try decoder.decode(ErrorResult.self, from: response).error
-                print("SendMoneyViewController.send_money() RPC error: " + rpc_error.message)
-            } catch {
-                print("SendMoneyViewController.send_money() RPC error: \(error)")
-            }
+            if is_rpc_error(response: response) { return }
             print("SendMoneyViewController.send_money() JSON decoder error: \(error)")
         }
     }
