@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct RPCError: Codable {
+struct RPCError: Codable, Error {
     let code: Int
     let message: String
 }
