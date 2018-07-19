@@ -68,7 +68,7 @@ class CreateInvoiceViewController: NSViewController, NSPopoverDelegate {
         do {
             let json_error = try? decoder.decode(ErrorResult.self, from: response).error
             if let error = json_error {
-                NotificationCenter.default.post(name: Notification.Name.rpc_error, object: error.message)
+                NotificationCenter.default.post(name: Notification.Name.rpc_error, object: error)
             } else {
                 var result: CreatedInvoice = try decoder.decode(CreatedInvoiceResult.self, from: response).result
                 result.label = label

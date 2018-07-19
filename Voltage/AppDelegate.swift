@@ -29,20 +29,29 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         return true
     }
     
+    // FIXME: This is just hot garbage
     func add_rpc_error_observer() {
         let notification_name = Notification.Name.rpc_error
         NotificationCenter.default.addObserver(forName: notification_name, object: nil, queue: nil, using: { (notification) in
             print("rpc observer notification", notification)
-            var error_text: String = String(describing: notification.object!)
+            var message: String = ""
+            
+            if let rpc_error: RPCError = notification.object as? RPCError {
+                // RPCErrors have a code and a message string
+                message = rpc_error.message
+            } else {
+                message = String(describing: notification.object!)
+            }
+            
             if let user_info: [AnyHashable: Any] = notification.userInfo {
                 if var socket_path = user_info["socket_path"] as? String {
                     socket_path = "Socket path: " + socket_path
-                    error_text += "\n\n" + socket_path
+                    message += "\n\n" + socket_path
                 }
             }
             // Anything that messes with the UI has to be done in the main thread
             DispatchQueue.main.async {
-                self.alert_rpc_error(header: "RPC Error", body: error_text)
+                self.alert_rpc_error(header: "RPC Error", body: message)
             }
         })
     }
