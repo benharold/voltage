@@ -23,7 +23,7 @@ class OutputTest: XCTestCase {
             method: "listfunds",
             params: []
         )
-        let response: Data = socket.send(query: query)
+        let response: Data = socket.send(query)
         print(response.to_string())
         do {
             result = try decoder.decode(FundResult.self, from: response)

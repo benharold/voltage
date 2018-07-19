@@ -23,7 +23,7 @@ class InvoiceTest: XCTestCase {
             method: "listinvoices",
             params: []
         )
-        let response: Data = socket.send(query: query)
+        let response: Data = socket.send(query)
         do {
             result = try decoder.decode(InvoiceResult.self, from: response)
             // I need to figure out how to assert that the result object

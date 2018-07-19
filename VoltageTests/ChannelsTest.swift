@@ -22,7 +22,7 @@ class ChannelsTest: XCTestCase {
                 method: "listchannels",
                 params: []
             )
-            let response: Data = socket.send(query: query)
+            let response: Data = socket.send(query)
             do {
                 let result = try decoder.decode(ChannelResult.self, from: response)
                 print(result)

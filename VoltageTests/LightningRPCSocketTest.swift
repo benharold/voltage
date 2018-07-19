@@ -60,7 +60,7 @@ class LightningRPCSocketTest: XCTestCase {
             method: "getinfo",
             params: []
         )
-        let response: Data = socket.send(query: query)
+        let response: Data = socket.send(query)
         do {
             result = try decoder.decode(GetInfoResult.self, from: response)
             XCTAssert(result is GetInfoResult) // Ignore the warning https://bugs.swift.org/browse/SR-1703
@@ -79,7 +79,7 @@ class LightningRPCSocketTest: XCTestCase {
             method: "listpayments",
             params: []
         )
-        let response: Data = socket.send(query: query)
+        let response: Data = socket.send(query)
         do {
             result = try decoder.decode(PaymentResult.self, from: response)
             XCTAssert(result is PaymentResult) // Ignore the warning https://bugs.swift.org/browse/SR-1703

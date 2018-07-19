@@ -23,7 +23,7 @@ class PeerTest: XCTestCase {
             method: "listpeers",
             params: []
         )
-        let response: Data = socket.send(query: query)
+        let response: Data = socket.send(query)
         do {
             result = try decoder.decode(PeerResult.self, from: response)
             print(result)

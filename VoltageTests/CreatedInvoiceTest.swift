@@ -27,7 +27,7 @@ class CreatedInvoiceTest: XCTestCase {
             method: "invoice",
             params: ["1000", label, "\"test description\""]
         )
-        let response: Data = socket.send(query: query)
+        let response: Data = socket.send(query)
         do {
             result = try decoder.decode(CreatedInvoiceResult.self, from: response)
             print(result)
