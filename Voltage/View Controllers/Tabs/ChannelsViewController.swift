@@ -8,9 +8,9 @@
 
 import Cocoa
 
-class ChannelsViewController: VoltageTableViewController, NSTableViewDelegate, NSTableViewDataSource {
+class ChannelsViewController: VoltageTableViewController {
 
-    var channel_list: [Channel]!
+    var channel_list: [Channel] = [Channel]()
     
     let table_keys = [
         "short_channel_id",
@@ -37,9 +37,7 @@ class ChannelsViewController: VoltageTableViewController, NSTableViewDelegate, N
     }
     
     override func reload() {
-        if channel_list != nil {
-            channel_list.removeAll()
-        }
+        channel_list.removeAll()
         load_table_data()
         DispatchQueue.main.async {
             self.reload_table_view()
@@ -47,7 +45,9 @@ class ChannelsViewController: VoltageTableViewController, NSTableViewDelegate, N
     }
     
     override func load_table_data() {
-        load_channels()
+        if let response: ChannelResult = query(LightningRPC.Method.listchannels) {
+            channel_list = response.result.channels
+        }
     }
     
     override func reload_table_view() {
@@ -60,25 +60,15 @@ class ChannelsViewController: VoltageTableViewController, NSTableViewDelegate, N
         }
     }
     
-    func load_channels() {
-        let listchannels: LightningRPCQuery = LightningRPCQuery(id: Int(getpid()), method: "listchannels", params: [])
-        guard let socket = LightningRPCSocket.create() else {
-            return
-        }
-        let response: Data = socket.send(query: listchannels)
-        do {
-            let result: ChannelList = try decoder.decode(ChannelResult.self, from: response).result
-            channel_list = result.channels
-        } catch {
-            print("ViewController::load_channels() JSON decoder error: \(error)")
-        }
-    }
-    
     func numberOfRows(in tableView: NSTableView) -> Int {
-        return channel_list?.count ?? 0
+        return channel_list.count
     }
     
     func tableView(_ tableView: NSTableView, objectValueFor tableColumn: NSTableColumn?, row: Int) -> Any? {
+        if channel_list.count == 0 {
+            return nil
+        }
+        
         var key = ""
         key = tableColumn!.identifier.rawValue
         
@@ -95,14 +85,7 @@ class ChannelsViewController: VoltageTableViewController, NSTableViewDelegate, N
             return channel_list[row].active.to_yes_no()
         } else if key == "last_update" {
             if channel_list[row].last_update != nil {
-                let date = Date(timeIntervalSince1970: TimeInterval(channel_list[row].last_update!))
-                let dateFormatter = DateFormatter()
-                dateFormatter.dateStyle = .medium
-                dateFormatter.timeStyle = .medium
-                dateFormatter.timeZone = TimeZone.current
-                dateFormatter.locale = NSLocale.current
-                let strDate = dateFormatter.string(from: date)
-                return strDate
+                return channel_list[row].last_update?.to_date_string()
             }
             return ""
         } else if key == "public" {
@@ -159,17 +142,4 @@ class ChannelsViewController: VoltageTableViewController, NSTableViewDelegate, N
         
         tableView.reloadData()
     }
-    
-    func tableViewSelectionDidChange(_ notification: Notification) {
-        set_active_row()
-    }
-    
-    func set_active_row() {
-        // channels_table_view.selectedRow will be -1 if the user selects a column
-        if channels_table_view.selectedRow >= 0 {
-//            channel_hash.stringValue = channel_list[channels_table_view.selectedRow].channel_hash
-//            destination.stringValue = channel_list[channels_table_view.selectedRow].destination
-        }
-    }
-    
 }

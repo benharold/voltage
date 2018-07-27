@@ -29,7 +29,9 @@ class PreferencesViewController: NSViewController {
     }
     
     @IBAction func test_connection_button(_ sender: Any) {
-        test_connection()
+        if test_connection() {
+            alert_socket_is_connected()
+        }
     }
     
     @IBAction func revert_to_default_button(_ sender: Any) {
@@ -44,24 +46,37 @@ class PreferencesViewController: NSViewController {
         preferences.socket_path = socket_location.stringValue
     }
     
-    func test_connection() {
+    func test_connection() -> Bool {
         guard let service = LightningRPCSocket(path: socket_location.stringValue) else {
             socket_status.stringValue = "Disconnected"
             socket_status.textColor = NSColor.red
-            return
+            
+            return false
         }
         if (service.socket?.isConnected)! {
             socket_status.stringValue = "Connected"
             socket_status.textColor = NSColor.black
+            
+            return true
         } else {
             socket_status.stringValue = "Disconnected"
             socket_status.textColor = NSColor.red
         }
+        
+        return false
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         show_existing_preferences()
-        test_connection()
+    }
+
+    func alert_socket_is_connected() {
+        let alert = NSAlert()
+        alert.messageText = "Connection Established"
+        alert.informativeText = "Voltage is connected to c-lightning via the RPC socket at " + socket_location.stringValue
+        alert.alertStyle = .informational
+        alert.addButton(withTitle: "Sweet!")
+        alert.runModal()
     }
 }

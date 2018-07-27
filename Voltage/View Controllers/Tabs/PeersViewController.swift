@@ -13,9 +13,9 @@ import Cocoa
 // a Channel object. Further muddying the waters, both the Peer and PeerChannel
 // object contain an optional `owner` field, while the `state` field is
 // required for a PeerChannel and optional for a peer.
-class PeersViewController: VoltageTableViewController, NSTableViewDelegate, NSTableViewDataSource {
+class PeersViewController: VoltageTableViewController {
 
-    var peer_list: [Peer]!
+    var peer_list: [Peer] = [Peer]()
     
     let table_keys = [
         "id",
@@ -28,6 +28,10 @@ class PeersViewController: VoltageTableViewController, NSTableViewDelegate, NSTa
     
     @IBOutlet weak var peers_table_view: NSTableView!
     
+    lazy var fund_channel_view_controller: FundChannelViewController = {
+        return FundChannelViewController()
+    }()
+    
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         self.tab_index = 3
@@ -37,21 +41,29 @@ class PeersViewController: VoltageTableViewController, NSTableViewDelegate, NSTa
         super.viewDidLoad()
         peers_table_view.delegate = self
         peers_table_view.dataSource = self
+        peers_table_view.doubleAction = #selector(double_click(_:))
         set_sort_descriptors()
     }
     
     override func reload() {
-        if peer_list != nil {
-            peer_list.removeAll()
-        }
+        peer_list.removeAll()
         load_table_data()
         DispatchQueue.main.async {
             self.reload_table_view()
         }
     }
     
+    @objc func double_click(_ sender: NSTableView) {
+        if peer_list[sender.clickedRow].connected == true {
+            //self.presentViewControllerAsSheet(fund_channel_view_controller)
+            //fund_channel_view_controller.set_data(peer_list[sender.clickedRow])
+        }
+    }
+    
     override func load_table_data() {
-        load_peers()
+        if let response: PeerResult = query(LightningRPC.Method.listpeers) {
+            peer_list = response.result.peers
+        }
     }
     
     override func reload_table_view() {
@@ -64,25 +76,15 @@ class PeersViewController: VoltageTableViewController, NSTableViewDelegate, NSTa
         }
     }
 
-    func load_peers() {
-        let listpeers: LightningRPCQuery = LightningRPCQuery(id: Int(getpid()), method: "listpeers", params: [])
-        guard let socket = LightningRPCSocket.create() else {
-            return
-        }
-        let response: Data = socket.send(query: listpeers)
-        do {
-            let result: PeerList = try decoder.decode(PeerResult.self, from: response).result
-            peer_list = result.peers
-        } catch {
-            print("ViewController::load_peers() JSON decoder error: \(error)")
-        }
-    }
-    
     func numberOfRows(in tableView: NSTableView) -> Int {
-        return peer_list?.count ?? 0
+        return peer_list.count
     }
     
     func tableView(_ tableView: NSTableView, objectValueFor tableColumn: NSTableColumn?, row: Int) -> Any? {
+        if peer_list.count == 0 {
+            return nil
+        }
+        
         var key = ""
         key = tableColumn!.identifier.rawValue
         
@@ -182,16 +184,5 @@ class PeersViewController: VoltageTableViewController, NSTableViewDelegate, NSTa
         }
         
         tableView.reloadData()
-    }
-    
-    func tableViewSelectionDidChange(_ notification: Notification) {
-        set_active_row()
-    }
-    
-    func set_active_row() {
-        // payments_table_view.selectedRow will be -1 if the user selects a column
-        if peers_table_view.selectedRow >= 0 {
-            
-        }
     }
 }

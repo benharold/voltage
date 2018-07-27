@@ -5,12 +5,13 @@
 //  Created by Ben Harold on 2/2/18.
 //  Copyright © 2018 Harold Consulting. All rights reserved.
 //
+// swiftlint:disable force_cast
 
 import Cocoa
 
-class InvoicesViewController: VoltageTableViewController, NSTableViewDelegate, NSTableViewDataSource {
+class InvoicesViewController: VoltageTableViewController {
     
-    var invoice_list: [Invoice]!
+    var invoice_list: [Invoice] = [Invoice]()
     
     let table_keys = [
         "label",
@@ -24,6 +25,10 @@ class InvoicesViewController: VoltageTableViewController, NSTableViewDelegate, N
     
     @IBOutlet weak var invoices_table_view: NSTableView!
     
+    lazy var invoice_view_controller: InvoiceViewController = {
+        return self.storyboard!.instantiateController(withIdentifier: NSStoryboard.SceneIdentifier(rawValue: "invoice_view_controller")) as! InvoiceViewController
+    }()
+    
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         self.tab_index = 1
@@ -33,21 +38,28 @@ class InvoicesViewController: VoltageTableViewController, NSTableViewDelegate, N
         super.viewDidLoad()
         invoices_table_view.delegate = self
         invoices_table_view.dataSource = self
+        invoices_table_view.target = self
+        invoices_table_view.doubleAction = #selector(double_click(_:))
         set_sort_descriptors()
     }
     
     override func reload() {
-        if invoice_list != nil {
-            invoice_list.removeAll()
-        }
+        invoice_list.removeAll()
         load_table_data()
         DispatchQueue.main.async {
             self.reload_table_view()
         }
     }
+    
+    @objc func double_click(_ sender: NSTableView) {
+        self.presentViewControllerAsModalWindow(invoice_view_controller)
+        invoice_view_controller.set_existing(invoice: invoice_list[sender.clickedRow])
+    }
 
     override func load_table_data() {
-        load_invoices()
+        if let response: InvoiceResult = query(LightningRPC.Method.listinvoices) {
+            invoice_list = response.result.invoices
+        }
     }
     
     override func reload_table_view() {
@@ -60,25 +72,15 @@ class InvoicesViewController: VoltageTableViewController, NSTableViewDelegate, N
         }
     }
     
-    func load_invoices() {
-        let listinvoices: LightningRPCQuery = LightningRPCQuery(id: Int(getpid()), method: "listinvoices", params: [])
-        guard let socket = LightningRPCSocket.create() else {
-            return
-        }
-        let response: Data = socket.send(query: listinvoices)
-        do {
-            let result: InvoiceList = try decoder.decode(InvoiceResult.self, from: response).result
-            invoice_list = result.invoices
-        } catch {
-            print("ViewController::load_invoices() JSON decoder error: \(error)")
-        }
-    }
-    
     func numberOfRows(in tableView: NSTableView) -> Int {
-        return invoice_list?.count ?? 0
+        return invoice_list.count
     }
     
     func tableView(_ tableView: NSTableView, objectValueFor tableColumn: NSTableColumn?, row: Int) -> Any? {
+        if invoice_list.count == 0 {
+            return nil
+        }
+        
         var key = ""
         key = tableColumn!.identifier.rawValue
 
@@ -95,27 +97,12 @@ class InvoicesViewController: VoltageTableViewController, NSTableViewDelegate, N
         } else if key == "msatoshi_received" {
             return msatoshi_received / 1000
         } else if key == "paid_at" {
-            return pretty_date(timestamp: invoice_list[row].paid_at)
+            return invoice_list[row].paid_at?.to_date_string()
         } else if key == "expires_at" {
-            return pretty_date(timestamp: invoice_list[row].expires_at)
+            return invoice_list[row].expires_at.to_date_string()
         }
         
         return nil
-    }
-    
-    func pretty_date(timestamp: Int?) -> String {
-        if timestamp == nil {
-            return "N/A"
-        }
-        
-        let date = Date(timeIntervalSince1970: TimeInterval(timestamp!))
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateStyle = .medium
-        dateFormatter.timeStyle = .medium
-        dateFormatter.timeZone = TimeZone.current
-        dateFormatter.locale = NSLocale.current
-        
-        return dateFormatter.string(from: date)
     }
     
     func tableView(_ tableView: NSTableView, sortDescriptorsDidChange oldDescriptors: [NSSortDescriptor]) {
@@ -162,17 +149,5 @@ class InvoicesViewController: VoltageTableViewController, NSTableViewDelegate, N
         }
 
         tableView.reloadData()
-    }
-    
-    func tableViewSelectionDidChange(_ notification: Notification) {
-        set_active_row()
-    }
-    
-    func set_active_row() {
-        // invoices_table_view.selectedRow will be -1 if the user selects a column
-        if invoices_table_view.selectedRow >= 0 {
-            //            invoice_hash.stringValue = invoice_list[invoices_table_view.selectedRow].invoice_hash
-            //            destination.stringValue = invoice_list[invoices_table_view.selectedRow].destination
-        }
     }
 }

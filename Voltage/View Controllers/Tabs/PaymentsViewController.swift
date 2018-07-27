@@ -9,9 +9,9 @@
 
 import Cocoa
 
-class PaymentsViewController: VoltageTableViewController, NSTableViewDelegate, NSTableViewDataSource {
+class PaymentsViewController: VoltageTableViewController {
     
-    var payment_list: [Payment]!
+    var payment_list: [Payment] = [Payment]()
     
     let table_keys = [
         "id",
@@ -23,9 +23,7 @@ class PaymentsViewController: VoltageTableViewController, NSTableViewDelegate, N
     ]
     
     @IBOutlet weak var payments_table_view: NSTableView!
-    
     @IBOutlet weak var payment_hash: NSTextFieldCell!
-    
     @IBOutlet weak var destination: NSTextFieldCell!
     
     required init?(coder: NSCoder) {
@@ -41,9 +39,7 @@ class PaymentsViewController: VoltageTableViewController, NSTableViewDelegate, N
     }
     
     override func reload() {
-        if payment_list != nil {
-            payment_list.removeAll()
-        }
+        payment_list.removeAll()
         load_table_data()
         DispatchQueue.main.async {
             self.reload_table_view()
@@ -51,7 +47,9 @@ class PaymentsViewController: VoltageTableViewController, NSTableViewDelegate, N
     }
     
     override func load_table_data() {
-        load_payments()
+        if let response: PaymentResult = query(LightningRPC.Method.listpayments) {
+            payment_list = response.result.payments
+        }
     }
     
     override func reload_table_view() {
@@ -64,26 +62,15 @@ class PaymentsViewController: VoltageTableViewController, NSTableViewDelegate, N
         }
     }
     
-    func load_payments() {
-        let listpayments: LightningRPCQuery = LightningRPCQuery(id: Int(getpid()), method: "listpayments", params: [])
-        guard let socket = LightningRPCSocket.create() else {
-            return
-        }
-        let response: Data = socket.send(query: listpayments)
-        do {
-            let result: PaymentList = try decoder.decode(PaymentResult.self, from: response).result
-            payment_list = result.payments
-        } catch {
-            //alert(message: "There was an error decoding the list of payments. Is your c-lightning node running?")
-            print("ViewController::load_payments() JSON decoder error: \(error)")
-        }
-    }
-    
     func numberOfRows(in tableView: NSTableView) -> Int {
-        return payment_list?.count ?? 0
+        return payment_list.count
     }
     
     func tableView(_ tableView: NSTableView, objectValueFor tableColumn: NSTableColumn?, row: Int) -> Any? {
+        if payment_list.count == 0 {
+            return nil
+        }
+
         var key = ""
         key = tableColumn!.identifier.rawValue
         
@@ -95,15 +82,7 @@ class PaymentsViewController: VoltageTableViewController, NSTableViewDelegate, N
         } else if key == "status" {
             return payment_list[row].status
         } else if key == "created" {
-            let date = Date(timeIntervalSince1970: TimeInterval(payment_list[row].created_at))
-            let dateFormatter = DateFormatter()
-            dateFormatter.dateStyle = .medium
-            dateFormatter.timeStyle = .medium
-            dateFormatter.timeZone = TimeZone.current
-            dateFormatter.locale = NSLocale.current
-            //dateFormatter.dateFormat = "yyyy-MM-dd"
-            let strDate = dateFormatter.string(from: date)
-            return strDate
+            return payment_list[row].created_at.to_date_string()
         } else if key == "msatoshi" {
             return payment_list[row].msatoshi / 1000
         } else if key == "destination" {
@@ -161,7 +140,6 @@ class PaymentsViewController: VoltageTableViewController, NSTableViewDelegate, N
     }
     
     func set_active_row() {
-        // payments_table_view.selectedRow will be -1 if the user selects a column
         if payments_table_view.selectedRow >= 0 {
             payment_hash.stringValue = payment_list[payments_table_view.selectedRow].payment_hash
             destination.stringValue = payment_list[payments_table_view.selectedRow].destination

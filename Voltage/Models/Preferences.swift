@@ -11,12 +11,12 @@ import Foundation
 struct Preferences {
     var socket_path: String {
         get {
-            let path = UserDefaults.standard.string(forKey: "socket_path") ?? "~/lightning/lightning-rpc"
+            let path = UserDefaults.standard.string(forKey: PreferenceDefaults.socket_path_key) ?? PreferenceDefaults.socket_path
 
             return path
         }
         set {
-            UserDefaults.standard.set(newValue, forKey: "socket_path")
+            UserDefaults.standard.set(newValue, forKey: PreferenceDefaults.socket_path_key)
         }
     }
 }

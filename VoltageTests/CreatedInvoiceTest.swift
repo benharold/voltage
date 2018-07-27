@@ -1,37 +1,42 @@
 //
-//  InvoiceTest.swift
+//  PeerTest.swift
 //  VoltageTests
 //
-//  Created by Ben Harold on 2/2/18.
+//  Created by Ben Harold on 2/6/18.
 //  Copyright © 2018 Harold Consulting. All rights reserved.
 //
 
 import XCTest
+import Fakery
 @testable import Voltage
 
-class InvoiceTest: XCTestCase {
+class CreatedInvoiceTest: XCTestCase {
     let decoder: JSONDecoder = JSONDecoder.init()
     
-    func testListInvoicesIsDecodable() throws {
+    let faker = Faker(locale: "en-US")
+    
+    func testCreateInvoiceIsDecodable() throws {
         //        self.measure {
-        let result: InvoiceResult
+        let result: CreatedInvoiceResult
         guard let socket = LightningRPCSocket.create() else {
             throw SocketError.unwrap
         }
+        let label = "\"test" + faker.lorem.word() + "\""
         let query = LightningRPCQuery(
             id: Int(getpid()),
-            method: "listinvoices",
-            params: []
+            method: "invoice",
+            params: ["1000", label, "\"test description\""]
         )
         let response: Data = socket.send(query)
         do {
-            result = try decoder.decode(InvoiceResult.self, from: response)
+            result = try decoder.decode(CreatedInvoiceResult.self, from: response)
+            Swift.print(result)
             // I need to figure out how to assert that the result object
             // is the expected type
-            Swift.print(result)
         } catch {
             Swift.print("Error: \(error)")
         }
         //        }
     }
+
 }

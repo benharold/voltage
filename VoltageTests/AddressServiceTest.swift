@@ -12,6 +12,8 @@ import XCTest
 class AddressServiceTest: XCTestCase {
 
     func test_get_new_address() {
+        // Prevents an interrupted system call
+        sleep(1)
         if let new_address = AddressService.generate() {
             XCTAssert(new_address.count >= 26)
             XCTAssert(new_address.count <= 35)
