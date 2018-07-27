@@ -13,7 +13,7 @@ class MainViewController: NSViewController {
     @IBOutlet weak var reload_indicator: NSProgressIndicator!
     
     @IBAction func reload_button(_ sender: NSButton) {
-        reload_indicator.startAnimation(self)
+        start_indicator()
         
         let group = DispatchGroup()
         group.enter()
@@ -25,7 +25,7 @@ class MainViewController: NSViewController {
         
         group.notify(queue: .main) {
             DispatchQueue.main.async {
-                self.reload_indicator.stopAnimation(self)
+                self.stop_indicator()
             }
         }
     }
