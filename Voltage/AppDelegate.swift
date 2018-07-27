@@ -10,7 +10,13 @@ import Cocoa
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-
+    
+    let debug_controller: DebugWindowController = DebugWindowController(windowNibName: NSNib.Name.debug)
+    
+    @IBAction func debug_button(_ sender: Any) {
+        open_debug_window()
+    }
+    
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Setup the RPC error observer. It watches for `Notification`s of type
         // "rpc_rror" and displays an alert when it sees them.
@@ -64,6 +70,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         alert.addButton(withTitle: "Dang")
         //alert.addButton(withTitle: "Cancel")
         return alert.runModal() == .alertFirstButtonReturn
+    }
+    
+    func open_debug_window() {
+        debug_controller.showWindow(self)
     }
 
 }
