@@ -21,8 +21,21 @@ extension MakesRPCQueries where Self: HandlesRPCErrors {
         do {
             let result: T = try decoder.decode(T.self, from: response)
             return result
+        } catch Swift.DecodingError.dataCorrupted(let decoding_error) {
+            // Sometimes a response payload will get truncated before the entire
+            // response is read from the socket. In that case, the decoder won't
+            // be able to decode the JSON.
+            let error_text = "The response JSON could not be decoded. Please try again."
+            NotificationCenter.default.post(name: Notification.Name.rpc_error,
+                                            object: error_text)
+            print(decoding_error)
         } catch {
+            // If it's a decodeable RPCError, this will handle notifications.
             if is_rpc_error(response: response) { return nil }
+            
+            // Otherwise dump the entire error object to the error handler.
+            NotificationCenter.default.post(name: Notification.Name.rpc_error,
+                                            object: error)
             print(error)
         }
         
