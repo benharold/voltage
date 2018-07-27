@@ -51,7 +51,6 @@ class LightningRPCSocketTest: XCTestCase {
     }
     
     func testSendGetInfoQuery() throws {
-        let result: GetInfoResult
         guard let socket = LightningRPCSocket(path: relative_path) else {
             throw SocketError.unwrap
         }
@@ -62,15 +61,14 @@ class LightningRPCSocketTest: XCTestCase {
         )
         let response: Data = socket.send(query)
         do {
-            result = try decoder.decode(GetInfoResult.self, from: response)
-            XCTAssert(result is GetInfoResult) // Ignore the warning https://bugs.swift.org/browse/SR-1703
+            _ = try decoder.decode(GetInfoResult.self, from: response)
+            XCTAssert(true)
         } catch {
-            Swift.print("Error: \(error)")
+            XCTAssert(false)
         }
     }
     
     func testListPaymentsIsDecodable() throws {
-        let result: PaymentResult
         guard let socket = LightningRPCSocket(path: relative_path) else {
             throw SocketError.unwrap
         }
@@ -81,10 +79,10 @@ class LightningRPCSocketTest: XCTestCase {
         )
         let response: Data = socket.send(query)
         do {
-            result = try decoder.decode(PaymentResult.self, from: response)
-            XCTAssert(result is PaymentResult) // Ignore the warning https://bugs.swift.org/browse/SR-1703
+            _ = try decoder.decode(PaymentResult.self, from: response)
+            XCTAssert(true)
         } catch {
-            Swift.print("Error: \(error)")
+            XCTAssert(false)
         }
     }
 

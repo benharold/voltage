@@ -50,6 +50,7 @@
 		3A6A3E90210A532C0050D711 /* DebugWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A6A3E8E210A532C0050D711 /* DebugWindowController.xib */; };
 		3A6A3E92210A57BE0050D711 /* DebugStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6A3E91210A57BE0050D711 /* DebugStorage.swift */; };
 		3A6A3E94210A5A2F0050D711 /* Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6A3E93210A5A2F0050D711 /* Swift.swift */; };
+		3A74D864210BB7C800D8CD25 /* MakesRPCQueries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A74D863210BB7C800D8CD25 /* MakesRPCQueries.swift */; };
 		3A7B0A0120DAF459006AEBF1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7B0A0020DAF459006AEBF1 /* MainViewController.swift */; };
 		3A983E6721001373007A8D27 /* Bolt11InvoiceWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A983E6521001373007A8D27 /* Bolt11InvoiceWindowController.swift */; };
 		3A983E6821001373007A8D27 /* Bolt11InvoiceWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A983E6621001373007A8D27 /* Bolt11InvoiceWindowController.xib */; };
@@ -330,6 +331,7 @@
 		3A6A3E8E210A532C0050D711 /* DebugWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DebugWindowController.xib; sourceTree = "<group>"; };
 		3A6A3E91210A57BE0050D711 /* DebugStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugStorage.swift; sourceTree = "<group>"; };
 		3A6A3E93210A5A2F0050D711 /* Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift.swift; sourceTree = "<group>"; };
+		3A74D863210BB7C800D8CD25 /* MakesRPCQueries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakesRPCQueries.swift; sourceTree = "<group>"; };
 		3A7B0A0020DAF459006AEBF1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		3A983E6521001373007A8D27 /* Bolt11InvoiceWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bolt11InvoiceWindowController.swift; sourceTree = "<group>"; };
 		3A983E6621001373007A8D27 /* Bolt11InvoiceWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Bolt11InvoiceWindowController.xib; sourceTree = "<group>"; };
@@ -782,6 +784,7 @@
 			children = (
 				3A983E6B2100E326007A8D27 /* HandlesRPCErrors.swift */,
 				3A605DF9202C0C6A0076EF45 /* VoltageTableViewProtocol.swift */,
+				3A74D863210BB7C800D8CD25 /* MakesRPCQueries.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -1245,6 +1248,7 @@
 				3A07FA0520FD22CA000CDDCF /* InfoViewController.swift in Sources */,
 				3A0713F9201A7127008E2AEE /* AppDelegate.swift in Sources */,
 				3A38BDED201CF8D70055BBA1 /* String.swift in Sources */,
+				3A74D864210BB7C800D8CD25 /* MakesRPCQueries.swift in Sources */,
 				3A5565642023B1DD003CEBEA /* listfunds.swift in Sources */,
 				3AF5DDF620FFECB3000D3AD6 /* decodepay.swift in Sources */,
 				3A18B5872024E80000D6C2DF /* Console.swift in Sources */,
@@ -1505,6 +1509,7 @@
 			baseConfigurationReference = DC49033F07955E01D2840EF9 /* Pods-VoltageUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = VoltageUITests/Info.plist;
@@ -1522,6 +1527,7 @@
 			baseConfigurationReference = E392EEE7ACBD0AC83CEA8EFA /* Pods-VoltageUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = VoltageUITests/Info.plist;

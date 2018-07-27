@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class ReloadableViewController: NSViewController, HandlesRPCErrors {
+class ReloadableViewController: NSViewController, HandlesRPCErrors, MakesRPCQueries {
     
     // The tab index is used to determine which ViewController should reload.
     var tab_index: Int = 0

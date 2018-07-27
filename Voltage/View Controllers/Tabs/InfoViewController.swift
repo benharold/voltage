@@ -24,25 +24,18 @@ class InfoViewController: ReloadableViewController {
     }
     
     override func reload() {
-        load_info()
+        if let response: GetInfoResult = query(LightningRPC.Method.getinfo) {
+            set_interface_values(response.result)
+        }
     }
     
-    func load_info() {
-        guard let service = LightningRPCSocket.create() else { return }
-        let query = LightningRPCQuery(LightningRPC.Method.getinfo)
-        let response: Data = service.send(query)
-        do {
-            let result: GetInfo = try decoder.decode(GetInfoResult.self, from: response).result
-            DispatchQueue.main.async {
-                self.node_id.stringValue = result.id
-                self.port.stringValue = String(result.port)
-                self.version.stringValue = result.version
-                self.block_height.intValue = Int32(result.blockheight)
-                self.network.stringValue = result.network
-            }
-        } catch {
-            if is_rpc_error(response: response) { return }
-            print("InfoViewController.load_info() JSON decoder error: \(error)")
+    func set_interface_values(_ data: GetInfo) {
+        DispatchQueue.main.async {
+            self.node_id.stringValue = data.id
+            self.port.stringValue = String(data.port)
+            self.version.stringValue = data.version
+            self.block_height.intValue = Int32(data.blockheight)
+            self.network.stringValue = data.network
         }
     }
 }
