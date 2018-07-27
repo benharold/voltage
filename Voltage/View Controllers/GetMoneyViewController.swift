@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class GetMoneyViewController: NSViewController {
+class GetMoneyViewController: NSViewController, NSPopoverDelegate {
     
     var funding_address: String = ""
     
@@ -20,6 +20,10 @@ class GetMoneyViewController: NSViewController {
         super.viewDidLoad()
         get_new_address()
         get_qr_code()
+    }
+    
+    func popoverWillShow(_ notification: Notification) {
+        PopoverManager.current = notification.object as? NSPopover
     }
     
     func get_new_address() {
