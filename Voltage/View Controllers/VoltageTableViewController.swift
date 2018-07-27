@@ -19,11 +19,9 @@ class VoltageTableViewController: ReloadableViewController, VoltageTableView {
     }
     
     func load_table() {
-        DispatchQueue.global(qos: .userInitiated).async {
-            self.load_table_data()
-            DispatchQueue.main.async {
-                self.reload_table_view()
-            }
+        self.load_table_data()
+        DispatchQueue.main.async {
+            self.reload_table_view()
         }
     }
     
