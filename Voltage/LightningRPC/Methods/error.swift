@@ -11,6 +11,15 @@ import Foundation
 struct RPCError: Codable, Error {
     let code: Int
     let message: String
+    let data: ErrorData?
+}
+
+struct ErrorData: Codable {
+    let now: Int
+    let expiry: Int
+    let getroute_tries: Int
+    let sendpay_tries: Int
+    //let failures: [ <#type#>]
 }
 
 struct ErrorResult: Codable {

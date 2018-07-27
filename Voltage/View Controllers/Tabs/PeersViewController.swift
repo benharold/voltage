@@ -28,6 +28,10 @@ class PeersViewController: VoltageTableViewController {
     
     @IBOutlet weak var peers_table_view: NSTableView!
     
+    lazy var fund_channel_view_controller: FundChannelViewController = {
+        return FundChannelViewController()
+    }()
+    
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         self.tab_index = 3
@@ -37,6 +41,7 @@ class PeersViewController: VoltageTableViewController {
         super.viewDidLoad()
         peers_table_view.delegate = self
         peers_table_view.dataSource = self
+        peers_table_view.doubleAction = #selector(double_click(_:))
         set_sort_descriptors()
     }
     
@@ -48,8 +53,17 @@ class PeersViewController: VoltageTableViewController {
         }
     }
     
+    @objc func double_click(_ sender: NSTableView) {
+        if peer_list[sender.clickedRow].connected == true {
+            //self.presentViewControllerAsSheet(fund_channel_view_controller)
+            //fund_channel_view_controller.set_data(peer_list[sender.clickedRow])
+        }
+    }
+    
     override func load_table_data() {
-        load_peers()
+        if let response: PeerResult = query(LightningRPC.Method.listpeers) {
+            peer_list = response.result.peers
+        }
     }
     
     override func reload_table_view() {
@@ -62,19 +76,6 @@ class PeersViewController: VoltageTableViewController {
         }
     }
 
-    func load_peers() {
-        guard let socket = LightningRPCSocket.create() else { return }
-        let query = LightningRPCQuery(LightningRPC.Method.listpeers)
-        let response: Data = socket.send(query)
-        do {
-            let result: PeerList = try decoder.decode(PeerResult.self, from: response).result
-            peer_list = result.peers
-        } catch {
-            if is_rpc_error(response: response) { return }
-            print("PeersViewController.load_peers() JSON decoder error: \(error)")
-        }
-    }
-    
     func numberOfRows(in tableView: NSTableView) -> Int {
         return peer_list.count
     }
@@ -183,16 +184,5 @@ class PeersViewController: VoltageTableViewController {
         }
         
         tableView.reloadData()
-    }
-    
-    func tableViewSelectionDidChange(_ notification: Notification) {
-        set_active_row()
-    }
-    
-    func set_active_row() {
-        // payments_table_view.selectedRow will be -1 if the user selects a column
-        if peers_table_view.selectedRow >= 0 {
-            
-        }
     }
 }
