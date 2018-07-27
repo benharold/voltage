@@ -62,14 +62,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         })
     }
     
-    func alert_rpc_error(header: String, body: String) -> Bool {
+    func alert_rpc_error(header: String, body: String) {
         let alert = NSAlert()
         alert.messageText = header
         alert.informativeText = body
         alert.alertStyle = .warning
         alert.addButton(withTitle: "Dang")
-        //alert.addButton(withTitle: "Cancel")
-        return alert.runModal() == .alertFirstButtonReturn
+        alert.runModal()
     }
     
     func open_debug_window() {

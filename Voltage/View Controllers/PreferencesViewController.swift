@@ -71,8 +71,7 @@ class PreferencesViewController: NSViewController {
         show_existing_preferences()
     }
 
-    func alert_socket_is_connected()
-    {
+    func alert_socket_is_connected() {
         let alert = NSAlert()
         alert.messageText = "Connection Established"
         alert.informativeText = "Voltage is connected to c-lightning via the RPC socket at " + socket_location.stringValue
