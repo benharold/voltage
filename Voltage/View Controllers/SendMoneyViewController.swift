@@ -8,14 +8,19 @@
 
 import Cocoa
 
-class SendMoneyViewController: NSViewController, HandlesRPCErrors {
+class SendMoneyViewController: NSViewController, NSPopoverDelegate, HandlesRPCErrors {
 
     @IBOutlet weak var send_to_field: NSTextField!
     
     @IBOutlet weak var amount_field: NSTextField!
     
     @IBAction func send_button(_ sender: Any) {
+        // TODO: add formatters, validate inputs
         send_money()
+    }
+    
+    func popoverWillShow(_ notification: Notification) {
+        PopoverManager.current = notification.object as? NSPopover
     }
     
     func send_money() {
@@ -30,12 +35,27 @@ class SendMoneyViewController: NSViewController, HandlesRPCErrors {
         print(response.to_string())
         do {
             let result: Withdraw = try decoder.decode(WithdrawResult.self, from: response).result
-            print(result)
-            // TODO: something with the result
+            show_transaction_confirmation_message(transaction: result)
+            reload_blockchain_balance()
         } catch {
             if is_rpc_error(response: response) { return }
             print("SendMoneyViewController.send_money() JSON decoder error: \(error)")
         }
+    }
+    
+    func show_transaction_confirmation_message(transaction: Withdraw) {
+        let alert = NSAlert()
+        alert.messageText = "Transaction Broadcast"
+        alert.informativeText = "Transaction ID: \(transaction.txid)"
+        alert.alertStyle = .informational
+        alert.addButton(withTitle: "OK")
+        
+        alert.runModal()
+    }
+    
+    func reload_blockchain_balance() {
+        let reload = Notification(name: Notification.Name.reload)
+        NotificationCenter.default.post(reload)
     }
     
 }
