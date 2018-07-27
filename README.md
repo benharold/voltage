@@ -10,7 +10,7 @@ If you've got a `c-lightning` node and a Mac, then this project *might* be of re
 
 I haven't built any binaries yet, so if you want to try it out you'll need to open the project in Xcode and build it from there.
 
-Right now Voltage has five tabs:
+Right now Voltage has six tabs:
 
 - Money - Send and receieve on-chain Bitcoin, create new lightning invoices
 - Invoices - Corresponds to `lightning-cli listinvoices`
@@ -19,7 +19,7 @@ Right now Voltage has five tabs:
 - Channels - Corresponds to `lightning-cli listchannels`
 - Info - Corresponds to `lightning-cli getinfo`
 
-Please be aware that there are no confirmations when you send or receive testnet Bitcoin. Just hit the reload button after the next block is found and your balances will be updated.
+Please be aware that there are no confirmations when you receive testnet Bitcoin. Just hit the reload button after the next block is found and your balances will be updated.
 
 ### Short Term Goals
 
@@ -28,7 +28,7 @@ Please be aware that there are no confirmations when you send or receive testnet
 - [ ] Open lightning channels
 - [ ] Close lightning channels
 - [X] Create lightning invoices
-- [ ] Pay lightning invoices
+- [X] Pay lightning invoices
 - [X] Make all of the lists sortable
 - [ ] Integrate [CoreBitcoin](https://github.com/oleganza/CoreBitcoin)
 - [X] Getinfo from the "About Voltage" menu item maybe?
