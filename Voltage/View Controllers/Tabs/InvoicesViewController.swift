@@ -57,7 +57,9 @@ class InvoicesViewController: VoltageTableViewController {
     }
 
     override func load_table_data() {
-        load_invoices()
+        if let response: InvoiceResult = query(LightningRPC.Method.listinvoices) {
+            invoice_list = response.result.invoices
+        }
     }
     
     override func reload_table_view() {
@@ -67,19 +69,6 @@ class InvoicesViewController: VoltageTableViewController {
     func set_sort_descriptors() {
         for (index, _) in table_keys.enumerated() {
             invoices_table_view.tableColumns[index].sortDescriptorPrototype = NSSortDescriptor(key: table_keys[index], ascending: true)
-        }
-    }
-    
-    func load_invoices() {
-        guard let socket = LightningRPCSocket.create() else { return }
-        let query = LightningRPCQuery(LightningRPC.Method.listinvoices)
-        let response: Data = socket.send(query)
-        do {
-            let result: InvoiceList = try decoder.decode(InvoiceResult.self, from: response).result
-            invoice_list = result.invoices
-        } catch {
-            if is_rpc_error(response: response) { return }
-            print("InvoicesViewController.load_invoices() JSON decoder error: \(error)")
         }
     }
     
@@ -160,17 +149,5 @@ class InvoicesViewController: VoltageTableViewController {
         }
 
         tableView.reloadData()
-    }
-    
-    func tableViewSelectionDidChange(_ notification: Notification) {
-        set_active_row()
-    }
-    
-    func set_active_row() {
-        // invoices_table_view.selectedRow will be -1 if the user selects a column
-        if invoices_table_view.selectedRow >= 0 {
-            //            invoice_hash.stringValue = invoice_list[invoices_table_view.selectedRow].invoice_hash
-            //            destination.stringValue = invoice_list[invoices_table_view.selectedRow].destination
-        }
     }
 }

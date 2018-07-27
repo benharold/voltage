@@ -45,7 +45,9 @@ class ChannelsViewController: VoltageTableViewController {
     }
     
     override func load_table_data() {
-        load_channels()
+        if let response: ChannelResult = query(LightningRPC.Method.listchannels) {
+            channel_list = response.result.channels
+        }
     }
     
     override func reload_table_view() {
@@ -55,19 +57,6 @@ class ChannelsViewController: VoltageTableViewController {
     func set_sort_descriptors() {
         for (index, _) in table_keys.enumerated() {
             channels_table_view.tableColumns[index].sortDescriptorPrototype = NSSortDescriptor(key: table_keys[index], ascending: true)
-        }
-    }
-    
-    func load_channels() {
-        guard let socket = LightningRPCSocket.create() else { return }
-        let query = LightningRPCQuery(LightningRPC.Method.listchannels)
-        let response: Data = socket.send(query)
-        do {
-            let result: ChannelList = try decoder.decode(ChannelResult.self, from: response).result
-            channel_list = result.channels
-        } catch {
-            if is_rpc_error(response: response) { return }
-            print("ChannelsViewController.load_channels() JSON decoder error: \(error)")
         }
     }
     
@@ -153,17 +142,4 @@ class ChannelsViewController: VoltageTableViewController {
         
         tableView.reloadData()
     }
-    
-    func tableViewSelectionDidChange(_ notification: Notification) {
-        set_active_row()
-    }
-    
-    func set_active_row() {
-        // channels_table_view.selectedRow will be -1 if the user selects a column
-        if channels_table_view.selectedRow >= 0 {
-//            channel_hash.stringValue = channel_list[channels_table_view.selectedRow].channel_hash
-//            destination.stringValue = channel_list[channels_table_view.selectedRow].destination
-        }
-    }
-    
 }
