@@ -23,9 +23,7 @@ class PaymentsViewController: VoltageTableViewController {
     ]
     
     @IBOutlet weak var payments_table_view: NSTableView!
-    
     @IBOutlet weak var payment_hash: NSTextFieldCell!
-    
     @IBOutlet weak var destination: NSTextFieldCell!
     
     required init?(coder: NSCoder) {
@@ -49,7 +47,9 @@ class PaymentsViewController: VoltageTableViewController {
     }
     
     override func load_table_data() {
-        load_payments()
+        if let response: PaymentResult = query(LightningRPC.Method.listpayments) {
+            payment_list = response.result.payments
+        }
     }
     
     override func reload_table_view() {
@@ -59,19 +59,6 @@ class PaymentsViewController: VoltageTableViewController {
     func set_sort_descriptors() {
         for (index, _) in table_keys.enumerated() {
             payments_table_view.tableColumns[index].sortDescriptorPrototype = NSSortDescriptor(key: table_keys[index], ascending: true)
-        }
-    }
-    
-    func load_payments() {
-        guard let socket = LightningRPCSocket.create() else { return }
-        let query = LightningRPCQuery(LightningRPC.Method.listpayments)
-        let response: Data = socket.send(query)
-        do {
-            let result: PaymentList = try decoder.decode(PaymentResult.self, from: response).result
-            payment_list = result.payments
-        } catch {
-            if is_rpc_error(response: response) { return }
-            print("PaymentsViewController.load_payments() JSON decoder error: \(error)")
         }
     }
     
@@ -153,7 +140,6 @@ class PaymentsViewController: VoltageTableViewController {
     }
     
     func set_active_row() {
-        // payments_table_view.selectedRow will be -1 if the user selects a column
         if payments_table_view.selectedRow >= 0 {
             payment_hash.stringValue = payment_list[payments_table_view.selectedRow].payment_hash
             destination.stringValue = payment_list[payments_table_view.selectedRow].destination
