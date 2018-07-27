@@ -10,10 +10,8 @@ import Cocoa
 
 // The idea is to allow loading of table data in the background without
 // interrupitng the UI. This is common to several tabs.
-class VoltageTableViewController: ReloadableViewController, VoltageTableView, NSTableViewDelegate, NSTableViewDataSource {
+class VoltageTableViewController: ReloadableViewController, VoltageTableView {
 
-    let decoder: JSONDecoder = JSONDecoder.init()
-    
     func load_table_data() {
     }
     

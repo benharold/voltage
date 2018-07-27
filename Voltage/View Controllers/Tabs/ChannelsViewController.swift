@@ -38,10 +38,7 @@ class ChannelsViewController: VoltageTableViewController {
     
     override func reload() {
         channel_list.removeAll()
-        load_table_data()
-        DispatchQueue.main.async {
-            self.reload_table_view()
-        }
+        load_table()
     }
     
     override func load_table_data() {

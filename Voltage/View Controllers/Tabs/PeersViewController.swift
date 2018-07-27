@@ -47,10 +47,7 @@ class PeersViewController: VoltageTableViewController {
     
     override func reload() {
         peer_list.removeAll()
-        load_table_data()
-        DispatchQueue.main.async {
-            self.reload_table_view()
-        }
+        load_table()
     }
     
     @objc func double_click(_ sender: NSTableView) {

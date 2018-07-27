@@ -40,10 +40,7 @@ class PaymentsViewController: VoltageTableViewController {
     
     override func reload() {
         payment_list.removeAll()
-        load_table_data()
-        DispatchQueue.main.async {
-            self.reload_table_view()
-        }
+        load_table()
     }
     
     override func load_table_data() {

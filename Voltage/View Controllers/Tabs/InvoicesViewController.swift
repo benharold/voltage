@@ -45,10 +45,7 @@ class InvoicesViewController: VoltageTableViewController {
     
     override func reload() {
         invoice_list.removeAll()
-        load_table_data()
-        DispatchQueue.main.async {
-            self.reload_table_view()
-        }
+        load_table()
     }
     
     @objc func double_click(_ sender: NSTableView) {
