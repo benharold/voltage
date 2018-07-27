@@ -25,7 +25,7 @@ class RemoteSocketTest: XCTestCase {
         let data = pipe.fileHandleForReading.readDataToEndOfFile()
         let output = String(data: data, encoding: String.Encoding.utf8)
         
-        print(output)
+        print(output!)
     }
     
     func testLocalConnoction() {
@@ -34,7 +34,6 @@ class RemoteSocketTest: XCTestCase {
         let socket_protocol = Socket.SocketProtocol.tcp
         
         do {
-            var response = Data(capacity: 4096)
             let socket: Socket = try Socket.create(family: socket_family, type: socket_type, proto: socket_protocol)
             socket.readBufferSize = 4096
             sleep(2)
@@ -66,7 +65,7 @@ class RemoteSocketTest: XCTestCase {
             let message = "hello world".data(using: .utf8)
             try socket.write(from: message!)
             _ = try socket.read(into: &response)
-            print(String(data: response, encoding: .utf8))
+            print(String(data: response, encoding: .utf8)!)
         } catch {
             print(error)
         }
