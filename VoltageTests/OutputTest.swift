@@ -24,14 +24,14 @@ class OutputTest: XCTestCase {
             params: []
         )
         let response: Data = socket.send(query)
-        print(response.to_string())
+        Swift.print(response.to_string())
         do {
             result = try decoder.decode(FundResult.self, from: response)
             // I need to figure out how to assert that the result object
             // is the expected type
-            print(result)
+            Swift.print(result)
         } catch {
-            print("Error: \(error)")
+            Swift.print("Error: \(error)")
         }
         //        }
     }

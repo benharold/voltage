@@ -26,11 +26,11 @@ class PeerTest: XCTestCase {
         let response: Data = socket.send(query)
         do {
             result = try decoder.decode(PeerResult.self, from: response)
-            print(result)
+            Swift.print(result)
             // I need to figure out how to assert that the result object
             // is the expected type
         } catch {
-            print("Error: \(error)")
+            Swift.print("Error: \(error)")
         }
         //        }
     }

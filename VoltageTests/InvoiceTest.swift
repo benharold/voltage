@@ -28,9 +28,9 @@ class InvoiceTest: XCTestCase {
             result = try decoder.decode(InvoiceResult.self, from: response)
             // I need to figure out how to assert that the result object
             // is the expected type
-            print(result)
+            Swift.print(result)
         } catch {
-            print("Error: \(error)")
+            Swift.print("Error: \(error)")
         }
         //        }
     }
