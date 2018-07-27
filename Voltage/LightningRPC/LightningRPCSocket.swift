@@ -40,7 +40,6 @@ class LightningRPCSocket: NSObject, RPCProtocol {
             socket.readBufferSize = buffer_size
             try socket.connect(to: socket_path)
         } catch {
-            print(type(of: error))
             let path: [String: String] = ["socket_path": socket_path]
             NotificationCenter.default.post(name: Notification.Name.rpc_error,
                                             object: error, userInfo: path)
