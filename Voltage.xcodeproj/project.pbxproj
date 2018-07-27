@@ -72,8 +72,6 @@
 		3AD8894920EAB70100B807D3 /* SocketStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD8894820EAB70100B807D3 /* SocketStatus.swift */; };
 		3AD8894B20EAC9BF00B807D3 /* CreateInvoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD8894A20EAC9BF00B807D3 /* CreateInvoiceViewController.swift */; };
 		3AD8894E20EACE9400B807D3 /* IntegerFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD8894D20EACE9400B807D3 /* IntegerFormatter.swift */; };
-		3AD8895020EAD6AB00B807D3 /* Amount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD8894F20EAD6AB00B807D3 /* Amount.swift */; };
-		3AD8895220EAD75E00B807D3 /* Denomination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD8895120EAD75E00B807D3 /* Denomination.swift */; };
 		3AD8895420EADC3400B807D3 /* createdinvoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD8895320EADC3400B807D3 /* createdinvoice.swift */; };
 		3AD8895620EADDE400B807D3 /* CreatedInvoiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD8895520EADDE400B807D3 /* CreatedInvoiceTest.swift */; };
 		3AD8895A20EBFA6000B807D3 /* NotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD8895920EBFA6000B807D3 /* NotificationName.swift */; };
@@ -355,8 +353,6 @@
 		3AD8894820EAB70100B807D3 /* SocketStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketStatus.swift; sourceTree = "<group>"; };
 		3AD8894A20EAC9BF00B807D3 /* CreateInvoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateInvoiceViewController.swift; sourceTree = "<group>"; };
 		3AD8894D20EACE9400B807D3 /* IntegerFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegerFormatter.swift; sourceTree = "<group>"; };
-		3AD8894F20EAD6AB00B807D3 /* Amount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amount.swift; sourceTree = "<group>"; };
-		3AD8895120EAD75E00B807D3 /* Denomination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Denomination.swift; sourceTree = "<group>"; };
 		3AD8895320EADC3400B807D3 /* createdinvoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createdinvoice.swift; sourceTree = "<group>"; };
 		3AD8895520EADDE400B807D3 /* CreatedInvoiceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatedInvoiceTest.swift; sourceTree = "<group>"; };
 		3AD8895920EBFA6000B807D3 /* NotificationName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationName.swift; sourceTree = "<group>"; };
@@ -863,9 +859,7 @@
 			isa = PBXGroup;
 			children = (
 				3A18B5992025120B00D6C2DF /* Address.swift */,
-				3AD8894F20EAD6AB00B807D3 /* Amount.swift */,
 				3A18B5862024E80000D6C2DF /* Console.swift */,
-				3AD8895120EAD75E00B807D3 /* Denomination.swift */,
 				3A38BDE8201C55B40055BBA1 /* PaymentHash.swift */,
 				3AFD6CFB202149D0001599D2 /* Preferences.swift */,
 				3AD8894820EAB70100B807D3 /* SocketStatus.swift */,
@@ -1206,7 +1200,6 @@
 				3A18B59C202515A500D6C2DF /* GetMoneyViewController.swift in Sources */,
 				3A55656C2023DB7E003CEBEA /* Bool.swift in Sources */,
 				3A07F9F520FD1FEB000CDDCF /* Int.swift in Sources */,
-				3AD8895020EAD6AB00B807D3 /* Amount.swift in Sources */,
 				3A18B59320250A0900D6C2DF /* error.swift in Sources */,
 				3A6A3E92210A57BE0050D711 /* DebugStorage.swift in Sources */,
 				3AD8894B20EAC9BF00B807D3 /* CreateInvoiceViewController.swift in Sources */,
@@ -1219,7 +1212,6 @@
 				3A18B5962025108400D6C2DF /* AddressService.swift in Sources */,
 				3A07FA0220FD22CA000CDDCF /* ChannelsViewController.swift in Sources */,
 				3A18B6AB20277B9C00D6C2DF /* LightningRPC.swift in Sources */,
-				3AD8895220EAD75E00B807D3 /* Denomination.swift in Sources */,
 				3AFD6CFA20213EAA001599D2 /* PreferencesViewController.swift in Sources */,
 				3A13B26620DB3F7A000FCC53 /* getinfo.swift in Sources */,
 				3A07FA0120FD22CA000CDDCF /* InvoicesViewController.swift in Sources */,
