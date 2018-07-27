@@ -37,9 +37,12 @@ class MoneyViewController: ReloadableViewController {
     }
 
     override func reload() {
-        load_outputs()
-        DispatchQueue.main.async {
-            self.recalculate_balances()
+        if let response: FundResult = query(LightningRPC.Method.listfunds) {
+            output_list = response.result.outputs
+            channel_list = response.result.channels
+            DispatchQueue.main.async {
+                self.recalculate_balances()
+            }
         }
     }
     
@@ -78,20 +81,6 @@ class MoneyViewController: ReloadableViewController {
     
     func calculate_channel_receivable() {
         channel_receivable_bits.stringValue = String(describing: (channel_capacity_bits.floatValue - channel_balance_bits.floatValue))
-    }
-    
-    func load_outputs() {
-        guard let socket = LightningRPCSocket.create() else { return }
-        let query = LightningRPCQuery(LightningRPC.Method.listfunds)
-        let response: Data = socket.send(query)
-        do {
-            let result: FundList = try decoder.decode(FundResult.self, from: response).result
-            output_list = result.outputs
-            channel_list = result.channels
-        } catch {
-            if is_rpc_error(response: response) { return }
-            print("MoneyViewController.load_outputs() JSON decoder error: \(error)")
-        }
     }
     
     // I have not measured the memory usage of this. I presume that since the

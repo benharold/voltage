@@ -509,11 +509,11 @@
 		3A07F9F920FD22C9000CDDCF /* Tabs */ = {
 			isa = PBXGroup;
 			children = (
-				3A07F9FA20FD22C9000CDDCF /* PaymentsViewController.swift */,
-				3A07F9FB20FD22C9000CDDCF /* InvoicesViewController.swift */,
-				3A07F9FC20FD22C9000CDDCF /* ChannelsViewController.swift */,
 				3A07F9FD20FD22C9000CDDCF /* MoneyViewController.swift */,
+				3A07F9FB20FD22C9000CDDCF /* InvoicesViewController.swift */,
+				3A07F9FA20FD22C9000CDDCF /* PaymentsViewController.swift */,
 				3A07F9FE20FD22C9000CDDCF /* PeersViewController.swift */,
+				3A07F9FC20FD22C9000CDDCF /* ChannelsViewController.swift */,
 				3A07F9FF20FD22C9000CDDCF /* InfoViewController.swift */,
 			);
 			path = Tabs;
