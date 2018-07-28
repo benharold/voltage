@@ -20,6 +20,8 @@ protocol RPCProtocol {
 
 class LightningRPCSocket: NSObject, RPCProtocol {
     
+    static var shared: LightningRPCSocket?
+    
     let encoder: JSONEncoder = JSONEncoder.init()
     
     var socket: Socket?
@@ -50,15 +52,33 @@ class LightningRPCSocket: NSObject, RPCProtocol {
     
     // This is just `init` using the preferences value for the path.
     // It mainly exists to make testing easier.
+    //
+    // On this branch I'm using a singleton LightningRPCSocket instead of
+    // creating a new one every time an RPC call is made.
+    //
+    // So far what I've learned is that once the socket gets a partial JSON
+    // response, it's broken for the duration of the session. It gives an error:
+    // "JSON text did not start with array or object and option to allow
+    // fragments not set."
+    //
+    // I'm hoping that I can use this branch to figure out how to effectively
+    // deal with the partial payload problem that I've been having on the
+    // `listchannels` RPC request. I assume that in the wild that problem will
+    // occur often enough that it will need to be addressed.
     class func create() -> LightningRPCSocket? {
+        if shared != nil {
+            return shared
+        }
+        
         let prefs = Preferences()
         let socket_path = prefs.socket_path
+        shared = LightningRPCSocket(path: socket_path)
         
-        return LightningRPCSocket(path: socket_path)
+        return shared
     }
     
     func send(_ query: LightningRPCQuery) -> Data {
-        print(query)
+        print(self, query)
         var response = Data(capacity: buffer_size)
         do {
             let request = try encoder.encode(query)
