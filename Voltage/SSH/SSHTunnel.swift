@@ -29,7 +29,7 @@ class SSHTunnel: SSHTunnelProtocol {
         let pipe = Pipe()
         task.launchPath = "/usr/bin/env"
         task.arguments = get_arguments()
-        print("Attempting to create SSH tunnel with arguments:", task.arguments)
+        print("Attempting to create SSH tunnel with arguments:", task.arguments as Any)
         task.standardError = pipe
         pipe.fileHandleForReading.waitForDataInBackgroundAndNotify()
         task.launch()

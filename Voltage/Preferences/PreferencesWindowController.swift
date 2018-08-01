@@ -164,8 +164,7 @@ class PreferencesWindowController: NSWindowController {
             return false
         }
         if (service.socket?.isConnected)! {
-            let query = LightningRPCQuery(LightningRPC.Method.getinfo)
-            let response = service.socket
+            _ = LightningRPCQuery(LightningRPC.Method.getinfo)
             connection_status.stringValue = "Connected"
             connection_status.textColor = NSColor.black
             
