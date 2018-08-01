@@ -30,7 +30,7 @@ class SendMoneyViewController: NSViewController, NSPopoverDelegate, HandlesRPCEr
         guard let service = LightningRPCSocket.create() else {
             return
         }
-        let query = LightningRPCQuery(method: LightningRPC.Method.withdraw, params: [address, amount])
+        let query = LightningRPCQuery(LightningRPC.Method.withdraw, params: [address, amount])
         let response: Data = service.send(query)
         print(response.to_string())
         do {

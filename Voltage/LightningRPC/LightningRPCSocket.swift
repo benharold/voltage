@@ -33,7 +33,9 @@ class LightningRPCSocket: NSObject, RPCProtocol {
         let socket_path = NSString(string: path).expandingTildeInPath
         
         do {
-            try socket = Socket.create(family: socket_family, type: socket_type, proto: socket_protocol)
+            try socket = Socket.create(family: socket_family,
+                                       type: socket_type,
+                                       proto: socket_protocol)
             guard let socket = socket else {
                 throw SocketError.unwrap
             }
@@ -48,12 +50,17 @@ class LightningRPCSocket: NSObject, RPCProtocol {
         }
     }
     
-    // This is just `init` using the preferences value for the path.
-    // It mainly exists to make testing easier.
+    // Create a new instance according to the user's preferences.
     class func create() -> LightningRPCSocket? {
         let prefs = Preferences()
-        let socket_path = prefs.socket_path
-        
+        var socket_path: String = ""
+        if prefs.node_location == NodeLocation.local {
+            let local_prefs = Preferences.Local()
+            socket_path = local_prefs.socket_path
+        } else {
+            socket_path = ApplicationSupportFolder().path + "/lightning-rpc"
+        }
+
         return LightningRPCSocket(path: socket_path)
     }
     
@@ -85,7 +92,8 @@ class LightningRPCSocket: NSObject, RPCProtocol {
             
             return response
         } catch {
-            NotificationCenter.default.post(name: Notification.Name.rpc_error, object: error)
+            NotificationCenter.default.post(name: Notification.Name.rpc_error,
+                                            object: error)
             print("error communicating with RPC server", error)
             
             // Probably not the best way to handle this but for now...

@@ -19,7 +19,7 @@ struct LightningRPCQuery: Encodable {
         self.params = params
     }
     
-    init(method: LightningRPC.Method, params: [String] = []) {
+    init(_ method: LightningRPC.Method, params: [String] = []) {
         self.id = Int(getpid())
         self.method = method.rawValue
         self.params = params

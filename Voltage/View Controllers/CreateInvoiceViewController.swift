@@ -63,7 +63,7 @@ class CreateInvoiceViewController: NSViewController, NSPopoverDelegate, HandlesR
             params.append(preimage)
         }
         guard let socket = LightningRPCSocket.create() else { return }
-        let query = LightningRPCQuery(method: LightningRPC.Method.invoice, params: params)
+        let query = LightningRPCQuery(LightningRPC.Method.invoice, params: params)
         let response: Data = socket.send(query)
         do {
             var result: CreatedInvoice = try decoder.decode(CreatedInvoiceResult.self, from: response).result

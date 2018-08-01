@@ -52,17 +52,21 @@ If you are using a non-standard data directory for `c-lightning`, you can use th
 
 ### Remote
 
-If you're like me and you don't have  `bitcoind` and/or `c-lightning` on your laptop, fret not! Just setup an `ssh` tunnel to your node's socket.
+If you're like me and you don't have  `bitcoind` and/or `c-lightning` on your laptop, fret not! `c-lightning` can be operated remotely over an SSH tunnel.
+
+If you have public key authentication setup between your local machine and your remote `c-lightning` server, you can configure Voltage to connect to your remote node. Just go to "Voltage" -> "Preferences..." and click on "Remote (experimental)". Then enter the necessary information and hit "Test Connection."
+
+There are still some bugs to work out. If you have problems, just setup an `ssh` tunnel to your node's socket manually.
 
 The following command will tunnel to the socket located at `/home/user/.lightning/lightning-rpc` on your remote machine and link to a new socket on your local machine at `~/.lightning/lightning-rpc`:
 
-    ssh -nNT -L ~/.lightning/lightning-rpc:/home/user/.lightning/lightning-rpc user@example.com
+    ssh -NL ~/.lightning/lightning-rpc:/home/user/.lightning/lightning-rpc user@example.com
 
 Once you've established the socket, Voltage should work. If you setup the socket in a location other than `~/.lightning/lightning-rpc` you'll need to update the "Socket Path" setting in the preferences pane.
 
 ## Errors
 
-Common RPC errors include:
+Common errors include:
 
 ### Error code: -9988(0x-2704), No such file or directory
 
@@ -75,6 +79,10 @@ Voltage found the socket, but the connection was refused. This usually happens i
 ### Voltage.SocketError.no_response
 
 The RPC query was sent, but zero bytes of data came back over the wire. Check to make sure `c-lightning` is running.
+
+### SSH Tunnell Error
+
+`channel 1: open failed: connect failed: open failed` - double check your "Remote Socket Path"
 
 ## Contributing
 

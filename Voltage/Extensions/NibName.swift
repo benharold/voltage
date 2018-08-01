@@ -11,4 +11,5 @@ import Cocoa
 extension NSNib.Name {
     static let bolt11_invoice = NSNib.Name("Bolt11InvoiceWindowController")
     static let debug = NSNib.Name("DebugWindowController")
+    static let preferences = NSNib.Name("PreferencesWindowController")
 }

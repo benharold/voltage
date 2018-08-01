@@ -24,7 +24,7 @@ class Bolt11InvoiceWindowController: NSWindowController, HandlesRPCErrors {
     
     @IBAction func pay_now_button(_ sender: Any) {
         // TODO: check expiration and available balance
-        let query = LightningRPCQuery(method: LightningRPC.Method.pay, params: [bolt11_value!])
+        let query = LightningRPCQuery(LightningRPC.Method.pay, params: [bolt11_value!])
         print(query)
         guard let socket = LightningRPCSocket.create() else { return }
         let whatevs = socket.send(query)
