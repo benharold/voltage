@@ -34,7 +34,7 @@ class PayInvoiceViewController: NSViewController, NSPopoverDelegate, HandlesRPCE
     
     func decode_bolt11() -> Bolt11Invoice? {
         guard let socket = LightningRPCSocket.create() else { return nil }
-        let query = LightningRPCQuery(method: LightningRPC.Method.decodepay, params: [bolt11_field.stringValue])
+        let query = LightningRPCQuery(LightningRPC.Method.decodepay, params: [bolt11_field.stringValue])
         let response: Data = socket.send(query)
         do {
             let result: Bolt11Invoice = try decoder.decode(Bolt11InvoiceResult.self, from: response).result
