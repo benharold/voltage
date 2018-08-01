@@ -13,9 +13,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     lazy var debug_controller = DebugWindowController(windowNibName: NSNib.Name.debug)
     
-    lazy var prefernces_controller = PreferencesWindowController(windowNibName: NSNib.Name.preferences)
+    lazy var preferences_controller = PreferencesWindowController(windowNibName: NSNib.Name.preferences)
     
-    @IBAction func prefernces_button(_ sender: Any) {
+    @IBAction func preferences_button(_ sender: Any) {
         open_preferences_window()
     }
     
@@ -115,7 +115,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     func open_preferences_window() {
-        prefernces_controller.showWindow(self)
+        preferences_controller.showWindow(self)
     }
     
     // Handle initial setup of the application
