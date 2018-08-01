@@ -51,6 +51,14 @@
 		3A6A3E92210A57BE0050D711 /* DebugStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6A3E91210A57BE0050D711 /* DebugStorage.swift */; };
 		3A6A3E94210A5A2F0050D711 /* Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6A3E93210A5A2F0050D711 /* Swift.swift */; };
 		3A74D864210BB7C800D8CD25 /* MakesRPCQueries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A74D863210BB7C800D8CD25 /* MakesRPCQueries.swift */; };
+		3A74D878210C003C00D8CD25 /* PreferencesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A74D876210C003C00D8CD25 /* PreferencesWindowController.swift */; };
+		3A74D879210C003C00D8CD25 /* PreferencesWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A74D877210C003C00D8CD25 /* PreferencesWindowController.xib */; };
+		3A74D87C210FBA3100D8CD25 /* SSHTunnel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A74D87B210FBA3100D8CD25 /* SSHTunnel.swift */; };
+		3A74D87E210FBB8E00D8CD25 /* SSHTunnelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A74D87D210FBB8E00D8CD25 /* SSHTunnelProtocol.swift */; };
+		3A74D880210FBCA300D8CD25 /* SSHTunnelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A74D87F210FBCA300D8CD25 /* SSHTunnelTest.swift */; };
+		3A74D883210FBF8000D8CD25 /* ApplicationSupportFolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A74D882210FBF8000D8CD25 /* ApplicationSupportFolder.swift */; };
+		3A74D886210FC12A00D8CD25 /* ApplicationSupportFolderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A74D885210FC12A00D8CD25 /* ApplicationSupportFolderTest.swift */; };
+		3A74D8882110BD0600D8CD25 /* PerferencesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A74D8872110BD0600D8CD25 /* PerferencesTest.swift */; };
 		3A7B0A0120DAF459006AEBF1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7B0A0020DAF459006AEBF1 /* MainViewController.swift */; };
 		3A983E6721001373007A8D27 /* Bolt11InvoiceWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A983E6521001373007A8D27 /* Bolt11InvoiceWindowController.swift */; };
 		3A983E6821001373007A8D27 /* Bolt11InvoiceWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A983E6621001373007A8D27 /* Bolt11InvoiceWindowController.xib */; };
@@ -78,7 +86,6 @@
 		3AD8895A20EBFA6000B807D3 /* NotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD8895920EBFA6000B807D3 /* NotificationName.swift */; };
 		3AF04905202F8AB700BABE2F /* ArrayTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF04904202F8AB700BABE2F /* ArrayTest.swift */; };
 		3AF5DDF620FFECB3000D3AD6 /* decodepay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF5DDF520FFECB3000D3AD6 /* decodepay.swift */; };
-		3AFD6CFA20213EAA001599D2 /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFD6CF920213EAA001599D2 /* PreferencesViewController.swift */; };
 		3AFD6CFC202149D0001599D2 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFD6CFB202149D0001599D2 /* Preferences.swift */; };
 		3AFD6D0020223C6F001599D2 /* LightningRPCSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFD6CFF20223C6F001599D2 /* LightningRPCSocket.swift */; };
 		3AFD6D02202240E2001599D2 /* LightningRPCSocketTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFD6D01202240E2001599D2 /* LightningRPCSocketTest.swift */; };
@@ -332,6 +339,14 @@
 		3A6A3E91210A57BE0050D711 /* DebugStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugStorage.swift; sourceTree = "<group>"; };
 		3A6A3E93210A5A2F0050D711 /* Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift.swift; sourceTree = "<group>"; };
 		3A74D863210BB7C800D8CD25 /* MakesRPCQueries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakesRPCQueries.swift; sourceTree = "<group>"; };
+		3A74D876210C003C00D8CD25 /* PreferencesWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesWindowController.swift; sourceTree = "<group>"; };
+		3A74D877210C003C00D8CD25 /* PreferencesWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreferencesWindowController.xib; sourceTree = "<group>"; };
+		3A74D87B210FBA3100D8CD25 /* SSHTunnel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSHTunnel.swift; sourceTree = "<group>"; };
+		3A74D87D210FBB8E00D8CD25 /* SSHTunnelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSHTunnelProtocol.swift; sourceTree = "<group>"; };
+		3A74D87F210FBCA300D8CD25 /* SSHTunnelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSHTunnelTest.swift; sourceTree = "<group>"; };
+		3A74D882210FBF8000D8CD25 /* ApplicationSupportFolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationSupportFolder.swift; sourceTree = "<group>"; };
+		3A74D885210FC12A00D8CD25 /* ApplicationSupportFolderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationSupportFolderTest.swift; sourceTree = "<group>"; };
+		3A74D8872110BD0600D8CD25 /* PerferencesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerferencesTest.swift; sourceTree = "<group>"; };
 		3A7B0A0020DAF459006AEBF1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		3A983E6521001373007A8D27 /* Bolt11InvoiceWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bolt11InvoiceWindowController.swift; sourceTree = "<group>"; };
 		3A983E6621001373007A8D27 /* Bolt11InvoiceWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Bolt11InvoiceWindowController.xib; sourceTree = "<group>"; };
@@ -360,7 +375,6 @@
 		3AD8895920EBFA6000B807D3 /* NotificationName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationName.swift; sourceTree = "<group>"; };
 		3AF04904202F8AB700BABE2F /* ArrayTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayTest.swift; sourceTree = "<group>"; };
 		3AF5DDF520FFECB3000D3AD6 /* decodepay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = decodepay.swift; sourceTree = "<group>"; };
-		3AFD6CF920213EAA001599D2 /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
 		3AFD6CFB202149D0001599D2 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
 		3AFD6CFF20223C6F001599D2 /* LightningRPCSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightningRPCSocket.swift; sourceTree = "<group>"; };
 		3AFD6D01202240E2001599D2 /* LightningRPCSocketTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightningRPCSocketTest.swift; sourceTree = "<group>"; };
@@ -467,9 +481,11 @@
 				3AA2A68F202385B8005664FC /* Extensions */,
 				3AD8894C20EACE5F00B807D3 /* Formatters */,
 				3AFD6CFE20222C6B001599D2 /* Models */,
+				3A74D881210FBF0300D8CD25 /* Preferences */,
 				3A605DF8202C0C410076EF45 /* Protocols */,
 				3A18B6A7202779D600D6C2DF /* LightningRPC */,
 				3A18B5942025106700D6C2DF /* Services */,
+				3A74D87A210FBA1200D8CD25 /* SSH */,
 				3AFD6CFD20222BFC001599D2 /* View Controllers */,
 				3AF5DDF9210010EF000D3AD6 /* Window Controllers */,
 			);
@@ -479,6 +495,7 @@
 		3A07140A201A7127008E2AEE /* VoltageTests */ = {
 			isa = PBXGroup;
 			children = (
+				3A74D884210FC11200D8CD25 /* Preferences */,
 				3AD8895520EADDE400B807D3 /* CreatedInvoiceTest.swift */,
 				3A18B5972025111200D6C2DF /* AddressServiceTest.swift */,
 				3A5565692023CF2F003CEBEA /* ChannelsTest.swift */,
@@ -493,6 +510,7 @@
 				3AF04904202F8AB700BABE2F /* ArrayTest.swift */,
 				3A983E7B210178EC007A8D27 /* GenericTest.swift */,
 				3A983E7D21027DEF007A8D27 /* RemoteSocketTest.swift */,
+				3A74D87F210FBCA300D8CD25 /* SSHTunnelTest.swift */,
 			);
 			path = VoltageTests;
 			sourceTree = "<group>";
@@ -789,6 +807,35 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		3A74D87A210FBA1200D8CD25 /* SSH */ = {
+			isa = PBXGroup;
+			children = (
+				3A74D87B210FBA3100D8CD25 /* SSHTunnel.swift */,
+				3A74D87D210FBB8E00D8CD25 /* SSHTunnelProtocol.swift */,
+			);
+			path = SSH;
+			sourceTree = "<group>";
+		};
+		3A74D881210FBF0300D8CD25 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				3A74D882210FBF8000D8CD25 /* ApplicationSupportFolder.swift */,
+				3AFD6CFB202149D0001599D2 /* Preferences.swift */,
+				3A74D876210C003C00D8CD25 /* PreferencesWindowController.swift */,
+				3A74D877210C003C00D8CD25 /* PreferencesWindowController.xib */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
+		3A74D884210FC11200D8CD25 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				3A74D885210FC12A00D8CD25 /* ApplicationSupportFolderTest.swift */,
+				3A74D8872110BD0600D8CD25 /* PerferencesTest.swift */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
 		3AA2A68F202385B8005664FC /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -847,7 +894,6 @@
 				3A18B59B202515A500D6C2DF /* GetMoneyViewController.swift */,
 				3A07F9F620FD2006000CDDCF /* InvoiceViewController.swift */,
 				3A7B0A0020DAF459006AEBF1 /* MainViewController.swift */,
-				3AFD6CF920213EAA001599D2 /* PreferencesViewController.swift */,
 				3A13B26720DDA303000FCC53 /* ReloadableViewController.swift */,
 				3A18B69820254FC800D6C2DF /* SendMoneyViewController.swift */,
 				3A605DFB202C0D260076EF45 /* VoltageTableViewController.swift */,
@@ -864,7 +910,6 @@
 				3A18B5992025120B00D6C2DF /* Address.swift */,
 				3A18B5862024E80000D6C2DF /* Console.swift */,
 				3A38BDE8201C55B40055BBA1 /* PaymentHash.swift */,
-				3AFD6CFB202149D0001599D2 /* Preferences.swift */,
 				3AD8894820EAB70100B807D3 /* SocketStatus.swift */,
 			);
 			path = Models;
@@ -999,6 +1044,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A74D879210C003C00D8CD25 /* PreferencesWindowController.xib in Resources */,
 				3A6A3E90210A532C0050D711 /* DebugWindowController.xib in Resources */,
 				3A00034F2034EE0500A68E68 /* Voltage.iconset in Resources */,
 				3A983E6821001373007A8D27 /* Bolt11InvoiceWindowController.xib in Resources */,
@@ -1204,6 +1250,7 @@
 				3A55656C2023DB7E003CEBEA /* Bool.swift in Sources */,
 				3A07F9F520FD1FEB000CDDCF /* Int.swift in Sources */,
 				3A18B59320250A0900D6C2DF /* error.swift in Sources */,
+				3A74D883210FBF8000D8CD25 /* ApplicationSupportFolder.swift in Sources */,
 				3A6A3E92210A57BE0050D711 /* DebugStorage.swift in Sources */,
 				3AD8894B20EAC9BF00B807D3 /* CreateInvoiceViewController.swift in Sources */,
 				3A07FA0420FD22CA000CDDCF /* PeersViewController.swift in Sources */,
@@ -1213,12 +1260,14 @@
 				3AFD6D0020223C6F001599D2 /* LightningRPCSocket.swift in Sources */,
 				3AFD6CFC202149D0001599D2 /* Preferences.swift in Sources */,
 				3A18B5962025108400D6C2DF /* AddressService.swift in Sources */,
+				3A74D87E210FBB8E00D8CD25 /* SSHTunnelProtocol.swift in Sources */,
 				3A07FA0220FD22CA000CDDCF /* ChannelsViewController.swift in Sources */,
 				3A18B6AB20277B9C00D6C2DF /* LightningRPC.swift in Sources */,
-				3AFD6CFA20213EAA001599D2 /* PreferencesViewController.swift in Sources */,
 				3A13B26620DB3F7A000FCC53 /* getinfo.swift in Sources */,
+				3A74D87C210FBA3100D8CD25 /* SSHTunnel.swift in Sources */,
 				3A07FA0120FD22CA000CDDCF /* InvoicesViewController.swift in Sources */,
 				3A983E702100E807007A8D27 /* NibName.swift in Sources */,
+				3A74D878210C003C00D8CD25 /* PreferencesWindowController.swift in Sources */,
 				3A983E6C2100E326007A8D27 /* HandlesRPCErrors.swift in Sources */,
 				3AA2A68420227AC2005664FC /* LightningRPCQuery.swift in Sources */,
 				3A983E6721001373007A8D27 /* Bolt11InvoiceWindowController.swift in Sources */,
@@ -1265,9 +1314,12 @@
 				3A983E7C210178EC007A8D27 /* GenericTest.swift in Sources */,
 				3A07140C201A7127008E2AEE /* JSONDecoderTest.swift in Sources */,
 				3A18B5982025111200D6C2DF /* AddressServiceTest.swift in Sources */,
+				3A74D886210FC12A00D8CD25 /* ApplicationSupportFolderTest.swift in Sources */,
 				3A18B6B32029748300D6C2DF /* PeerTest.swift in Sources */,
+				3A74D8882110BD0600D8CD25 /* PerferencesTest.swift in Sources */,
 				3A983E7E21027DEF007A8D27 /* RemoteSocketTest.swift in Sources */,
 				3A18B58B2024F61900D6C2DF /* InvoiceTest.swift in Sources */,
+				3A74D880210FBCA300D8CD25 /* SSHTunnelTest.swift in Sources */,
 				3AFD6D02202240E2001599D2 /* LightningRPCSocketTest.swift in Sources */,
 				3AD8895620EADDE400B807D3 /* CreatedInvoiceTest.swift in Sources */,
 			);

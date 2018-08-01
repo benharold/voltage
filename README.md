@@ -76,6 +76,10 @@ Voltage found the socket, but the connection was refused. This usually happens i
 
 The RPC query was sent, but zero bytes of data came back over the wire. Check to make sure `c-lightning` is running.
 
+### SSH Tunnell Error
+
+`channel 1: open failed: connect failed: open failed` - double check your "Remote Socket Path"
+
 ## Contributing
 
 Pull requests are welcome! Criticism encouraged!
