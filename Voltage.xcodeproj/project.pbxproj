@@ -930,6 +930,7 @@
 				3A38BDF1201D1F650055BBA1 /* ShellScript */,
 				82B5EE19B34570783B695A20 /* [CP] Embed Pods Frameworks */,
 				E209D49494438A6E63BDF5B1 /* [CP] Copy Pods Resources */,
+				3A57B5762112494B00A0678C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1086,6 +1087,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
+		};
+		3A57B5762112494B00A0678C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "buildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"";
 		};
 		5781C41623A8EC5FC7A09FE7 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
