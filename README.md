@@ -52,7 +52,7 @@ If you are using a non-standard data directory for `c-lightning`, you can use th
 
 If you're like me and you don't have  `bitcoind` and/or `c-lightning` on your laptop, fret not! `c-lightning` can be operated remotely over an SSH tunnel.
 
-If you have public key authentication setup between your local machine and your remote `c-lightning` server, you can configure Voltage to connect to your remote node. Just go to "Voltage" -> "Preferences..." and click on "Remote (experimental)". Then enter the necessary information and hit "Test Connection."
+If you have public key authentication setup between your local machine and your remote `c-lightning` server, you can configure Voltage to connect to your remote node. Just go to "Voltage" -> "Preferences..." and click on "Remote". Then enter the necessary information and hit "Test Connection."
 
 There are still some bugs to work out. If you have problems, just setup an `ssh` tunnel to your node's socket manually.
 
