@@ -8,11 +8,9 @@ If you've got a `c-lightning` node and a Mac, then this project *might* be of re
 
 ## Current Status
 
-I haven't built any binaries yet, so if you want to try it out you'll need to open the project in Xcode and build it from there.
-
 Right now Voltage has six tabs:
 
-- Money - Send and receieve on-chain Bitcoin, create new lightning invoices
+- Money - Send and receieve on-chain Bitcoin, create and pay lightning invoices
 - Invoices - Corresponds to `lightning-cli listinvoices`
 - Payments - Corresponds to `lightning-cli listpayments`
 - Peers - Corresponds to `lightning-cli listpeers`
@@ -54,7 +52,7 @@ If you are using a non-standard data directory for `c-lightning`, you can use th
 
 If you're like me and you don't have  `bitcoind` and/or `c-lightning` on your laptop, fret not! `c-lightning` can be operated remotely over an SSH tunnel.
 
-If you have public key authentication setup between your local machine and your remote `c-lightning` server, you can configure Voltage to connect to your remote node. Just go to "Voltage" -> "Preferences..." and click on "Remote (experimental)". Then enter the necessary information and hit "Test Connection."
+If you have public key authentication setup between your local machine and your remote `c-lightning` server, you can configure Voltage to connect to your remote node. Just go to "Voltage" -> "Preferences..." and click on "Remote". Then enter the necessary information and hit "Test Connection."
 
 There are still some bugs to work out. If you have problems, just setup an `ssh` tunnel to your node's socket manually.
 

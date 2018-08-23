@@ -367,6 +367,7 @@
 		3AA4BDEF201BE8F400000153 /* listpeers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listpeers.swift; sourceTree = "<group>"; };
 		3AA4BDF2201BE91B00000153 /* listchannels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listchannels.swift; sourceTree = "<group>"; };
 		3AC2B841202B601F00216D55 /* horn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = horn.mp3; sourceTree = "<group>"; };
+		3ACF3B4F212F75B2004C2A01 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		3AD8894820EAB70100B807D3 /* SocketStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketStatus.swift; sourceTree = "<group>"; };
 		3AD8894A20EAC9BF00B807D3 /* CreateInvoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateInvoiceViewController.swift; sourceTree = "<group>"; };
 		3AD8894D20EACE9400B807D3 /* IntegerFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegerFormatter.swift; sourceTree = "<group>"; };
@@ -445,6 +446,7 @@
 		3A0713EC201A7127008E2AEE = {
 			isa = PBXGroup;
 			children = (
+				3ACF3B4F212F75B2004C2A01 /* CHANGELOG.md */,
 				3AA2A69020239073005664FC /* LICENSE.md */,
 				3A38BDEE201D16DE0055BBA1 /* README.md */,
 				3A0713F7201A7127008E2AEE /* Voltage */,
@@ -998,7 +1000,7 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
-								enabled = 0;
+								enabled = 1;
 							};
 						};
 					};
@@ -1489,6 +1491,7 @@
 			baseConfigurationReference = F6107EDB521CE62DC8E4D65E /* Pods-Voltage.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Voltage/Voltage.entitlements;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1510,6 +1513,7 @@
 			baseConfigurationReference = A41EC9104EB5A584C9EFBDC7 /* Pods-Voltage.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Voltage/Voltage.entitlements;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
