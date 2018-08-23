@@ -75,16 +75,24 @@ class PreferencesWindowController: NSWindowController, NSTextFieldDelegate {
     
     func test_remote_connection() -> Bool {
         if let socket_path: String = open_ssh_tunnel()?.path {
-            // If we don't sleep here the socket test will take place
-            // before the tunnel is fully established. Specifically,
+            // If we don't wait for the socket to exist here the test will take
+            // place before the tunnel is fully established. Specifically,
             // the socket file will not be found in the filesystem.
             //
-            // This will probably break for people who have an SSH
-            // handshake that is slow for whatever reason.
-            //
-            // FIXME: should be waiting for the socket file to appear
-            // in the filesystem instead of sleeping here.
-            sleep(1)
+            // Let's give the socket 5 seconds to appear before we give up.
+            let start = Date().timeIntervalSince1970
+            let file_manager = FileManager()
+            var keep_trying = true
+            while keep_trying {
+                // Once the socket file appears, go ahead with the test
+                if file_manager.fileExists(atPath: socket_path) {
+                    keep_trying = false
+                }
+                // If the file hasn't appeared in 5 seconds, give up
+                if Date().timeIntervalSince1970 > start + 4 {
+                    keep_trying = false
+                }
+            }
             return test_connection(socket_path: socket_path)
         }
 
