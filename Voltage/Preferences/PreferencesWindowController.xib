@@ -168,9 +168,9 @@
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wDc-nX-HLF">
-                        <rect key="frame" x="129" y="210" width="160" height="18"/>
+                        <rect key="frame" x="129" y="210" width="69" height="18"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="radio" title="Remote (experimental)" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="IRm-ND-sAN">
+                        <buttonCell key="cell" type="radio" title="Remote" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="IRm-ND-sAN">
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
