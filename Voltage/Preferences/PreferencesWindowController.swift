@@ -52,8 +52,8 @@ class PreferencesWindowController: NSWindowController, NSTextFieldDelegate {
     
     @IBAction func save_button(_ sender: Any) {
         save_preferences()
-        NotificationCenter.default.post(name: Notification.Name.reload, object: nil)
         self.close()
+        NotificationCenter.default.post(name: Notification.Name.reload, object: nil)
     }
     
     @IBAction func cancel_button(_ sender: Any) {
