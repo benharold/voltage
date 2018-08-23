@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class PreferencesWindowController: NSWindowController {
+class PreferencesWindowController: NSWindowController, NSTextFieldDelegate {
     
     var prefs = Preferences()
     var local_prefs = Preferences.Local()
@@ -22,7 +22,8 @@ class PreferencesWindowController: NSWindowController {
 
     // MARK: Local Preferences
     @IBOutlet weak var socket_location: NSTextField!
-
+    @IBOutlet weak var revert_to_default_button: NSButtonCell!
+    
     // MARK: Remote Preferences
     @IBOutlet weak var remote_host: NSTextField!
     @IBOutlet weak var remote_port: NSTextField!
@@ -105,6 +106,7 @@ class PreferencesWindowController: NSWindowController {
     
     @IBAction func revert_to_default_button(_ sender: Any) {
         socket_location.stringValue = default_socket_path
+        revert_to_default_button.isEnabled = false
     }
     
     func show_existing_preferences() {
@@ -180,6 +182,20 @@ class PreferencesWindowController: NSWindowController {
     override func windowDidLoad() {
         super.windowDidLoad()
         show_existing_preferences()
+        socket_location.delegate = self
+        revert_to_default_button.isEnabled = revert_to_default_button_should_be_active()
+    }
+    
+    override func controlTextDidChange(_ obj: Notification) {
+        revert_to_default_button.isEnabled = revert_to_default_button_should_be_active()
+    }
+    
+    func revert_to_default_button_should_be_active() -> Bool {
+        if socket_location.stringValue == Constant.default_socket_path {
+            return false
+        }
+        
+        return true
     }
     
     func alert_socket_is_connected() {
