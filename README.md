@@ -8,11 +8,9 @@ If you've got a `c-lightning` node and a Mac, then this project *might* be of re
 
 ## Current Status
 
-I haven't built any binaries yet, so if you want to try it out you'll need to open the project in Xcode and build it from there.
-
 Right now Voltage has six tabs:
 
-- Money - Send and receieve on-chain Bitcoin, create new lightning invoices
+- Money - Send and receieve on-chain Bitcoin, create and pay lightning invoices
 - Invoices - Corresponds to `lightning-cli listinvoices`
 - Payments - Corresponds to `lightning-cli listpayments`
 - Peers - Corresponds to `lightning-cli listpeers`
