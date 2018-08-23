@@ -39,52 +39,50 @@ class LightningRPCSocketTest: XCTestCase {
         do {
             try socket = Socket.create(family: socket_family, type: socket_type, proto: socket_protocol)
             guard let socket = socket else {
-                print("Unable to unwrap socket")
-                throw SocketError.unwrap_error
+                Swift.print("Unable to unwrap socket")
+                throw SocketError.unwrap
             }
             socket.readBufferSize = 4096
             try socket.connect(to: absolute_path)
         } catch {
-            print("socket connection error: \(error)")
+            Swift.print("socket connection error: \(error)")
         }
         XCTAssert((socket?.isConnected)!)
     }
     
     func testSendGetInfoQuery() throws {
-        let result: GetInfoResult
         guard let socket = LightningRPCSocket(path: relative_path) else {
-            throw SocketError.unwrap_error
+            throw SocketError.unwrap
         }
         let query = LightningRPCQuery(
             id: Int(getpid()),
             method: "getinfo",
             params: []
         )
-        let response: Data = socket.send(query: query)
+        let response: Data = socket.send(query)
         do {
-            result = try decoder.decode(GetInfoResult.self, from: response)
-            XCTAssert(result is GetInfoResult) // Ignore the warning https://bugs.swift.org/browse/SR-1703
+            _ = try decoder.decode(GetInfoResult.self, from: response)
+            XCTAssert(true)
         } catch {
-            print("Error: \(error)")
+            XCTAssert(false)
         }
     }
     
     func testListPaymentsIsDecodable() throws {
-        let result: PaymentResult
         guard let socket = LightningRPCSocket(path: relative_path) else {
-            throw SocketError.unwrap_error
+            throw SocketError.unwrap
         }
         let query = LightningRPCQuery(
             id: Int(getpid()),
             method: "listpayments",
             params: []
         )
-        let response: Data = socket.send(query: query)
+        let response: Data = socket.send(query)
         do {
-            result = try decoder.decode(PaymentResult.self, from: response)
-            XCTAssert(result is PaymentResult) // Ignore the warning https://bugs.swift.org/browse/SR-1703
+            _ = try decoder.decode(PaymentResult.self, from: response)
+            XCTAssert(true)
         } catch {
-            print("Error: \(error)")
+            XCTAssert(false)
         }
     }
 

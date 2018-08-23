@@ -13,19 +13,19 @@ class MainViewController: NSViewController {
     @IBOutlet weak var reload_indicator: NSProgressIndicator!
     
     @IBAction func reload_button(_ sender: NSButton) {
-        reload_indicator.startAnimation(self)
+        start_indicator()
         
         let group = DispatchGroup()
         group.enter()
         
         DispatchQueue.global(qos: .userInitiated).async {
-            NotificationCenter.default.post(name: Notification.Name(rawValue: "reload_button_pressed"), object: nil)
+            NotificationCenter.default.post(name: Notification.Name.reload, object: nil)
             group.leave()
         }
         
         group.notify(queue: .main) {
             DispatchQueue.main.async {
-                self.reload_indicator.stopAnimation(self)
+                self.stop_indicator()
             }
         }
     }
@@ -37,13 +37,17 @@ class MainViewController: NSViewController {
     }
     
     func listen_for_loading_start() {
-        NotificationCenter.default.addObserver(self, selector: #selector(MainViewController.start_indicator),
-                                               name: Notification.Name(rawValue: "loading_start"), object: nil)
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(MainViewController.start_indicator),
+                                               name: Notification.Name.loading_start,
+                                               object: nil)
     }
     
     func listen_for_loading_finish() {
-        NotificationCenter.default.addObserver(self, selector: #selector(MainViewController.stop_indicator),
-                                               name: Notification.Name(rawValue: "loading_finish"), object: nil)
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(MainViewController.stop_indicator),
+                                               name: Notification.Name.loading_finish,
+                                               object: nil)
     }
     
     @objc func start_indicator() {

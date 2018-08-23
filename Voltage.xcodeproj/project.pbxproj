@@ -8,19 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		3A00034F2034EE0500A68E68 /* Voltage.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 3A00034E2034EE0500A68E68 /* Voltage.iconset */; };
-		3A0003532034F0DC00A68E68 /* libqrencode.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0003512034F00F00A68E68 /* libqrencode.4.dylib */; };
 		3A0713F9201A7127008E2AEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0713F8201A7127008E2AEE /* AppDelegate.swift */; };
 		3A0713FD201A7127008E2AEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A0713FC201A7127008E2AEE /* Assets.xcassets */; };
 		3A071400201A7127008E2AEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0713FE201A7127008E2AEE /* Main.storyboard */; };
 		3A07140C201A7127008E2AEE /* JSONDecoderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A07140B201A7127008E2AEE /* JSONDecoderTest.swift */; };
 		3A071417201A7127008E2AEE /* VoltageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A071416201A7127008E2AEE /* VoltageUITests.swift */; };
+		3A07F9F520FD1FEB000CDDCF /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A07F9F420FD1FEA000CDDCF /* Int.swift */; };
+		3A07F9F720FD2006000CDDCF /* InvoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A07F9F620FD2006000CDDCF /* InvoiceViewController.swift */; };
+		3A07FA0020FD22CA000CDDCF /* PaymentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A07F9FA20FD22C9000CDDCF /* PaymentsViewController.swift */; };
+		3A07FA0120FD22CA000CDDCF /* InvoicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A07F9FB20FD22C9000CDDCF /* InvoicesViewController.swift */; };
+		3A07FA0220FD22CA000CDDCF /* ChannelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A07F9FC20FD22C9000CDDCF /* ChannelsViewController.swift */; };
+		3A07FA0320FD22CA000CDDCF /* MoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A07F9FD20FD22C9000CDDCF /* MoneyViewController.swift */; };
+		3A07FA0420FD22CA000CDDCF /* PeersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A07F9FE20FD22C9000CDDCF /* PeersViewController.swift */; };
+		3A07FA0520FD22CA000CDDCF /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A07F9FF20FD22C9000CDDCF /* InfoViewController.swift */; };
+		3A07FA0920FD4A74000CDDCF /* libqrencode.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0003512034F00F00A68E68 /* libqrencode.4.dylib */; };
+		3A07FA0E20FD4ED7000CDDCF /* libqrencode.4.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = 3A0003512034F00F00A68E68 /* libqrencode.4.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		3A07FA1320FD532F000CDDCF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A07FA1220FD532E000CDDCF /* Constants.swift */; };
 		3A13B26620DB3F7A000FCC53 /* getinfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A13B26520DB3F79000FCC53 /* getinfo.swift */; };
 		3A13B26820DDA303000FCC53 /* ReloadableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A13B26720DDA303000FCC53 /* ReloadableViewController.swift */; };
 		3A18B5872024E80000D6C2DF /* Console.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B5862024E80000D6C2DF /* Console.swift */; };
 		3A18B5892024F51700D6C2DF /* listinvoices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B5882024F51700D6C2DF /* listinvoices.swift */; };
 		3A18B58B2024F61900D6C2DF /* InvoiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B58A2024F61900D6C2DF /* InvoiceTest.swift */; };
-		3A18B58D2024F8DD00D6C2DF /* InvoicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B58C2024F8DD00D6C2DF /* InvoicesViewController.swift */; };
-		3A18B58F202503B100D6C2DF /* MoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B58E202503B100D6C2DF /* MoneyViewController.swift */; };
 		3A18B5912025054B00D6C2DF /* OutputTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B5902025054B00D6C2DF /* OutputTest.swift */; };
 		3A18B59320250A0900D6C2DF /* error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B59220250A0900D6C2DF /* error.swift */; };
 		3A18B5962025108400D6C2DF /* AddressService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B5952025108400D6C2DF /* AddressService.swift */; };
@@ -29,21 +37,39 @@
 		3A18B59C202515A500D6C2DF /* GetMoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B59B202515A500D6C2DF /* GetMoneyViewController.swift */; };
 		3A18B69920254FC800D6C2DF /* SendMoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B69820254FC800D6C2DF /* SendMoneyViewController.swift */; };
 		3A18B69B20255B3600D6C2DF /* withdraw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B69A20255B3600D6C2DF /* withdraw.swift */; };
-		3A18B6A2202572E200D6C2DF /* LightningRPC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B6A1202572E200D6C2DF /* LightningRPC.swift */; };
-		3A18B6A4202573D700D6C2DF /* LightningRPCTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B6A3202573D700D6C2DF /* LightningRPCTest.swift */; };
-		3A18B6AB20277B9C00D6C2DF /* LightningRPCConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B6AA20277B9C00D6C2DF /* LightningRPCConstants.swift */; };
-		3A18B6B120296B1C00D6C2DF /* PeersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B6B020296B1C00D6C2DF /* PeersViewController.swift */; };
+		3A18B6AB20277B9C00D6C2DF /* LightningRPC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B6AA20277B9C00D6C2DF /* LightningRPC.swift */; };
 		3A18B6B32029748300D6C2DF /* PeerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18B6B22029748300D6C2DF /* PeerTest.swift */; };
 		3A38BDE9201C55B40055BBA1 /* PaymentHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A38BDE8201C55B40055BBA1 /* PaymentHash.swift */; };
 		3A38BDED201CF8D70055BBA1 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A38BDEC201CF8D70055BBA1 /* String.swift */; };
 		3A5565642023B1DD003CEBEA /* listfunds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5565632023B1DD003CEBEA /* listfunds.swift */; };
-		3A5565662023BFDE003CEBEA /* PaymentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5565652023BFDE003CEBEA /* PaymentsViewController.swift */; };
-		3A5565682023C9F0003CEBEA /* ChannelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5565672023C9F0003CEBEA /* ChannelsViewController.swift */; };
 		3A55656A2023CF2F003CEBEA /* ChannelsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5565692023CF2F003CEBEA /* ChannelsTest.swift */; };
 		3A55656C2023DB7E003CEBEA /* Bool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A55656B2023DB7E003CEBEA /* Bool.swift */; };
 		3A605DFA202C0C6A0076EF45 /* VoltageTableViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A605DF9202C0C6A0076EF45 /* VoltageTableViewProtocol.swift */; };
 		3A605DFC202C0D260076EF45 /* VoltageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A605DFB202C0D260076EF45 /* VoltageTableViewController.swift */; };
+		3A6A3E8F210A532C0050D711 /* DebugWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6A3E8D210A532C0050D711 /* DebugWindowController.swift */; };
+		3A6A3E90210A532C0050D711 /* DebugWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A6A3E8E210A532C0050D711 /* DebugWindowController.xib */; };
+		3A6A3E92210A57BE0050D711 /* DebugStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6A3E91210A57BE0050D711 /* DebugStorage.swift */; };
+		3A6A3E94210A5A2F0050D711 /* Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6A3E93210A5A2F0050D711 /* Swift.swift */; };
+		3A74D864210BB7C800D8CD25 /* MakesRPCQueries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A74D863210BB7C800D8CD25 /* MakesRPCQueries.swift */; };
+		3A74D878210C003C00D8CD25 /* PreferencesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A74D876210C003C00D8CD25 /* PreferencesWindowController.swift */; };
+		3A74D879210C003C00D8CD25 /* PreferencesWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A74D877210C003C00D8CD25 /* PreferencesWindowController.xib */; };
+		3A74D87C210FBA3100D8CD25 /* SSHTunnel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A74D87B210FBA3100D8CD25 /* SSHTunnel.swift */; };
+		3A74D87E210FBB8E00D8CD25 /* SSHTunnelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A74D87D210FBB8E00D8CD25 /* SSHTunnelProtocol.swift */; };
+		3A74D880210FBCA300D8CD25 /* SSHTunnelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A74D87F210FBCA300D8CD25 /* SSHTunnelTest.swift */; };
+		3A74D883210FBF8000D8CD25 /* ApplicationSupportFolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A74D882210FBF8000D8CD25 /* ApplicationSupportFolder.swift */; };
+		3A74D886210FC12A00D8CD25 /* ApplicationSupportFolderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A74D885210FC12A00D8CD25 /* ApplicationSupportFolderTest.swift */; };
+		3A74D8882110BD0600D8CD25 /* PerferencesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A74D8872110BD0600D8CD25 /* PerferencesTest.swift */; };
 		3A7B0A0120DAF459006AEBF1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7B0A0020DAF459006AEBF1 /* MainViewController.swift */; };
+		3A983E6721001373007A8D27 /* Bolt11InvoiceWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A983E6521001373007A8D27 /* Bolt11InvoiceWindowController.swift */; };
+		3A983E6821001373007A8D27 /* Bolt11InvoiceWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A983E6621001373007A8D27 /* Bolt11InvoiceWindowController.xib */; };
+		3A983E6A2100E1A9007A8D27 /* PayInvoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A983E692100E1A9007A8D27 /* PayInvoiceViewController.swift */; };
+		3A983E6C2100E326007A8D27 /* HandlesRPCErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A983E6B2100E326007A8D27 /* HandlesRPCErrors.swift */; };
+		3A983E702100E807007A8D27 /* NibName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A983E6F2100E807007A8D27 /* NibName.swift */; };
+		3A983E722100EA70007A8D27 /* PopoverManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A983E712100EA70007A8D27 /* PopoverManager.swift */; };
+		3A983E792101591E007A8D27 /* FundChannelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A983E772101591E007A8D27 /* FundChannelViewController.swift */; };
+		3A983E7A2101591E007A8D27 /* FundChannelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A983E782101591E007A8D27 /* FundChannelViewController.xib */; };
+		3A983E7C210178EC007A8D27 /* GenericTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A983E7B210178EC007A8D27 /* GenericTest.swift */; };
+		3A983E7E21027DEF007A8D27 /* RemoteSocketTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A983E7D21027DEF007A8D27 /* RemoteSocketTest.swift */; };
 		3AA2A68420227AC2005664FC /* LightningRPCQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA2A68320227AC2005664FC /* LightningRPCQuery.swift */; };
 		3AA2A68E202385AC005664FC /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA2A68D202385AC005664FC /* Data.swift */; };
 		3AA4BDEA201BCADC00000153 /* listpayments.json in Resources */ = {isa = PBXBuildFile; fileRef = 3AA4BDE9201BCADC00000153 /* listpayments.json */; };
@@ -51,10 +77,15 @@
 		3AA4BDEE201BE8A300000153 /* listpayments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA4BDED201BE8A300000153 /* listpayments.swift */; };
 		3AA4BDF0201BE8F400000153 /* listpeers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA4BDEF201BE8F400000153 /* listpeers.swift */; };
 		3AA4BDF3201BE91B00000153 /* listchannels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA4BDF2201BE91B00000153 /* listchannels.swift */; };
-		3AABB80B20D8662100173861 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AABB80A20D8662100173861 /* InfoViewController.swift */; };
 		3AC2B843202B601F00216D55 /* horn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3AC2B841202B601F00216D55 /* horn.mp3 */; };
+		3AD8894920EAB70100B807D3 /* SocketStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD8894820EAB70100B807D3 /* SocketStatus.swift */; };
+		3AD8894B20EAC9BF00B807D3 /* CreateInvoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD8894A20EAC9BF00B807D3 /* CreateInvoiceViewController.swift */; };
+		3AD8894E20EACE9400B807D3 /* IntegerFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD8894D20EACE9400B807D3 /* IntegerFormatter.swift */; };
+		3AD8895420EADC3400B807D3 /* createdinvoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD8895320EADC3400B807D3 /* createdinvoice.swift */; };
+		3AD8895620EADDE400B807D3 /* CreatedInvoiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD8895520EADDE400B807D3 /* CreatedInvoiceTest.swift */; };
+		3AD8895A20EBFA6000B807D3 /* NotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD8895920EBFA6000B807D3 /* NotificationName.swift */; };
 		3AF04905202F8AB700BABE2F /* ArrayTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF04904202F8AB700BABE2F /* ArrayTest.swift */; };
-		3AFD6CFA20213EAA001599D2 /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFD6CF920213EAA001599D2 /* PreferencesViewController.swift */; };
+		3AF5DDF620FFECB3000D3AD6 /* decodepay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF5DDF520FFECB3000D3AD6 /* decodepay.swift */; };
 		3AFD6CFC202149D0001599D2 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFD6CFB202149D0001599D2 /* Preferences.swift */; };
 		3AFD6D0020223C6F001599D2 /* LightningRPCSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFD6CFF20223C6F001599D2 /* LightningRPCSocket.swift */; };
 		3AFD6D02202240E2001599D2 /* LightningRPCSocketTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFD6D01202240E2001599D2 /* LightningRPCSocketTest.swift */; };
@@ -80,6 +111,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3A07FA0C20FD4BC0000CDDCF /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3A07FA0E20FD4ED7000CDDCF /* libqrencode.4.dylib in Copy Files */,
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0B9DBA404466F9AFE4DDAB37 /* Pods_VoltageUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VoltageUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A00034E2034EE0500A68E68 /* Voltage.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; name = Voltage.iconset; path = art/Voltage.iconset; sourceTree = SOURCE_ROOT; };
@@ -96,13 +141,20 @@
 		3A071412201A7127008E2AEE /* VoltageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoltageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A071416201A7127008E2AEE /* VoltageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoltageUITests.swift; sourceTree = "<group>"; };
 		3A071418201A7127008E2AEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A07F9F420FD1FEA000CDDCF /* Int.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
+		3A07F9F620FD2006000CDDCF /* InvoiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvoiceViewController.swift; sourceTree = "<group>"; };
+		3A07F9FA20FD22C9000CDDCF /* PaymentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentsViewController.swift; sourceTree = "<group>"; };
+		3A07F9FB20FD22C9000CDDCF /* InvoicesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvoicesViewController.swift; sourceTree = "<group>"; };
+		3A07F9FC20FD22C9000CDDCF /* ChannelsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelsViewController.swift; sourceTree = "<group>"; };
+		3A07F9FD20FD22C9000CDDCF /* MoneyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyViewController.swift; sourceTree = "<group>"; };
+		3A07F9FE20FD22C9000CDDCF /* PeersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeersViewController.swift; sourceTree = "<group>"; };
+		3A07F9FF20FD22C9000CDDCF /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		3A07FA1220FD532E000CDDCF /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3A13B26520DB3F79000FCC53 /* getinfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = getinfo.swift; sourceTree = "<group>"; };
 		3A13B26720DDA303000FCC53 /* ReloadableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReloadableViewController.swift; sourceTree = "<group>"; };
 		3A18B5862024E80000D6C2DF /* Console.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Console.swift; sourceTree = "<group>"; };
 		3A18B5882024F51700D6C2DF /* listinvoices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listinvoices.swift; sourceTree = "<group>"; };
 		3A18B58A2024F61900D6C2DF /* InvoiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceTest.swift; sourceTree = "<group>"; };
-		3A18B58C2024F8DD00D6C2DF /* InvoicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoicesViewController.swift; sourceTree = "<group>"; };
-		3A18B58E202503B100D6C2DF /* MoneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyViewController.swift; sourceTree = "<group>"; };
 		3A18B5902025054B00D6C2DF /* OutputTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputTest.swift; sourceTree = "<group>"; };
 		3A18B59220250A0900D6C2DF /* error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = error.swift; sourceTree = "<group>"; };
 		3A18B5952025108400D6C2DF /* AddressService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressService.swift; sourceTree = "<group>"; };
@@ -271,23 +323,41 @@
 		3A18B6952025264400D6C2DF /* autogen.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = autogen.sh; sourceTree = "<group>"; };
 		3A18B69820254FC800D6C2DF /* SendMoneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMoneyViewController.swift; sourceTree = "<group>"; };
 		3A18B69A20255B3600D6C2DF /* withdraw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = withdraw.swift; sourceTree = "<group>"; };
-		3A18B6A1202572E200D6C2DF /* LightningRPC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightningRPC.swift; sourceTree = "<group>"; };
-		3A18B6A3202573D700D6C2DF /* LightningRPCTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightningRPCTest.swift; sourceTree = "<group>"; };
-		3A18B6AA20277B9C00D6C2DF /* LightningRPCConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightningRPCConstants.swift; sourceTree = "<group>"; };
-		3A18B6B020296B1C00D6C2DF /* PeersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeersViewController.swift; sourceTree = "<group>"; };
+		3A18B6AA20277B9C00D6C2DF /* LightningRPC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightningRPC.swift; sourceTree = "<group>"; };
 		3A18B6B22029748300D6C2DF /* PeerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeerTest.swift; sourceTree = "<group>"; };
 		3A38BDE8201C55B40055BBA1 /* PaymentHash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHash.swift; sourceTree = "<group>"; };
 		3A38BDEB201CF59C0055BBA1 /* Voltage-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Voltage-Bridging-Header.h"; sourceTree = "<group>"; };
 		3A38BDEC201CF8D70055BBA1 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		3A38BDEE201D16DE0055BBA1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3A5565632023B1DD003CEBEA /* listfunds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listfunds.swift; sourceTree = "<group>"; };
-		3A5565652023BFDE003CEBEA /* PaymentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsViewController.swift; sourceTree = "<group>"; };
-		3A5565672023C9F0003CEBEA /* ChannelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsViewController.swift; sourceTree = "<group>"; };
 		3A5565692023CF2F003CEBEA /* ChannelsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsTest.swift; sourceTree = "<group>"; };
 		3A55656B2023DB7E003CEBEA /* Bool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bool.swift; sourceTree = "<group>"; };
 		3A605DF9202C0C6A0076EF45 /* VoltageTableViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoltageTableViewProtocol.swift; sourceTree = "<group>"; };
 		3A605DFB202C0D260076EF45 /* VoltageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoltageTableViewController.swift; sourceTree = "<group>"; };
+		3A6A3E8D210A532C0050D711 /* DebugWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugWindowController.swift; sourceTree = "<group>"; };
+		3A6A3E8E210A532C0050D711 /* DebugWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DebugWindowController.xib; sourceTree = "<group>"; };
+		3A6A3E91210A57BE0050D711 /* DebugStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugStorage.swift; sourceTree = "<group>"; };
+		3A6A3E93210A5A2F0050D711 /* Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift.swift; sourceTree = "<group>"; };
+		3A74D863210BB7C800D8CD25 /* MakesRPCQueries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakesRPCQueries.swift; sourceTree = "<group>"; };
+		3A74D876210C003C00D8CD25 /* PreferencesWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesWindowController.swift; sourceTree = "<group>"; };
+		3A74D877210C003C00D8CD25 /* PreferencesWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreferencesWindowController.xib; sourceTree = "<group>"; };
+		3A74D87B210FBA3100D8CD25 /* SSHTunnel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSHTunnel.swift; sourceTree = "<group>"; };
+		3A74D87D210FBB8E00D8CD25 /* SSHTunnelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSHTunnelProtocol.swift; sourceTree = "<group>"; };
+		3A74D87F210FBCA300D8CD25 /* SSHTunnelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSHTunnelTest.swift; sourceTree = "<group>"; };
+		3A74D882210FBF8000D8CD25 /* ApplicationSupportFolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationSupportFolder.swift; sourceTree = "<group>"; };
+		3A74D885210FC12A00D8CD25 /* ApplicationSupportFolderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationSupportFolderTest.swift; sourceTree = "<group>"; };
+		3A74D8872110BD0600D8CD25 /* PerferencesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerferencesTest.swift; sourceTree = "<group>"; };
 		3A7B0A0020DAF459006AEBF1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		3A983E6521001373007A8D27 /* Bolt11InvoiceWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bolt11InvoiceWindowController.swift; sourceTree = "<group>"; };
+		3A983E6621001373007A8D27 /* Bolt11InvoiceWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Bolt11InvoiceWindowController.xib; sourceTree = "<group>"; };
+		3A983E692100E1A9007A8D27 /* PayInvoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayInvoiceViewController.swift; sourceTree = "<group>"; };
+		3A983E6B2100E326007A8D27 /* HandlesRPCErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandlesRPCErrors.swift; sourceTree = "<group>"; };
+		3A983E6F2100E807007A8D27 /* NibName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibName.swift; sourceTree = "<group>"; };
+		3A983E712100EA70007A8D27 /* PopoverManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverManager.swift; sourceTree = "<group>"; };
+		3A983E772101591E007A8D27 /* FundChannelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundChannelViewController.swift; sourceTree = "<group>"; };
+		3A983E782101591E007A8D27 /* FundChannelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FundChannelViewController.xib; sourceTree = "<group>"; };
+		3A983E7B210178EC007A8D27 /* GenericTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTest.swift; sourceTree = "<group>"; };
+		3A983E7D21027DEF007A8D27 /* RemoteSocketTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteSocketTest.swift; sourceTree = "<group>"; };
 		3AA2A68320227AC2005664FC /* LightningRPCQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightningRPCQuery.swift; sourceTree = "<group>"; };
 		3AA2A68D202385AC005664FC /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		3AA2A69020239073005664FC /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
@@ -296,10 +366,16 @@
 		3AA4BDED201BE8A300000153 /* listpayments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listpayments.swift; sourceTree = "<group>"; };
 		3AA4BDEF201BE8F400000153 /* listpeers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listpeers.swift; sourceTree = "<group>"; };
 		3AA4BDF2201BE91B00000153 /* listchannels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listchannels.swift; sourceTree = "<group>"; };
-		3AABB80A20D8662100173861 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		3AC2B841202B601F00216D55 /* horn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = horn.mp3; sourceTree = "<group>"; };
+		3ACF3B4F212F75B2004C2A01 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		3AD8894820EAB70100B807D3 /* SocketStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketStatus.swift; sourceTree = "<group>"; };
+		3AD8894A20EAC9BF00B807D3 /* CreateInvoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateInvoiceViewController.swift; sourceTree = "<group>"; };
+		3AD8894D20EACE9400B807D3 /* IntegerFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegerFormatter.swift; sourceTree = "<group>"; };
+		3AD8895320EADC3400B807D3 /* createdinvoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createdinvoice.swift; sourceTree = "<group>"; };
+		3AD8895520EADDE400B807D3 /* CreatedInvoiceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatedInvoiceTest.swift; sourceTree = "<group>"; };
+		3AD8895920EBFA6000B807D3 /* NotificationName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationName.swift; sourceTree = "<group>"; };
 		3AF04904202F8AB700BABE2F /* ArrayTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayTest.swift; sourceTree = "<group>"; };
-		3AFD6CF920213EAA001599D2 /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
+		3AF5DDF520FFECB3000D3AD6 /* decodepay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = decodepay.swift; sourceTree = "<group>"; };
 		3AFD6CFB202149D0001599D2 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
 		3AFD6CFF20223C6F001599D2 /* LightningRPCSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightningRPCSocket.swift; sourceTree = "<group>"; };
 		3AFD6D01202240E2001599D2 /* LightningRPCSocketTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightningRPCSocketTest.swift; sourceTree = "<group>"; };
@@ -318,8 +394,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A0003532034F0DC00A68E68 /* libqrencode.4.dylib in Frameworks */,
 				7A9A87BF7E1EB5CDADA7F6AA /* Pods_Voltage.framework in Frameworks */,
+				3A07FA0920FD4A74000CDDCF /* libqrencode.4.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +446,7 @@
 		3A0713EC201A7127008E2AEE = {
 			isa = PBXGroup;
 			children = (
+				3ACF3B4F212F75B2004C2A01 /* CHANGELOG.md */,
 				3AA2A69020239073005664FC /* LICENSE.md */,
 				3A38BDEE201D16DE0055BBA1 /* README.md */,
 				3A0713F7201A7127008E2AEE /* Voltage */,
@@ -395,6 +472,7 @@
 			isa = PBXGroup;
 			children = (
 				3A0713F8201A7127008E2AEE /* AppDelegate.swift */,
+				3A07FA1220FD532E000CDDCF /* Constants.swift */,
 				3A38BDEB201CF59C0055BBA1 /* Voltage-Bridging-Header.h */,
 				3A0713FC201A7127008E2AEE /* Assets.xcassets */,
 				3A00034E2034EE0500A68E68 /* Voltage.iconset */,
@@ -403,11 +481,15 @@
 				3A071402201A7127008E2AEE /* Voltage.entitlements */,
 				3AC2B841202B601F00216D55 /* horn.mp3 */,
 				3AA2A68F202385B8005664FC /* Extensions */,
+				3AD8894C20EACE5F00B807D3 /* Formatters */,
 				3AFD6CFE20222C6B001599D2 /* Models */,
+				3A74D881210FBF0300D8CD25 /* Preferences */,
 				3A605DF8202C0C410076EF45 /* Protocols */,
-				3A18B6A7202779D600D6C2DF /* RPC */,
+				3A18B6A7202779D600D6C2DF /* LightningRPC */,
 				3A18B5942025106700D6C2DF /* Services */,
+				3A74D87A210FBA1200D8CD25 /* SSH */,
 				3AFD6CFD20222BFC001599D2 /* View Controllers */,
+				3AF5DDF9210010EF000D3AD6 /* Window Controllers */,
 			);
 			path = Voltage;
 			sourceTree = "<group>";
@@ -415,18 +497,22 @@
 		3A07140A201A7127008E2AEE /* VoltageTests */ = {
 			isa = PBXGroup;
 			children = (
+				3A74D884210FC11200D8CD25 /* Preferences */,
+				3AD8895520EADDE400B807D3 /* CreatedInvoiceTest.swift */,
 				3A18B5972025111200D6C2DF /* AddressServiceTest.swift */,
 				3A5565692023CF2F003CEBEA /* ChannelsTest.swift */,
 				3A07140D201A7127008E2AEE /* Info.plist */,
 				3A18B58A2024F61900D6C2DF /* InvoiceTest.swift */,
 				3A07140B201A7127008E2AEE /* JSONDecoderTest.swift */,
 				3AFD6D01202240E2001599D2 /* LightningRPCSocketTest.swift */,
-				3A18B6A3202573D700D6C2DF /* LightningRPCTest.swift */,
 				3AA4BDE9201BCADC00000153 /* listpayments.json */,
 				3AA4BDEB201BE13800000153 /* listpeers.json */,
 				3A18B5902025054B00D6C2DF /* OutputTest.swift */,
 				3A18B6B22029748300D6C2DF /* PeerTest.swift */,
 				3AF04904202F8AB700BABE2F /* ArrayTest.swift */,
+				3A983E7B210178EC007A8D27 /* GenericTest.swift */,
+				3A983E7D21027DEF007A8D27 /* RemoteSocketTest.swift */,
+				3A74D87F210FBCA300D8CD25 /* SSHTunnelTest.swift */,
 			);
 			path = VoltageTests;
 			sourceTree = "<group>";
@@ -440,10 +526,25 @@
 			path = VoltageUITests;
 			sourceTree = "<group>";
 		};
+		3A07F9F920FD22C9000CDDCF /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				3A07F9FD20FD22C9000CDDCF /* MoneyViewController.swift */,
+				3A07F9FB20FD22C9000CDDCF /* InvoicesViewController.swift */,
+				3A07F9FA20FD22C9000CDDCF /* PaymentsViewController.swift */,
+				3A07F9FE20FD22C9000CDDCF /* PeersViewController.swift */,
+				3A07F9FC20FD22C9000CDDCF /* ChannelsViewController.swift */,
+				3A07F9FF20FD22C9000CDDCF /* InfoViewController.swift */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
 		3A18B5942025106700D6C2DF /* Services */ = {
 			isa = PBXGroup;
 			children = (
 				3A18B5952025108400D6C2DF /* AddressService.swift */,
+				3A983E712100EA70007A8D27 /* PopoverManager.swift */,
+				3A6A3E91210A57BE0050D711 /* DebugStorage.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -687,40 +788,85 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3A18B6A7202779D600D6C2DF /* RPC */ = {
+		3A18B6A7202779D600D6C2DF /* LightningRPC */ = {
 			isa = PBXGroup;
 			children = (
-				3A18B6A1202572E200D6C2DF /* LightningRPC.swift */,
-				3A18B6AA20277B9C00D6C2DF /* LightningRPCConstants.swift */,
+				3A18B6AA20277B9C00D6C2DF /* LightningRPC.swift */,
 				3AA2A68320227AC2005664FC /* LightningRPCQuery.swift */,
 				3AFD6CFF20223C6F001599D2 /* LightningRPCSocket.swift */,
+				3AF0490D202FBA5700BABE2F /* Methods */,
 			);
-			path = RPC;
+			path = LightningRPC;
 			sourceTree = "<group>";
 		};
 		3A605DF8202C0C410076EF45 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				3A983E6B2100E326007A8D27 /* HandlesRPCErrors.swift */,
 				3A605DF9202C0C6A0076EF45 /* VoltageTableViewProtocol.swift */,
+				3A74D863210BB7C800D8CD25 /* MakesRPCQueries.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		3A74D87A210FBA1200D8CD25 /* SSH */ = {
+			isa = PBXGroup;
+			children = (
+				3A74D87B210FBA3100D8CD25 /* SSHTunnel.swift */,
+				3A74D87D210FBB8E00D8CD25 /* SSHTunnelProtocol.swift */,
+			);
+			path = SSH;
+			sourceTree = "<group>";
+		};
+		3A74D881210FBF0300D8CD25 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				3A74D882210FBF8000D8CD25 /* ApplicationSupportFolder.swift */,
+				3AFD6CFB202149D0001599D2 /* Preferences.swift */,
+				3A74D876210C003C00D8CD25 /* PreferencesWindowController.swift */,
+				3A74D877210C003C00D8CD25 /* PreferencesWindowController.xib */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
+		3A74D884210FC11200D8CD25 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				3A74D885210FC12A00D8CD25 /* ApplicationSupportFolderTest.swift */,
+				3A74D8872110BD0600D8CD25 /* PerferencesTest.swift */,
+			);
+			path = Preferences;
 			sourceTree = "<group>";
 		};
 		3AA2A68F202385B8005664FC /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				3AA2A68D202385AC005664FC /* Data.swift */,
-				3A38BDEC201CF8D70055BBA1 /* String.swift */,
 				3A55656B2023DB7E003CEBEA /* Bool.swift */,
+				3AA2A68D202385AC005664FC /* Data.swift */,
+				3A07F9F420FD1FEA000CDDCF /* Int.swift */,
+				3AD8895920EBFA6000B807D3 /* NotificationName.swift */,
+				3A983E6F2100E807007A8D27 /* NibName.swift */,
+				3A38BDEC201CF8D70055BBA1 /* String.swift */,
+				3A6A3E93210A5A2F0050D711 /* Swift.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		3AF0490D202FBA5700BABE2F /* JSON-RPC Methods */ = {
+		3AD8894C20EACE5F00B807D3 /* Formatters */ = {
 			isa = PBXGroup;
 			children = (
-				3A13B26520DB3F79000FCC53 /* getinfo.swift */,
+				3AD8894D20EACE9400B807D3 /* IntegerFormatter.swift */,
+			);
+			path = Formatters;
+			sourceTree = "<group>";
+		};
+		3AF0490D202FBA5700BABE2F /* Methods */ = {
+			isa = PBXGroup;
+			children = (
+				3AD8895320EADC3400B807D3 /* createdinvoice.swift */,
+				3AF5DDF520FFECB3000D3AD6 /* decodepay.swift */,
 				3A18B59220250A0900D6C2DF /* error.swift */,
+				3A13B26520DB3F79000FCC53 /* getinfo.swift */,
 				3AA4BDF2201BE91B00000153 /* listchannels.swift */,
 				3A5565632023B1DD003CEBEA /* listfunds.swift */,
 				3A18B5882024F51700D6C2DF /* listinvoices.swift */,
@@ -728,24 +874,34 @@
 				3AA4BDEF201BE8F400000153 /* listpeers.swift */,
 				3A18B69A20255B3600D6C2DF /* withdraw.swift */,
 			);
-			path = "JSON-RPC Methods";
+			path = Methods;
+			sourceTree = "<group>";
+		};
+		3AF5DDF9210010EF000D3AD6 /* Window Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3A983E6521001373007A8D27 /* Bolt11InvoiceWindowController.swift */,
+				3A983E6621001373007A8D27 /* Bolt11InvoiceWindowController.xib */,
+				3A6A3E8D210A532C0050D711 /* DebugWindowController.swift */,
+				3A6A3E8E210A532C0050D711 /* DebugWindowController.xib */,
+			);
+			path = "Window Controllers";
 			sourceTree = "<group>";
 		};
 		3AFD6CFD20222BFC001599D2 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				3A5565672023C9F0003CEBEA /* ChannelsViewController.swift */,
+				3A07F9F920FD22C9000CDDCF /* Tabs */,
+				3AD8894A20EAC9BF00B807D3 /* CreateInvoiceViewController.swift */,
 				3A18B59B202515A500D6C2DF /* GetMoneyViewController.swift */,
-				3AABB80A20D8662100173861 /* InfoViewController.swift */,
-				3A18B58C2024F8DD00D6C2DF /* InvoicesViewController.swift */,
+				3A07F9F620FD2006000CDDCF /* InvoiceViewController.swift */,
 				3A7B0A0020DAF459006AEBF1 /* MainViewController.swift */,
-				3A18B58E202503B100D6C2DF /* MoneyViewController.swift */,
-				3A5565652023BFDE003CEBEA /* PaymentsViewController.swift */,
-				3A18B6B020296B1C00D6C2DF /* PeersViewController.swift */,
-				3AFD6CF920213EAA001599D2 /* PreferencesViewController.swift */,
 				3A13B26720DDA303000FCC53 /* ReloadableViewController.swift */,
 				3A18B69820254FC800D6C2DF /* SendMoneyViewController.swift */,
 				3A605DFB202C0D260076EF45 /* VoltageTableViewController.swift */,
+				3A983E692100E1A9007A8D27 /* PayInvoiceViewController.swift */,
+				3A983E772101591E007A8D27 /* FundChannelViewController.swift */,
+				3A983E782101591E007A8D27 /* FundChannelViewController.xib */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -753,11 +909,10 @@
 		3AFD6CFE20222C6B001599D2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				3AF0490D202FBA5700BABE2F /* JSON-RPC Methods */,
 				3A18B5992025120B00D6C2DF /* Address.swift */,
 				3A18B5862024E80000D6C2DF /* Console.swift */,
 				3A38BDE8201C55B40055BBA1 /* PaymentHash.swift */,
-				3AFD6CFB202149D0001599D2 /* Preferences.swift */,
+				3AD8894820EAB70100B807D3 /* SocketStatus.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -770,12 +925,14 @@
 			buildConfigurationList = 3A07141B201A7127008E2AEE /* Build configuration list for PBXNativeTarget "Voltage" */;
 			buildPhases = (
 				740F6B06E6CB1925E34D84DE /* [CP] Check Pods Manifest.lock */,
+				3A07FA0C20FD4BC0000CDDCF /* Copy Files */,
 				3A0713F1201A7127008E2AEE /* Sources */,
 				3A0713F2201A7127008E2AEE /* Frameworks */,
 				3A0713F3201A7127008E2AEE /* Resources */,
 				3A38BDF1201D1F650055BBA1 /* ShellScript */,
 				82B5EE19B34570783B695A20 /* [CP] Embed Pods Frameworks */,
 				E209D49494438A6E63BDF5B1 /* [CP] Copy Pods Resources */,
+				3A57B5762112494B00A0678C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -841,6 +998,11 @@
 					3A0713F4201A7127008E2AEE = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 					3A071406201A7127008E2AEE = {
 						CreatedOnToolsVersion = 9.2;
@@ -885,8 +1047,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A74D879210C003C00D8CD25 /* PreferencesWindowController.xib in Resources */,
+				3A6A3E90210A532C0050D711 /* DebugWindowController.xib in Resources */,
 				3A00034F2034EE0500A68E68 /* Voltage.iconset in Resources */,
+				3A983E6821001373007A8D27 /* Bolt11InvoiceWindowController.xib in Resources */,
 				3AC2B843202B601F00216D55 /* horn.mp3 in Resources */,
+				3A983E7A2101591E007A8D27 /* FundChannelViewController.xib in Resources */,
 				3A0713FD201A7127008E2AEE /* Assets.xcassets in Resources */,
 				3A071400201A7127008E2AEE /* Main.storyboard in Resources */,
 			);
@@ -923,6 +1089,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
+		};
+		3A57B5762112494B00A0678C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "buildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"";
 		};
 		5781C41623A8EC5FC7A09FE7 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1084,38 +1263,59 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A18B59C202515A500D6C2DF /* GetMoneyViewController.swift in Sources */,
-				3A5565682023C9F0003CEBEA /* ChannelsViewController.swift in Sources */,
 				3A55656C2023DB7E003CEBEA /* Bool.swift in Sources */,
+				3A07F9F520FD1FEB000CDDCF /* Int.swift in Sources */,
 				3A18B59320250A0900D6C2DF /* error.swift in Sources */,
-				3A18B58F202503B100D6C2DF /* MoneyViewController.swift in Sources */,
-				3AABB80B20D8662100173861 /* InfoViewController.swift in Sources */,
-				3A5565662023BFDE003CEBEA /* PaymentsViewController.swift in Sources */,
+				3A74D883210FBF8000D8CD25 /* ApplicationSupportFolder.swift in Sources */,
+				3A6A3E92210A57BE0050D711 /* DebugStorage.swift in Sources */,
+				3AD8894B20EAC9BF00B807D3 /* CreateInvoiceViewController.swift in Sources */,
+				3A07FA0420FD22CA000CDDCF /* PeersViewController.swift in Sources */,
+				3A07FA0320FD22CA000CDDCF /* MoneyViewController.swift in Sources */,
+				3AD8894E20EACE9400B807D3 /* IntegerFormatter.swift in Sources */,
+				3A6A3E8F210A532C0050D711 /* DebugWindowController.swift in Sources */,
 				3AFD6D0020223C6F001599D2 /* LightningRPCSocket.swift in Sources */,
 				3AFD6CFC202149D0001599D2 /* Preferences.swift in Sources */,
 				3A18B5962025108400D6C2DF /* AddressService.swift in Sources */,
-				3A18B6AB20277B9C00D6C2DF /* LightningRPCConstants.swift in Sources */,
-				3A18B6A2202572E200D6C2DF /* LightningRPC.swift in Sources */,
-				3A18B6B120296B1C00D6C2DF /* PeersViewController.swift in Sources */,
-				3AFD6CFA20213EAA001599D2 /* PreferencesViewController.swift in Sources */,
+				3A74D87E210FBB8E00D8CD25 /* SSHTunnelProtocol.swift in Sources */,
+				3A07FA0220FD22CA000CDDCF /* ChannelsViewController.swift in Sources */,
+				3A18B6AB20277B9C00D6C2DF /* LightningRPC.swift in Sources */,
 				3A13B26620DB3F7A000FCC53 /* getinfo.swift in Sources */,
+				3A74D87C210FBA3100D8CD25 /* SSHTunnel.swift in Sources */,
+				3A07FA0120FD22CA000CDDCF /* InvoicesViewController.swift in Sources */,
+				3A983E702100E807007A8D27 /* NibName.swift in Sources */,
+				3A74D878210C003C00D8CD25 /* PreferencesWindowController.swift in Sources */,
+				3A983E6C2100E326007A8D27 /* HandlesRPCErrors.swift in Sources */,
 				3AA2A68420227AC2005664FC /* LightningRPCQuery.swift in Sources */,
+				3A983E6721001373007A8D27 /* Bolt11InvoiceWindowController.swift in Sources */,
 				3A605DFA202C0C6A0076EF45 /* VoltageTableViewProtocol.swift in Sources */,
 				3A38BDE9201C55B40055BBA1 /* PaymentHash.swift in Sources */,
-				3A18B58D2024F8DD00D6C2DF /* InvoicesViewController.swift in Sources */,
+				3AD8894920EAB70100B807D3 /* SocketStatus.swift in Sources */,
+				3A07FA1320FD532F000CDDCF /* Constants.swift in Sources */,
+				3A07F9F720FD2006000CDDCF /* InvoiceViewController.swift in Sources */,
+				3AD8895420EADC3400B807D3 /* createdinvoice.swift in Sources */,
 				3AA4BDF3201BE91B00000153 /* listchannels.swift in Sources */,
+				3A983E792101591E007A8D27 /* FundChannelViewController.swift in Sources */,
 				3AA4BDF0201BE8F400000153 /* listpeers.swift in Sources */,
 				3A13B26820DDA303000FCC53 /* ReloadableViewController.swift in Sources */,
 				3AA2A68E202385AC005664FC /* Data.swift in Sources */,
+				3A07FA0020FD22CA000CDDCF /* PaymentsViewController.swift in Sources */,
 				3A605DFC202C0D260076EF45 /* VoltageTableViewController.swift in Sources */,
+				3A983E6A2100E1A9007A8D27 /* PayInvoiceViewController.swift in Sources */,
+				3A6A3E94210A5A2F0050D711 /* Swift.swift in Sources */,
 				3A18B69B20255B3600D6C2DF /* withdraw.swift in Sources */,
+				3AD8895A20EBFA6000B807D3 /* NotificationName.swift in Sources */,
 				3A7B0A0120DAF459006AEBF1 /* MainViewController.swift in Sources */,
 				3A18B59A2025120B00D6C2DF /* Address.swift in Sources */,
+				3A983E722100EA70007A8D27 /* PopoverManager.swift in Sources */,
 				3A18B69920254FC800D6C2DF /* SendMoneyViewController.swift in Sources */,
 				3AA4BDEE201BE8A300000153 /* listpayments.swift in Sources */,
 				3A18B5892024F51700D6C2DF /* listinvoices.swift in Sources */,
+				3A07FA0520FD22CA000CDDCF /* InfoViewController.swift in Sources */,
 				3A0713F9201A7127008E2AEE /* AppDelegate.swift in Sources */,
 				3A38BDED201CF8D70055BBA1 /* String.swift in Sources */,
+				3A74D864210BB7C800D8CD25 /* MakesRPCQueries.swift in Sources */,
 				3A5565642023B1DD003CEBEA /* listfunds.swift in Sources */,
+				3AF5DDF620FFECB3000D3AD6 /* decodepay.swift in Sources */,
 				3A18B5872024E80000D6C2DF /* Console.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1127,12 +1327,17 @@
 				3A18B5912025054B00D6C2DF /* OutputTest.swift in Sources */,
 				3A55656A2023CF2F003CEBEA /* ChannelsTest.swift in Sources */,
 				3AF04905202F8AB700BABE2F /* ArrayTest.swift in Sources */,
+				3A983E7C210178EC007A8D27 /* GenericTest.swift in Sources */,
 				3A07140C201A7127008E2AEE /* JSONDecoderTest.swift in Sources */,
 				3A18B5982025111200D6C2DF /* AddressServiceTest.swift in Sources */,
+				3A74D886210FC12A00D8CD25 /* ApplicationSupportFolderTest.swift in Sources */,
 				3A18B6B32029748300D6C2DF /* PeerTest.swift in Sources */,
+				3A74D8882110BD0600D8CD25 /* PerferencesTest.swift in Sources */,
+				3A983E7E21027DEF007A8D27 /* RemoteSocketTest.swift in Sources */,
 				3A18B58B2024F61900D6C2DF /* InvoiceTest.swift in Sources */,
+				3A74D880210FBCA300D8CD25 /* SSHTunnelTest.swift in Sources */,
 				3AFD6D02202240E2001599D2 /* LightningRPCSocketTest.swift in Sources */,
-				3A18B6A4202573D700D6C2DF /* LightningRPCTest.swift in Sources */,
+				3AD8895620EADDE400B807D3 /* CreatedInvoiceTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1285,7 +1490,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F6107EDB521CE62DC8E4D65E /* Pods-Voltage.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Voltage/Voltage.entitlements;
 				CODE_SIGN_IDENTITY = "";
@@ -1295,10 +1499,7 @@
 				DEVELOPMENT_TEAM = K5NA8NE576;
 				INFOPLIST_FILE = Voltage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					/usr/local/lib,
-					"$(PROJECT_DIR)/lib",
-				);
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/lib";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hci.Voltage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1311,7 +1512,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A41EC9104EB5A584C9EFBDC7 /* Pods-Voltage.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Voltage/Voltage.entitlements;
 				CODE_SIGN_IDENTITY = "";
@@ -1321,10 +1521,7 @@
 				DEVELOPMENT_TEAM = K5NA8NE576;
 				INFOPLIST_FILE = Voltage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					/usr/local/lib,
-					"$(PROJECT_DIR)/lib",
-				);
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/lib";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hci.Voltage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1382,6 +1579,7 @@
 			baseConfigurationReference = DC49033F07955E01D2840EF9 /* Pods-VoltageUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = VoltageUITests/Info.plist;
@@ -1399,6 +1597,7 @@
 			baseConfigurationReference = E392EEE7ACBD0AC83CEA8EFA /* Pods-VoltageUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = VoltageUITests/Info.plist;

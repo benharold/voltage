@@ -10,6 +10,8 @@ import Foundation
 
 struct Invoice: Codable {
     let label: String
+    let bolt11: String // The `bolt11` key is always set but can be an empty string
+    var bolt11_value: String? { return bolt11 == "" ? nil : bolt11 }
     let payment_hash: String
     let msatoshi: Int
     let status: String

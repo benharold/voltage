@@ -16,21 +16,21 @@ class InvoiceTest: XCTestCase {
         //        self.measure {
         let result: InvoiceResult
         guard let socket = LightningRPCSocket.create() else {
-            throw SocketError.unwrap_error
+            throw SocketError.unwrap
         }
         let query = LightningRPCQuery(
             id: Int(getpid()),
             method: "listinvoices",
             params: []
         )
-        let response: Data = socket.send(query: query)
+        let response: Data = socket.send(query)
         do {
             result = try decoder.decode(InvoiceResult.self, from: response)
             // I need to figure out how to assert that the result object
             // is the expected type
-            print(result)
+            Swift.print(result)
         } catch {
-            print("Error: \(error)")
+            Swift.print("Error: \(error)")
         }
         //        }
     }

@@ -26,31 +26,24 @@ class MoneyViewController: ReloadableViewController {
     var decoder: JSONDecoder = JSONDecoder.init()
     
     @IBOutlet weak var balance_satoshis: NSTextFieldCell!
-    
     @IBOutlet weak var balance_bits: NSTextFieldCell!
-        
     @IBOutlet weak var balance_btc: NSTextFieldCell!
-    
     @IBOutlet weak var channel_capacity_bits: NSTextField!
-    
     @IBOutlet weak var channel_balance_bits: NSTextField!
-    
     @IBOutlet weak var channel_receivable_bits: NSTextField!
     
     @IBAction func hodl_button(_ sender: Any) {
         instant_rap_air_horn()
     }
-    
-    override func viewWillAppear() {
-        super.viewWillAppear()
-        NotificationCenter.default.post(name: Notification.Name(rawValue: "loading_start"), object: nil)
-        DispatchQueue.global(qos: .userInitiated).async {
-            self.load_outputs()
-        }
-    }
-    
+
     override func reload() {
-        load_outputs()
+        if let response: FundResult = query(LightningRPC.Method.listfunds) {
+            output_list = response.result.outputs
+            channel_list = response.result.channels
+            DispatchQueue.main.async {
+                self.recalculate_balances()
+            }
+        }
     }
     
     func recalculate_balances() {
@@ -88,33 +81,6 @@ class MoneyViewController: ReloadableViewController {
     
     func calculate_channel_receivable() {
         channel_receivable_bits.stringValue = String(describing: (channel_capacity_bits.floatValue - channel_balance_bits.floatValue))
-    }
-    
-    func load_outputs() {
-        guard let service = LightningRPCSocket.create() else {
-            return
-        }
-        let listoutputs: LightningRPCQuery = LightningRPCQuery(id: Int(getpid()), method: "listfunds", params: [])
-        let response: Data = service.send(query: listoutputs)
-        do {
-            let result: FundList = try decoder.decode(FundResult.self, from: response).result
-            output_list = result.outputs
-            channel_list = result.channels
-        } catch {
-            do {
-                let error_message = try decoder.decode(ErrorResult.self, from: response).error
-                print("MoneyViewController.load_outputs() RPC error: " + error_message)
-            } catch {
-                print("MoneyViewController.load_outputs() RPC error: \(error)")
-            }
-            //alert(message: "There was an error decoding the list of outputs. Is your c-lightning node running?")
-            print("MoneyViewController.load_outputs() JSON decoder error: \(error)")
-        }
-        
-        DispatchQueue.main.async {
-            self.recalculate_balances()
-            NotificationCenter.default.post(name: Notification.Name(rawValue: "loading_finish"), object: nil)
-        }
     }
     
     // I have not measured the memory usage of this. I presume that since the

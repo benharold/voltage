@@ -15,21 +15,21 @@ class ChannelsTest: XCTestCase {
     func testListChannelsIsDecodable() throws {
 //        self.measure {
         guard let socket = LightningRPCSocket.create() else {
-            throw SocketError.unwrap_error
+            throw SocketError.unwrap
         }
             let query = LightningRPCQuery(
                 id: Int(getpid()),
                 method: "listchannels",
                 params: []
             )
-            let response: Data = socket.send(query: query)
+            let response: Data = socket.send(query)
             do {
                 let result = try decoder.decode(ChannelResult.self, from: response)
-                print(result)
+                Swift.print(result)
                 // I need to figure out how to assert that the result object
                 // is the expected type
             } catch {
-                print("Error: \(error)")
+                Swift.print("Error: \(error)")
             }
 //        }
     }

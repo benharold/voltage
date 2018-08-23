@@ -23,7 +23,7 @@ class JSONDecoderTest: XCTestCase {
             //print(json)
             return json
         } catch {
-            print("Other error: \(error)")
+            Swift.print("Other error: \(error)")
         }
         return nil
     }
@@ -34,9 +34,9 @@ class JSONDecoderTest: XCTestCase {
         let decoder = JSONDecoder.init()
         do {
             let result = try decoder.decode(PaymentList.self, from: json_data!.data(using: .utf8)!)
-            print(result.payments[0])
+            Swift.print(result.payments[0])
         } catch {
-            print("Error: \(error)")
+            Swift.print("Error: \(error)")
         }
     }
     
@@ -46,15 +46,15 @@ class JSONDecoderTest: XCTestCase {
         let decoder = JSONDecoder.init()
         do {
             let result = try decoder.decode(PeerList.self, from: json_data!.data(using: .utf8)!)
-            print(result.peers[5])
+            Swift.print(result.peers[5])
         } catch {
-            print("Error: \(error)")
+            Swift.print("Error: \(error)")
         }
     }
     
     func testUseFactoryToCreatePayment() {
         let new_payment = Payment.fake()
-        print(new_payment)
+        Swift.print(new_payment)
     }
     
 }

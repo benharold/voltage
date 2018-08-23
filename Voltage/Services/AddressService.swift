@@ -12,26 +12,29 @@ class AddressService: NSObject {
     
     class func generate() -> String? {
         let decoder: JSONDecoder = JSONDecoder.init()
-        guard let service = LightningRPCSocket.create() else {
-            return nil
-        }
-        let newaddr: LightningRPCQuery = LightningRPCQuery(id: Int(getpid()), method: "newaddr", params: [])
-        let response: Data = service.send(query: newaddr)
-        
+        guard let socket = LightningRPCSocket.create() else { return nil }
+        let query = LightningRPCQuery(LightningRPC.Method.newaddr)
+        let response: Data = socket.send(query)
         do {
             let result: Address = try decoder.decode(AddressResult.self, from: response).result
             return result.address
         } catch {
-            do {
-                NotificationCenter.default.post(name: Notification.Name(rawValue: "RPC Error"), object: error)
-                let error_message = try decoder.decode(ErrorResult.self, from: response).error
-                print("AddressService RPC error: " + error_message)
-            } catch {
-                print("AddressService RPC error: \(error)")
-            }
-            print("AddressService JSON decoder error: \(error)")
+            if is_rpc_error(response: response) { return nil }
+            print(error)
         }
         
         return nil
+    }
+    
+    private class func is_rpc_error(response: Data) -> Bool {
+        do {
+            let decoder = JSONDecoder.init()
+            let rpc_error: RPCError = try decoder.decode(ErrorResult.self, from: response).error
+            NotificationCenter.default.post(name: Notification.Name.rpc_error, object: rpc_error)
+            return true
+        } catch {
+            print(error)
+            return false
+        }
     }
 }
